@@ -1,0 +1,27 @@
+/* ----------ABOUT---------------*/
+.about {
+  background: linear-gradient(155deg, #256ce1 48%, #fff 48.2%);
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    text-align: justify;
+
+    .textBx {
+        min-width: 49%;
+        width: 49%;
+
+        > p {
+        color: #333;
+    }
+  }
+
+    .imgBx {
+      margin-left: 40px;
+  
+      img {
+          max-width: 100%;
+      }
+    }
+  }
+}

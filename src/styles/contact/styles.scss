@@ -1,0 +1,61 @@
+/*------------Contatos---------*/
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(205deg, #256ce1 49%, #fff 49.2%);
+
+  .contactForm {
+    position: relative;
+    width: 700px;
+    margin-top: 20px;
+
+    .row {
+      width: 100%;
+      display: flex;
+
+      .col50 {
+        width: 50%;
+        margin: 10px;
+    }
+
+      .col100 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: #FFF;
+        color: #333;
+        font-size: 1.6rem;
+        resize: none;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    input[type="submit"] {
+        background-color: #00bcd4;
+        color: #FFF;
+        padding: 10px 30px;
+        display: inline-block;
+        font-weight: 500;
+        letter-spacing: 2px;
+        cursor: pointer;
+        max-width: 150px;
+
+        &:hover{
+          background: #333;
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }
+}
