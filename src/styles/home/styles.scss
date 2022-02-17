@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+  font-family: Poppins, 'sans-serif';
+}
 #home {
     display: flex;
     align-items: justify;
     width: stretch;
     height: 100vh;
-    background: linear-gradient(1deg, #256ce1 80%, #333 );
+    background: linear-gradient(22deg, #256ce1 50%, #FFF  50.1%);
   
     aside {
       flex: 8;
@@ -30,16 +35,20 @@
       }
 
       
-      p {
+      >p { 
         margin-top: 5px;
         text-align: center;
         font-size: 2rem;
         font-weight: 400;
       }
+      .point {
+        display: flex;
+        justify-content: center;
+      }
       
     }
     main {
-      // background: #FFF;
+      // background: #333;
       flex: 12;
       padding: 0 32px;
   
@@ -102,32 +111,54 @@
     right: 0;
   
     h4 {
-        font-size: 3.5rem;
-        color: #FFF;
-        font-weight: 300;
-  
-        span {
-          color: #FFF;
-          font-size: 1.5em;
+        font-size: 2rem;
+        color: #333;
+        font-weight: 400;
+        line-height: 5rem;
+
+        > span {
+          color: #0269A4;
+          font-size: 6em;
           font-weight: 700;
+          
       }
   
     }
     h2 {
-        font-size: 5rem;
-        color: #FFF;
-        line-height: 4rem;
+        font-size: 6rem;
+        color: #333;
+        line-height: 5rem;
     }
-  }
-  
-  
-  p {
-      color: #FFF;
-      font-size: 1.7rem;
+    h3 {
+      font-size: 2rem;
+      color: #333;
+      line-height: 5rem;
+    }
+    p {
+      color: #333;
+      font-size: 2rem;
       margin: 20px 0;
-      font-weight: 300;
-      text-shadow: 1px 1px 2px #333;
+      font-weight: 500;
+      // text-shadow: 1px 1px 1px #FFF;
+      // background: #ff3f;
+      
+      &:after{
+        position: relative;
+        font-size: 10rem;
+        content: '&#xf13';
+        color: #FFD832;
+        
+      }
+      
+      
+      
+    }
+
+    
   }
+  
+  
+  
   
   .aboutus_btn{
      text-align: right;

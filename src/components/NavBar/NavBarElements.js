@@ -6,18 +6,19 @@ import styled from "styled-components";
 export const Nav = styled.nav`
         position: fixed;
         width: 100%;
-        background: linear-gradient(125deg, #FFF 33%, #202020 33.1%);
+        /* background: linear-gradient(45deg, #FFF 33%, #202020 33.1%); */
         background-blend-mode: multiply;
         height: 80px;
         display: flex;
         justify-content: space-between;
         padding: 0.5rem calc((100vw - 2000px) / 2);
-        background: linear-gradient(70deg, #FFF 20%, #FFC40A   20.1%);
-        z-index: 10;
+        background: linear-gradient(45deg, #FFF 20%, #FFF   20.1%);
+        z-index: 10;     
         /* Third Nav */
         /* justify-content: flex-start; */
 
-
+        
+        
         .img-logo{           
             
 
@@ -43,8 +44,34 @@ export const Nav = styled.nav`
         padding: 2rem 3rem;
         height: 100%;
         cursor: pointer;
+        overflow: hidden;
+    
         
-        &.active {
+        &::after {  
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #333;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s;
+            }
+        &:hover::after {
+            background: #333;
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        
+    }
+        
+        
+    }
+        
+        .active {
             color: #15cdfc;
         }   
         `;
@@ -92,7 +119,7 @@ export const Nav = styled.nav`
 
         export const NavBtnLink = styled.a`
         border-radius: 4px;
-        background: #256ce1;
+        background: #1b87b4;
         padding: 10px 22px;
         color: #fff;
         outline: none;

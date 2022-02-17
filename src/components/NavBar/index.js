@@ -23,10 +23,11 @@ const Navbar = () => {
         </Anchor>
         <Bars />
         <NavMenu>
-          <Anchor href='#home' activeStyle>
+
+          <Anchor href='#home'  activeStyle>
             Home
           </Anchor>
-          <Anchor href='#about' activeStyle>
+          <Anchor className="link" href='#about' activeStyle>
             Sobre
           </Anchor>
           <Anchor href='#' activeStyle>
@@ -41,6 +42,7 @@ const Navbar = () => {
           </NavBtnLink>
         </NavBtn>
       </Nav>
+      
     </>
   );
 };

@@ -12,25 +12,33 @@ import mobileCare from '../../images/illustrations/mobile-care.png'
 
 import { About } from '../about'
 import { ContactForm } from '../contacts'
+import { Pointer } from '../../components/Pointer'
  
 
 export function Home(){
   return (
     <div>
       <div id="home" >
+      
         <aside>
           <img src={mobileCare} alt="Illustration symbolizing asking and questions" />
-          
+           
           <strong>Syscare</strong>
+         
             <p>Gestão de Home Care</p>
+            <div className="point"><Pointer /></div>
+            
         </aside>
+       
           <main>
             <div className="contentBox">
                 <div>
-                    <h4><span>Syscare</span>, seu </h4>
-                    <h4>sistema de gestão de </h4>
+                    <h4><span>Syscare</span>, seu</h4>
+                    <h4> sistema de gestão de </h4>
                     <h2>Home Care</h2>
-                    <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
+                    {/* <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p> */}
+                    
+                    
 
                     <div className="aboutus_btn">
                       <button className='btn'>Clique <span>& </span>Confira</button>
