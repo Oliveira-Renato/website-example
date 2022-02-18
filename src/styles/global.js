@@ -18,7 +18,8 @@ export default createGlobalStyle`
     body {
         font-size: 1.6rem;
         min-height: 100vh;
-        background: linear-gradient(125deg, #256ce1 20%, #00B4AB );
+        /* background: linear-gradient(125deg, #256ce1 20%, #00B4AB ); */
+        background: #333;
     }
 
     button {
@@ -107,8 +108,9 @@ export default createGlobalStyle`
         }
     }
 
-    &.black, h2,p {
+    &.black h2 {
         color:#333;
+
         p{
             color:#333;
             font-size:1.4rem;
@@ -125,7 +127,7 @@ export default createGlobalStyle`
         }
     }
     &.white h2::before {
-        background: #fff;
+        background: #FFC40A;
     }
 
    

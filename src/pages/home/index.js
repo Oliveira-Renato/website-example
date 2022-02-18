@@ -12,6 +12,7 @@ import mobileCare from '../../images/illustrations/mobile-care.png'
 import { About } from '../about'
 import { ContactForm } from '../contacts'
 import { Pointer } from '../../components/Pointer'
+import { Footer } from '../footer'
  
 
 export function Home(){
@@ -33,7 +34,9 @@ export function Home(){
             <div className="contentBox">
              
                 <div>
-                  <div className='img-mobile'></div>
+                  <div className='home_mob_img'>
+                    <img src={ mobileCare } />
+                  </div>
                     <h4><span>Syscare</span>, seu</h4>
                     <h4>sistema de gestão de </h4>
                     <h2>Home Care</h2>
@@ -58,7 +61,8 @@ export function Home(){
       <div className="contact-page">
         <ContactForm />
       </div>
-
+      {/*----------Footer-------------- */}
+      <Footer />
 
       
     </div>

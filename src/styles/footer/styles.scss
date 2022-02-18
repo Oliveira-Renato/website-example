@@ -1,0 +1,58 @@
+.footer {
+  padding-top: 20px;
+  background: #333;
+  //1b87b4
+  position: relative;
+  margin: 0 20rem;
+
+
+  &__social {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding:2em 0; 
+
+    a + a {
+      margin-left: 2em;
+      
+    }
+  }
+
+  &__copyright {
+    padding:2em 0; 
+
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+  }
+
+  &__allTogether {
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+
+    background: #333;
+    
+    .kennenFooter {
+      
+      
+      >img{
+        filter: contrast(100%); 
+        width: 200px;
+        padding: 2px 4px;
+        background: #FFF;
+        border-radius: 100px;
+      }
+    }
+    .syscareFooter {
+      >img{
+        background-image: fit-content;
+        width: 200px;
+        padding: 2px 4px;
+        background: #FFF;
+        border-radius: 100px;
+      }
+    }
+  }
+}

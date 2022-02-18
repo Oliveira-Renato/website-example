@@ -7,6 +7,7 @@
     display:flex;
     height: 100vh;
     background:#1b87b4;
+
     
     @media(min-width: 40em) {
       align-items: justify;
@@ -122,12 +123,19 @@
     top: 0;
     right: 0;
 
-    @media(max-width:900px){
-      .img-mobile {
+   
+    .home_mob_img{
+      display: none;
+
+      @media(max-width:900px){
         display: flex;
-        width: 200px;
-        height: 200px;
-        background-image: url('../../images/symbols/heart-beat.png');
+        justify-content: center;
+        
+
+        >img {
+          width: 250px;
+          height: 250px;
+        }
       }
     }
   
@@ -150,11 +158,7 @@
         color: #333;
         line-height: 5rem;
     }
-    h3 {
-      font-size: 2rem;
-      color: #333;
-      line-height: 5rem;
-    }
+    
     p {
       color: #333;
       font-size: 2rem;
@@ -183,12 +187,12 @@
   
   .aboutus_btn{
     text-align: right;
+    margin-top: 16px; 
 
     @media(min-width: 40em) {
       display: flex;
-
-      
     }
+    
     .btn {
       display: inline-block;
       text-align: right;

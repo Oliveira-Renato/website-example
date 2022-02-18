@@ -5,11 +5,22 @@
   flex-direction: column;
   justify-content: center;
   background: #1b87b4;
+  z-index: 1000;
 
- 
-
+  .contact_img {
+     
+    >img{
+      width: 200px;
+      
+      @media(min-width: 900px){
+        width: 300px;
+       
+      }
+    }
+  }
   .contactForm {
     width: 100%;
+    
     @media(min-width: 43.5em){
       position: relative;
       width: 700px;

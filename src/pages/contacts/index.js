@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/contact/styles.scss'
 import { Button } from '../../components/Button';
 
-import { contactImg } from '../../images/symbols/contact.png'
+import  contactImg from '../../images/symbols/contact.png'
 
 export function ContactForm(){
     return (
@@ -12,7 +12,7 @@ export function ContactForm(){
             <section className="contact" id="contact">
             
             <div className="contact_img">
-                
+                <img src={ contactImg} />
             </div>
             <div className="title white">
                 <h2>Entre em Contato</h2>
