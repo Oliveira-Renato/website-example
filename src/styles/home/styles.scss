@@ -4,27 +4,39 @@
   font-family: Poppins, 'sans-serif';
 }
 #home {
-    display: flex;
-    align-items: justify;
-    width: stretch;
+    display:flex;
     height: 100vh;
-    background: linear-gradient(22deg, #256ce1 50%, #FFF  50.1%);
+    background:#1b87b4;
+    
+    @media(min-width: 40em) {
+      align-items: justify;
+      width: stretch;
+      background:#1b87b4;
+    }
+
+
+    
   
     aside {
-      flex: 8;
+      display: none;
+
+      @media (min-width: 900px) {
+        flex: 8;
   
-      // background: linear-gradient(125deg, #00B4AB 20%, #0269A4);
-      color: #fff;
-  
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  
-      padding: 120px 80px;
+        // background: linear-gradient(125deg, #00B4AB 20%, #0269A4);
+        color: #fff;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        padding: 120px 80px;
+      }
   
       img{
         margin: 0;
         max-width: 100%;
+   
       }
       
       strong {
@@ -50,7 +62,7 @@
     main {
       // background: #333;
       flex: 12;
-      padding: 0 32px;
+      padding: 0 0px;
   
       display: flex;
       align-items: center;
@@ -102,23 +114,32 @@
 
 /*------Conteudo---------*/
 .contentBox, .sidebar {
-    width: 100%;
+    max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 22px;
     top: 0;
     right: 0;
+
+    @media(max-width:900px){
+      .img-mobile {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        background-image: url('../../images/symbols/heart-beat.png');
+      }
+    }
   
     h4 {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 1rem + 10vh ,3rem);
         color: #333;
         font-weight: 400;
         line-height: 5rem;
 
         > span {
-          color: #0269A4;
-          font-size: 6em;
+          color: #FFF;
+          font-size: clamp(3rem, 2rem + 20vh ,6rem);
           font-weight: 700;
           
       }
@@ -161,28 +182,33 @@
   
   
   .aboutus_btn{
-     text-align: right;
-    justify-content: center;
-    
+    text-align: right;
+
+    @media(min-width: 40em) {
+      display: flex;
+
+      
+    }
     .btn {
       display: inline-block;
       text-align: right;
       justify-content: center;
-      margin: 20px 60px;
-      background: linear-gradient(125deg, #FFD832 30%, #FE7C00);
-      color: #333;
-      padding: 20px 20px;
-      width: 130px;
-      height: 130px;
+      border-radius: 4px;
+      background: #FFC40A;
+      padding: 10px 22px;
+      color: #fff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
       text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 2px;
-      font-size: 1.6rem;
-      border-radius: 100%;
-      text-transform: uppercase;
-      text-align: center;
+      /* Second Nav */
+      &:hover {
+            transition: all 0.2s ease-in-out;
+            background: #fff;
+            color: #010606;
+        }  
       transform: scale(1.2);
-      opacity: 0.9;
       -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
       transition: width 2s, height 2s, background-color 2s, transform 2s;
       border: 1px solid rgba(0,0,0,0.3);
@@ -193,17 +219,11 @@
       }
   
       &:hover
-      {
-        border: 1px solid #FFF;
-        transform: rotate(180deg);
-        transition-duration: 0.5s;
-        background: linear-gradient(125deg, #0269A4 20%, #011B56);
-        color: #FFF;
-        transform: scale(0.9);   
-        opacity: 1;
-
-      }
+      {   
+          transition: all 0.2s ease-in-out;
+          background: #333;
+          color: #fff;  
+        
+    }
   }
-  
-  
-  }   
+}   

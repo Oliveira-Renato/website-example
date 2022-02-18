@@ -33,11 +33,14 @@ const Navbar = () => {
           <Anchor href='#' activeStyle>
             Produtos
           </Anchor>
+          <Anchor className="link" href='#contact' activeStyle>
+            Contatos
+          </Anchor>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink href='#contact' activeStyle>
+          <NavBtnLink target='blank' href='http://suporte.syscare.com.br:81/suporte/login' activeStyle>
             Suporte
           </NavBtnLink>
         </NavBtn>

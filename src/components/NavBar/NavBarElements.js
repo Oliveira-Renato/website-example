@@ -66,7 +66,7 @@ export const Nav = styled.nav`
         }
 
         
-    }
+        }
         
         
     }
@@ -78,7 +78,7 @@ export const Nav = styled.nav`
 
         export const Bars = styled(FaBars)`
         display: none;
-        color: #fff;
+        color: #333;
         @media screen and (max-width: 768px) {
             display: block;
             position: absolute;
@@ -131,8 +131,8 @@ export const Nav = styled.nav`
         margin-left: 24px;
         &:hover {
             transition: all 0.2s ease-in-out;
-            background: #fff;
-            color: #010606;
+            background: #333;
+            color: #FFF;
         }  
 `;
 

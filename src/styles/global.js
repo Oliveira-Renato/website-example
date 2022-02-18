@@ -38,6 +38,10 @@ export default createGlobalStyle`
         padding: 100px;
         min-height: 100vh;
 
+        @media(max-width: 730px){
+            padding: 30px;
+        }
+
     }
 
      
@@ -75,15 +79,18 @@ export default createGlobalStyle`
     text-align: center;
 
     h2 {
-    text-transform: uppercase;
-      position: relative;
-      color:#5782ab;
-      font-family: "Intro-Bold";
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: 1px;
+        font-size: 2.1rem;
+        position: relative;
 
-      p {
+      @media(min-width: 40em){
+        text-transform: uppercase;
+        color:#5782ab;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      >p {
           max-width: 700px;
           display: inline-block;
       }
@@ -100,18 +107,28 @@ export default createGlobalStyle`
         }
     }
 
-    &.black p {
+    &.black, h2,p {
         color:#333;
+        p{
+            color:#333;
+            font-size:1.4rem;
+            margin: 12px;
+        }
     }
 
-    &.white h2, p {
+    &.white, h2,p {
         color: #fff;
-    
+
+        p{
+            font-size:1.4rem;
+            margin: 12px;
+        }
     }
     &.white h2::before {
         background: #fff;
     }
 
+   
 
 }
 

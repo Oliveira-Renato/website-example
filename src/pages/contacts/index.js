@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/contact/styles.scss'
 import { Button } from '../../components/Button';
 
-
+import { contactImg } from '../../images/symbols/contact.png'
 
 export function ContactForm(){
     return (
@@ -11,10 +11,12 @@ export function ContactForm(){
            
             <section className="contact" id="contact">
             
-
+            <div className="contact_img">
+                
+            </div>
             <div className="title white">
                 <h2>Entre em Contato</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores cumque voluptatum doloremque maxime quidem obcaecati, delectus minima soluta similique cupiditate porro debitis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
             </div>
             <form  id='main-form'>
                 <div className="contactForm">
