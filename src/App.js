@@ -8,6 +8,8 @@ import Layout from './components/Layout';
 import  NavBar  from './components/NavBar';
 import { Whatsapp } from './components/Whatsapp';
 
+
+
 function App() {
   return (
      <div className="App">
