@@ -1,4 +1,5 @@
 import React from 'react'
+import { ProgressBar } from '../../components/progressbar'
 
 import mainImg from '../../images/homeImages/5802654.jpg'
 import careDoctor from '../../images/homeImages/doctor-taking-care-senior-woman.jpg'
@@ -7,8 +8,8 @@ import '../../styles/about/styles.scss'
 
 export function About(){
     return (
+      
          <div>
-           
              <section className="about" id="about">
                 <div className="title black">
                     <h2>Nossa Empresa</h2>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
     Nav,
@@ -9,15 +9,35 @@ import {
     NavBtnLink
   } from './NavBarElements';
 
+import './styles.scss'
 
 import  logo  from '../../images/iconsLogo/logo_syscare_200.png'
 
+import { ProgressBar } from '../progressbar'
+
+import '../styles.scss'
 
 
 const Navbar = () => {
+
+  useEffect(()=>{
+    window.onscroll = function() {HandleScrollBar()};
+
+    function HandleScrollBar(){
+      
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  })
+
   return (
-    <>
+    <div>
+      
       <Nav>
+      
         <Anchor className="img-logo" scroll to='/'>
           <img src={logo} alt='logo' />
         </Anchor>
@@ -44,9 +64,15 @@ const Navbar = () => {
             Suporte
           </NavBtnLink>
         </NavBtn>
+
+        
       </Nav>
-      
-    </>
+
+     
+   
+    {/*  */}
+    </div>
+    
   );
 };
 

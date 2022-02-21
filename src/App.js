@@ -7,6 +7,7 @@ import GlobalStyle from './styles/global';
 import Layout from './components/Layout';
 import  NavBar  from './components/NavBar';
 import { Whatsapp } from './components/Whatsapp';
+import { ProgressBar } from './components/progressbar';
 
 
 
@@ -16,7 +17,7 @@ function App() {
       <BrowserRouter>
       <Layout /> 
       <GlobalStyle />
-      
+      <ProgressBar />
         <NavBar />
         <Whatsapp />
         <Routes>  
