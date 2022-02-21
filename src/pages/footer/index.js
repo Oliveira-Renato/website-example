@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 import '../../styles/footer/styles.scss'
 
 import kennenImg from '../../images/iconsLogo/header_kennen.png'
-import syscareImg from '../../images/iconsLogo/logo_syscare_150.png'
+import syscareImg from '../../images/iconsLogo/logo_syscare_200.png'
 
 
 export function Footer(){
@@ -40,5 +40,7 @@ export function Footer(){
 
       <p className="footer__copyright">2022 by <FaCopyright color="#FFF"/> Kennen Consultoria e Sistemas de Informação Ltda.</p>
     </footer>
+
+    
   )
 }

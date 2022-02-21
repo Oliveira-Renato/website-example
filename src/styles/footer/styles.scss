@@ -35,23 +35,24 @@
     background: #333;
     
     .kennenFooter {
-      
+      aspect-ratio: 16 / 9; 
       
       >img{
-        filter: contrast(100%); 
-        width: 200px;
-        padding: 2px 4px;
+        width: 150px;
         background: #FFF;
-        border-radius: 100px;
+        border-radius: 5%;
       }
     }
     .syscareFooter {
+      aspect-ratio: 16 / 9;
+      
       >img{
-        background-image: fit-content;
-        width: 200px;
-        padding: 2px 4px;
+        inline-size: 100%;
+        object-fit: cover;
+        width: 150px;
         background: #FFF;
-        border-radius: 100px;
+        border-radius: 5%;
+        margin:5px;
       }
     }
   }

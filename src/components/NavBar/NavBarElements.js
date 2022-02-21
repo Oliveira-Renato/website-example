@@ -60,7 +60,7 @@ export const Nav = styled.nav`
             transition: transform 0.5s;
             }
         &:hover::after {
-            background: #333;
+            background: #FFC40A;
             transform: scaleX(1);
             transform-origin: left;
         }
