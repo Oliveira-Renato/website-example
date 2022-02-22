@@ -1,24 +1,46 @@
+.container{
+  max-width: 1600px!important;
+}
 nav{
   position: fixed;
   width: 100%;
-  /* background: linear-gradient(45deg, #FFF 33%, #202020 33.1%); */
   background-blend-mode: multiply;
   height: 80px;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem calc((100vw - 2000px) / 2);
-  background: linear-gradient(45deg, #FFF 20%, #FFF   20.1%);
-  z-index: 10;     
-  /* Third Nav */
-  /* justify-content: flex-start; */  
-  .img-logo{           
-      
-      > img {
-          max-width: 100%;
-          z-index: 1;
-          image-rendering: optimizeQuality;
+  padding: 0px 25px 0px 25px;
+  background-color: transparent;
+  z-index: 10; 
+  
+  .navbar{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  
+
+  .navbar-brand{           
+    color: rgba(0,0,0,.9);
+
+      .logo{
+        opacity: 1;
+        transform: translateZ(0);
+        
+          > img {
+            max-width: 100%;
+            height: 65px;
+            z-index: 1;
+            image-rendering: optimizeQuality;
+        }
       }
   }
+
 
   a{
     transition: smooth;
@@ -27,7 +49,8 @@ nav{
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 2rem 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     height: 100%;
     cursor: pointer;
     overflow: hidden;
@@ -57,10 +80,10 @@ nav{
 
   }
 
-  .navMenu{
+  .navMenu,ul, li {
     display: flex;
     align-items: center;
-    margin-right: -16px;
+    margin-left: 24px;
     /* Second Nav */
     /* margin-right: 24px; */
     /* Third Nav */
@@ -69,6 +92,8 @@ nav{
     @media screen and (max-width: 768px) {
         display: none;
     }
+
+
   }
 
         
@@ -81,6 +106,7 @@ nav{
   /* Third Nav */
   /* width: 100vw;
   white-space: nowrap; */
+
   @media screen and (max-width: 768px) {
       display: none;
   }
@@ -139,3 +165,15 @@ nav{
       }
     }
   }
+
+  
+  .fixed-menu {
+    background-color: #333;
+    -webkit-box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+
