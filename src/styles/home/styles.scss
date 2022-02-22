@@ -3,62 +3,139 @@
 *{
   font-family: Poppins, 'sans-serif';
 }
+
 #home {
     display:flex;
     height: 100vh;
     background:#1b87b4;
-
+   
     
     @media(min-width: 40em) {
+      padding: 20px 12px;
       align-items: justify;
       width: stretch;
-      background:#fff;
+      background:#001f3f;
+      background-image: url('../../images/homeImages/home.png');
+      background-size: 900px;
+      background-repeat: no-repeat;
+      background-position: right;
+
     }
 
 
     
   
-    aside {
-      display: none;
+    aside, .contentBox + .sidebar {
+      max-width: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 22px;
+      top: 0;
+      right: 0;
+      
+        .home_mob_img{
+          display: none;
+    
+          @media(max-width:900px){
+            display: flex;
+            justify-content: center;
+            
+    
+            >img {
+              width: 250px;
+              height: 250px;
+            }
+          }
+        }
 
-      @media (min-width: 900px) {
-        flex: 8;
-  
-        // background: linear-gradient(125deg, #00B4AB 20%, #0269A4);
+        h1 {
+          color: #1b87b4;
+          font-size: 10rem;
+          font-weight: 700; 
+          text-transform: uppercase; 
+          line-height:1;
+          text-shadow: 1px 1px 3px #ffbf00;
+        }
+      
+      
+        h3 {
+            font-size: 4rem;
+            color:	#ffbf00;        
+            text-transform: uppercase;
+            text-shadow: 1px 1px 3px #1b87b4;
+        }
+        
+        p {
+          color: #fff;
+          font-size: 2rem;
+          margin: 20px 0;
+          font-weight: 500;
+          // text-shadow: 1px 1px 1px #FFF;
+          // background: #ff3f;
+          
+          // &:after{
+          //   position: relative;
+          //   font-size: 10rem;
+          //   content: '&#xf13';
+          //   color: #FFD832;
+            
+          // }
+          
+          
+          
+        
+        
+      }
+      
+    
+    .aboutus_btn{
+      display: flex;
+      margin: 40px 12px;
+    
+      @media(min-width: 40em) {
+        display: flex;
+      }
+        
+      .btn {
+        display: inline-block;
+        text-align: right;
+        justify-content: center;
+        border-radius: 4px;
+        background: #FFC40A;
+        padding: 10px 22px;
         color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        /* Second Nav */
+        &:hover {
+              transition: all 0.2s ease-in-out;
+              background: #fff;
+              color: #010606;
+        }  
+        transform: scale(1.2);
+        -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 2s, transform 2s;
+        border: 1px solid rgba(0,0,0,0.3);
     
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-        padding: 120px 80px;
-      }
-  
-      img{
-        margin: 0;
-        max-width: 100%;
-   
-      }
+        >span{
+          display: flex;
+          justify-content: center;
+        }
       
-      strong {
-        font: 700 3.6rem 'Poppins', sans-serif;
-        text-align: center;
-        color: #FFD;
-        text-shadow: 1px 1px 2px #333;
+        &:hover{   
+            transition: all 0.2s ease-in-out;
+            background: #333;
+            color: #fff;  
+    
+        }
       }
+    }   
 
-      
-      >p { 
-        margin-top: 5px;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 400;
-      }
-      .point {
-        display: flex;
-        justify-content: center;
-      }
-      
+
     }
     main {
       // background: #333;
@@ -114,120 +191,3 @@
 }
 
 /*------Conteudo---------*/
-.contentBox, .sidebar {
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 22px;
-    top: 0;
-    right: 0;
-
-   
-    .home_mob_img{
-      display: none;
-
-      @media(max-width:900px){
-        display: flex;
-        justify-content: center;
-        
-
-        >img {
-          width: 250px;
-          height: 250px;
-        }
-      }
-    }
-  
-    h4 {
-        font-size: clamp(1.5rem, 1rem + 10vh ,3rem);
-        color: #333;
-        font-weight: 400;
-        line-height: 5rem;
-
-        > span {
-          color: #FFF;
-          font-size: clamp(3rem, 2rem + 20vh ,6rem);
-          font-weight: 700;
-          
-      }
-  
-    }
-    h2 {
-        font-size: 6rem;
-        color: #333;
-        line-height: 5rem;
-    }
-    
-    p {
-      color: #333;
-      font-size: 2rem;
-      margin: 20px 0;
-      font-weight: 500;
-      // text-shadow: 1px 1px 1px #FFF;
-      // background: #ff3f;
-      
-      &:after{
-        position: relative;
-        font-size: 10rem;
-        content: '&#xf13';
-        color: #FFD832;
-        
-      }
-      
-      
-      
-    }
-
-    
-  }
-  
-  
-  
-  
-  .aboutus_btn{
-    text-align: right;
-    margin-top: 16px; 
-
-    @media(min-width: 40em) {
-      display: flex;
-    }
-    
-    .btn {
-      display: inline-block;
-      text-align: right;
-      justify-content: center;
-      border-radius: 4px;
-      background: #FFC40A;
-      padding: 10px 22px;
-      color: #fff;
-      outline: none;
-      border: none;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
-      text-decoration: none;
-      /* Second Nav */
-      &:hover {
-            transition: all 0.2s ease-in-out;
-            background: #fff;
-            color: #010606;
-        }  
-      transform: scale(1.2);
-      -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-      transition: width 2s, height 2s, background-color 2s, transform 2s;
-      border: 1px solid rgba(0,0,0,0.3);
-
-      >span{
-        display: flex;
-        justify-content: center;
-      }
-  
-      &:hover
-      {   
-          transition: all 0.2s ease-in-out;
-          background: #333;
-          color: #fff;  
-        
-    }
-  }
-}   

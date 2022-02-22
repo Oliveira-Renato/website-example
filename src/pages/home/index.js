@@ -21,35 +21,30 @@ export function Home(){
       <div id="home" >
       
         <aside>
-          <img src={mobileCare} alt="Illustration symbolizing asking and questions" />
-           
-          <strong>Syscare</strong>
-         
-            <p>Gestão de Home Care</p>
-            <div className="point"><Pointer /></div>
-            
+          <div className="contentBox">
+             
+             
+            <div className='home_mob_img'>
+              <img src={ mobileCare } />
+            </div>
+              <h1>Syscare</h1>
+              <h3>gestão de Home Care</h3>
+              
+             <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
+              
+              
+
+              <div className="contentBox aboutus_btn">
+                <button className='btn'>Saiba mais</button>
+              </div>
+
+               
+          </div>
+ 
         </aside>
        
           <main>
-            <div className="contentBox">
-             
-                <div>
-                  <div className='home_mob_img'>
-                    <img src={ mobileCare } />
-                  </div>
-                    <h4><span>Syscare</span>, seu</h4>
-                    <h4>sistema de gestão de </h4>
-                    <h2>Home Care</h2>
-                    {/* <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p> */}
-                    
-                    
-
-                    <div className="contentBox aboutus_btn">
-                      <button className='btn'>Saiba mais</button>
-                    </div>
-
-                </div>   
-            </div>
+            
         </main>
       </div>
       {/*----------sobre------------------- */ }

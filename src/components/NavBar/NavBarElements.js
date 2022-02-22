@@ -8,11 +8,11 @@ export const Nav = styled.nav`
         width: 100%;
         /* background: linear-gradient(45deg, #FFF 33%, #202020 33.1%); */
         background-blend-mode: multiply;
-        height: 80px;
+        height: 90px;
         display: flex;
         justify-content: space-between;
         padding: 0.5rem calc((100vw - 2000px) / 2);
-        background: linear-gradient(45deg, #FFF 20%, #FFF   20.1%);
+        background: #FFf;
         z-index: 10;     
         /* Third Nav */
         /* justify-content: flex-start; */
