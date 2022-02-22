@@ -17,9 +17,9 @@ function App() {
       <BrowserRouter>
       <Layout /> 
       <GlobalStyle />
-      <ProgressBar />
-        <NavBar />
-        <Whatsapp />
+        <ProgressBar />
+        <NavBar />  
+        {/* <Whatsapp /> */}
         <Routes>  
           <Route path="/" element={<Home />}/>
           <Route path="/sobre" element={<About />}/>

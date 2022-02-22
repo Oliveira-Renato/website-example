@@ -1,0 +1,141 @@
+nav{
+  position: fixed;
+  width: 100%;
+  /* background: linear-gradient(45deg, #FFF 33%, #202020 33.1%); */
+  background-blend-mode: multiply;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 2000px) / 2);
+  background: linear-gradient(45deg, #FFF 20%, #FFF   20.1%);
+  z-index: 10;     
+  /* Third Nav */
+  /* justify-content: flex-start; */  
+  .img-logo{           
+      
+      > img {
+          max-width: 100%;
+          z-index: 1;
+          image-rendering: optimizeQuality;
+      }
+  }
+
+  a{
+    transition: smooth;
+    color: #333;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 2rem 3rem;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position:relative;
+    z-index: 1;
+
+    &:hover {
+      color: #FFC40A;
+    }
+  
+  }
+
+  
+  .toggle{
+    display: none;
+    color: #333;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 75%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+  }
+
+  .navMenu{
+    display: flex;
+    align-items: center;
+    margin-right: -16px;
+    /* Second Nav */
+    /* margin-right: 24px; */
+    /* Third Nav */
+    /* width: 100vw;
+    white-space: nowrap; */
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+  }
+
+        
+&.navBtn {
+  display: flex;
+  align-items: center;
+  margin-right: -16px;
+  /* Second Nav */
+  /* margin-right: 24px; */
+  /* Third Nav */
+  /* width: 100vw;
+  white-space: nowrap; */
+  @media screen and (max-width: 768px) {
+      display: none;
+  }
+
+  .nav_Btn_Link{
+    border-radius: 4px;
+    background: #1b87b4;
+    padding: 10px 22px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    /* Second Nav */
+    margin-left: 24px;
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #333;
+        color: #FFF;
+    } 
+  }
+}
+
+}
+        
+
+      
+      
+
+
+
+  
+  
+
+
+
+
+  .header:last-child {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #f1f1f1;
+
+  
+    .progress-container {
+      width: 100%;
+      height: 5px;
+      background: #ccc;
+      bottom: 0;
+  
+      .progress-bar {
+        height: 5px;
+        background: #FFC40A;
+        width: 0%;
+      }
+    }
+  }

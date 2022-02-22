@@ -9,16 +9,14 @@ import {
     NavBtnLink
   } from './NavBarElements';
 
-import './styles.scss'
 
 import  logo  from '../../images/iconsLogo/logo_syscare_200.png'
 
 import { ProgressBar } from '../progressbar'
 
-import '../styles.scss'
 
 
-const Navbar = () => {
+const NavBar = () => {
 
   useEffect(()=>{
     window.onscroll = function() {HandleScrollBar()};
@@ -64,16 +62,13 @@ const Navbar = () => {
             Suporte
           </NavBtnLink>
         </NavBtn>
-
-        
       </Nav>
-
-     
-   
+      
+      
     {/*  */}
     </div>
     
   );
 };
 
-export default Navbar;
+export default NavBar;
