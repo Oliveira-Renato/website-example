@@ -16,7 +16,7 @@ export const Nav = styled.nav`
         z-index: 10;     
         /* Third Nav */
         /* justify-content: flex-start; */
-
+        border-bottom: 1px solid rgba(240,240,240,0.3);
         
         
         .img-logo{           
@@ -105,7 +105,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled.a`
           border-radius: 4px;
-          background: #1b87b4;
+          background: #1b87c8;
           padding: 10px 22px;
           color: #fff;
           outline: none;

@@ -7,14 +7,14 @@
 #home {
     display:flex;
     height: 100vh;
-    background:#1b87b4;
+    background:#1b87b4;//1b87c8
    
     
     @media(min-width: 40em) {
       padding: 20px 12px;
       align-items: justify;
       width: stretch;
-      background:#001f3f;
+      background:#1b87c8;//001f3f
       background-image: url('../../images/homeImages/home.png');
       background-size: 900px;
       background-repeat: no-repeat;
@@ -50,20 +50,20 @@
         }
 
         h1 {
-          color: #1b87b4;
+          color: #0e355c;
           font-size: 10rem;
           font-weight: 700; 
           text-transform: uppercase; 
           line-height:1;
-          text-shadow: 1px 1px 3px #ffbf00;
+          text-shadow: 1px 1px 2px #FFF;
         }
       
       
         h3 {
             font-size: 4rem;
-            color:	#ffbf00;        
+            color:	#FFF;        
             text-transform: uppercase;
-            text-shadow: 1px 1px 3px #1b87b4;
+            text-shadow: 1px 1px 2px #333;
         }
         
         p {
@@ -71,7 +71,7 @@
           font-size: 2rem;
           margin: 20px 0;
           font-weight: 500;
-          // text-shadow: 1px 1px 1px #FFF;
+          text-shadow: 1px 1px 1px #333;
           // background: #ff3f;
           
           // &:after{
@@ -95,6 +95,7 @@
     
       @media(min-width: 40em) {
         display: flex;
+        
       }
         
       .btn {
@@ -104,7 +105,7 @@
         border-radius: 4px;
         background: #FFC40A;
         padding: 10px 22px;
-        color: #fff;
+        color: #333;
         outline: none;
         border: none;
         cursor: pointer;
