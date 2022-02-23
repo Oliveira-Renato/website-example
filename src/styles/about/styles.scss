@@ -1,25 +1,39 @@
 /* ----------ABOUT---------------*/
 .about {
   background:#FFF;
+  background-image: url('../../images/SyscareOld/Drawing.png');
+  background-repeat: no-repeat; /* You must set a specified height */
+  // background-size: ; /* Resize the background image to cover the entire container */
+  background-position: bottom;
+  back
+    // @media screen and (max-width: 1400px) {
+    //   background-size:1000px;
+    // }
+    z-index: 1000;
 
 
   .content {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    text-align: justify;
+    text-align: justify;  
+    height: 100vh;
+    
+
 
     .textBx {
         min-width: 49%;
         width: 49%;
 
-        > p {
-        color: #333;
-    }
+        >p {
+          margin-top: 12px;
+          color: #333 !important;
+        }
+        
   }
 
     .imgBx {
-      margin-left: 40px;
+      margin-left: 20px;
   
       img {
           max-width: 100%;
@@ -27,3 +41,4 @@
     }
   }
 }
+

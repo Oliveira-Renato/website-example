@@ -3,6 +3,7 @@ import { ProgressBar } from '../../components/progressbar'
 
 import mainImg from '../../images/homeImages/5802654.jpg'
 import careDoctor from '../../images/homeImages/doctor-taking-care-senior-woman.jpg'
+import coolGuys from '../../images/CIAD/CIAD/DSC05171.JPG'
 
 import '../../styles/about/styles.scss'
 
@@ -10,6 +11,7 @@ export function About(){
     return (
       
          <div>
+
              <section className="about" id="about">
                 <div className="title black">
                     <h2>Nossa Empresa</h2>
@@ -31,12 +33,14 @@ export function About(){
                         </p>
                     </div>
                     {/* Imagem pessoal da pagina sobre */}
-                    <div className="imgBx">
-                        <img src='' />
-                    </div>
+                    {/* <div className="imgBx">
+                        <img src={ coolGuys }/>
+                    </div> */}
                 </div>
           </section>
-
+          <div className="imgBx">
+               <img src={ coolGuys }/>
+            </div>           
         </div>
     )
 }

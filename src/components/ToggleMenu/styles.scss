@@ -1,0 +1,93 @@
+.first{
+  display: none;
+}
+
+
+@media screen and (max-width:905px) {
+  .first{
+    display: flex;
+  }
+  
+  .toggle {
+    position: fixed;
+    top: 14px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #1b87b4 url('../../images/toggle/menu.png');
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+  
+    &.active {
+        background: #1b87b4 url('../../images/toggle/close.png');
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+  
+  }
+  
+  /* ------MENU LATERAL ----------*/
+  .sidebar {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: fixed;
+    background: #1b87b4;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: 0.5s;
+    padding: 40px;
+    z-index: 100;
+    right: -100%;
+    opacity: 0.9;
+  
+    &.active {
+        right: 0;
+    }
+  
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  
+        li {
+          list-style: none;
+  
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 3rem;
+            margin: 10px 0;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+  
+            &:hover {
+                color: #FFC40A;
+            }
+  
+            >img {
+              background-color: #1b87b4;
+            }
+        }
+      }
+    }
+  
+  }
+  
+  
+  .bluerContent {
+    transition: 0.5s;
+    filter: blur(1.5rem);
+  }
+  
+  .imgToggle {
+    
+  }
+}

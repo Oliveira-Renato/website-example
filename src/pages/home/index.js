@@ -18,47 +18,46 @@ import { Footer } from '../footer'
 export function Home(){
   return (
     <div>
+      <div className="control_content">
       <div id="home" >
       
-        <aside>
-          <div className="contentBox">
-             
-             
-            <div className='home_mob_img'>
-              <img src={ mobileCare } />
-            </div>
+      <aside>
+        <div className="contentBox">
+           
               <h1>Syscare</h1>
               <h3>gestão de Home Care</h3>
-              
-             <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
-              
-              
+            
+              <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
+            
+            
 
               <div className="contentBox aboutus_btn">
                 <button className='btn'>Saiba mais</button>
               </div>
 
-               
-          </div>
- 
-        </aside>
-       
-          <main>
-            
-        </main>
-      </div>
-      {/*----------sobre------------------- */ }
-      <div className="about-page">
-        <About />
-      </div>
+             
+            </div>
 
-      {/*----------sobre------------------- */ }
-      <div className="contact-page">
-        <ContactForm />
-      </div>
-      {/*----------Footer-------------- */}
-      <Footer />
+          </aside>
+        
+            <main>
+              
+          </main>
+        </div>
+        {/*----------sobre------------------- */ }
+        <div className="about-page">
+          <About />
+        </div>
 
+        {/*----------sobre------------------- */ }
+        <div className="contact-page">
+          <ContactForm />
+        </div>
+        {/*----------Footer-------------- */}
+        <Footer />
+
+
+      </div>
       
     </div>
 

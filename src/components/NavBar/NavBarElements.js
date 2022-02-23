@@ -11,27 +11,27 @@ export const Nav = styled.nav`
         height: 90px;
         display: flex;
         justify-content: space-between;
-        padding: 0.5rem calc((100vw - 2000px) / 2);
-        background: #FFf;
+        padding: 0 3rem;
+        background: transparent;
         z-index: 10;     
         /* Third Nav */
         /* justify-content: flex-start; */
-        border-bottom: 1px solid rgba(240,240,240,0.3);
         
         
-        .img-logo{           
-            
+        .logo{
+        opacity: 1;
+        transform: translateZ(1);
+        
+          > img {   
+            width: 100%;
+            height: 65px;
+            z-index: 1;
+            image-rendering: optimizeQuality;
 
-            > img {
-                max-width: 100%;
-                z-index: 1000;
-                image-rendering: optimizeQuality;
-            }
         }
+      }
 
-        @media screen and (max-width: 1200px) {
-            
-        }
+      
 `;
 
 export const Anchor = styled.a`
@@ -47,6 +47,10 @@ export const Anchor = styled.a`
         overflow: hidden;
         position:relative;
         z-index: 1;
+
+        @media screen and (max-width:990px) {
+            padding:1rem 2rem;
+        }
 
         &:hover {
           color: #FFC40A;
@@ -65,7 +69,7 @@ export const Anchor = styled.a`
 export const Bars = styled(FaBars)`
           display: none;
           color: #333;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 840px) {
             display: block;
             position: absolute;
             top: 0;
@@ -86,7 +90,7 @@ export const NavMenu = styled.div`
         /* Third Nav */
         /* width: 100vw;
         white-space: nowrap; */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 840px) {
             display: none;
         }
 `;
@@ -98,30 +102,28 @@ export const NavBtn = styled.nav`
           /* Third Nav */
           /* justify-content: flex-end;
           width: 100vw; */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 840px) {
             display: none;
         }
  `;
 
 export const NavBtnLink = styled.a`
-          border-radius: 4px;
-          background: #1b87c8;
-          padding: 10px 22px;
-          color: #fff;
-          outline: none;
-          border: none;
-          cursor: pointer;
-          transition: all 0.2s ease-in-out;
-          text-decoration: none;
-          /* Second Nav */
-          margin-left: 24px;
-        &:hover {
-            transition: all 0.2s ease-in-out;
-            background: #333;
-            color: #FFF;
-        } 
-
-      
+        border-radius: 4px;
+        background: #1b87c8;
+        padding: 10px 22px;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        /* Second Nav */
+        margin-left: 24px;
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #333;
+        color: #FFF;
+    }   
 }
 `;
 

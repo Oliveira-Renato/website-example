@@ -5,10 +5,12 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 
 import './styles.scss'
+import { ToggleMenu } from "../ToggleMenu/Toggle";
 
 
 
 const Teste = () => {
+
   useEffect(()=>{
 
     $(function() {
@@ -25,6 +27,7 @@ const Teste = () => {
     });
 
   })
+
   return (
     <>    
       <header>
@@ -36,10 +39,6 @@ const Teste = () => {
                 <img src={logo} alt='logo' />
               </div>
             </a>
-
-            <div className="toggle">
-            </div>
-
             <div className="navMenu">
 
               <ul>
@@ -56,11 +55,20 @@ const Teste = () => {
                   <a href='#home' className="nav-link" >Contatos</a>
                 </li>
               </ul>
-            
+              <div className='buttonNav'>
+                <button>Suporte</button>
+              </div>
             </div>
+
+            
           </nav>
+
         </div>
+
       </header>
+
+      
+      
     </>
   );
 };

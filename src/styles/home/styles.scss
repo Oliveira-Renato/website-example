@@ -4,13 +4,10 @@
   font-family: Poppins, 'sans-serif';
 }
 
+
 #home {
-    display:flex;
-    height: 100vh;
-    background:#1b87b4;//1b87c8
-   
-    
-    @media(min-width: 40em) {
+      display:flex;
+      height: 100vh;
       padding: 20px 12px;
       align-items: justify;
       width: stretch;
@@ -20,6 +17,35 @@
       background-repeat: no-repeat;
       background-position: right;
 
+      
+      
+      @media screen and (max-width: 1300px) {
+        background-size: 700px;
+        justify-content: center;
+        align-items: flex-end;
+        background-color:#FFF;//background-color:#1b87c8
+        background-position: top 10px right 10px;
+      
+      }
+
+    // @media screen and (max-width: 1200px) {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: self-end;
+    //   bottom: 0;
+    //   padding: 22px;
+    //   right: 0;
+    // }
+  
+    @media screen and (max-width: 905px) {
+      background-color:#DDD;//001f3f
+      background-size: 400px;
+      background-position: bottom 10px right 100px;
+    }
+    @media screen and (max-width: 375px) {
+      background-color:#DDD;//001f3f
+      background-size: 200px;
+      background-position: bottom 10px right 100px;
     }
 
 
@@ -38,14 +64,7 @@
           display: none;
     
           @media(max-width:900px){
-            display: flex;
-            justify-content: center;
             
-    
-            >img {
-              width: 250px;
-              height: 250px;
-            }
           }
         }
 
@@ -56,6 +75,14 @@
           text-transform: uppercase; 
           line-height:1;
           text-shadow: 1px 1px 2px #FFF;
+
+          @media screen and (max-width: 905px) {
+            font-size: 8rem;
+          }
+          @media screen and (max-width: 375px) {
+            font-size: 6rem;
+          }
+      
         }
       
       
@@ -64,6 +91,14 @@
             color:	#FFF;        
             text-transform: uppercase;
             text-shadow: 1px 1px 2px #333;
+
+            @media screen and (max-width: 905px) {
+              font-size: 2.6rem;
+            }
+            // @media screen and (max-width: 375px) {
+            //   font-size:3rem;
+            // }
+        
         }
         
         p {
@@ -81,7 +116,9 @@
           //   color: #FFD832;
             
           // }
-          
+          @media screen and (max-width: 375px) {
+            font-size: 1.6rem;
+          }
           
           
         

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import {
     Nav,
     Anchor,
@@ -9,6 +8,8 @@ import {
     NavBtnLink
   } from './NavBarElements';
 
+import $ from 'jquery';
+import './styles.scss'
 
 import  logo  from '../../images/iconsLogo/logo_syscare_200.png'
 
@@ -18,26 +19,33 @@ import { ProgressBar } from '../progressbar'
 
 const NavBar = () => {
 
-  useEffect(()=>{
-    window.onscroll = function() {HandleScrollBar()};
+    useEffect(()=>{
 
-    function HandleScrollBar(){
-      
-      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (winScroll / height) * 100;
-      
-      document.getElementById("myBar").style.width = scrolled + "%";
-    }
-  })
+      $(function() {
+        $(window).on("scroll", function() {
 
+          if ($(window).scrollTop() > 25) {
+            $("nav").addClass("fixed-menu");
+          } else {
+            $("nav").removeClass("fixed-menu");
+          }
+
+        })
+        
+      });
+
+    })
+  
   return (
     <div>
       
-      <Nav>
-      
+      <header className='ddd'>
+        <Nav>
+        
         <Anchor className="img-logo" scroll to='/'>
-          <img src={logo} alt='logo' />
+          <div className="logo">
+                <img src={logo} alt='logo' />
+          </div>
         </Anchor>
         <Bars />
         <NavMenu>
@@ -63,6 +71,7 @@ const NavBar = () => {
           </NavBtnLink>
         </NavBtn>
       </Nav>
+      </header>
       
       
     {/*  */}

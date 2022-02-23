@@ -108,7 +108,7 @@ export default createGlobalStyle`
         }
     }
 
-    &.black h2 {
+    &.black, h2, + p {
         color:#333;
 
         p{
@@ -118,7 +118,7 @@ export default createGlobalStyle`
         }
     }
 
-    &.white, h2,p {
+    &.white +  h2,p {
         color: #fff;
 
         p{
@@ -132,6 +132,12 @@ export default createGlobalStyle`
 
    
 
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
 }
 
 `
