@@ -13,13 +13,13 @@ export default createGlobalStyle`
     html {
         font-size: 62.5%;
         min-height: 100%;
-        background: #fff;
     }
     body {
         font-size: 1.6rem;
         min-height: 100vh;
         /* background: linear-gradient(125deg, #256ce1 20%, #00B4AB ); */
-        background: #333;
+        /* background: linear-gradient(125deg, #0269A4 20%, #00B4AB); */
+        background: #FFF;
     }
 
     button {
@@ -39,9 +39,9 @@ export default createGlobalStyle`
         padding: 100px;
         min-height: 100vh;
 
-        @media(max-width: 730px){
+        /* @media(max-width: 730px){
             padding: 30px;
-        }
+        } */
 
     }
 
@@ -85,7 +85,7 @@ export default createGlobalStyle`
 
       @media(min-width: 40em){
         text-transform: uppercase;
-        color:#5782ab;
+        color:#1b87c8;
         font-size: 3rem;
         font-weight: 700;
         letter-spacing: 1px;
@@ -108,19 +108,13 @@ export default createGlobalStyle`
         }
     }
 
-    &.black, h2, + p {
-        color:#333;
-
-        p{
-            color:#333;
-            font-size:1.4rem;
-            margin: 12px;
-        }
+    
     }
 
-    &.white +  h2,p {
+    .white h2,  p {
         color: #fff;
-
+        margin: 12px;
+        
         p{
             font-size:1.4rem;
             margin: 12px;
@@ -136,8 +130,23 @@ export default createGlobalStyle`
 
 @media screen and (max-width: 1200px) {
     html {
-        font-size: 50%;
+        font-size: 56%;
     }
-}
+    body {
+        font-size: 1.8rem;
+    }
+}   
 
+@media screen and (max-width: 905px){
+      flex-direction: column;
+      margin-top: 12px;
+
+        body {
+        font-size: 1.8rem;
+        }   
+    }
+
+@media screen and (max-width: 390px) {
+        font-size: 1.700rem;
+        }
 `

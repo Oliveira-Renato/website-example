@@ -28,6 +28,11 @@ export const Nav = styled.nav`
             z-index: 1;
             image-rendering: optimizeQuality;
 
+            @media screen and (max-width: 391px){
+              width: 100px;
+              height: 60px;
+            }
+
         }
       }
 

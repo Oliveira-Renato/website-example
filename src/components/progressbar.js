@@ -2,9 +2,9 @@ import { useEffect } from 'react'
 import './styles.scss'
 
 export function ProgressBar(){
-  useEffect(()=>{
-    window.onscroll = function() {HandleScrollBar()};
 
+  useEffect(()=>{
+    
     function HandleScrollBar(){
       
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -13,13 +13,15 @@ export function ProgressBar(){
       
       document.getElementById("myBar").style.width = scrolled + "%";
     }
+
+    window.onscroll = function() {HandleScrollBar()};
   })
 
   return(
     <div>
-      <div class="header">
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
+      <div className="header">
+        <div className="progress-container">
+          <div className="progress-bar" id="myBar"></div>
         </div>  
       </div>
     </div>

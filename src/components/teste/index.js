@@ -6,7 +6,7 @@ import $ from 'jquery';
 
 import './styles.scss'
 import { ToggleMenu } from "../ToggleMenu/Toggle";
-
+import { ProgressBar } from '../progressbar'
 
 
 const Teste = () => {
@@ -34,7 +34,7 @@ const Teste = () => {
         <div className="container">
 
           <nav className="navbar">
-            <a href="/" className="navbar-brand">
+            <a href="#home" className="navbar-brand">
               <div className="logo">
                 <img src={logo} alt='logo' />
               </div>
@@ -46,25 +46,23 @@ const Teste = () => {
                   <a href='#home' className="nav-link">Home</a>
                 </li>
                 <li>
-                  <a href='#home' className="nav-link" >Sobre</a>
+                  <a href='#about' className="nav-link" >Sobre</a>
                 </li>
                 <li>
                   <a href='#home' className="nav-link" >Produtos</a>
                 </li>
                 <li>
-                  <a href='#home' className="nav-link" >Contatos</a>
+                  <a href='#contact' className="nav-link" >Contatos</a>
                 </li>
               </ul>
               <div className='buttonNav'>
                 <button>Suporte</button>
               </div>
             </div>
-
-            
           </nav>
 
         </div>
-
+      <ProgressBar />
       </header>
 
       

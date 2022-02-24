@@ -1,0 +1,32 @@
+.wrapper{
+  display: grid;
+  // grid-template-columns: 200px 200px ;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 200px);
+
+  .col{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .back_title {
+    height: 200px;
+    background: #1b87c8;
+    max-width: 1200px;
+    width: 100% !important;
+    float: none !important;
+    padding: 5px 15px;
+    margin: 50px auto !important;
+    position: relative;
+    z-index: 2;
+
+  }
+}
