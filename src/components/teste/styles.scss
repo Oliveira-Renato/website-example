@@ -9,7 +9,7 @@ nav{
   display: flex;
   padding: 0px 25px 0px 25px;
   background-color: transparent;
-  z-index: 10; 
+  z-index: 300; 
   @media screen and(max-width: 390px){ 
     padding: 10px 0 0 0;
     height: 65px;
@@ -162,8 +162,11 @@ nav{
     position: fixed;
     z-index: 100;
     width: 100%;
-    background-color: #f1f1f1;
-    align-items: bottom;
+    background-color: transparent;
+    margin-top: 80px;
+    @media screen and(max-width: 390px){ 
+      margin-top:65px;
+    }
 
   
     .progress-container {

@@ -64,7 +64,7 @@
     }
     @media screen and (max-width: 375px) {
       // background-color:#FFF;//001f3f
-      background-size: 340px;
+      background-size: 360px;
       background-position: top 60px right 1px;
     }
 
@@ -84,9 +84,6 @@
         .home_mob_img{
           display: none;
     
-          @media(max-width:900px){
-            
-          }
         }
 
         h1 {
@@ -129,15 +126,7 @@
           margin: 20px 0;
           font-weight: 500;
           text-shadow: 1px 1px 1px rgb(240,240,240);
-          // background: #ff3f;
           
-          // &:after{
-          //   position: relative;
-          //   font-size: 10rem;
-          //   content: '&#xf13';
-          //   color: #FFD832;
-            
-          // }
           @media screen and (max-width: 375px) {
             font-size: 1.6rem;
           }

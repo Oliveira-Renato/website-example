@@ -1,7 +1,11 @@
+.products {
+  padding : "20px"
+}
+
 .wrapper{
   display: grid;
   // grid-template-columns: 200px 200px ;
-  grid-gap: 10px;
+  grid-gap: 40px;
   background-color: #fff;
   color: #444;
   justify-content: center;

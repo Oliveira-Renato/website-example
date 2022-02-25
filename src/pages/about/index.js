@@ -8,6 +8,7 @@ import homeLogo from '../../images/SyscareOld/Drawing.png'
 
 import '../../styles/about/styles.scss'
 
+
 export function About(){
     return (
       

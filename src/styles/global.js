@@ -19,7 +19,7 @@ export default createGlobalStyle`
         min-height: 100vh;
         /* background: linear-gradient(125deg, #256ce1 20%, #00B4AB ); */
         /* background: linear-gradient(125deg, #0269A4 20%, #00B4AB); */
-        background: #FFF;
+        background: transparent;
     }
 
     button {

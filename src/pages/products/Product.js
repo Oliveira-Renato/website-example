@@ -10,7 +10,6 @@ import './styles.scss';
 export function Product() {
   return (
     <div>
-      
         <section className="products" >
           <div className="title blackTitle back_title">
               <h2>Produtos</h2>

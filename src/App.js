@@ -14,7 +14,9 @@ import { Whatsapp } from './components/Whatsapp';
 import { ProgressBar } from './components/progressbar';
 import NavChangeColor from './components/ScrollTop';
 import { ToggleMenu } from './components/ToggleMenu/Toggle';
-import { ProcuctTest } from './components/Produtos/Product';
+import  {ProductTest}  from './components/Produtos/Product';
+
+
 
 
 
@@ -33,7 +35,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/sobre" element={<About />}/>
           <Route path="/contato" element={<ContactForm />}/>
-          <Route path="/produtos" element={<ProcuctTest />}/>
+          <Route path="/produtos" element={<ProductTest />}/>
         </Routes>
       </BrowserRouter>
     </div>

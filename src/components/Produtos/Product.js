@@ -1,68 +1,50 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
-import  logo  from '../../images/iconsLogo/logo_syscare_200.png'
+import  logo  from '../../images/iconsLogo/logo_syscare_200.png';
 
 import { Footer } from '../../pages/footer';
-import './styles.scss'
+import './styles.scss';
+
+
+import data from './data.json'
+import { Card } from 'react-bootstrap';
+import { Button } from '../Button';
 
 
 
+export function ProductTest(){
 
-export function ProcuctTest(){
   
-    let dados=[
-      {
-        'titulo':'produto 1',
-        'image' : {logo}
-      },
-      {
-        'titulo':'produto 2',
-        'image' : {logo}
-      },
-      {
-        'titulo':'produto 3',
-        'image' : 'aaaaaa'
-      },
-      {
-        'titulo':'produto 4',
-        'image' : 'aaaaaa'
-      },
-      {
-        'titulo':'produto 5',
-        'image' : 'aaaaaa 6'
-      },
-    ];
+  console.log(data)
 
-    let itemList=[];
-
-    for(let i = 0; i <= dados.length - 1; i++ ){
-
-      itemList.push(<div key={i} className="col">
-        {dados[i]['titulo']}
-      </div>)
-
-    }
-    
-
-    
+  const newData = data.map((x,index,teste)=>{
+    return (
+      <Card key ={teste[index]['id']} style={{ width: '18rem' }}>
+        <Card.Img src={ logo } />
+        <Card.Body>
+          <Card.Title>{teste[index]['titulo']}</Card.Title>
+          <Card.Text style={{ color: '#333' }}>
+            {teste[index]['content']}
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+    )
+  })
 
   return (
-    <>  
-      <section className="products" >
+    <div>
+        <section className="products">
         <div className="title blackTitle back_title">
             <h2>Produtos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div> 
 
-        <div className="wrapper">
-            
-              {itemList}
-            
-        </div>
-
-      </section>
-    <Footer />  
-  </>
-);
-
+          <div className="wrapper">         
+            {newData}             
+          </div>
+        </section>
+        <Footer />
+    </div>
+  )
 }
