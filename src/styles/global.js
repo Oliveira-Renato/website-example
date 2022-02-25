@@ -105,6 +105,7 @@ export default createGlobalStyle`
         width: 60px;
         height: 4px;
         background: #FFC40A;
+        
         }
     }
 

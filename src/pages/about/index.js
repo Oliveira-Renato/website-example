@@ -1,7 +1,8 @@
-import React from 'react'
-import { ProgressBar } from '../../components/progressbar'
+import React from 'react';
 
-import mainImg from '../../images/homeImages/5802654.jpg'
+import { ProgressBar } from '../../components/progressbar';
+
+import mainImg from '../../images/homeImages/5802654.jpg';
 import careDoctor from '../../images/homeImages/doctor-taking-care-senior-woman.jpg'
 import homeLogo from '../../images/SyscareOld/Drawing.png'
 
@@ -12,7 +13,7 @@ export function About(){
       
          <div>
              <section className="about" id="about">
-                <div className="title blackTitle back_title">
+                <div className="title blackTitle back_title img_back">
                     <h2>Nossa Empresa</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div> 
@@ -36,8 +37,7 @@ export function About(){
                     {/* Imagem pessoal da pagina sobre */}
                     
                 </div>
-          </section>
-                  
+          </section>                  
         </div>
     )
 }

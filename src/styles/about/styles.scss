@@ -77,28 +77,39 @@
 
   .back_title{
     height: 200px;//00B4AB
-   background: #1b87c8;
+    background-color: #1b87c8;
     max-width: 1200px;
     width: 100% !important;
     float: none !important;
     padding: 5px 15px;
-    margin: 0 auto !important;
+    // margin: 0 auto !important;
     position: relative;
     z-index: 2;
+    margin: 50px auto !important;
+
     
-    @media screen and (max-width:390px){
-      margin: 50px auto !important;
-    }
+    
+    
 
     h2{
       margin-top: 12px;
       color: #FFF !important;
+      text-shadow: 2px 2px 6px #333;
     }
 
     p{
       color: #FFF !important;
-      
+      text-shadow: 2px 2px 2px #333;
     }
   }
   
+}
+
+
+.img_back{
+  background-image: url('../../images/SyscareOld/Drawing.png');
+  background-size: 400px;
+  background-position: bottom 30px left 50px;
+  background-repeat : no-repeat;
+  image-resolution: 0.5;
 }
