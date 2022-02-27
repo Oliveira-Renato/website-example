@@ -127,7 +127,7 @@ export default createGlobalStyle`
 
    
 
-}
+
 
 @media screen and (max-width: 1200px) {
     html {
@@ -140,14 +140,13 @@ export default createGlobalStyle`
 
 @media screen and (max-width: 905px){
       flex-direction: column;
-      margin-top: 12px;
+      margin-top:12px;
 
         body {
-        font-size: 1.8rem;
+            font-size: 1.8rem;
         }   
     }
 
-@media screen and (max-width: 390px) {
-        font-size: 1.700rem;
-        }
+
+    
 `
