@@ -1,57 +1,38 @@
 import React, { useEffect } from 'react'
-import  logo  from '../../images/iconsLogo/logo_syscare_100.png'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
 
 import './styles.scss'
 
 export function ToggleMenu(){
- 
-  function HandleToggleMenu() {
-    const menuToggle = document.querySelector('.toggle');
-    const sidebar = document.querySelector('.sidebar');
-    const bluerPage = document.querySelector('.control_content');
 
-
-    
-
-    menuToggle.classList.toggle('active');
-    sidebar.classList.toggle('active');
-    bluerPage.classList.toggle('bluerContent');
-  }
+   function HandleToggleMenu() {
+     const nav = document.querySelector('#header nav');
+     const menuToggle = document.querySelectorAll('nav .toggle');
+     
+     nav.classList.toggle('show');
+    //  sidebar.classList.toggle('active');
+   }
 
   return(
     <>
-    <div className="first ">
+      <div className="menu">
+        <ul className="grid">
+          <li><a className="title" href="#home" alt="" onClick={HandleToggleMenu} >Home</a></li>
+          <li><a className="title" href="#about" alt="" onClick={HandleToggleMenu} >Sobre</a></li>
+          <li><a className="title" href="#products" alt="" onClick={HandleToggleMenu} >Produtos</a></li>
+          <li><a className="title" href="#suport" alt="" >Contato</a></li>
+        </ul>
+      </div>
 
-      <div className="toggle" onClick={HandleToggleMenu}></div>
-
-        {/* <-----------Opções do menu ----------------> */}
-          <div className="sidebar">
-            <ul className="menu">
-                <li>
-                    <a href="#home" onClick={ HandleToggleMenu }>Início</a>
-                </li>
-                <li>
-                    <a href="#about" onClick={ HandleToggleMenu }>Sobre</a>
-                </li>
-                <li>
-                    <a href="#" onClick={ HandleToggleMenu }>Produtos</a>
-                </li>
-                <li>
-                    <a href="#contact" onClick={ HandleToggleMenu }>Contato</a>
-                </li>
-                <li>
-                    <a href="#contact" onClick={ HandleToggleMenu }>Suporte</a>
-                </li>
-            </ul>
-            {/* <div className="imgToggle">
-                <a href="#home" onClick={ HandleToggleMenu }>
-                  <img src={ logo } />
-                </a>
-              </div> */}
-          </div>
-
-    </div>
-    
+      <div className="toggle open" >
+        <FontAwesomeIcon icon={faBars} onClick={HandleToggleMenu} />
+      </div>
+      
+      <div className="toggle close">
+        <FontAwesomeIcon icon={faXmark} onClick={HandleToggleMenu}  />
+      </div>
     </>
   )
 

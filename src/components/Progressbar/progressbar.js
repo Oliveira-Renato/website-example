@@ -19,7 +19,7 @@ export function ProgressBar(){
 
   return(
     <div>
-      <div className="header">
+      <div className="aaa">
         <div className="progress-container">
           <div className="progress-bar" id="myBar"></div>
         </div>  

@@ -6,7 +6,7 @@ import $ from 'jquery';
 
 import './styles.scss'
 import { ToggleMenu } from "../ToggleMenu/Toggle";
-import { ProgressBar } from '../Progressbar/progressbar'
+import { ProgressBar } from '../ProgressBar/progressbar'
 
 
 const Teste = () => {
