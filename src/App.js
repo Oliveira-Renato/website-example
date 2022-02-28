@@ -22,7 +22,7 @@ function App() {
      <div className="App">
       <BrowserRouter>
         <GlobalStyle />
-          {/* <ProgressBar /> */}
+          {/* --<ProgressBar /> */}
             {/* <Teste /> */}
             <NavChangeColor />
               {/* <Whatsapp /> */}
