@@ -116,9 +116,9 @@ body {
   width: 100%;
 }
 
-#header .scroll {
-  box-shadow: 0px 0px 12px rgba(0,0,0,0.15);
-}
+#header.scroll {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+} 
 
 main {
   margin-top: calc(var(--header-height) + 2rem);
@@ -304,5 +304,9 @@ nav .close {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
+
+/*====  TESTIMONIALS ================= */
+
+
 
 `

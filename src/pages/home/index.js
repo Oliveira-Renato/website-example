@@ -126,6 +126,17 @@ export function Home(){
         </div>
       </section>
 
+      <div className="divider-1"></div>
+
+
+      <section className="section" id="testimonials">
+        <div className="container">
+          <header>
+            <h2 className="title">Depoimentos de quem já utilizou o <strong>SYSCARE</strong></h2>
+            
+          </header>
+        </div>
+      </section>
     </div>
 
     
