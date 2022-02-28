@@ -1,13 +1,10 @@
 import React from 'react'
-
 import '../../styles/home/styles.scss'
 
 
-import  logo  from '../../images/iconsLogo/logo_syscare_400.png'
-import mainImg from '../../images/homeImages/5802654.jpg'
-import cherry from '../../images/illustrations/cherry.png'
-import contactDoctor from '../../images/illustrations/contact-doctor.png'
-import mobileCare from '../../images/illustrations/mobile-care.png'
+import  logo  from '../../images/iconsLogo/logo_syscare_100.png'
+import mainImg from '../../images/homeImages/doctor-taking-care-senior-woman.jpg'
+
 
 import { About } from '../about'
 import { ContactForm } from '../contacts'
@@ -18,46 +15,43 @@ import { Footer } from '../footer'
 export function Home(){
   return (
     <div>
-      <div className="control_content">
-      <div id="home" >
+      <header id="header">
+        <nav className="container show">
+          <a href="#" className="logo">
+            <img  src={logo} alt="imagem logo syscare" />
+          </a>
+          <div className="menu">
+            <ul class="grid">
+              <li><a className="title" href="#home" alt="" >Home</a></li>
+              <li><a className="title" href="#about" alt="" >Sobre</a></li>
+              <li><a className="title" href="#products" alt="" >Produtos</a></li>
+              <li><a className="title" href="#suport" alt="" >Contato</a></li>
+            </ul>
+          </div>
+          <div className="open">...</div>
+          <div className="close">x</div>
+        </nav>
+      </header>
       
-      <aside>
-        <div className="contentBox">
-           
-              <h1>Syscare</h1>
-              <h3>gestão de Home Care</h3>
-            
-              <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
-            
-            
+      <main>
+        <section className="section" id="home">
+          <div className="image">
+              <img src={ mainImg } alt="" />
+          </div>
+          <div className="text">
+            <h2 className="title">Syscare - gestão de Home Care</h2>
+            <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
 
-              <div className="contentBox aboutus_btn">
-                <button className='btn'>Saiba mais</button>
-              </div>
+            <a className='button'>Saiba mais</a>
+          </div>
+        </section>
+      </main>
 
-             
-            </div>
-
-          </aside>
+      <div class="divider-1"></div>
+      
+      <section className="section">
         
-            <main>
-              
-          </main>
-        </div>
-        {/*----------sobre------------------- */ }
-        <div className="about-page">
-          <About />
-        </div>
-
-        {/*----------sobre------------------- */ }
-        <div className="contact-page">
-          <ContactForm />
-        </div>
-        {/*----------Footer-------------- */}
-        <Footer />
-
-
-      </div>
+      </section>
       
     </div>
 

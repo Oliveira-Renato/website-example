@@ -8,12 +8,9 @@ import { Product } from './pages/products/Product';
 
 
 import GlobalStyle from './styles/global';
-import Layout from './components/Layout';
 import  Teste  from './components/teste';
 import { Whatsapp } from './components/Whatsapp';
-import { ProgressBar } from './components/progressbar';
 import NavChangeColor from './components/ScrollTop';
-import { ToggleMenu } from './components/ToggleMenu/Toggle';
 import  {ProductTest}  from './components/Produtos/Product';
 
 
@@ -24,11 +21,9 @@ function App() {
   return (
      <div className="App">
       <BrowserRouter>
-      <Layout /> 
       <GlobalStyle />
-       {/* <ProgressBar /> */}
-        <ToggleMenu />
-        <Teste />
+      
+        {/* <Teste /> */}
         <NavChangeColor />
         {/* <Whatsapp /> */}
         <Routes>  
