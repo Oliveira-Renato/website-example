@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -17,10 +19,11 @@ import { ProgressBar } from './components/ProgressBar/progressbar';
 
 
 
+
 function App() {
   return (
      <div className="App">
-      <BrowserRouter>
+      <BrowserRouter>  
         <GlobalStyle />
           <HeaderEffect />
             <ScrollReavelling />
