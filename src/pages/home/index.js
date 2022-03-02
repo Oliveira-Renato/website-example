@@ -18,9 +18,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faHouseMedical, faLaptopMedical} from "@fortawesome/free-solid-svg-icons";
 import { faBtc } from "@fortawesome/free-brands-svg-icons";
- 
+
+//==== Import Swiper React components ==== \\
+import { Mousewheel , Pagination, Keyboard ,Navigation, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/mousewheel';
+import 'swiper/css/pagination';
+import 'swiper/css/keyboard';
+import 'swiper/css/navigation';
+
 
 export function Home(){
+  
+  
   return (
     <div>
 
@@ -83,7 +96,7 @@ export function Home(){
       </section>
       
       {/*====  SEPARETOR 2 ====  */}
-      <div class="divider-2"></div>
+      <div className="divider-2"></div>
 
        {/*====  PRODUCTS ====  */}
       <section className="section" id="products">
@@ -147,54 +160,72 @@ export function Home(){
           <header>
             <h2 className="title">Depoimentos de quem já utilizou o <strong>SYSCARE</strong></h2>
           </header>
+          <Swiper 
+            // install Swiper modules
+            modules={[Pagination, Mousewheel, Keyboard , Navigation]}
+            slidesPerView={1}
+            pagination={{
+              clickable: true,
+              bulletClass: 'swiper-pagination-bullet'
+          }}
+          onSwiper={(swiper) => console.log(swiper)}
+          mousewheel={true}
+          keyboard={true}
+          onSlideChange={() => console.log('slide change')}>
+  
+            <SwiperSlide>
+              <div className="testimonials ">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                  <img src={ caioImg } alt="Foto do Caio" />
+                    Caio da Massa
+                  </cite>
+                </blockquote>
+              </div>
+            </SwiperSlide>
 
-          <div className="testimonials">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                ipsam neque
-              </p>
-              <cite>
-              <img src={ caioImg } alt="Foto do Caio" />
-                Caio da Massa
-              </cite>
-            </blockquote>
-          </div>
+            <SwiperSlide>
+              <div className="testimonials">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img src={ alcidezImg } alt="Foto do Alcidez Rodriguez" />
+                    Alcidez Rodrigues
+                  </cite>
+                </blockquote>
+              </div>
+            </SwiperSlide>
 
-          <div className="testimonials">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                ipsam neque
-              </p>
-              <cite>
-              <img src={ alcidezImg } alt="Foto do Alcidez Rodriguez" />
-                Alcidez Rodrigues
-              </cite>
-            </blockquote>
-          </div>
+            <SwiperSlide>
+              <div className="testimonials">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                  <img src={ tantanImg } alt="Foto do Tantan" />
+                    Tantan
+                  </cite>
+                </blockquote>
+              </div>
+            </SwiperSlide>
 
-          <div className="testimonials">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                ipsam neque
-              </p>
-              <cite>
-              <img src={ tantanImg } alt="Foto do Tantan" />
-                Tantan
-              </cite>
-            </blockquote>
-            
-
-          </div>
-
+          </Swiper>
+          
 
         </div>
       </section>

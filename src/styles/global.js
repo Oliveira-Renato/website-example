@@ -381,5 +381,19 @@ nav .close {
   margin-right: 0.5rem;
 }
 
+/*==== SWIPER ================= */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
 
 `
