@@ -7,10 +7,9 @@ import { Product } from './pages/products/Product';
 
 
 import GlobalStyle from './styles/global';
-import { Whatsapp } from './components/Whatsapp';
 import  {ProductTest}  from './components/Produtos/Product';
 import { HeaderEffect } from './hooks/Header';
-import { ProgressBar } from './components/Progressbar/progressbar';
+import { ProgressBar } from './components/ProgressBar/progressbar';
 
 
 
@@ -25,12 +24,11 @@ function App() {
           <HeaderEffect />
           <ProgressBar />
  
-              {/* <Whatsapp /> */}
-        <Routes>  
-          <Route path="/" element={<Home />}/>
-          <Route path="/contato" element={<ContactForm />}/>
-          <Route path="/produtos" element={<ProductTest />}/>
-        </Routes>
+            <Routes>  
+              <Route path="/" element={<Home />}/>
+              <Route path="/contato" element={<ContactForm />}/>
+              <Route path="/produtos" element={<ProductTest />}/>
+            </Routes>
       </BrowserRouter>
     </div>
   );

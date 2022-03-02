@@ -192,10 +192,12 @@ nav ul li a:hover::after {
 nav .menu{
     opacity: 0;
     visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+}
 
-    
-    display: none;
-    transition: 0.3s;
+nav .menu ul {
+  display: none;
 }
 
 /*=========== toggle menu ==========*/
@@ -329,7 +331,55 @@ nav .close {
 }
 
 /*====  TESTIMONIALS ================= */
+#testimonials {
+  background: white;
+}
 
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-indent: 1.875rem;
+  color: var(--title-color);
+}
+
+#testimonials blockquote p span{
+  font: 700 3rem serif;
+  position: absolute;
+  left: -1.875rem;
+  line-height: 1.625rem;
+  color: var(--base-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style:normal;
+}
+
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
 
 
 `

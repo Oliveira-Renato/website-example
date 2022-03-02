@@ -5,12 +5,16 @@ import  logo  from '../../images/iconsLogo/logo_syscare_150.png'
 import mainImg from '../../images/homeImages/doctor-taking-care-senior-woman.jpg'
 import aboutImg from '../../images/homeImages/campaign-creators.jpg'
 
+//==== Users testimonials pictures ==== \\
+import  caioImg  from '../../images/UserTestimonials/caio.jpg'
+import  alcidezImg  from '../../images/UserTestimonials/alcidez.jpg'
+import  tantanImg  from '../../images/UserTestimonials/tantan.jpg'
 
-import { ContactForm } from '../contacts'
-import { Pointer } from '../../components/Pointer'
-import { Footer } from '../footer'
-import { ToggleMenu } from '../../components/ToggleMenu/Toggle'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { ContactForm } from '../contacts';
+import { Footer } from '../footer';
+import { ToggleMenu } from '../../components/ToggleMenu/Toggle';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faHouseMedical, faLaptopMedical} from "@fortawesome/free-solid-svg-icons";
 import { faBtc } from "@fortawesome/free-brands-svg-icons";
@@ -19,6 +23,8 @@ import { faBtc } from "@fortawesome/free-brands-svg-icons";
 export function Home(){
   return (
     <div>
+
+      {/*====  HEADER/NAV ====  */}
       <header id="header">
         <nav className="container">
           <a href="#" className="logo">
@@ -28,6 +34,7 @@ export function Home(){
         </nav>
       </header>
       
+      {/*====  MAIN ====  */}
       <main>
         <section className="section" id="home">
           <div className="container grid">
@@ -45,8 +52,10 @@ export function Home(){
         </section>
       </main>
 
+       {/*====  SEPARETOR 1 ====  */}
       <div className="divider-1"></div>
-      
+
+       {/*====  ABOUT ====  */}
       <section className="section" id="about" >
         <div className="container grid">
           <div className="image">
@@ -73,8 +82,10 @@ export function Home(){
         </div>
       </section>
       
+      {/*====  SEPARETOR 2 ====  */}
       <div class="divider-2"></div>
 
+       {/*====  PRODUCTS ====  */}
       <section className="section" id="products">
         <div className="container grid">
           <header>
@@ -126,20 +137,68 @@ export function Home(){
         </div>
       </section>
 
+      {/*====  SEPARETOR 1 ====  */}
       <div className="divider-1"></div>
 
 
+       {/*====  TESTIMONIALS ====  */}
       <section className="section" id="testimonials">
         <div className="container">
           <header>
             <h2 className="title">Depoimentos de quem já utilizou o <strong>SYSCARE</strong></h2>
-            
           </header>
+
+          <div className="testimonials">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                ipsam neque
+              </p>
+              <cite>
+              <img src={ caioImg } alt="Foto do Caio" />
+                Caio da Massa
+              </cite>
+            </blockquote>
+          </div>
+
+          <div className="testimonials">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                ipsam neque
+              </p>
+              <cite>
+              <img src={ alcidezImg } alt="Foto do Alcidez Rodriguez" />
+                Alcidez Rodrigues
+              </cite>
+            </blockquote>
+          </div>
+
+          <div className="testimonials">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                ipsam neque
+              </p>
+              <cite>
+              <img src={ tantanImg } alt="Foto do Tantan" />
+                Tantan
+              </cite>
+            </blockquote>
+            
+
+          </div>
+
+
         </div>
       </section>
     </div>
-
-    
 
   )
 }

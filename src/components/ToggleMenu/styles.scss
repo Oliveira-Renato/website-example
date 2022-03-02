@@ -17,6 +17,10 @@ nav.show .menu {
   place-content: center;
 }
 
+nav.show .menu ul {
+  display: grid;
+}
+
 nav.show ul.grid  {
   gap: 4rem;
 }
