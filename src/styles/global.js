@@ -112,11 +112,14 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--body-color);
+  background: transparent;
   width: 100%;
+
+  transition: color 0.2s;
 }
 
 #header.scroll {
+  background-color: var(--body-color);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 } 
 
@@ -126,7 +129,23 @@ main {
 
 /*====  LOGO ============================ */
 nav a .logo  img {
-  max-width: 100%;
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0;
+    height: 0;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
 } 
 
 /*====  NAVIGATION ============================ */
@@ -173,6 +192,10 @@ nav ul li a:hover::after {
 nav .menu{
     opacity: 0;
     visibility: hidden;
+
+    
+    display: none;
+    transition: 0.3s;
 }
 
 /*=========== toggle menu ==========*/
@@ -185,7 +208,7 @@ nav .close {
   top: -1.5rem;
   right: 1.5rem;
 
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 /*====  HOME ============================ */

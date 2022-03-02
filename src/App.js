@@ -7,11 +7,11 @@ import { Product } from './pages/products/Product';
 
 
 import GlobalStyle from './styles/global';
-import  Teste  from './components/teste';
 import { Whatsapp } from './components/Whatsapp';
-import NavChangeColor from './components/ScrollTop';
 import  {ProductTest}  from './components/Produtos/Product';
-import { ProgressBar } from './components/ProgressBar/progressbar';
+import { HeaderEffect } from './hooks/Header';
+import { ProgressBar } from './components/Progressbar/progressbar';
+
 
 
 
@@ -22,9 +22,9 @@ function App() {
      <div className="App">
       <BrowserRouter>
         <GlobalStyle />
-          {/* --<ProgressBar /> */}
-            {/* <Teste /> */}
-            <NavChangeColor />
+          <HeaderEffect />
+          <ProgressBar />
+ 
               {/* <Whatsapp /> */}
         <Routes>  
           <Route path="/" element={<Home />}/>
