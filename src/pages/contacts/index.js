@@ -1,29 +1,22 @@
 import React from 'react'
-import '../../styles/contact/styles.scss'
+import './styles.scss'
 import { Button } from '../../components/Button';
 
 import  contactImg from '../../images/symbols/contact.png'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export function ContactForm(){
     return (
         
        <div>
-           
-            <section className="contact" id="contact">
-            
-            <div className="contact_img">
-                <img src={ contactImg} />
-            </div>
-            <div className="title white">
-                <h2>Entre em Contato</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
-            </div>
-            <form  id='main-form'>
+            <form  id='form'>
                 <div className="contactForm">
                     <div className="row">
                         <div className="col50">
                             <label htmlFor="name"></label>
-                            <input type="text" id="name" name="name" placeholder="Primeiro Nome"   required/>
+                            <input type="text" id="name" name="name" placeholder="Nome"   required/>
                         </div>
                         <div className="col50">
                             <label htmlFor="lastname"></label>
@@ -48,13 +41,10 @@ export function ContactForm(){
                     </div>
                 </div>
             
-                <div className="row">
-                    <div className="col100 btn-da-massa">
-                         <Button /> 
-                    </div>
+                <div className="row send">
+                    <button className="button"><FontAwesomeIcon className="icones" icon={faPaperPlane} />Enviar</button>
                 </div>
             </form>
-        </section>
        </div>
     )
 }

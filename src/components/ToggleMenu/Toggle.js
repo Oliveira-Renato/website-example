@@ -22,7 +22,8 @@ export function ToggleMenu(){
           <li><a className="title" href="#home" alt="" onClick={HandleToggleMenu} >Home</a></li>
           <li><a className="title" href="#about" alt="" onClick={HandleToggleMenu} >Sobre</a></li>
           <li><a className="title" href="#products" alt="" onClick={HandleToggleMenu} >Produtos</a></li>
-          <li><a className="title" href="#suport" alt="" >Contato</a></li>
+          <li><a className="title" href="#testimonials" alt="" onClick={HandleToggleMenu} >Depoimentos</a></li>
+          <li><a className="title" href="#contact" alt="" onClick={HandleToggleMenu}>Contato</a></li>
         </ul>
       </div>
 

@@ -115,7 +115,7 @@ body {
   background: transparent;
   width: 100%;
 
-  transition: color 0.2s;
+  transition: color 0.5s;
 }
 
 #header.scroll {
@@ -193,7 +193,7 @@ nav .menu{
     opacity: 0;
     visibility: hidden;
     top: -20rem;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 nav .menu ul {
@@ -210,7 +210,7 @@ nav .close {
   top: -1.5rem;
   right: 1.5rem;
 
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 /*====  HOME ============================ */
@@ -325,6 +325,8 @@ nav .close {
   color: var(--base-color);
 }
 
+
+
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
@@ -394,6 +396,28 @@ nav .close {
 
 .swiper-pagination-bullet-active {
   background: var(--base-color);
+}
+
+
+/*==== CONTACT ================= */
+#contact {
+  position: relative;
+}
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button .icones {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact .button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 `

@@ -17,8 +17,9 @@ export function ScrollReavelling(){
       #about .image, #about .text,
       #services header, #products .card,
       #testimonials header, #testimonials .testimonials
-      #contact .text, #contact .links`,
-      {interval: 100}
+      #contact .text, #contact .links
+      `,
+      { interval: 100 }
     )
   })
 

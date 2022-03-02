@@ -14,10 +14,10 @@ import  tantanImg  from '../../images/UserTestimonials/tantan.jpg'
 import { ContactForm } from '../contacts';
 import { Footer } from '../footer';
 import { ToggleMenu } from '../../components/ToggleMenu/Toggle';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseMedical, faLaptopMedical} from "@fortawesome/free-solid-svg-icons";
-import { faBtc } from "@fortawesome/free-brands-svg-icons";
+import { faBtc, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 //==== Import Swiper React components ==== \\
 import { Mousewheel , Pagination, Keyboard ,Navigation, A11y } from 'swiper';
@@ -167,11 +167,11 @@ export function Home(){
             pagination={{
               clickable: true,
               bulletClass: 'swiper-pagination-bullet'
-          }}
-          onSwiper={(swiper) => console.log(swiper)}
-          mousewheel={true}
-          keyboard={true}
-          onSlideChange={() => console.log('slide change')}>
+            }}
+            onSwiper={(swiper) => console.log(swiper)}
+            mousewheel={true}
+            keyboard={true}
+            onSlideChange={() => console.log('slide change')}>
   
             <SwiperSlide>
               <div className="testimonials ">
@@ -225,10 +225,39 @@ export function Home(){
             </SwiperSlide>
 
           </Swiper>
-          
-
         </div>
       </section>
+
+      {/*====  SEPARETOR 2 ====  */}
+      <div class="divider-2"></div>
+
+      {/*====  CONTACTS ====  */}
+      <section className="section" id="contact">
+        <div className="container grid">
+          <div className="text">
+            <h2 className="title">Entre em contato com a gente!</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              distinctio neque blanditiis, dolorem aperiam nulla explicabo
+              asperiores
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário" className="button">
+                <div className="icones">
+                  <FontAwesomeIcon icon={ faWhatsapp } />
+                </div>
+                Entrar em contato
+            </a>
+          </div>
+            <ContactForm />
+        </div>
+
+        {/*====  FOOTER ====  */}
+        <Footer />
+      </section>
+
+      
+
+      
     </div>
 
   )
