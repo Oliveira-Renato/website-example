@@ -15,8 +15,7 @@ import  ScrollReavelling  from './hooks/ScrollReveal';
 import { ProgressBar } from './components/ProgressBar/progressbar';
 
 
-
-
+import './styles/media.scss';
 
 
 
@@ -26,7 +25,7 @@ function App() {
       <BrowserRouter>  
         <GlobalStyle />
           <HeaderEffect />
-            <ScrollReavelling />
+            {/* <ScrollReavelling /> */}
           <ProgressBar />
  
             <Routes>  

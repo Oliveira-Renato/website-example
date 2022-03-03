@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
 
 import './styles.scss'
+import '../../styles/media.scss'
+
 
 export function ToggleMenu(){
 

@@ -11,11 +11,15 @@
   .progress-container {
     width: 100%;
     height: 3px;
-    background: var(--base-color-second);
+    background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%
+  );
 
     .progress-bar {
       height: 3px;
-      background: var(--bar-loading-color);
+      background: var(--base-color-second);
       width: 0%;
     }
   }

@@ -15,6 +15,7 @@ import { ContactForm } from '../contacts';
 import { Footer } from '../footer';
 import { ToggleMenu } from '../../components/ToggleMenu/Toggle';
 
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseMedical, faLaptopMedical, faPhone, faEnvelope, faLocationDot, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import { faBtc, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -30,6 +31,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
 
+
+import '../../styles/media.scss'
 
 export function Home(){
   
@@ -56,7 +59,8 @@ export function Home(){
             </div>
 
             <div className="text">
-              <h2 className="title">SYSCARE - gestão de Home Care</h2>
+              <h2 className="title">Syscare</h2>
+              <h3 className="title">Gestão de Home Care</h3>
               <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
 
               <a className='button' href="#about">Saiba mais</a>
