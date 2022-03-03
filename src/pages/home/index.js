@@ -16,7 +16,7 @@ import { Footer } from '../footer';
 import { ToggleMenu } from '../../components/ToggleMenu/Toggle';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseMedical, faLaptopMedical, faPhone, faEnvelope, faLocationDot} from "@fortawesome/free-solid-svg-icons";
+import { faHouseMedical, faLaptopMedical, faPhone, faEnvelope, faLocationDot, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import { faBtc, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 //==== Import Swiper React components ==== \\
@@ -167,10 +167,9 @@ export function Home(){
                 clickable: true,
                 bulletClass: 'swiper-pagination-bullet'
               }}
-              onSwiper={(swiper) => console.log(swiper)}
               mousewheel={true}
               keyboard={true}
-              onSlideChange={() => console.log('slide change')}>
+              >
 
               <SwiperSlide>
                 <div className="testimonials ">
@@ -269,8 +268,14 @@ export function Home(){
 
       {/*====  SEPARETOR 2 ====  */}
       <div class="divider-1"></div>
+
       {/*====  FOOTER ====  */}
       <Footer />
+
+      {/*====  SCROLL TO TOP ====  */}
+      <a href="#home" className="back-to-top">
+        <FontAwesomeIcon icon={faArrowUp}  />
+      </a>
        
     </div>
 

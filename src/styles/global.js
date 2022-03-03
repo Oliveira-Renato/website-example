@@ -434,6 +434,35 @@ nav .close {
   margin-right: 0.875rem;
 }
 
+/*==== BACK TO TOP ================= */
+a.back-to-top {
+  background: var(--base-color);
+  color: var(--text-color-light);
 
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  visibility: hidden;
+  opacity: 0;
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+
+ 
+
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 `

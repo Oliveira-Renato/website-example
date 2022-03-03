@@ -2,7 +2,7 @@ import { useEffect} from 'react'
 
 import ScrollReveal from 'scrollreveal'
 
-export function ScrollReavelling(){
+export default function ScrollReavelling(){
 
   useEffect(() => {
     const scrollReveal = ScrollReveal({
@@ -18,13 +18,11 @@ export function ScrollReavelling(){
       #services header, #products .card,
       #testimonials header, #testimonials .testimonials,
       #contact .text, #contact .links,
-      #footer .container .row .footer-col
+      #footer .row, #footer .footer-col
       `,
       { interval: 100 }
     )
   })
 
-  return (
-    <div></div>
-  )
+  return null
 }

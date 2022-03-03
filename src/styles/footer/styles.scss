@@ -3,6 +3,8 @@
   padding: 5rem 0 0;
   position: absolute;
   width: 100%;
+
+  z-index: 0;
   .container {
     
   }
@@ -25,7 +27,7 @@
     align-items:center;
     bottom: 0;
     font-size: 0.625rem;
-    
+    z-index: 0;
   }
 
 }

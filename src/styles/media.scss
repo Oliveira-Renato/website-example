@@ -1,0 +1,56 @@
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+  /*classes reusables*/
+  .container {
+
+  }
+  
+  .section, #testimonials {
+
+    header {
+      max-width: 32rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+   
+}
+
+
+/* large devices: 1023 > */
+@media (min-width: 1023px) {
+  
+}
+
+
+
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  
+}
+
+/* medium devices: 767 > */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 2rem;
+    
+  }
+}
+
+/*medium devices: 574 >*/
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    text-align: center;
+    
+
+    h4::before {
+     left: auto;
+     width: 5rem;
+    }
+  }
+}
+
