@@ -1,7 +1,6 @@
-.footer{
+#footer{
 	background-color: var(--base-color);
   padding: 5rem 0 0;
-  margin-top: 5rem;
   position: absolute;
   width: 100%;
   .container {
@@ -117,16 +116,29 @@
   .footer-col{
     width: 50%;
     margin-bottom: 2rem;
+    
   }
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
     text-align: center;
+    
 
     h4::before {
      left: auto;
      width: 5rem;
     }
   }
+
+  .footer-col .social-links a {
+    margin: 0 0.625rem 0.625rem 0.625rem;
+    text-align: center;
+
+  }
+
+  ul {
+    padding: 0;
+  }
+  
 }

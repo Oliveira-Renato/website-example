@@ -420,4 +420,20 @@ nav .close {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li .icones{
+  color: var(--base-color);
+  margin-right: 0.875rem;
+}
+
+
+
 `

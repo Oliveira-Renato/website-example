@@ -23,7 +23,7 @@ import { faFacebookF, faYoutube, faInstagram, faLinkedinIn } from "@fortawesome/
 
 export function Footer(){
   return(
-  <footer className="footer">
+  <footer id="footer">
     <div className="container">
       <div className="row">
 
@@ -36,7 +36,7 @@ export function Footer(){
             <li><a href="#">Política de privacidade</a></li>
           </ul>
         </div>
-
+        
 
         <div className="footer-col">
           <h4>Suporte</h4>

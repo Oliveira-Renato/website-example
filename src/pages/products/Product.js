@@ -50,7 +50,7 @@ export function Product() {
                         <img src={syscareLogo} />
                     </div>
                 </div>
-         
+
       </section>
       <Footer />
     </div>

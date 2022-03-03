@@ -16,7 +16,7 @@ import { Footer } from '../footer';
 import { ToggleMenu } from '../../components/ToggleMenu/Toggle';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseMedical, faLaptopMedical} from "@fortawesome/free-solid-svg-icons";
+import { faHouseMedical, faLaptopMedical, faPhone, faEnvelope, faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import { faBtc, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 //==== Import Swiper React components ==== \\
@@ -63,13 +63,12 @@ export function Home(){
             </div>
           </div>
         </section>
-      </main>
 
-       {/*====  SEPARETOR 1 ====  */}
-      <div className="divider-1"></div>
+        {/*====  SEPARETOR 1 ====  */}
+        <div className="divider-1"></div>
 
-       {/*====  ABOUT ====  */}
-      <section className="section" id="about" >
+        {/*====  ABOUT ====  */}
+        <section className="section" id="about" >
         <div className="container grid">
           <div className="image">
             <img src={aboutImg} alt="" />
@@ -93,13 +92,13 @@ export function Home(){
             </p>
           </div>
         </div>
-      </section>
-      
-      {/*====  SEPARETOR 2 ====  */}
-      <div className="divider-2"></div>
+        </section>
 
-       {/*====  PRODUCTS ====  */}
-      <section className="section" id="products">
+        {/*====  SEPARETOR 2 ====  */}
+        <div className="divider-2"></div>
+
+        {/*====  PRODUCTS ====  */}
+        <section className="section" id="products">
         <div className="container grid">
           <header>
             <h2 class="title">Produtos</h2>
@@ -148,116 +147,131 @@ export function Home(){
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
-      {/*====  SEPARETOR 1 ====  */}
-      <div className="divider-1"></div>
+        {/*====  SEPARETOR 1 ====  */}
+        <div className="divider-1"></div>
 
 
-       {/*====  TESTIMONIALS ====  */}
-      <section className="section" id="testimonials">
-        <div className="container">
-          <header>
-            <h2 className="title">Depoimentos de quem já utilizou o <strong>SYSCARE</strong></h2>
-          </header>
-          <Swiper 
-            // install Swiper modules
-            modules={[Pagination, Mousewheel, Keyboard , Navigation]}
-            slidesPerView={1}
-            pagination={{
-              clickable: true,
-              bulletClass: 'swiper-pagination-bullet'
-            }}
-            onSwiper={(swiper) => console.log(swiper)}
-            mousewheel={true}
-            keyboard={true}
-            onSlideChange={() => console.log('slide change')}>
-  
-            <SwiperSlide>
-              <div className="testimonials ">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                    ipsam neque
-                  </p>
-                  <cite>
-                  <img src={ caioImg } alt="Foto do Caio" />
-                    Caio da Massa
-                  </cite>
-                </blockquote>
-              </div>
-            </SwiperSlide>
+        {/*====  TESTIMONIALS ====  */}
+        <section className="section" id="testimonials">
+          <div className="container">
+            <header>
+              <h2 className="title">Depoimentos de quem já utilizou o <strong>SYSCARE</strong></h2>
+            </header>
+            <Swiper 
+              // install Swiper modules
+              modules={[Pagination, Mousewheel, Keyboard , Navigation]}
+              slidesPerView={1}
+              pagination={{
+                clickable: true,
+                bulletClass: 'swiper-pagination-bullet'
+              }}
+              onSwiper={(swiper) => console.log(swiper)}
+              mousewheel={true}
+              keyboard={true}
+              onSlideChange={() => console.log('slide change')}>
 
-            <SwiperSlide>
-              <div className="testimonials">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                    ipsam neque
-                  </p>
-                  <cite>
-                    <img src={ alcidezImg } alt="Foto do Alcidez Rodriguez" />
-                    Alcidez Rodrigues
-                  </cite>
-                </blockquote>
-              </div>
-            </SwiperSlide>
+              <SwiperSlide>
+                <div className="testimonials ">
+                  <blockquote>
+                    <p>
+                      <span>&ldquo;</span>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                      ipsam neque
+                    </p>
+                    <cite>
+                    <img src={ caioImg } alt="Foto do Caio" />
+                      Caio da Massa
+                    </cite>
+                  </blockquote>
+                </div>
+              </SwiperSlide>
 
-            <SwiperSlide>
-              <div className="testimonials">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                    ipsam neque
-                  </p>
-                  <cite>
-                  <img src={ tantanImg } alt="Foto do Tantan" />
-                    Tantan
-                  </cite>
-                </blockquote>
-              </div>
-            </SwiperSlide>
+              <SwiperSlide>
+                <div className="testimonials">
+                  <blockquote>
+                    <p>
+                      <span>&ldquo;</span>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                      ipsam neque
+                    </p>
+                    <cite>
+                      <img src={ alcidezImg } alt="Foto do Alcidez Rodriguez" />
+                      Alcidez Rodrigues
+                    </cite>
+                  </blockquote>
+                </div>
+              </SwiperSlide>
 
-          </Swiper>
-        </div>
-      </section>
+              <SwiperSlide>
+                <div className="testimonials">
+                  <blockquote>
+                    <p>
+                      <span>&ldquo;</span>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                      ipsam neque
+                    </p>
+                    <cite>
+                    <img src={ tantanImg } alt="Foto do Tantan" />
+                      Tantan
+                    </cite>
+                  </blockquote>
+                </div>
+              </SwiperSlide>
+
+            </Swiper>
+          </div>
+        </section>
+
+        {/*====  SEPARETOR 2 ====  */}
+        <div class="divider-2"></div>
+
+        {/*====  CONTACTS ====  */}
+        <section className="section" id="contact">
+          <div className="container grid">
+            <div className="text">
+              <h2 className="title">Entre em contato com a gente!</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+              <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário" className="button">
+                  <div className="icones">
+                    <FontAwesomeIcon icon={ faWhatsapp } />
+                  </div>
+                  Entrar em contato
+              </a>
+            </div>
+
+            <div className="links">
+              <ul className="grid">
+                <li>
+                  <FontAwesomeIcon icon={faPhone} className="icones" />55 (11) 4153-1075
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faEnvelope} className="icones" />contato@kennen.com.br
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faLocationDot} className="icones"/>Alameda Araguaia, 2044 - Torre I
+                </li>
+              </ul>
+            </div>
+            {/*====  FORMS ====  */}
+            <ContactForm />
+          </div>
+        </section>
+      </main>
 
       {/*====  SEPARETOR 2 ====  */}
-      <div class="divider-2"></div>
-
-      {/*====  CONTACTS ====  */}
-      <section className="section" id="contact">
-        <div className="container grid">
-          <div className="text">
-            <h2 className="title">Entre em contato com a gente!</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              distinctio neque blanditiis, dolorem aperiam nulla explicabo
-              asperiores
-            </p>
-            <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário" className="button">
-                <div className="icones">
-                  <FontAwesomeIcon icon={ faWhatsapp } />
-                </div>
-                Entrar em contato
-            </a>
-          </div>
-            <ContactForm />
-        </div>
-
-        {/*====  FOOTER ====  */}
-        <Footer />
-      </section>
-
-      
-
-      
+      <div class="divider-1"></div>
+      {/*====  FOOTER ====  */}
+      <Footer />
+       
     </div>
 
   )

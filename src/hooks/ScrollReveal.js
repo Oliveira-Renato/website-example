@@ -16,8 +16,9 @@ export function ScrollReavelling(){
       `#home .image, #home .text,
       #about .image, #about .text,
       #services header, #products .card,
-      #testimonials header, #testimonials .testimonials
-      #contact .text, #contact .links
+      #testimonials header, #testimonials .testimonials,
+      #contact .text, #contact .links,
+      #footer .container .row .footer-col
       `,
       { interval: 100 }
     )
