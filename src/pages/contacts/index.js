@@ -12,6 +12,9 @@ export function ContactForm(){
         
        <div>
             <form  id='form'>
+                <h2 className="title">Envie-nos uma mensagem</h2>
+                
+
                 <div className="contactForm">
                     <div className="row">
                         <div className="col50">
@@ -40,8 +43,8 @@ export function ContactForm(){
                         </div>
                     </div>
                 </div>
-            
-                <div className="row send">
+                
+                <div className="send">
                     <button className="button"><FontAwesomeIcon className="icones" icon={faPaperPlane} />Enviar</button>
                 </div>
             </form>

@@ -32,8 +32,6 @@ import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
 
 
-import '../../styles/media.scss'
-
 export function Home(){
   
   
@@ -78,10 +76,11 @@ export function Home(){
             <img src={aboutImg} alt="" />
           </div>
           <div className="text">
-            <h2 className="title">Sobre nos</h2>
+            <h2 className="title">Sobre nós</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             </p>
+            <br />
             <br />
             <p>
               O Syscare tem como objetivo renovar a forma de gestão das empresas desenvolvendo sistemas sob demanda, elaborados a partir das necessidades de cada cliente, e oferecendo produtos específicos como o SysCare da massa!
@@ -108,7 +107,8 @@ export function Home(){
             <h2 class="title">Produtos</h2>
             <p>Com mais de 20 anos no mercado, o <strong>Syscare</strong> já
               conquistou inúmeros  clientes com seus serviços
-              exclusivos.</p>
+              exclusivos.
+              </p>
           </header>
           <div className="cards grid">
             <div className="card">
@@ -149,7 +149,7 @@ export function Home(){
                 asperiores
               </p>
             </div>
-          </div>
+          </div>  
         </div>
         </section>
 
@@ -238,7 +238,7 @@ export function Home(){
           <div className="container grid">
             <div className="text">
               <h2 className="title">Entre em contato com a gente!</h2>
-              <p>
+              <p> 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
                 distinctio neque blanditiis, dolorem aperiam nulla explicabo
                 asperiores
@@ -264,7 +264,11 @@ export function Home(){
                 </li>
               </ul>
             </div>
-            {/*====  FORMS ====  */}
+            
+            
+          </div>
+          {/*====  FORMS ====  */}
+          <div className="forms container">
             <ContactForm />
           </div>
         </section>

@@ -29,7 +29,7 @@ img {
 
 /*====  BASE ============================ */
 body {
-  font: 400 1rem 'DM Sans', sans-serif;
+  font: 400 1rem 'Poppins', sans-serif;
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
@@ -386,7 +386,7 @@ nav .close {
 /*==== SWIPER ================= */
 .swiper-slide {
   height: auto;
-  padding: 4rem 1rem;
+  padding: 4rem 1rem !important;
 }
 
 .swiper-pagination-bullet {
@@ -434,6 +434,9 @@ nav .close {
   margin-right: 0.875rem;
 }
 
+#contact .forms {
+  margin: 4rem 1.5rem 1rem 1.5rem ;
+}
 /*==== BACK TO TOP ================= */
 a.back-to-top {
   background: var(--base-color);
@@ -463,6 +466,9 @@ a.back-to-top {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+
+    
   }
+
 
 `

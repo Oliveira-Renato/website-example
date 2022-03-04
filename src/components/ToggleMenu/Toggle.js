@@ -13,9 +13,16 @@ export function ToggleMenu(){
      const nav = document.querySelector('#header nav');
      const menuToggle = document.querySelectorAll('nav .toggle');
      
-     nav.classList.toggle('show');
+     if(nav.classList.contains('show')){
+        nav.classList.remove('show');
+     }else {
+        nav.classList.add('show');
+     }
+     
     //  sidebar.classList.toggle('active');
    }
+
+   
 
   return(
     <>
