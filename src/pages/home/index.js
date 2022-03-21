@@ -104,7 +104,7 @@ export function Home(){
         <section className="section" id="products">
         <div className="container grid">
           <header>
-            <h2 class="title">Produtos</h2>
+            <h2 className="title">Produtos</h2>
             <p>Com mais de 20 anos no mercado, o <strong>Syscare</strong> já
               conquistou inúmeros  clientes com seus serviços
               exclusivos.
@@ -231,7 +231,7 @@ export function Home(){
         </section>
 
         {/*====  SEPARETOR 2 ====  */}
-        <div class="divider-2"></div>
+        <div className="divider-2"></div>
 
         {/*====  CONTACTS ====  */}
         <section className="section" id="contact">
@@ -275,7 +275,7 @@ export function Home(){
       </main>
 
       {/*====  SEPARETOR 2 ====  */}
-      <div class="divider-1"></div>
+      <div className="divider-1"></div>
 
       {/*====  FOOTER ====  */}
       <Footer />

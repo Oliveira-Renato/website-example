@@ -80,6 +80,7 @@ body {
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  justify-content: space-between;
 }
 
 .grid {
