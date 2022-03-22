@@ -14,7 +14,7 @@ export function ProgressBar(){
       document.getElementById("myBar").style.width = scrolled + "%";
     }
 
-    window.onscroll = function() {HandleScrollBar()};
+    window.onscroll = function() { HandleScrollBar() };
   })
 
   return(

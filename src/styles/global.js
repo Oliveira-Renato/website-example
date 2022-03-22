@@ -203,6 +203,14 @@ nav .menu ul {
 
 /*=========== toggle menu ==========*/
 
+.icones {
+
+  font-size: 1.05rem;
+  margin-right: 0.625rem;
+        
+}
+
+
 nav .close {
   visibility: hidden;
   opacity: 0;
@@ -468,8 +476,11 @@ a.back-to-top {
     opacity: 1;
     transform: translateY(0);
 
-    
   }
+
+.showSuport {
+  display: none ;
+}
 
 
 `

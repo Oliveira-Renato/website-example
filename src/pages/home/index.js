@@ -17,7 +17,19 @@ import { ToggleMenu } from '../../components/ToggleMenu/Toggle';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseMedical, faLaptopMedical, faPhone, faEnvelope, faLocationDot, faArrowUp} from "@fortawesome/free-solid-svg-icons";
+
+/* ===== ICONES ===== */
+import {
+  faHouseMedical,
+  faLaptopMedical,
+  faPhone,
+  faEnvelope,
+  faLocationDot,
+  faArrowUp,
+  faSuitcaseMedical,
+  faAnglesDown
+} from "@fortawesome/free-solid-svg-icons";
+
 import { faBtc, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 //==== Import Swiper React components ==== \\
@@ -45,6 +57,14 @@ export function Home(){
             <img  src={logo} alt="imagem logo syscare" />
           </a>
           <ToggleMenu />
+
+          {/* ==== botão suporte ===== */}
+          <div className="suport_btn">
+              <a href="http://suporte.syscare.com.br:81/suporte/login" className="button" target="_blank" alt="Botão para suporte">
+                <FontAwesomeIcon className="icones" icon={ faSuitcaseMedical } />Suporte
+              </a>
+          </div>
+
         </nav>
       </header>
       
@@ -61,7 +81,9 @@ export function Home(){
               <h3 className="title">Gestão de Home Care</h3>
               <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
 
-              <a className='button' href="#about">Saiba mais</a>
+              <a className='button' href="#about">
+                <FontAwesomeIcon className="icones" icon={ faAnglesDown } />Saiba mais
+              </a>  
             </div>
           </div>
         </section>

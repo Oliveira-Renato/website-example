@@ -9,7 +9,7 @@ nav.show .menu {
 
   position: fixed;
   top: 0;
-  left: 0;
+  left: -1.625rem;
 
  
   
@@ -45,3 +45,17 @@ nav.show div.close {
   cursor: pointer;
 }
 
+
+
+.show_btn {
+  display: none
+}
+.ainda_nao {
+  text-align: center;
+  margin-top: 7rem;
+
+  .btn2{
+    width: 213.75px;
+    padding-left: 4rem;
+  }
+}
