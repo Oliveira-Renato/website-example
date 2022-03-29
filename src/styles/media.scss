@@ -351,39 +351,47 @@
 
         li{
 
-          a { 
-            position: unset;
-            &.title {
-              font: 400 1rem  'Poppins';
-              color: #333;
-              -webkit-transition: 0.3s;
-              
-
-              &:hover { 
+          
+            a { 
+             
+              &.title {
+                font: 400 1rem "Poppins";
                 color: var(--base-color);
-                text-decoration: uppercase ;
-                font-size: 1.18rem;
-                font-weight: 700;
+                
               }
-              &::after {
-                width:0;
+  
+              &::after{
+                position: relative;
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background: var(--base-color);
+                transition: width 0.3s;
+                top: -3px;
+              
               }
-
-              &active {
-                font-weight: bold;
-                -webkit-font-smoothing: auto;
+              
+              &:hover::after{
+                width: 100%;
+                transition: width .3s;
               }
             }
-          }
+          
         }
       }
   
-    }
+    
 
     .toggle {
       display: none;
     }
-  }  
+    }
+    
+    .toggle {
+      display: none;
+    }
+
   /* layout */
   main {
 
@@ -431,7 +439,7 @@
     //===== HOME =====\\
     #home {
       // margin: 0 7rem;
-      // padding: 10rem 0;
+
 
       .container {
         grid-auto-flow: column;
@@ -604,10 +612,9 @@
     }
 
 
-    .swiper-slide {
-      width: 50% !important;
-    }
+    
 
+    
     
 
   }
@@ -654,27 +661,29 @@
         li{
 
           a { 
-            position: unset;
+            
             &.title {
               font: 400 1rem  'Poppins';
               color: #333;
               -webkit-transition: 0.3s;
-              
+        
+            }
 
-              &:hover { 
-                color: var(--base-color);
-                text-decoration: uppercase ;
-                font-size: 1.18rem;
-                font-weight: 700;
-              }
-              &::after {
-                width:0;
-              }
-
-              &active {
-                font-weight: bold;
-                -webkit-font-smoothing: auto;
-              }
+            &::after{
+              position: relative;
+              content: "";
+              display: block;
+              width: 0;
+              height: 2px;
+              background: var(--base-color);
+              transition: width 0.3s;
+              top: -3px;
+            
+            }
+            
+            &:hover::after{
+              width: 100%;
+              transition: width .3s;
             }
           }
         }
@@ -689,7 +698,7 @@
   /* layout */
   main {
     .section {
-      padding:2rem 2rem;
+      padding:7em 2rem;
       height: 100%;
     }
 
@@ -697,7 +706,7 @@
       
 
       .container {
-        padding: 6rem 4rem;
+        padding: 9rem 4rem;
 
 
         header .title, header p {
@@ -856,7 +865,7 @@
     }
     //===== CONTACTS =====\\
     #contact {
-      padding: 2rem 7rem;
+      padding: 7rem 7rem;
 
       .container {
         grid-auto-flow: column;
@@ -931,6 +940,8 @@
     }
   }
 
+
+
 }
 
 
@@ -974,25 +985,9 @@
             a { 
               position: unset;
               &.title {
-                font: 400 1rem  'Poppins';
+                font: 400 1rem "Poppins", sans-serif;
                 color: #333;
-                -webkit-transition: 0.3s;
                 
-
-                &:hover { 
-                  color: var(--base-color);
-                  text-decoration: uppercase ;
-                  font-size: 1.18rem;
-                  font-weight: 700;
-                }
-                &::after {
-                  width:0;
-                }
-
-                &active {
-                  font-weight: bold;
-                  -webkit-font-smoothing: auto;
-                }
               }
             }
           }
@@ -1063,7 +1058,7 @@
     //===== HOME =====\\
     #home {
       margin: 0 3.5rem;
-      padding: 2rem 0;
+      padding: 7rem 0;
 
       .container {
         grid-auto-flow: column;
@@ -1109,7 +1104,6 @@
     //===== ABOUT =====\\
     #about {
       
-      padding: 8.5rem 0;
 
       .container {
         grid-auto-flow: column;
@@ -1305,7 +1299,7 @@
     //===== HOME =====\\
     #home {
       margin: 0 3.5rem;
-      padding: 2rem 0;
+      padding: 7rem 0;
 
       .container {
         grid-auto-flow: column;
@@ -1495,7 +1489,7 @@
   
 }
 
-
+}
 
 
 

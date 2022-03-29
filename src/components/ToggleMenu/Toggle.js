@@ -24,7 +24,7 @@ export function ToggleMenu(){
           nav.classList.toggle('show');
           suportBtn.classList.toggle('show_btn');
       }
-    //  sidebar.classList.toggle('active');
+      //  sidebar.classList.toggle('active');
    }
 
    const handleCloseMenu = () => { 
@@ -36,11 +36,21 @@ export function ToggleMenu(){
     <>
       <div className="menu">
         <ul className="grid">
-          <li><a className="title" href="#home" alt="" onClick={handleCloseMenu} >Home</a></li>
-          <li><a className="title" href="#about" alt="" onClick={handleCloseMenu}  >Sobre</a></li>
-          <li><a className="title" href="#products" alt="" onClick={handleCloseMenu}  >Produtos</a></li>
-          <li><a className="title" href="#testimonials" alt="" onClick={handleCloseMenu}  >Depoimentos</a></li>
-          <li><a className="title" href="#contact" alt="" onClick={handleCloseMenu} >Contato</a></li>
+          <li>
+            <a className="title" href="#home" alt="" onClick={handleCloseMenu} >Home</a>
+          </li>
+          <li>
+            <a className="title" href="#about" alt="" onClick={handleCloseMenu}  >Sobre</a>
+          </li>
+          <li>
+            <a className="title" href="#products" alt="" onClick={handleCloseMenu}  >Produtos</a>
+          </li>
+          <li>
+            <a className="title" href="#testimonials" alt="" onClick={handleCloseMenu}  >Depoimentos</a>
+          </li>
+          <li>
+            <a className="title" href="#contact" alt="" onClick={handleCloseMenu} >Contato</a>
+          </li>
         </ul>
         {/* ==== botão suporte ===== */}
         <div className="ainda_nao show_btn">

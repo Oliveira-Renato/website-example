@@ -25,7 +25,7 @@ function App() {
       <BrowserRouter>  
         <GlobalStyle />
           <HeaderEffect />
-            {/* <ScrollReavelling /> */}
+            <ScrollReavelling />
           <ProgressBar />
  
             <Routes>  

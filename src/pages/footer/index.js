@@ -31,8 +31,8 @@ export function Footer(){
         <div className="footer-col">
           <h4>Empresa</h4>
           <ul>
-            <li><a href="#">Sobre nos</a></li>
-            <li><a href="#">Nossos serviços</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#products">Nossos serviços</a></li>
             <li><a href="#">Política de privacidade</a></li>
           </ul>
         </div>
@@ -42,8 +42,8 @@ export function Footer(){
           <h4>Suporte</h4>
           <ul>
             <li><a href="#">FAQ</a></li>
-            <li><a href="#">Suporte</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="http://suporte.syscare.com.br:81/suporte/login" target="_blank">Suporte</a></li>
+            <li><a href="#home">Home</a></li>
           </ul>
         </div>
 
@@ -61,7 +61,7 @@ export function Footer(){
         <div className="footer-col">
           <h4>Siga nos</h4>
           <div className="social-links">
-            <a href="#">
+            <a href="https://www.facebook.com/SistemaSysCare" target="_blank">
               <FontAwesomeIcon icon={faFacebookF} className="socialmedia" />
             </a>
             <a href="#">

@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 ul li {
     list-style: none;
 }
@@ -52,6 +53,7 @@ body {
   font: 500 1rem 'DM Sans', sans-serif;
   transition: background 0.5s;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .button:hover {
@@ -130,7 +132,7 @@ main {
 
 /*====  LOGO ============================ */
 nav a .logo  img {
-  position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -159,6 +161,7 @@ nav {
 }
 
 nav ul li {
+  
     text-align: center;
 }
 

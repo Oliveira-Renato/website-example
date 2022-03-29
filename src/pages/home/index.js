@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import  logo  from '../../images/iconsLogo/logo_syscare_150.png'
-import mainImg from '../../images/homeImages/doctor-taking-care-senior-woman.jpg'
+import mainImg from '../../images/homeImages/home.jpg'
 import aboutImg from '../../images/homeImages/campaign-creators.jpg'
 
 //==== Users testimonials pictures ==== \\
@@ -188,12 +188,13 @@ export function Home(){
             <Swiper 
               // install Swiper modules
               modules={[Pagination, Mousewheel, Keyboard , Navigation]}
-              slidesPerView={1}
+              slidesPerView={'auto'}
               pagination={{
                 clickable: true,
                 bulletClass: 'swiper-pagination-bullet'
               }}
-              mousewheel={true}
+              
+              // mousewheel={true}
               keyboard={true}
               >
 
