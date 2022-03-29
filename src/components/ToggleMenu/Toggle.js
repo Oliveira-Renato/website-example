@@ -1,73 +1,73 @@
-import  { useState } from "react";
-import { Link } from "react-router-dom";
-import logoMColored from '../../images/iconsLogo/logo_syscare_400.png';
+import React, { useEffect } from 'react'
 
-import { 
-    FiMenu 
-} from 'react-icons/fi';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark, faSuitcaseMedical} from "@fortawesome/free-solid-svg-icons";
 
-import { AiOutlineClose } from 'react-icons/ai';
-
-import { Header, Logo, HeaderContent, MenuSectionOn, ContainerIcons } from './styles';
+import './styles.scss'
+import '../../styles/media.scss'
+import { SupportButton } from '../Button/Suport';
 
 
-const ToggleMenu = () => {
-    const [menuBar, setMenuBar] = useState(false);
-    const [displayMenu, setDisplayMenu] = useState(false)
-    const [toggle, set] = useState(false);;
+export function ToggleMenu(){
+  
+  
 
-    const handleMenuBar = () => {
-        if(!menuBar){
-            setMenuBar(true);
-        }else{
-            setMenuBar(false);
-        }
-    };
-    
-    const handleClickLink = () => {
-        if(!displayMenu){
-            setMenuBar(false);
-        }else{
-            setMenuBar(false);
-        }
-    };
+   function HandleToggleMenu() {
+      const nav = document.querySelector('#header nav'); 
+      const suportBtn = document.querySelector('.ainda_nao');
 
+      if(nav.classList.contains('show')){
+          nav.classList.toggle('show');
+          suportBtn.classList.toggle('show_btn');
+          
+      }else {
+          nav.classList.toggle('show');
+          suportBtn.classList.toggle('show_btn');
+      }
+      //  sidebar.classList.toggle('active');
+   }
 
-    return(
-        <Header>
-            <MenuSectionOn  ishandled={menuBar} >
-                    <nav>
-                        <Link onClick={() => handleClickLink()} to="#about" >About me</Link>
-                        <Link onClick={() => handleClickLink()} to="services" >Services</Link>
-                        <Link onClick={() => handleClickLink()} to="portfolio" >Portfólio</Link>
-                        <Link onClick={() => handleClickLink()} to="contact" >Contact</Link>
-                    </nav>
-                    <ContainerIcons>
-                        <a href="#" target="_blank">
-                            <button className="button">Suporte</button>
-                        </a>
-                        
-                    </ContainerIcons>
-            </MenuSectionOn>
-            <HeaderContent ishandled={menuBar}>
-                <Logo>
-                    <Link to="home" >
-                        {/* <img src={logoMColored} alt="logo"/> */}
-                        </Link>
-                </Logo>
-                
-                { menuBar ? <AiOutlineClose onClick={() => handleMenuBar()} size={36} color="#333" />
-                : <FiMenu onClick={() => handleMenuBar()} size={36} color="#333"/>}
-                    <nav>
-                        <Link to="#about" >Sobre</Link>
-                        <Link to="services" >Habilidades</Link>
-                        <Link to="portfolio" >Projetos</Link>
-                        <Link to="contact" >Contato</Link>
-                    </nav>
-            </HeaderContent>
-            
-        </Header>
-    )
+   const handleCloseMenu = () => { 
+     const nav = document.querySelector('#header nav'); 
+     nav.classList.remove('show');
+    }
+
+  return(
+    <>
+      <div className="menu">
+        <ul className="grid">
+          <li>
+            <a className="title" href="#home" alt="" onClick={handleCloseMenu} >Home</a>
+          </li>
+          <li>
+            <a className="title" href="#about" alt="" onClick={handleCloseMenu}  >Sobre</a>
+          </li>
+          <li>
+            <a className="title" href="#products" alt="" onClick={handleCloseMenu}  >Produtos</a>
+          </li>
+          <li>
+            <a className="title" href="#testimonials" alt="" onClick={handleCloseMenu}  >Depoimentos</a>
+          </li>
+          <li>
+            <a className="title" href="#contact" alt="" onClick={handleCloseMenu} >Contato</a>
+          </li>
+        </ul>
+        {/* ==== botão suporte ===== */}
+        <div className="ainda_nao show_btn">
+            <a href="http://suporte.syscare.com.br:81/suporte/login" className="button btn2" target="_blank"  onClick={handleCloseMenu} alt="Botão para suporte">
+              <FontAwesomeIcon className="icones" icon={ faSuitcaseMedical } />Suporte
+            </a>
+        </div>
+      </div>
+
+      <div className="toggle open" >
+        <FontAwesomeIcon icon={faBars} onClick={HandleToggleMenu} />
+      </div>  
+      
+      <div className="toggle close">
+        <FontAwesomeIcon icon={faXmark}  onClick={HandleToggleMenu} />
+      </div>
+    </>
+  )
+
 }
-
-export default ToggleMenu;

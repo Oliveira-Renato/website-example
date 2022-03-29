@@ -3,6 +3,7 @@ import './styles.scss'
 
 export function ProgressBar(){
 
+
   useEffect(()=>{
     
     function HandleScrollBar(){

@@ -11,6 +11,7 @@ box-sizing: border-box;
 }
 
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -30,14 +31,14 @@ img {
 
 /*====  BASE ============================ */
 body {
-  font: 400 1rem 'Poppins', sans-serif;
+  font: 400 1.6rem 'Poppins', sans-serif;
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
-  font: 700 1.875rem 'Poppins', sans-serif;
+  font: 700 1.878rem 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -45,12 +46,12 @@ body {
 .button {
   background-color: var(--base-color);
   color: var(--text-color-light);
-  height: 3.5rem;
+  height: 5.6rem;
   display: inline-flex;
   align-items: center;
-  padding: 0 2rem;
-  border-radius: 0.25rem;
-  font: 500 1rem 'DM Sans', sans-serif;
+  padding: 0 3.2rem;
+  border-radius: 0.28rem;
+  font: 500 1.6rem 'DM Sans', sans-serif;
   transition: background 0.5s;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -80,26 +81,26 @@ body {
 
 /*====  LAYOUT ============================ */
 .container {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
   justify-content: space-between;
 }
 
 .grid {
   display: grid;
-  gap: 2rem;
+  gap: 3.2rem;
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 8rem 0;
 }
 
 .section .title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 .section header {
-  margin-bottom: 4rem;
+  margin-bottom: 6.4rem;
 }
 
 .section header strong {
@@ -108,7 +109,7 @@ body {
 
 #header {
   border-bottom: 1px solid #e4e4e4;
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
   display: flex;
 
   position: fixed;
@@ -127,25 +128,11 @@ body {
 } 
 
 main {
-  margin-top: calc(var(--header-height) + 2rem);
+  margin-top: calc(var(--header-height) + 3.2rem);
 }
 
 /*====  LOGO ============================ */
-nav a .logo  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    box-sizing: border-box;
-    padding: 0;
-    border: none;
-    margin: auto;
-    display: block;
-    width: 0;
-    height: 0;
-    min-width: 100%;
-    max-width: 100%;
+nav a.logo  img {
     min-height: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -183,7 +170,7 @@ nav ul li a::after {
 
     position: absolute;
     left: 0;
-    bottom: -1.5rem;
+    bottom: -2.4rem;
 
     transition: 0.5s;
     
@@ -196,7 +183,7 @@ nav ul li a:hover::after {
 nav .menu{
     opacity: 0;
     visibility: hidden;
-    top: -20rem;
+    top: -32rem;
     transition: 0.5s;
 }
 
@@ -208,8 +195,8 @@ nav .menu ul {
 
 .icones {
 
-  font-size: 1.05rem;
-  margin-right: 0.625rem;
+  font-size: 1.08rem;
+  margin-right: 1.048rem;
         
 }
 
@@ -219,8 +206,8 @@ nav .close {
   opacity: 0;
 
   position: absolute;
-  top: -1.5rem;
-  right: 1.5rem;
+  top: -2.4rem;
+  right: 2.4rem;
 
   transition: 0.5s;
 }
@@ -253,26 +240,26 @@ nav .close {
 
 #home .image img {
   position: relative;
-  right: 2.93rem;
+  right: 4.68rem;
 }
 
 #home .image img,
 #home .image::before {
-  border-radius: 0.25rem;
+  border-radius: 0.28rem;
 }
 
 #home .text {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
   text-align: center;
 }
 
 #home .text h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 #home .text p {
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 
@@ -308,40 +295,40 @@ nav .close {
 
 #about .image img,
 #about .image::before {
-  border-radius: 0.25rem;
+  border-radius: 0.28rem;
 }
 
 #about .text {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
 }
 
 
 /*====  SERVICES ============================ */
 .cards.grid {
-  gap: 1.5rem;
+  gap: 2.4rem;
 }
 
 .card {
-  padding: 3.625rem 2rem;
+  padding: 5.804rem 3.2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.25rem solid var(--base-color);
-  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 0.28rem solid var(--base-color);
+  border-radius: 0.28rem 0.28rem 0 0;
   text-align: center;
 }
 
 .card  .icones {
   display: block;
-  margin-bottom: 1.5rem;
-  font-size: 5rem;
+  margin-bottom: 2.4rem;
+  font-size: 8rem;
   color: var(--base-color);
 }
 
 
 
 .card .title {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.4rem;
+  margin-bottom: 1.248rem;
 }
 
 /*====  TESTIMONIALS ================= */
@@ -355,29 +342,29 @@ nav .close {
 }
 
 #testimonials header {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
   margin-bottom: 0;
 }
 
 #testimonials blockquote {
-  padding: 2rem;
+  padding: 3.2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 0.25rem;
+  border-radius: 0.28rem;
 }
 
 #testimonials blockquote p {
   position: relative;
-  margin-bottom: 1.5rem;
-  text-indent: 1.875rem;
+  margin-bottom: 2.4rem;
+  text-indent: 1.878rem;
   color: var(--title-color);
 }
 
 #testimonials blockquote p span{
   font: 700 3rem serif;
   position: absolute;
-  left: -1.875rem;
-  line-height: 1.625rem;
+  left: -1.878rem;
+  line-height: 1.628rem;
   color: var(--base-color);
 }
 
@@ -388,22 +375,22 @@ nav .close {
 }
 
 #testimonials cite img {
-  width: 2rem;
-  height: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
   object-fit: cover;
   clip-path: circle();
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
 }
 
 /*==== SWIPER ================= */
 .swiper-slide {
   height: auto;
-  padding: 4rem 1rem !important;
+  padding: 6.4rem 1.6rem !important;
 }
 
 .swiper-pagination-bullet {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 1.248rem;
+  height: 1.248rem;
 }
 
 .swiper-pagination-bullet-active {
@@ -416,16 +403,16 @@ nav .close {
   position: relative;
 }
 #contact .grid {
-  gap: 4rem;
+  gap: 6.4rem;
 }
 
 #contact .text p {
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 #contact .button .icones {
-  font-size: 1.5rem;
-  margin-right: 0.625rem;
+  font-size: 2.4rem;
+  margin-right: 1.048rem;
 }
 
 #contact .button {
@@ -433,7 +420,7 @@ nav .close {
 }
 
 #contact ul.grid {
-  gap: 2rem;
+  gap: 3.2rem;
 }
 
 #contact ul li {
@@ -443,11 +430,11 @@ nav .close {
 
 #contact ul li .icones{
   color: var(--base-color);
-  margin-right: 0.875rem;
+  margin-right: 0.878rem;
 }
 
 #contact .forms {
-  margin: 4rem 1.5rem 1rem 1.5rem ;
+  margin: 6.4rem 2.4rem 1.6rem 2.4rem ;
 }
 /*==== BACK TO TOP ================= */
 a.back-to-top {
@@ -455,16 +442,16 @@ a.back-to-top {
   color: var(--text-color-light);
 
   position: fixed;
-  right: 1rem;
-  bottom: 1rem;
+  right: 1.6rem;
+  bottom: 1.6rem;
 
   visibility: hidden;
   opacity: 0;
 
-  padding: 0.5rem;
+  padding: 0.8rem;
   clip-path: circle();
 
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   line-height: 0;
 
   transition: 0.3s;

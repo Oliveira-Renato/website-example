@@ -8,13 +8,13 @@
 /*================ EXTRA SMALL DEVICES ====================*/
 @media (max-width:320px) {
   body {
-    font: 400 0.9rem 'Poppins',sans-serif;
+    font: 400 1.44rem 'Poppins',sans-serif;
   }
   
   nav, .container {
     // max-width: 1366px;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 11.2rem;
+    margin-right: 11.2rem;
     
     .suport_btn{
       display: none;
@@ -23,7 +23,7 @@
   
   #home, #about, #products, #testimonials, #contact{
       .section {
-        padding: 6rem 0;
+        padding: 9.6rem 0;
       }
       .container {
         
@@ -47,8 +47,8 @@
   
   nav, .container {
     // max-width: 1366px;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 11.2rem;
+    margin-right: 11.2rem;
     
     .suport_btn{
       display: none;
@@ -64,13 +64,17 @@
   
   nav, .container {
     // max-width: 1366px;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 11.2rem;
+    margin-right: 11.2rem;
     
     .suport_btn{
       display: none;
     }
   }  
+
+  section .title {
+    font-size: 2.92rem;
+  }
   /* layout */
   main {
 
@@ -106,8 +110,8 @@
          
 
           .card {
-            padding-left: 3rem;
-            padding-right: 3rem;
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
           }
         }
 
@@ -116,8 +120,8 @@
 
     //===== HOME =====\\
     #home {
-      // margin: 0 7rem;
-      // padding: 10rem 0;
+      // margin: 0 11.2rem;
+      // padding: 16rem 0;
 
       .container {
         
@@ -125,8 +129,8 @@
         .text {
 
           p {
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
+            margin-left: 2.4rem;
+            margin-right: 2.4rem;
           }
         }
 
@@ -138,7 +142,7 @@
 
           img {
             max-width: 570px;
-            right: -2.07rem;
+            right: -1.2rem;
             
             
           }
@@ -153,11 +157,11 @@
 
         .text {
           
-          margin-bottom: 1.5rem;
+          margin-bottom: 2.4rem;
           margin: 0 auto;
           >h2 {
             margin-bottom: 0rem;
-            // font-size: 2.7rem;
+            // font-size: 2.11.2rem;
 
           }
 
@@ -197,7 +201,7 @@
 
         .text { 
           
-          font-size: 1rem;
+          font-size: 1.05rem;
           text-align: center;
           margin: 0 auto;
           
@@ -222,7 +226,7 @@
     //===== PRODUCTS =====\\
     #products {
       .container {
-        padding: 0 6rem;
+        padding: 0 9.6rem;
         
         h2 {
           position: relative;
@@ -259,7 +263,7 @@
             
           }
           p {
-            margin-bottom: 2rem;
+            margin-bottom: 3.2rem;
           }
         }
 
@@ -298,7 +302,7 @@
         
       }
       .grid {
-        gap: 4rem;
+        gap: 6.4rem;
       }
     }
 
@@ -331,8 +335,8 @@
   
   nav, .container {
     // max-width: 1366px;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 11.2rem;
+    margin-right: 11.2rem;
 
     .suport_btn{
       display: block;
@@ -347,7 +351,7 @@
 
       ul {
         display: flex;
-        gap: 2rem;
+        gap: 3.2rem;
 
         li{
 
@@ -355,7 +359,7 @@
             a { 
              
               &.title {
-                font: 400 1rem "Poppins";
+                font: 400 1.6rem "Poppins";
                 color: var(--base-color);
                 
               }
@@ -402,7 +406,7 @@
       
 
       .container {
-        padding: 8rem 2rem;
+        padding: 8rem 3.2rem;
 
         header .title, header p {
           // max-width: 32rem;
@@ -428,8 +432,8 @@
           grid-template-columns: 1fr 1fr 1fr;
 
           .card {
-            padding-left: 3rem;
-            padding-right: 3rem;
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
           }
         }
 
@@ -438,7 +442,7 @@
 
     //===== HOME =====\\
     #home {
-      // margin: 0 7rem;
+      // margin: 0 11.2rem;
 
 
       .container {
@@ -450,7 +454,7 @@
 
           img {
             // max-width: 480px;
-            right: -0.07rem;
+            right: -1.2rem;
             min-width: 570px;
 
             
@@ -465,17 +469,17 @@
         }
 
         .text {
-          margin-bottom: 1.5rem;
+          margin-bottom: 2.4rem;
           width: 320px;
           
           >h2 {
             margin-bottom: 0rem;
-            // font-size: 2.7rem;
+            // font-size: 2.11.2rem;
 
           }
 
           >p {
-            margin-top: 2rem;
+            margin-top: 3.2rem;
           }
 
           .button {
@@ -568,7 +572,7 @@
             
           }
           p {
-            margin-bottom: 2rem;
+            margin-bottom: 3.2rem;
           }
         }
 
@@ -607,7 +611,7 @@
         
       }
       .grid {
-        gap: 4rem;
+        gap: 6.4rem;
       }
     }
 
@@ -622,12 +626,12 @@
   
   #footer {
     .footer-col {
-      padding: 0 0 0 7rem;
+      padding: 0 0 0 11.2rem;
     }
   }
 
+  }
 }
-
 
 /*================ NOTEBOOK ====================*/
 @media (min-width: 1024px) {
@@ -642,8 +646,8 @@
   
   nav, .container {
     // max-width: 1366px; 
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 11.2rem;
+    margin-right: 11.2rem;
 
     .logo{
       margin: 1.4375rem 0 1.4375rem  0;
@@ -656,14 +660,14 @@
 
       ul {
         display: flex;
-        gap: 2rem;
+        gap: 3.2rem;
 
         li{
 
           a { 
             
             &.title {
-              font: 400 1rem  'Poppins';
+              font: 400 1.6rem  'Poppins';
               color: #333;
               -webkit-transition: 0.3s;
         
@@ -698,7 +702,7 @@
   /* layout */
   main {
     .section {
-      padding:7em 2rem;
+      padding:11.2rem 3.2rem;
       height: 100%;
     }
 
@@ -706,7 +710,7 @@
       
 
       .container {
-        padding: 9rem 4rem;
+        padding: 14.4rem 6.4rem;
 
 
         header .title, header p {
@@ -718,13 +722,16 @@
 
         .image {
           order: 1;
+          
           // max-width: 800px;
+          &::before {
+            
+          }
          
         }
 
         .text {
           order: 0;
-          // max-width: 24rem;
           text-align: left;
         }
         
@@ -734,8 +741,8 @@
           grid-template-columns: 1fr 1fr 1fr;
 
           .card {
-            padding-left: 3rem;
-            padding-right: 3rem;
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
           }
         }
 
@@ -744,8 +751,8 @@
 
     //===== HOME =====\\
     #home {
-      // margin: 0 7rem;
-      // padding: 10rem 0;
+      // margin: 0 11.2rem;
+      // padding: 16rem 0;
 
       .container {
         grid-auto-flow: column;
@@ -756,33 +763,28 @@
 
           img {
             // max-width: 480px;
-            right: -0.07rem;
+            right: -1.2rem;
 
-            img {
-
-            }
           }
 
           &::before { 
-            width: 100%;
-            height: 100%;
-            top: -12.8%;
+            
 
           }
         }
 
         .text {
-          margin-bottom: 1.5rem;
+          margin-bottom: 2.4rem;
           width: 320px;
           
           >h2 {
             margin-bottom: 0rem;
-            // font-size: 2.7rem;
+            // font-size: 2.11.2rem;
 
           }
 
           >p {
-            margin-top: 2rem;
+            margin-top: 3.2rem;
           }
 
           .button {
@@ -806,7 +808,7 @@
           position: relative;
 
           img {
-            right: 7.93rem;
+            right: 19.93rem;
             width: 620px;
           }
 
@@ -814,13 +816,13 @@
             height: 70%;
             bottom: -8.3%;
             top: -12.3%;
-            left: -32%; 
+            left: -40%;
           }
         }
 
         .text {
           text-align: left;
-          font-size: 0.86rem;
+          font-size: 0.89.6rem;
           position: relative;
           left: -40%;
           
@@ -845,7 +847,7 @@
     //===== PRODUCTS =====\\
     #products {
       .container {
-        padding: 2rem 2rem;
+        padding: 3.2rem 3.2rem;
         h2 {
           position: relative;
 
@@ -865,7 +867,7 @@
     }
     //===== CONTACTS =====\\
     #contact {
-      padding: 7rem 7rem;
+      padding: 11.2rem 11.2rem;
 
       .container {
         grid-auto-flow: column;
@@ -881,7 +883,7 @@
             
           }
           p {
-            margin-bottom: 2rem;
+            margin-bottom: 3.2rem;
           }
         }
 
@@ -920,7 +922,7 @@
         
       }
       .grid {
-        gap: 4rem;
+        gap: 6.4rem;
       }
     }
 
@@ -936,7 +938,7 @@
   
   #footer {
     .footer-col {
-      padding: 0 0 0 4rem;
+      padding: 0 0 0 6.4rem;
     }
   }
 
@@ -955,7 +957,7 @@
   #header {
     
     nav, .container {
-      margin-left: 7rem;
+      margin-left: 11.2rem;
       margin-right: 3.5rem;
       justify-content: space-between;
 
@@ -978,14 +980,14 @@
 
         ul {
           display: flex;
-          gap: 2rem;
+          gap: 3.2rem;
 
           li{
 
             a { 
               position: unset;
               &.title {
-                font: 400 1rem "Poppins", sans-serif;
+                font: 400 1.6rem "Poppins", sans-serif;
                 color: #333;
                 
               }
@@ -1046,8 +1048,8 @@
           grid-template-columns: 1fr 1fr 1fr;
 
           .card {
-            padding-left: 3rem;
-            padding-right: 3rem;
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
           }
         }
 
@@ -1058,7 +1060,7 @@
     //===== HOME =====\\
     #home {
       margin: 0 3.5rem;
-      padding: 7rem 0;
+      padding: 11.2rem 0;
 
       .container {
         grid-auto-flow: column;
@@ -1067,7 +1069,7 @@
 
 
         .image {
-          right: -0.07rem;
+          right: -0.011.2rem;
 
           img {
             
@@ -1081,17 +1083,17 @@
         }
 
         .text {
-          margin-bottom: 1.5rem;
+          margin-bottom: 2.4rem;
           width: 100%;
           
           >h2 {
             margin-bottom: 0rem;
-            font-size: 2.7rem;
+            font-size: 2.1rem;
 
           }
 
           >p {
-            margin-top: 2rem;
+            margin-top: 3.2rem;
           }
 
           .button {
@@ -1120,7 +1122,7 @@
         }
 
         .text {
-
+          left: -4.8rem;
           width: 100%;
           
           h2 {
@@ -1137,7 +1139,7 @@
     //===== PRODUCTS =====\\
     #products {
       .container {
-        padding: 2rem 3rem;
+        padding: 3.2rem 4.8rem;
 
         h2 {
           position: relative;
@@ -1160,7 +1162,7 @@
     #contact {
 
       .container {
-        padding: 2rem 7rem;
+        padding: 3.2rem 11.2rem;
         grid-auto-flow: column;
         align-items: center;
         grid-template-columns: repeat(auto-fit, 45%);
@@ -1174,7 +1176,7 @@
             
           }
           p {
-            margin-bottom: 2rem;
+            margin-bottom: 3.2rem;
           }
         }
 
@@ -1213,7 +1215,7 @@
         
       }
       .grid {
-        gap: 4rem;
+        gap: 6.4rem;
       }
     }
 
@@ -1229,7 +1231,7 @@
   
   #footer {
     .footer-col {
-      padding: 0 0 0 7rem;
+      padding: 0 0 0 11.2rem;
     }
   }
   
@@ -1242,8 +1244,8 @@
 @media (min-width: 1400px) {
 
   #header nav, #header .container {
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 11.2rem;
+    margin-right: 11.2rem;
     justify-content: space-between; 
   }
   /* layout */
@@ -1287,8 +1289,8 @@
           grid-template-columns: 1fr 1fr 1fr;
 
           .card {
-            padding-left: 3rem;
-            padding-right: 3rem;
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
           }
         }
 
@@ -1299,17 +1301,17 @@
     //===== HOME =====\\
     #home {
       margin: 0 3.5rem;
-      padding: 7rem 0;
+      padding: 11.2rem 0;
 
       .container {
         grid-auto-flow: column;
         justify-content:center;
         margin: 0 auto;
-        gap: 16rem;
+        gap: 20rem;
 
 
         .image {
-          right: -0.07rem;
+          right: -1.12rem;
 
           img {
             
@@ -1323,17 +1325,18 @@
         }
 
         .text {
-          margin-bottom: 1.5rem;
-          width: 100%;
+          margin-bottom: 2.4rem;
+          max-width: 47rem;
+        
           
           >h2 {
             margin-bottom: 0rem;
-            font-size: 2.7rem;
+            font-size: 1.2rem;
 
           }
 
           >p {
-            margin-top: 2rem;
+            margin-top: 3.2rem;
           }
 
           .button {
@@ -1350,9 +1353,9 @@
 
       .container {
         grid-auto-flow: column;
-        justify-content:center;
-        margin: 0 7rem;
-        gap: 10rem;
+        justify-content: center;
+        margin: 1.2rem;
+        gap: 20rem;
 
         .image {
           order: 0;
@@ -1365,20 +1368,20 @@
 
           &::before {
             height: 100%;
-            left: -7rem;
+            left: -11.2rem;
             
           }
         }
 
         .text {
-          left: -3rem;
+          left: -4.8rem;
           width: 100%;
           
           h2 {
             position: relative;
 
             &::before {
-              left: 16%;
+              left: 25%;
               
             }
           }
@@ -1389,7 +1392,7 @@
     //===== PRODUCTS =====\\
     #products {
       .container {
-        padding: 2rem 2.9rem;
+        padding: 3.2rem 2.9rem;
 
         h2 {
           position: relative;
@@ -1412,21 +1415,21 @@
     #contact {
 
       .container {
-        padding: 2rem 7rem;
+        padding: 3.2rem 11.2rem;
         grid-auto-flow: column;
         align-items: center;
         grid-template-columns: repeat(auto-fit, 45%);
 
 
         .text {
-          max-width: 25rem;
+          max-width: 47rem;
 
           h2 {
            
             
           }
           p {
-            margin-bottom: 2rem;
+            margin-bottom: 3.2rem;
           }
         }
 
@@ -1465,7 +1468,7 @@
         
       }
       .grid {
-        gap: 4rem;
+        gap: 6.4rem;
       }
     }
 
@@ -1481,7 +1484,8 @@
   
   #footer {
     .footer-col {
-      padding: 0 0 0 7rem;
+      padding: 0 0 0 11.2rem;
+
     }
   }
   
@@ -1489,7 +1493,7 @@
   
 }
 
-}
+
 
 
 

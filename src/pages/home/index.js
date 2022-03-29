@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import  logo  from '../../images/iconsLogo/logo_syscare_150.png'
+import  logo  from '../../images/iconsLogo/logo_syscare_100.png'
 import mainImg from '../../images/homeImages/home.jpg'
 import aboutImg from '../../images/homeImages/campaign-creators.jpg'
 
@@ -77,8 +77,8 @@ export function Home(){
             </div>
 
             <div className="text">
-              <h2 className="title">Syscare</h2>
-              <h3 className="title">Gestão de Home Care</h3>
+              <h3 className="title">Syscare</h3>
+              <h2 className="title">Gestão de Home Care</h2>
               <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
 
               <a className='button' href="#about">
