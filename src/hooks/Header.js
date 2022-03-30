@@ -31,6 +31,10 @@ export function HeaderEffect(){
     })
 
     return (
-        <div></div>
+        <>
+            <header>
+                
+            </header>
+        </>
     )
 }

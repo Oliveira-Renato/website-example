@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import  logo  from '../../images/iconsLogo/logo_syscare_100.png'
+import  logo  from '../../images/iconsLogo/logo_syscare_200.png'
 import mainImg from '../../images/homeImages/home.jpg'
 import aboutImg from '../../images/homeImages/campaign-creators.jpg'
 
@@ -17,6 +17,7 @@ import { ToggleMenu } from '../../components/ToggleMenu/Toggle';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 /* ===== ICONES ===== */
 import {
@@ -43,6 +44,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
 
+import { Header } from '../../components/header/header'
+
 
 export function Home(){
   
@@ -51,22 +54,7 @@ export function Home(){
     <div>
 
       {/*====  HEADER/NAV ====  */}
-      <header id="header">
-        <nav className="container">
-          <a href="#" className="logo">
-            <img  src={logo} alt="imagem logo syscare" />
-          </a>
-          <ToggleMenu />
-
-          {/* ==== botão suporte ===== */}
-          <div className="suport_btn">
-              <a href="http://suporte.syscare.com.br:81/suporte/login" className="button" target="_blank" alt="Botão para suporte">
-                <FontAwesomeIcon className="icones" icon={ faSuitcaseMedical } />Suporte
-              </a>
-          </div>
-
-        </nav>
-      </header>
+      <Header />
       
       {/*====  MAIN ====  */}
       <main>
@@ -171,7 +159,12 @@ export function Home(){
                 asperiores
               </p>
             </div>
-          </div>  
+          </div> 
+        <div className="btn_produtos">
+          <a className='button' href="#about">
+            <FontAwesomeIcon className="icones" icon={ faCartPlus } />Confira nossos produtos
+          </a>  
+        </div> 
         </div>
         </section>
 

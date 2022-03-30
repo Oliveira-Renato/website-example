@@ -9,7 +9,7 @@ nav.show .menu {
 
   position: fixed;
   top: 0;
-  left: -2.6rem;
+  left: -3.84rem;
 
 }
 
@@ -23,16 +23,15 @@ nav.show .menu ul {
 }
 
 nav.show ul.grid  {
-  gap: 6.4rem;
+  gap: 3.4rem;
 }
 
 
 nav.show div.close {
   visibility: visible;
   opacity: 1;
-  top: 2.4rem;
-
-  transition: 0.5s;
+  top: auto;
+  right: -0.16rem;
 }
 
 /*======== TOGGLE MENU =============*/
@@ -41,13 +40,50 @@ nav.show div.close {
 .show_btn {
   display: none;
 }
+
 .ainda_nao {
-  text-align: center;
   margin-top: 7rem;
 
   .btn2{
-    width: 213.75px;
-    padding-left: 6.4rem;
+    padding: 0 3.2rem;
+  }
+}
+
+
+
+.renato {
+  display: block;
+}
+
+.login_btn {
+  justify-content:center;
+  text-align: center;
+  font: 700 1.878rem 'Poppins',sans-serif;
+
+  @media (min-width: 912px) {
+    position: absolute;
+    margin: 0; 
+    font: 400 1.6rem "Poppins", sans-serif;
+    right: 20rem;
+    top: 2.5rem;
+    display: none;
+  }
+  @media (min-width: 1280px) {
+    right: 28rem;
+    top: 2.5rem;
+  }
+  @media (min-width: 1400px) {
+    right: 28rem;
+    top: 2.5rem;
+  }
+
+  span {
+    margin-left: 0.5rem;
+    color: #333;
+  }
+
+  .login_icon {
+    color: var(--base-color);
   }
 }
 
@@ -59,14 +95,17 @@ nav.show div.close {
       color: var(--title-color);
       -webkit-font-smoothing: auto;
     }
-  nav.show ul.grid {
-    gap: 2rem;
-  }
+    nav.show ul.grid {
+      gap: 2rem;
+    }
 
-  .ainda_nao {
-    text-align: center;
-    margin-top: 6.4rem;
-  }
+    .ainda_nao {
+      text-align: center;
+      margin-top: 6.4rem;
+    }
 }
+
+
+
 
 

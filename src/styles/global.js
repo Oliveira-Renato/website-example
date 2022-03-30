@@ -52,9 +52,10 @@ body {
   padding: 0 3.2rem;
   border-radius: 0.28rem;
   font: 500 1.6rem 'DM Sans', sans-serif;
-  transition: background 0.5s;
+  transition: background 0.3s;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  gap: 0.5rem;
 }
 
 .button:hover {
@@ -81,8 +82,8 @@ body {
 
 /*====  LAYOUT ============================ */
 .container {
-  margin-left: 2.4rem;
-  margin-right: 2.4rem;
+  margin-left: 3.84rem;
+  margin-right: 3.84rem;
   justify-content: space-between;
 }
 
@@ -119,7 +120,7 @@ body {
   background: transparent;
   width: 100%;
 
-  transition: color 0.5s;
+  transition: color 0.3s;
 }
 
 #header.scroll {
@@ -133,9 +134,21 @@ main {
 
 /*====  LOGO ============================ */
 nav a.logo  img {
+    min-width: 48%;
+    max-width: 48%;
+    
     min-height: 100%;
     max-height: 100%;
     object-fit: cover;
+
+    @media (min-width: 1024px) {
+      min-width: 144px;
+      max-width: 144px;
+    }
+    @media (min-width: 1282px) {
+      min-width: 48%;
+      max-width: 48%;
+    }
 } 
 
 /*====  NAVIGATION ============================ */
@@ -153,7 +166,7 @@ nav ul li {
 }
 
 nav ul li a {
-    transition: color 0.5s;
+    transition: color 0.3s;
     position: relative;
     
 }
@@ -172,7 +185,7 @@ nav ul li a::after {
     left: 0;
     bottom: -2.4rem;
 
-    transition: 0.5s;
+    transition: 0.3s;
     
 }
 
@@ -184,7 +197,7 @@ nav .menu{
     opacity: 0;
     visibility: hidden;
     top: -32rem;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 nav .menu ul {
@@ -192,10 +205,10 @@ nav .menu ul {
 }
 
 /*=========== toggle menu ==========*/
-
+nav
 .icones {
 
-  font-size: 1.08rem;
+  font-size: 1.6rem;  
   margin-right: 1.048rem;
         
 }
@@ -209,7 +222,7 @@ nav .close {
   top: -2.4rem;
   right: 2.4rem;
 
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 /*====  HOME ============================ */
@@ -310,7 +323,7 @@ nav .close {
 }
 
 .card {
-  padding: 5.804rem 3.2rem;
+  padding: 2.4rem 1.6rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.28rem solid var(--base-color);
   border-radius: 0.28rem 0.28rem 0 0;
@@ -472,5 +485,10 @@ a.back-to-top {
   display: none ;
 }
 
+
+.btn_produtos {
+  display: flex;
+  justify-content: center;
+}
 
 `

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark, faSuitcaseMedical} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark, faSuitcaseMedical,faUserNurse, faPhoneVolume, faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 import './styles.scss'
 import '../../styles/media.scss'
@@ -17,12 +17,14 @@ export function ToggleMenu(){
       const suportBtn = document.querySelector('.ainda_nao');
 
       if(nav.classList.contains('show')){
-          nav.classList.toggle('show');
           suportBtn.classList.toggle('show_btn');
+          nav.classList.toggle('show');
+          
           
       }else {
-          nav.classList.toggle('show');
           suportBtn.classList.toggle('show_btn');
+          nav.classList.toggle('show');
+          
       }
       //  sidebar.classList.toggle('active');
    }
@@ -53,12 +55,20 @@ export function ToggleMenu(){
           </li>
         </ul>
         {/* ==== botão suporte ===== */}
-        <div className="ainda_nao show_btn">
-            <a href="http://suporte.syscare.com.br:81/suporte/login" className="button btn2" target="_blank"  onClick={handleCloseMenu} alt="Botão para suporte">
-              <FontAwesomeIcon className="icones" icon={ faSuitcaseMedical } />Suporte
-            </a>
+        <div className="ainda_nao show_btn"> 
+          <a href="http://suporte.syscare.com.br:81/suporte/login" className="button btn2" target="_blank"  alt="Botão para suporte">
+            <FontAwesomeIcon className="icones" icon={ faPhoneVolume } />Suporte
+          </a>
         </div>
+        <div className="ainda_nao login_btn">
+          <a href="http://dese.syscare.com.br" className="btn1" target="_blank"  alt="área de login">
+            <FontAwesomeIcon className="icones login_icon" icon={ faUserNurse } /><span>Entrar</span>
+          </a>
+        </div>
+
       </div>
+
+      
 
       <div className="toggle open" >
         <FontAwesomeIcon icon={faBars} onClick={HandleToggleMenu} />
