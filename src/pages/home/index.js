@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import  logo  from '../../images/iconsLogo/logo_syscare_200.png'
+import  logo  from '../../images/iconsLogo/logo_syscare_100.png'
 import mainImg from '../../images/homeImages/home.jpg'
 import aboutImg from '../../images/homeImages/campaign-creators.jpg'
 

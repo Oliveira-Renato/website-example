@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark, faSuitcaseMedical,faUserNurse, faPhoneVolume, faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark,faUserNurse, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
 import './styles.scss'
 import '../../styles/media.scss'
-import { SupportButton } from '../Button/Suport';
+
 
 
 export function ToggleMenu(){

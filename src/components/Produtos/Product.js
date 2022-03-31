@@ -6,7 +6,6 @@ import './styles.scss';
 
 import data from './data.json'
 import { Card } from 'react-bootstrap';
-import { Button } from '../Button';
 import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
 
@@ -26,7 +25,7 @@ export function ProductTest(){
           <Card.Text style={{ color: '#333' }}>
             {teste[index]['content']}
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <button>Go somewhere</button>
         </Card.Body>
       </Card>
     )

@@ -134,12 +134,15 @@ main {
 
 /*====  LOGO ============================ */
 nav a.logo  img {
+  top: 0;
+    left: 0;
     min-width: 48%;
     max-width: 48%;
     
     min-height: 100%;
     max-height: 100%;
     object-fit: cover;
+    resize:none ;
 
     @media (min-width: 1024px) {
       min-width: 144px;
@@ -205,8 +208,7 @@ nav .menu ul {
 }
 
 /*=========== toggle menu ==========*/
-nav
-.icones {
+nav .icones {
 
   font-size: 1.6rem;  
   margin-right: 1.048rem;
@@ -482,7 +484,7 @@ a.back-to-top {
   }
 
 .showSuport {
-  display: none ;
+  display: none;
 }
 
 

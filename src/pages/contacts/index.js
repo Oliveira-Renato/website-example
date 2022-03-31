@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles.scss'
-import { Button } from '../../components/Button';
 
 import  contactImg from '../../images/symbols/contact.png'
 
