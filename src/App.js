@@ -14,6 +14,8 @@ import { ProgressBar } from './components/Progressbar/Progressbar';
 
 
 import './styles/media.scss';
+import { Toaster } from 'react-hot-toast';
+
 
 
 
@@ -21,6 +23,10 @@ function App() {
   return (
      <div className="App">
       <BrowserRouter>  
+      <Toaster
+       position="top-right"
+       reverseOrder={false} 
+       />
         <GlobalStyle />
           <HeaderEffect /> 
             <ScrollReavelling />

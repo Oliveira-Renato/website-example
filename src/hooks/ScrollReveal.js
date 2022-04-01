@@ -18,7 +18,7 @@ export default function ScrollReavelling(){
       #services header, #products .card,
       #testimonials header, #testimonials .testimonials,
       #contact .text, #contact .links,
-      #footer .row, #footer .footer-col
+      #footer .row
       `,
       { interval: 100 }
     )

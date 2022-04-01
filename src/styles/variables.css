@@ -14,6 +14,7 @@
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
-    --bar-loading-color: hsl(60, 100%, 50%);
+    --bar-loading-color: hsl(57, 82%, 60%);
     --swiper-theme-color: blue;
+    --error-color: hsl(57, 50%, 50%);
   }
