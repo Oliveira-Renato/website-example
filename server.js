@@ -7,12 +7,13 @@ const dotenv = require('dotenv');
 
 
 
-dotenv.config({ path: './.env.local'})
+dotenv.config({ path: './src/.env.local'})
 
 
 
 //Now i will use express() to setup the server that’ll run on port 5000:
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
@@ -22,8 +23,8 @@ app.listen(5000, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'renato.troll@gmail.com',
-    pass: 'jqmcuusnexnalsoe',
+    user: process.env.SEND_USER_EMAIL,
+    pass: process.env.SEND_USER_PASS,
   },
 });
 
