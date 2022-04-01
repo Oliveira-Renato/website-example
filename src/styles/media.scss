@@ -3,8 +3,6 @@
 /*========= MEDIA QUERIES =========*/
 
 
-
-
 /*================ EXTRA SMALL DEVICES ====================*/
 @media (max-width:320px) {
   body {
@@ -354,6 +352,8 @@
       
       .container {
 
+        
+
         header .title, header p {
           // max-width: 32rem;
           text-align: center;
@@ -452,12 +452,12 @@
     
     //===== ABOUT =====\\
     #about {
-      .container {
-        padding: 4rem 0;
+      >.container {
+        padding: 11.2rem 0;
         grid-auto-flow: column;
         justify-content: space-between;
         margin: 0 auto;
-
+        gap: 11.2rem;
       
         
         .image {
@@ -490,11 +490,11 @@
             &::before {
               content: '';
               position: absolute;
-              left: 50%;
               transform: translateX(-50%);
               bottom: -4px;
               width: 120px;
               height: 4px;
+              left: 6rem;
               background: var(--base-color);
             }
           }
@@ -504,6 +504,8 @@
 
     //===== PRODUCTS =====\\
     #products {
+     
+
       .container {
         padding: 0 9.6rem;
         
@@ -528,14 +530,13 @@
     #contact {
 
       .container {
-        padding: 0;
         grid-auto-flow: column;
         align-items: center;
         grid-template-columns: repeat(auto-fit, 50%);
 
 
         .text {
-          max-width: 25rem;
+          max-width: 100%;
 
           h2 {
            
@@ -623,6 +624,8 @@
     // max-width: 1366px; 
     margin-left: 11.2rem;
     margin-right: 11.2rem;
+    gap: 10rem;
+
     .toggle {
       display: none;
       visibility: hidden;
@@ -758,7 +761,6 @@
             max-width: 100%;
             height: 90%;
             top: -8.8%;
-            left: 38%;
 
           }
         }
@@ -812,6 +814,7 @@
         }
 
         .text {
+          max-width: 100%;
           text-align: left;
           font-size: 0.89.6rem;
           position: relative;
@@ -823,7 +826,6 @@
             &::before {
               content: '';
               position: absolute;
-              left: 27%;
               transform: translateX(-50%);
               bottom: -4px;
               width: 120px;
@@ -961,7 +963,6 @@
   #header {
     
     nav, .container {
-  
       margin-left: 11.2rem;
       margin-right: 3.5rem;
       justify-content: left;
@@ -1136,7 +1137,6 @@
             position: relative;
 
             &::before {
-              left: 16%;
             }
           }
         }
@@ -1257,8 +1257,13 @@
   }
   /* layout */
   main {
-
     margin-top: var(--header-height);
+
+    section {
+      padding: 0;
+      margin: 0;
+    }
+    
 
     .section, +#contact {
       
@@ -1309,7 +1314,7 @@
     #home {
       margin: 0 3.5rem;
 
-
+     
       .container {
         grid-auto-flow: column;
         justify-content:center;
@@ -1332,6 +1337,11 @@
         }
 
         .text {
+          .title {
+            font-size: 2.8rem;
+          }
+
+          font-size: 1.6rem;
           margin-bottom: 2.4rem;
           max-width: 47rem;
         
@@ -1381,15 +1391,14 @@
         }
 
         .text {
-          font-size: 1.6rem;
           left: -3rem;
-          width: 100%;
+          max-width: 100%;
           
           h2 {
             position: relative;
 
             &::before {
-              left: 25%;
+            
               
             }
           }

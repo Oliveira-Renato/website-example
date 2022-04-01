@@ -46,13 +46,13 @@ export function Header(){
     {/*====  HEADER/NAV ====  */}
     <header id="header">
         <nav className="container">
-          <a href="#" className="logo">
+          <a href="/" className="logo">
             <img  src={logo} alt="imagem logo syscare" />
           </a>
           <div className="menu">
         <ul className="grid">
           <li>
-            <a className="title" href="#home" alt="" onClick={handleCloseMenu} >Home</a>
+            <a className="title" href="/" alt="" onClick={handleCloseMenu} >Home</a>
           </li>
           <li>
             <a className="title" href="#about" alt="" onClick={handleCloseMenu}  >Sobre</a>
@@ -81,8 +81,6 @@ export function Header(){
 
       </div>
 
-      
-
       <div className="toggle open" >
         <FontAwesomeIcon icon={faBars} onClick={HandleToggleMenu} />
       </div>    
@@ -92,7 +90,6 @@ export function Header(){
       </div>
 
           {/* ==== botão suporte ===== */}
-
 
         </nav>
     </header>

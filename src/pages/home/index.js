@@ -47,7 +47,7 @@ import 'swiper/css/navigation';
 import { Header } from '../../components/header/header'
 
 
-export function Home(){
+export function Home(){ 
   
   
   return (
@@ -160,11 +160,11 @@ export function Home(){
               </p>
             </div>
           </div> 
-        <div className="btn_produtos">
-          <a className='button' href="#about">
-            <FontAwesomeIcon className="icones" icon={ faCartPlus } />Confira nossos produtos
-          </a>  
-        </div> 
+          <div className="btn_produtos">
+            <a href="/produtos" className='button'>
+              <FontAwesomeIcon className="icones" icon={ faCartPlus } />Confira nossos produtos
+            </a>  
+          </div> 
         </div>
         </section>
 

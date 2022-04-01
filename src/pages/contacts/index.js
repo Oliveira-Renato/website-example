@@ -10,7 +10,7 @@ export function ContactForm(){
     return (
         
        <div>
-            <form  id='form'>
+            <form  action="classEmail.php" name="form" method="POST" id='form' >
                 <h2 className="title">Envie-nos uma mensagem</h2>
                 
 
@@ -18,7 +18,7 @@ export function ContactForm(){
                     <div className="row">
                         <div className="col50">
                             <label htmlFor="name"></label>
-                            <input type="text" id="name" name="name" placeholder="Nome"   required/>
+                            <input type="text" id="name" name="nome" placeholder="Nome"   required/>
                         </div>
                         <div className="col50">
                             <label htmlFor="lastname"></label>
@@ -32,19 +32,20 @@ export function ContactForm(){
                         </div>
                         <div className="col50">
                             <label htmlFor="subject"></label>
-                            <input type="text" id="subject" name="subject" placeholder="Assunto"  required />
+                            <input type="text" id="subject" name="assunto" placeholder="Assunto"  required />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col100">
                             <label htmlFor="message"></label>
-                            <textarea name='message' id="message" placeholder="Digite sua mensagem aqui..."  required ></textarea>
+                            <textarea name='mensagem' id="message" placeholder="Digite sua mensagem aqui..."  required ></textarea>
                         </div>
                     </div>
                 </div>
                 
                 <div className="send">
-                    <button className="button"><FontAwesomeIcon className="icones" icon={faPaperPlane} />Enviar</button>
+                    <input type="submit" className="button" />
+
                 </div>
             </form>
        </div>

@@ -38,7 +38,7 @@ body {
 }
 
 .title {
-  font: 700 1.878rem 'Poppins', sans-serif;
+  font: 700 2.4rem 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -97,7 +97,7 @@ body {
 }
 
 .section .title {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.05rem;
 }
 
 .section header {
@@ -136,8 +136,8 @@ main {
 nav a.logo  img {
   top: 0;
     left: 0;
-    min-width: 48%;
-    max-width: 48%;
+    min-width: 100%;
+    max-width: 100%;
     
     min-height: 100%;
     max-height: 100%;
@@ -145,12 +145,12 @@ nav a.logo  img {
     resize:none ;
 
     @media (min-width: 1024px) {
-      min-width: 144px;
-      max-width: 144px;
+      min-width: 100%;
+    max-width: 100%;
     }
     @media (min-width: 1282px) {
-      min-width: 48%;
-      max-width: 48%;
+      min-width: 100%;
+      max-width: 100%;
     }
 } 
 

@@ -26,12 +26,11 @@ export function HeaderEffect(){
 
         window.addEventListener('scroll', function(){
             HandleHeaderEffect()
-            HandleBackToTop()
+            // HandleBackToTop()
         })
     })
 
     return (
-        <>
-        </>
+        <></>
     )
 }
