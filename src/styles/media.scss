@@ -252,6 +252,15 @@
         }
       }
     }
+
+    //===== TESTIMONIALS =====\\
+    #testimonials {
+      .container {
+        header {
+          text-align: center;
+        }
+      }
+    }
     //===== CONTACTS =====\\
     #contact {
 
@@ -264,8 +273,10 @@
 
         .text {
           max-width: 25rem;
+          
 
           h2 {
+          text-align:left;
            
             
           }
