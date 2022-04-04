@@ -61,17 +61,25 @@ nav.show div.close {
   text-align: center;
   font: 700 1.878rem 'Poppins',sans-serif;
 
-  @media (min-width: 912px) {
+  @media (min-width: 1280px) {
+    
+  }
+  @media (min-width: 1280px) {
     position: absolute;
     margin: 0; 
     font: 400 1.6rem "Poppins", sans-serif;
     right: 20rem;
     top: 2.5rem;
     display: none;
-  }
-  @media (min-width: 1280px) {
     right: 28rem;
     top: 2.5rem;
+
+    
+       
+        
+      
+
+    
   }
   @media (min-width: 1400px) {
     right: 28rem;

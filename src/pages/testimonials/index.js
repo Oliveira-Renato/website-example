@@ -9,18 +9,17 @@ import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
 
-//==== Users testimonials pictures ==== \\
-import  caioImg  from '../../images/UserTestimonials/caio.jpg'
-import  alcidezImg  from '../../images/UserTestimonials/alcidez.jpg'
-import  tantanImg  from '../../images/UserTestimonials/tantan.jpg'
-
 import data from './testimonials.json';
+import { CarouselItem } from 'react-bootstrap';
+
 
 
 export function Testimonials(){
 
   const newData = data.map((valor,index,array)=>{
+
     return (
+      console.log(array[index]["image"]),
       <SwiperSlide key ={array[index]['id']}>
         <div className="testimonials" >
 
@@ -30,7 +29,7 @@ export function Testimonials(){
                 {array[index]['content']}
               </p>
               <cite>
-              <img src={ array[index]['image'] } alt="Foto da pessoa" />
+              <img src={`${array[index]['image']}`} alt="Foto da pessoa"  />
                 {array[index]['titulo']}
               </cite>
             </blockquote> 
