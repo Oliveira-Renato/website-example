@@ -28,6 +28,8 @@ export function Testimonials(){
               <p>
                 <span>&ldquo;</span>
                 {array[index]['content']}
+                <br/><br/>
+                {array[index]['data']}
               </p>
               <cite>
               <img src={ array[index]['image'] } alt="Foto da pessoa" />
