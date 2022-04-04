@@ -16,21 +16,17 @@ import './styles.scss';
 
 export function ProductTest(){
 
-  
-  console.log(data)
-
-  const newData = data.map((x,index,teste)=>{
+  const newData = data.map((valor,index,array)=>{
     return (
-      
-    
-      <div className="card"  key ={teste[index]['id']}>
+      <div className="card"  key ={array[index]['id']}>
+        
         <div className="icones">
           <FontAwesomeIcon icon={ faHouseMedical }  />
         </div>
         
-        <h3 className="title">{teste[index]['titulo']}</h3>
+        <h3 className="title">{array[index]['titulo']}</h3>
         <p>
-          {teste[index]['content']}
+          {array[index]['content']}
         </p>
       </div>
 

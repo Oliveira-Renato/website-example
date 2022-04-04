@@ -129,10 +129,10 @@ export function ContactForm(){
     }
     
 
-    function HandleonChange(value) {
+    function HandleOnChange(value) {
         setVerify(false)
         console.log(verify);
-      }
+    }
 
 
     return (
@@ -171,7 +171,7 @@ export function ContactForm(){
                 </div>
                 <ReCAPTCHA
                 sitekey="6Lc6TzcfAAAAAKJA35L_LGZGY8CPsE02SB7YNjKE"
-                onChange={ HandleonChange }
+                onChange={ HandleOnChange }
                
                  />
                 <div className="send">

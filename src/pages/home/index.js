@@ -45,6 +45,7 @@ import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
 
 import { Header } from '../../components/header/header'
+import { Testimonials } from '../testimonials'
 
 
 export function Home(){ 
@@ -173,78 +174,7 @@ export function Home(){
 
 
         {/*====  TESTIMONIALS ====  */}
-        <section className="section" id="testimonials">
-          <div className="container">
-            <header>
-              <h2 className="title">Depoimentos de quem já utilizou o <strong>SYSCARE</strong></h2>
-            </header>
-            <Swiper 
-              // install Swiper modules
-              modules={[Pagination, Mousewheel, Keyboard , Navigation]}
-              slidesPerView={'auto'}
-              pagination={{
-                clickable: true,
-                bulletClass: 'swiper-pagination-bullet'
-              }}
-              
-              // mousewheel={true}
-              keyboard={true}
-              >
-
-              <SwiperSlide>
-                <div className="testimonials ">
-                  <blockquote>
-                    <p>
-                      <span>&ldquo;</span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                      ipsam neque
-                    </p>
-                    <cite>
-                    <img src={ caioImg } alt="Foto do Caio" />
-                      Caio da Massa
-                    </cite>
-                  </blockquote>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="testimonials">
-                  <blockquote>
-                    <p>
-                      <span>&ldquo;</span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                      ipsam neque
-                    </p>
-                    <cite>
-                      <img src={ alcidezImg } alt="Foto do Alcidez Rodriguez" />
-                      Alcidez Rodrigues
-                    </cite>
-                  </blockquote>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="testimonials">
-                  <blockquote>
-                    <p>
-                      <span>&ldquo;</span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Rerum blanditiis saepe nam excepturi explicabo ipsa error
-                      ipsam neque
-                    </p>
-                    <cite>
-                    <img src={ tantanImg } alt="Foto do Tantan" />
-                      Tantan
-                    </cite>
-                  </blockquote>
-                </div>
-              </SwiperSlide>
-
-            </Swiper>
-          </div>
-        </section>
+        <Testimonials />
 
         {/*====  SEPARETOR 2 ====  */}
         <div className="divider-2"></div>

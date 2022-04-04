@@ -1,0 +1,38 @@
+
+[
+  {
+    "id":1,
+    "boInativo": 0,
+    "titulo":"Renato Oliveira",
+    "image":"./images/renato.jpg",
+    "content": "Empresa oferece  ótimos produtos para gestão de home Care e estão sempre prontos para atender seus clientes. Não tenho do que reclamar!"
+  },
+  {
+    "id":2,
+    "boInativo": 0,
+    "titulo":"Caio da Silva",
+    "image":"./images/caio.jpg",
+    "content": "Umas das melhores empresas no ramo, com  os melhores funcionários presentes no mercado atual."
+  },
+  {
+    "id":3,
+    "boInativo": 0,
+    "titulo":"Carolina Silveira",
+    "image":"./images/carol.jpg",
+    "content": "Ótimo sistema, atendem bem a necessidade do dia dia de um home care. Tem tudo em um só sistema. Agora também tem o sistema de regulação médica dentro do Syscare que supri a necessidade para quem trabalha com frotas de remoção."
+  },
+  {
+    "id":4,
+    "boInativo": 0,
+    "titulo":"Miqueias",
+    "image":"./images/miqueias.jpg",
+    "content": "Sistema impecável, supri todas as necessidades que um Home Care precisa, suporte pronto para atender qualquer dificuldade que tiverem e qualquer problema que surgir com os melhores funcionários prontos para te atenderem!!"
+  },
+  {
+    "id":5,
+    "boInativo": 0,
+    "titulo":"Moe Szyslac",
+    "image":"./images/moe.jpg",
+    "content": "Equipe de suporte oferece um ótimo atendimento, nunca me deixaram na mão. Diferente dos outros sistemas de home care atual, o Syscare está de parabéns!"
+  }
+]

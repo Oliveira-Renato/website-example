@@ -11,12 +11,12 @@ export default function ScrollReavelling(){
       duration: 700,
       reset: true
     })
-  
+  //#testimonials .testimonials,
     scrollReveal.reveal(
       `#home .image, #home .text,
       #about .image, #about .text,
       #services header, #products .card,
-      #testimonials header, #testimonials .testimonials,
+      #testimonials header, 
       #contact .text, #contact .links,
       #footer .row
       `,
