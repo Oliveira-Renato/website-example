@@ -11,10 +11,12 @@ import { SpringValue } from 'react-spring';
 
 
 import toast from 'react-hot-toast';
+import ReCAPTCHA from "react-google-recaptcha";
 
 export function ContactForm(){
     const [inputs, setInputs] = useState([]);
     const [status, setStatus] = useState('Enviar');
+    const [verify, setVerify] = useState(true);
 
     function HandleCleanInputs(){
         var campos = document.querySelectorAll('input');
@@ -38,7 +40,7 @@ export function ContactForm(){
 
     async function HandleSubmitForm(event) {
         event.preventDefault();
-
+        console.log(verify);
         // console.log(inputs);
         const data = Object.entries(inputs).map(([key, value]) => {
             return {
@@ -127,6 +129,11 @@ export function ContactForm(){
     }
     
 
+    function HandleonChange(value) {
+        setVerify(false)
+        console.log(verify);
+      }
+
 
     return (
        <div>
@@ -162,9 +169,13 @@ export function ContactForm(){
                         </div>
                     </div>
                 </div>
-                
+                <ReCAPTCHA
+                sitekey="6Lc6TzcfAAAAAKJA35L_LGZGY8CPsE02SB7YNjKE"
+                onChange={ HandleonChange }
+               
+                 />
                 <div className="send">
-                    <button className="button" type="submit">{status}</button>
+                    <button className="button" type="submit" disabled={verify}>{status}</button>
                 </div>
             </form>
        </div>
