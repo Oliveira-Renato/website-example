@@ -178,7 +178,7 @@ export function Home(){
 
         {/*====  SEPARETOR 2 ====  */}
         <div className="divider-2"></div>
-
+    
         {/*====  CONTACTS ====  */}
         <section className="section" id="contact">
           <div className="container grid">

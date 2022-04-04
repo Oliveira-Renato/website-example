@@ -19,7 +19,6 @@ export function Testimonials(){
   const newData = data.map((valor,index,array)=>{
 
     return (
-      console.log(array[index]["image"]),
       <SwiperSlide key ={array[index]['id']}>
         <div className="testimonials" >
 
