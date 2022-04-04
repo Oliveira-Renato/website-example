@@ -71,6 +71,7 @@
   }  
 
   section .title {
+    
     font-size: 2.92rem;
   }
   /* layout */
@@ -223,8 +224,16 @@
 
     //===== PRODUCTS =====\\
     #products {
+      
       .container {
         padding: 0 9.6rem;
+
+      
+          header {
+            text-align: center;
+          }
+          
+         
         
         h2 {
           position: relative;

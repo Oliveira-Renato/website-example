@@ -12,6 +12,7 @@ import  logo  from '../../images/iconsLogo/logo_syscare_150.png'
 
 import  contactImg from '../../images/symbols/contact.png'
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import ReactTooltip from "react-tooltip";
 
 
 export function Header(){
@@ -69,14 +70,15 @@ export function Header(){
         </ul>
         {/* ==== botão suporte ===== */}
         <div className="ainda_nao show_btn"> 
-          <a href="http://suporte.syscare.com.br:81/suporte/login" className="button btn2" target="_blank"  alt="Botão para suporte">
+          <a href="/suporte" className="button btn2"  alt="Botão para suporte">
             <FontAwesomeIcon className="icones" icon={ faPhoneVolume } />Suporte
           </a>
         </div>
-        <div className="ainda_nao login_btn">
-          <a href="http://dese.syscare.com.br" className="btn1" target="_blank"  alt="área de login">
+        <div className="ainda_nao login_btn" >
+          <a href="http://dese.syscare.com.br"  className="btn1" target="_blank"  alt="área de login">
             <FontAwesomeIcon className="icones login_icon" icon={ faUserNurse } /><span>Entrar</span>
           </a>
+
         </div>
 
       </div>

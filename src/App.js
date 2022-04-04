@@ -15,6 +15,7 @@ import { ProgressBar } from './components/Progressbar/Progressbar';
 
 import './styles/media.scss';
 import { Toaster } from 'react-hot-toast';
+import { Suport } from './pages/suport';
 
 
 
@@ -33,8 +34,9 @@ function App() {
           <ProgressBar />
  
             <Routes>  
-              <Route path="/" element={<Home />}/>
-              <Route path="/produtos" element={<ProductTest />}/>
+              <Route path="/" element={<Home />} />
+              <Route path="/produtos" element={<ProductTest />} />
+              <Route path="/suporte" element={<Suport />} />
             </Routes>
       </BrowserRouter>
     </div>

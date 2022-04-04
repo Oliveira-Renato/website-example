@@ -79,7 +79,7 @@
         transition: all 0.3s ease;
 
         &:hover{
-          color:#FFC40A;
+          
           padding-left: 0.5rem;
         }
 
@@ -107,7 +107,11 @@
       color: #FFF;
       transition: all 0.5s ease;  
 
+      &:hover{
+        color: var(--bar-loading-color);
+      }
     }
+
 
   }
 
