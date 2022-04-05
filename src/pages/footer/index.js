@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FaCopyright } from "react-icons/fa";
 // import { FaYoutube } from "react-icons/fa";
@@ -22,6 +22,9 @@ import { faFacebookF, faYoutube, faInstagram, faLinkedinIn } from "@fortawesome/
 
 
 export function Footer(){
+  const [year] = useState(new Date().getFullYear())
+
+  
   return(
   <footer id="footer">
     <div className="container">
@@ -42,7 +45,7 @@ export function Footer(){
           <h4>Suporte</h4>
           <ul>
             <li><a href="#">FAQ</a></li>
-            <li><a href="http://suporte.syscare.com.br:81/suporte/login" target="_blank">Suporte</a></li>
+            <li><a href="/suporte">Suporte</a></li>
             <li><a href="#home">Home</a></li>
           </ul>
         </div>
@@ -82,7 +85,7 @@ export function Footer(){
 
 
     <div className="copyRight">
-         <p>2022 by <FaCopyright color="#FFF"/> Kennen Consultoria e Sistemas de Informação Ltda.</p>
+         <p>{year} by <FaCopyright color="#FFF"/> Kennen Consultoria e Sistemas de Informação Ltda.</p>
     </div>
   </footer>
     

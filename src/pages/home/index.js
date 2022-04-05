@@ -46,6 +46,7 @@ import 'swiper/css/navigation';
 
 import { Header } from '../../components/header/header'
 import { Testimonials } from '../testimonials'
+import { AboutPage } from '../about'
 
 
 export function Home(){ 
@@ -61,7 +62,7 @@ export function Home(){
       <main>
         <section className="section" id="home">
           <div className="container grid">
-            <div className="image">
+            <div className="image image_home">
                 <img src={ mainImg } alt="" />
             </div>
 
@@ -81,33 +82,7 @@ export function Home(){
         <div className="divider-1"></div>
 
         {/*====  ABOUT ====  */}
-        <section className="section" id="about" >
-          <div className="container grid">
-            <div className="image">
-              <img src={aboutImg} alt="" />
-            </div>
-            <div className="text">
-              <h2 className="title">Sobre nós</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              </p>
-              <br />
-              <br />
-              <p>
-                O Syscare tem como objetivo renovar a forma de gestão das empresas desenvolvendo sistemas sob demanda, elaborados a partir das necessidades de cada cliente, e oferecendo produtos específicos como o SysCare da massa!
-              </p>
-              <br />
-              <p>
-                Sistema de Gestão de Home Care que atende de forma ampla as empresas de Home Care. Atua, também, com sistemas de ERP (Enterprise Resource Planning), tais como financeiro, contabilidade, ativo fixo.
-              </p>
-              <br />
-              <p>
-                Conta com profissionais com ampla experiência, com mais de 20 anos no mercado, tendo sua sede na cidade de Santana de Parnaíba – SP e filial em São Paulo.
-              </p>
-            </div>
-          </div>
-        </section>
-
+        <AboutPage />
         {/*====  SEPARETOR 2 ====  */}
         <div className="divider-2"></div>
 

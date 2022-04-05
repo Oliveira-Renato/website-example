@@ -17,27 +17,28 @@ import './styles/media.scss';
 import { Toaster } from 'react-hot-toast';
 import { Suport } from './pages/suport';
 
-
+import { Cookies } from './hooks/Cookie';
 
 
 function App() {
   return (
      <div className="App">
       <BrowserRouter>  
-      <Toaster
-       position="top-right"
-       reverseOrder={false} 
-       />
-        <GlobalStyle />
-          <HeaderEffect /> 
-            <ScrollReavelling />
-          <ProgressBar />
- 
-            <Routes>  
-              <Route path="/" element={<Home />} />
-              <Route path="/produtos" element={<ProductTest />} />
-              <Route path="/suporte" element={<Suport />} />
-            </Routes>
+        <Toaster
+        position="top-right"
+        reverseOrder={false} 
+        />
+          <GlobalStyle />
+            <Cookies />
+              <HeaderEffect /> 
+                <ScrollReavelling />
+                  <ProgressBar />
+  
+                    <Routes>  
+                      <Route path="/" element={<Home />} />
+                      <Route path="/produtos" element={<ProductTest />} />
+                      <Route path="/suporte" element={<Suport />} />
+                    </Routes>
       </BrowserRouter>
     </div>
   );

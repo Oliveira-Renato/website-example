@@ -132,6 +132,10 @@ main {
   margin-top: calc(var(--header-height) + 3.2rem);
 }
 
+
+.svg-inline--fa {
+    
+}
 /*====  LOGO ============================ */
 nav a.logo  img {
   top: 0;
@@ -208,6 +212,18 @@ nav .menu ul {
 }
 
 /*=========== toggle menu ==========*/
+.toggle {
+  color: var(--base-color);
+
+  >.svg-inline--fa {
+    height: 1.5em;
+
+  }
+}
+
+.toggle_size {
+  font-size: 1.5rem;
+}
 nav .icones {
 
   font-size: 1.6rem;  

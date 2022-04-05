@@ -71,7 +71,7 @@ export function ToggleMenu(){
       
 
       <div className="toggle open" >
-        <FontAwesomeIcon icon={faBars} onClick={HandleToggleMenu} />
+        <FontAwesomeIcon icon={faBars} onClick={HandleToggleMenu} size="5x"  />
       </div>  
       
       <div className="toggle close">

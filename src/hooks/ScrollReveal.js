@@ -7,14 +7,14 @@ export default function ScrollReavelling(){
   useEffect(() => {
     const scrollReveal = ScrollReveal({
       origin: 'top',
-      distance: '30px',
+      distance: '20px',
       duration: 700,
       reset: true
     })
   //#testimonials .testimonials,
     scrollReveal.reveal(
-      `#home .image, #home .text,
-      #about .image, #about .text,
+      ` #home .text,
+      #about .image_about, #about .text,
       #services header, #products .card,
       #testimonials header, 
       #contact .text, #contact .links,

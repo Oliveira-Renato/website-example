@@ -7,7 +7,7 @@ import kennenLogo from '../../assets/suport_Images/header_kennen.png';
 
 export function Suport() {
 
-    function limpaForm() {
+    function HandleCleanInputs() {
         document.frm_login.usuario.value = '';
         document.frm_login.senha.value = '';
         document.frm_login.usuario.focus();
@@ -19,12 +19,14 @@ export function Suport() {
       <Header />
         <section className="section" id="suport" >
             <div className="wrapper">
-                <div id="formcontent">
+                <div id="formcontent" onLoad={HandleCleanInputs}>
                     <h2 className="active">LOGIN</h2>
                     <div className="first">
                         <img className="icon" src={logo} />
-                        <form action="http://suporte.syscare.com.br:81/suporte/login" method="post">
+                        <form name="frm_login" action="http://suporte.syscare.com.br:81/suporte/login" method="POST">
+                            <label htmlFor="Usuário" />
                             <input type="text" id="usuario" name="usuario" placeholder="Usuário" />
+                            <label htmlFor="Senha" />
                             <input type="password" id="senha" name="senha" placeholder="Senha" />
                             <input className="btn" type="submit" value="Entrar" />
                         </form> 
