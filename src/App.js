@@ -15,7 +15,7 @@ import { ProgressBar } from './components/Progressbar/Progressbar';
 
 import './styles/media.scss';
 import { Toaster } from 'react-hot-toast';
-import { Suport } from './pages/suport';
+import { Suport } from './pages/suport/index';
 
 import { Cookies } from './hooks/Cookie';
 
