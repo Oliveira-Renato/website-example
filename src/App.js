@@ -17,7 +17,7 @@ import './styles/media.scss';
 import { Toaster } from 'react-hot-toast';
 import { Suport } from './pages/suport/index';
 
-import { Cookies } from './hooks/Cookie';
+import { Cookies } from './hooks/cookies/Cookie';
 
 
 function App() {

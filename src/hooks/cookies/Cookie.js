@@ -28,7 +28,9 @@ export function Cookies(){
         
       >
         <FontAwesomeIcon style={{fontSize: "1.6rem", marginRight: "1.08rem"}} className="icones" icon={faCookieBite} />
-        Este site utiliza cookies para melhorar a experiência do usuário. Ao clicar no botão "Aceitar", você concorda com a nossa política de uso de cookies.
+        Este site utiliza cookies para melhorar a experiência do usuário. Ao clicar no botão "Aceitar", você concorda com a nossa 
+        <a href="" style={{color: "var(--base-color)", textDecoration: "none", marginLeft:"1.05rem"}}> Política de Cookies</a>.
+        
       </CookieConsent>
     </>
   )

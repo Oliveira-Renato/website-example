@@ -52,7 +52,13 @@
   }
 
     textarea {
-        height: 100px;
+      font: 400 1.6rem 'Poppins',sans-serif;
+      margin-left: 5px; 
+      height: 100px;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
     }
   }
 

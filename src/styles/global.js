@@ -95,9 +95,13 @@ body {
 .section {
   padding: 8rem 0;
 }
-
+//title_products
 .section .title {
+  text-transform: uppercase;
   margin-bottom: 1.05rem;
+}
+.section .title_products {
+  text-align: left;
 }
 
 .section header {

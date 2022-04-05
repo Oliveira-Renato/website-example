@@ -165,7 +165,7 @@ export function ContactForm(){
                     <div className="row">
                         <div className="col100">
                             <label htmlFor="message"></label>
-                            <textarea name='message' id="message" placeholder="Digite sua mensagem aqui..." onChange={ HandleInputChanges } required ></textarea>
+                            <textarea name='message' id="message" placeholder="Digite sua mensagem aqui..." onChange={ HandleInputChanges } required  />
                         </div>
                     </div>
                 </div>

@@ -62,7 +62,7 @@ export function Footer(){
 
 
         <div className="footer-col">
-          <h4>Siga nos</h4>
+          <h4>Siga-nos</h4>
           <div className="social-links">
             <a href="https://www.facebook.com/SistemaSysCare" target="_blank">
               <FontAwesomeIcon icon={faFacebookF} className="socialmedia" />

@@ -158,7 +158,7 @@ export function Home(){
         <section className="section" id="contact">
           <div className="container grid">
             <div className="text">
-              <h2 className="title">Entre em contato com a gente!</h2>
+              <h2 className="title title_products">Entre em contato com a gente!</h2>
               <p> 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
                 distinctio neque blanditiis, dolorem aperiam nulla explicabo
