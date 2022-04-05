@@ -17,7 +17,7 @@ export function Cookies(){
         declineButtonText = "Recusar"
         declineButtonStyle = {{fontSize: "1.6rem", background: "var(--base-color)",borderRadius: "2%", padding: "1rem 3.2rem",boxShadow: "0px 4px 4px rgb(0 0 0 / 25%)"}}
         onDecline={() => {
-          
+          //do something on decline
         }}
         location="bottom"
         buttonText="Aceitar"
