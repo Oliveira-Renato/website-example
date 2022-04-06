@@ -7,12 +7,11 @@ import  contactImg from '../../images/symbols/contact.png'
 import $ from 'jquery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import { SpringValue } from 'react-spring';
+
 
 
 import toast from 'react-hot-toast';
-import ReCAPTCHA from "react-google-recaptcha";
-import { Recaptcha } from '../../hooks/recaptcha/Recaptcha'
+
 
 export function ContactForm(){
     const [inputs, setInputs] = useState([]);
@@ -161,7 +160,7 @@ export function ContactForm(){
                     <div className="row">
                         <div className="col50">
                             <label htmlFor="email"></label>
-                            <input type="text" id="email" name="email" placeholder="Email" onChange={ HandleInputChanges }  required />
+                            <input type="email" id="email" name="email" placeholder="Email" onChange={ HandleInputChanges }  required />
                         </div>
                         <div className="col50">
                             <label htmlFor="subject"></label>
@@ -175,13 +174,12 @@ export function ContactForm(){
                         </div>
                     </div>
                 </div>
-                {/* <ReCAPTCHA
-                sitekey="k4fAAAAAJqB_WFlftRnLmBrbOaGCOYhdQhR"
-                onChange={ HandleOnChange }
-               
-                 /> */}
+                
                 <div className="send">
-                    <button className="button" type="submit" >{status}</button>
+                    <button className="button" type="submit" >
+                    <FontAwesomeIcon icon={faPaperPlane} />
+                        {status}
+                    </button>
                 </div>
             </form>
        </div>

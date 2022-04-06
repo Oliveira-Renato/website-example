@@ -1,10 +1,12 @@
 import { useEffect } from "react"
 
 export function Recaptcha(){
-  const handleLoaded = () => {
+  
+  function handleLoaded(e) {
+    e.preventDefault();
     window.grecaptcha.ready(() => {
       window.grecaptcha
-        .execute("6LdE-k4fAAAAAJqB_WFlftRnLmBrbOaGCOYhdQhR", { action: "homepage" })
+        .execute("6LdE-k4fAAAAAJqB_WFlftRnLmBrbOaGCOYhdQhR", { action:"homepage" })
         .then(token => {
           // ...
           console.log(token);
@@ -15,7 +17,7 @@ export function Recaptcha(){
   useEffect(() => {
     // Add reCaptcha
     const script = document.createElement("script")
-    script.src = "https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"
+    script.src = "https://www.google.com/recaptcha/api.js?render=6LdE-k4fAAAAAJqB_WFlftRnLmBrbOaGCOYhdQhR"
     script.addEventListener("load", handleLoaded)
     document.body.appendChild(script)
   }, [])

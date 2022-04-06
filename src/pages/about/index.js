@@ -8,7 +8,7 @@ export function AboutPage(){
             <div className="image image_about">
               <img src={aboutImg} alt="" />
             </div>
-            <div className="text">
+            <div className="text text_about">
               <h2 className="title">Sobre nós</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
