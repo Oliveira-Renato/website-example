@@ -12,11 +12,14 @@ import { SpringValue } from 'react-spring';
 
 import toast from 'react-hot-toast';
 import ReCAPTCHA from "react-google-recaptcha";
+import { Recaptcha } from '../../hooks/recaptcha/Recaptcha'
 
 export function ContactForm(){
     const [inputs, setInputs] = useState([]);
     const [status, setStatus] = useState('Enviar');
     const [verify, setVerify] = useState(true);
+    const [loading, setLoading] = useState(false);
+
 
     function HandleCleanInputs(){
         var campos = document.querySelectorAll('input');
@@ -110,6 +113,7 @@ export function ContactForm(){
                         fontSize: '1.6rem',
                     },
                 })
+                HandleCleanInputs()
                 console.log("err ",err)
             });   
 
@@ -124,6 +128,7 @@ export function ContactForm(){
                         fontSize: '1.6rem',
                     },
                 })
+            HandleCleanInputs()
             console.log('ERRO : ', error)
         }
     }
@@ -134,6 +139,7 @@ export function ContactForm(){
         console.log(verify);
     }
 
+    
 
     return (
        <div>
@@ -169,13 +175,13 @@ export function ContactForm(){
                         </div>
                     </div>
                 </div>
-                <ReCAPTCHA
-                sitekey="6Lc6TzcfAAAAAKJA35L_LGZGY8CPsE02SB7YNjKE"
+                {/* <ReCAPTCHA
+                sitekey="k4fAAAAAJqB_WFlftRnLmBrbOaGCOYhdQhR"
                 onChange={ HandleOnChange }
                
-                 />
+                 /> */}
                 <div className="send">
-                    <button className="button" type="submit" disabled={verify}>{status}</button>
+                    <button className="button" type="submit" >{status}</button>
                 </div>
             </form>
        </div>

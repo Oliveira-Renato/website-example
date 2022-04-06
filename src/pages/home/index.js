@@ -13,7 +13,6 @@ import  tantanImg  from '../../images/UserTestimonials/tantan.jpg'
 
 import { ContactForm } from '../contacts';
 import { Footer } from '../footer';
-import { ToggleMenu } from '../../components/ToggleMenu/Toggle';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

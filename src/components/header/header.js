@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark,faUserNurse, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
@@ -16,6 +16,7 @@ import ReactTooltip from "react-tooltip";
 
 
 export function Header(){
+  const [url, setUrl] = useState('')
 
   function HandleToggleMenu() {
     const nav = document.querySelector('#header nav'); 
@@ -36,11 +37,16 @@ export function Header(){
 
 
 
-   const handleCloseMenu = () => { 
+   const handleCloseMenu = (time) => { 
      const nav = document.querySelector('#header nav'); 
      nav.classList.remove('show');
+     //window.location.pathname = '#'+ time
     }
 
+   
+
+  
+    
 
   return (
     <>
@@ -53,19 +59,19 @@ export function Header(){
           <div className="menu">
         <ul className="grid">
           <li>
-            <a className="title" href="/" alt="" onClick={handleCloseMenu} >Home</a>
+            <a className="title" href="/" alt="" onClick={handleCloseMenu} name="home" >Home</a>
           </li>
           <li>
-            <a className="title" href="#about" alt="" onClick={handleCloseMenu}  >Sobre</a>
+            <a className="title" href="#about" alt="" onClick={handleCloseMenu} name="about"  >Sobre</a>
           </li>
           <li>
-            <a className="title" href="#products" alt="" onClick={handleCloseMenu}  >Produtos</a>
+            <a className="title" href="#products" alt="" onClick={handleCloseMenu} name="products" >Produtos</a>
           </li>
           <li>
-            <a className="title" href="#testimonials" alt="" onClick={handleCloseMenu}  >Depoimentos</a>
+            <a className="title" href="#testimonials" alt="" onClick={handleCloseMenu} name="testmonials"  >Depoimentos</a>
           </li>
           <li>
-            <a className="title" href="#contact" alt="" onClick={handleCloseMenu} >Contato</a>
+            <a className="title" href="#contact" alt="" onClick={handleCloseMenu} name="contact" >Contato</a>
           </li>
         </ul>
         {/* ==== botão suporte ===== */}
@@ -92,8 +98,9 @@ export function Header(){
       </div>
 
           {/* ==== botão suporte ===== */}
-
+  
         </nav>
+
     </header>
       
     </>

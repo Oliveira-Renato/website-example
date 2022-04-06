@@ -18,6 +18,10 @@ import { Toaster } from 'react-hot-toast';
 import { Suport } from './pages/suport/index';
 
 import { Cookies } from './hooks/cookies/Cookie';
+import { AboutPage } from './pages/about/index';
+import { Testimonials } from './pages/testimonials/index';
+import { Recaptcha } from './hooks/recaptcha/Recaptcha';
+
 
 
 function App() {
@@ -38,7 +42,12 @@ function App() {
                       <Route path="/" element={<Home />} />
                       <Route path="/produtos" element={<ProductTest />} />
                       <Route path="/suporte" element={<Suport />} />
+                      <Route path="/sobre" element={<AboutPage />} />
+                      <Route path="/contato" element={<ContactForm />} />
+                      <Route path="/depoimentos" element={<Testimonials />} />
                     </Routes>
+
+                    <Recaptcha />
       </BrowserRouter>
     </div>
   );
