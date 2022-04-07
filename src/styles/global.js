@@ -137,8 +137,8 @@ main {
 }
 
 
-.svg-inline--fa {
-    
+strong {
+  color: var(--base-color);
 }
 /*====  LOGO ============================ */
 nav a.logo  img {

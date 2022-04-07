@@ -11,20 +11,20 @@ export function AboutPage(){
             <div className="text text_about">
               <h2 className="title">Sobre nós</h2>
               <p>
-              <strong style={{color: "var(--base-color)"}}>Syscare</strong> seu sistema de Home Care
+              O <strong>Syscare</strong> é uma empresa de tecnologia da informação que atua no mercado de Home Care.
               </p>
               <br />
               <br />
               <p>
-                O Syscare tem como objetivo renovar a forma de gestão das empresas desenvolvendo sistemas sob demanda, elaborados a partir das necessidades de cada cliente, e oferecendo produtos específicos como o SysCare da massa!
+                O <strong>Syscare</strong> tem como objetivo renovar a forma de gestão das empresas desenvolvendo sistemas sob demanda elaborados a partir das necessidades de cada cliente, oferecendo-lhes soluções de gestão de Home Care que atendam aos requisitos de cada empresa.
               </p>
               <br />
               <p>
-                Sistema de Gestão de Home Care que atende de forma ampla as empresas de Home Care. Atua, também, com sistemas de ERP (Enterprise Resource Planning), tais como financeiro, contabilidade, ativo fixo.
+                Nosso sistema atende de forma ampla as empresas de Home Care, assim como também atua com sistemas de <b>ERP</b> (Enterprise Resource Planning), tais como <i>financeiro</i>, <i>contabilidade</i>, <i>ativo fixo</i>.
               </p>
               <br />
               <p>
-                Conta com profissionais com ampla experiência, com mais de 20 anos no mercado, tendo sua sede na cidade de Santana de Parnaíba – SP e filial em São Paulo.
+              Contando com profissionais que possuem ampla experiência com mais de 20 anos no mercado, o <strong>Syscare</strong> tem sua sede na cidade de Santana de Parnaíba – SP e filial em São Paulo.
               </p>
             </div>
           </div>
