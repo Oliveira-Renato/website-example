@@ -67,9 +67,9 @@ export function Home(){
             </div>
 
             <div className="text">
-              <h3 className="title main_title">Syscare</h3>
+              <h3 className="title main_title" style={{color: "var(--base-color)"}}>Syscare</h3>
               <div className="typewriter">
-                <h1 className="title">Gestão de Home Care.</h1>
+                <h1 className="title second_title">Gestão de Home Care</h1>
               </div>
               <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
 
