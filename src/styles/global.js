@@ -194,7 +194,7 @@ nav ul li a::after {
 
     position: absolute;
     left: 0;
-    bottom: -2.4rem;
+    bottom: -1.4rem;
 
     transition: 0.3s;
     
