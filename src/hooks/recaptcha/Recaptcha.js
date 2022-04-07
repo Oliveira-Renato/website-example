@@ -6,7 +6,7 @@ export function Recaptcha(){
     e.preventDefault();
     window.grecaptcha.ready(() => {
       window.grecaptcha
-        .execute("6LdE-k4fAAAAAJqB_WFlftRnLmBrbOaGCOYhdQhR", { action:"homepage" })
+        .execute("6LcxBlQfAAAAAMM2iVlQai_h2wk9r8H3pcsnK1_B", { action:"homepage" })
         .then(token => {
           // ...
           console.log(token);
@@ -17,7 +17,7 @@ export function Recaptcha(){
   useEffect(() => {
     // Add reCaptcha
     const script = document.createElement("script")
-    script.src = "https://www.google.com/recaptcha/api.js?render=6LdE-k4fAAAAAJqB_WFlftRnLmBrbOaGCOYhdQhR"
+    script.src = "https://www.google.com/recaptcha/api.js?render=6LcxBlQfAAAAAMM2iVlQai_h2wk9r8H3pcsnK1_B"
     script.addEventListener("load", handleLoaded)
     document.body.appendChild(script)
   }, [])
@@ -25,7 +25,7 @@ export function Recaptcha(){
   return (
     <div
       className="g-recaptcha"
-      data-sitekey="6LdE-k4fAAAAAJqB_WFlftRnLmBrbOaGCOYhdQhR"
+      data-sitekey="6LcxBlQfAAAAAMM2iVlQai_h2wk9r8H3pcsnK1_B"
       data-size="invisible"
     ></div>
   )

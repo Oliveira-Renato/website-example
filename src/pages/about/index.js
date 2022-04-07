@@ -11,7 +11,7 @@ export function AboutPage(){
             <div className="text text_about">
               <h2 className="title">Sobre nós</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              <strong style={{color: "var(--base-color)"}}>Syscare</strong> seu sistema de Home Care
               </p>
               <br />
               <br />

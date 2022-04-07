@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-import { Home } from './pages/home/index';
+
 import { ContactForm } from './pages/contacts/index';
 
 import GlobalStyle from './styles/global';
@@ -17,6 +17,8 @@ import './styles/media.scss';
 import { Toaster } from 'react-hot-toast';
 import { Suport } from './pages/suport/index';
 
+
+import { Home } from './pages/home/index';
 import { Cookies } from './hooks/cookies/Cookie';
 import { AboutPage } from './pages/about/index';
 import { Testimonials } from './pages/testimonials/index';
@@ -42,9 +44,9 @@ function App() {
                       <Route path="/" element={<Home />} />
                       <Route path="/produtos" element={<ProductTest />} />
                       <Route path="/suporte" element={<Suport />} />
-                      <Route path="/sobre" element={<AboutPage />} />
-                      <Route path="/contato" element={<ContactForm />} />
-                      <Route path="/depoimentos" element={<Testimonials />} />
+                      <Route path="/#about" element={<AboutPage />} />
+                      <Route path="/#contact" element={<ContactForm />} />
+                      <Route path="/#testimonials" element={<Testimonials />} />
                     </Routes>
 
                     <Recaptcha />

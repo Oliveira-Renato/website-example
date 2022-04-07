@@ -34,8 +34,8 @@ export function Footer(){
         <div className="footer-col">
           <h4>Empresa</h4>
           <ul>
-            <li><a href="#about">Sobre nós</a></li>
-            <li><a href="#products">Nossos serviços</a></li>
+            <li><a href="/#about">Sobre nós</a></li>
+            <li><a href="/produtos">Nossos serviços</a></li>
             <li><a href="#">Política de privacidade</a></li>
           </ul>
         </div>
@@ -46,7 +46,7 @@ export function Footer(){
           <ul>
             <li><a href="#">FAQ</a></li>
             <li><a href="/suporte">Suporte</a></li>
-            <li><a href="#home">Home</a></li>
+            <li><a href="/">Home</a></li>
           </ul>
         </div>
 

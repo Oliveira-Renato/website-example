@@ -142,7 +142,7 @@ main {
 }
 /*====  LOGO ============================ */
 nav a.logo  img {
-  top: 0;
+    top: 0;
     left: 0;
     min-width: 100%;
     max-width: 100%;

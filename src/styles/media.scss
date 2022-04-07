@@ -13,7 +13,30 @@
     // max-width: 1366px;
     margin-left: 11.2rem;
     margin-right: 11.2rem;
-    
+    a {
+      .logo {
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          box-sizing: border-box;
+          padding: 0;
+          border: none;
+          margin: auto;
+          display: block;
+          width: 0;
+          height: 0;
+          min-width: 100%;
+          max-width: 100%;
+          min-height: 100%;
+          max-height: 100%;
+          object-fit: cover;
+      
+        }
+      }
+    }
     .suport_btn{
       display: none;
     }
@@ -178,7 +201,7 @@
     //===== ABOUT =====\\
     #about {
       .container {
-        
+        margin: 0 5rem;
         
         .image {
           order: 0;
@@ -201,7 +224,7 @@
         .text { 
           
           font-size: 1.6rem;
-          text-align: center;
+          text-align: left;
           margin: 0 auto;
           
           h2 {
@@ -1410,6 +1433,7 @@
     #about {
       
       padding: 11.2rem;
+
       .container {
         gap: 0;
         grid-auto-flow: column;

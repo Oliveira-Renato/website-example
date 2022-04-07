@@ -38,12 +38,16 @@ nav.show div.close {
 
 
 .show_btn {
-  display: none;
+  // visibility: visible;
+  
+
 }
 
 .ainda_nao {
-  display: block;
+  // display: block;
   margin-top: 3.2rem;
+  
+  // opacity: 1;
 
   @media (min-width: 1030px) {
     position: absolute;
@@ -58,13 +62,19 @@ nav.show div.close {
 
   .btn2{
     padding: 0 3.2rem;
+    &:hover {
+      color: var(--body-color);
+    }
+    &:hover::after{
+      width: 0;
+    }
   }
 }
 
 
 
 .renato {
-  display: block;
+  // display: block;
 }
 
 .login_btn {
@@ -129,7 +139,34 @@ nav.show div.close {
     }
 }
 
+/*================ EXTRA SMALL DEVICES ====================*/
+@media (max-width:420px) {
+ 
+  
+ header {
+  nav {
+    
+    a {
+      &.logo {
+        display: block;
+        img {
+          background-image: url('../../images/iconsLogo/logo_syscare_100.png');
+          background-size: contain;
+          min-width: 100px;
+          max-width: 100px;
+        }
+      }
+    }
 
+    .menu {
+      left: 32rem;
+      width: 0;
+    }
+    
+  }
+ } 
+
+}
 
 
 
