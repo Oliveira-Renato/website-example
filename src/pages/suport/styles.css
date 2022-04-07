@@ -98,14 +98,20 @@ input
   margin: 5px;
   width: 65%;
   border: 2px solid white;
-  transition: all 0.5s ease-i   n-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 5px 5px 5px 5px;
+
+  
+  
 }
 
 input:focus
 {
   background-color: white;
   border-bottom: 2px solid var(--base-color);
+
+  
+
 }
 
 input::placeholder
@@ -115,4 +121,10 @@ input::placeholder
 
 *:focus {
   outline: none;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 80%;
+  }
 }
