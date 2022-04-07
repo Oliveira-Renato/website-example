@@ -4,69 +4,69 @@
     "boInativo": 0,
     "titulo":"Produto 1",
     "image":"image 1",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   },
   {
     "id":"2",
     "boInativo": 0,
     "titulo":"Produto 2",
     "image":"image 2",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   },
   {
     "id":"3",
     "boInativo": 0,
     "titulo":"Produto 3",
     "image":"image 3",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   },
   {
     "id":"4",
     "boInativo": 0,
     "titulo":"Produto 4",
     "image":"image 4",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   },
   {
     "id":"5",
     "boInativo": 0,
     "titulo":"Produto 5",
     "image":"image 5",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   },
   {
     "id":"6",
     "boInativo": 0,
     "titulo":"Produto 6",
     "image":"image 6",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   },
-  {
+  { 
     "id":"7",
     "boInativo": 0,
     "titulo":"Produto 7",
     "image":"image 7",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   },
   {
     "id":"8",
     "boInativo": 0,
     "titulo":"Produto 8",
     "image":"image 8",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   },
   {
     "id":"9",
     "boInativo": 0,
     "titulo":"Produto 9",
     "image":"image 9",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   },
   {
     "id":"10",
     "boInativo": 0,
     "titulo":"Produto 10",
     "image":"image 10",
-    "content": "BTC moedinha da praia, alta infinita!"
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio neque blanditiis, dolorem aperiam nulla explicabo asperiores"
   }
 ]

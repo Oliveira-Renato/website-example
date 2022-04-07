@@ -124,10 +124,10 @@ export function Home(){
 
             <div className="card">
               <div className="icones">
-                <FontAwesomeIcon icon={ faBtc }/>
+                <FontAwesomeIcon icon={ faHouseMedical }  />
               </div>
               
-              <h3 className="title">Syscare - BTC</h3>
+              <h3 className="title">Syscare - MGS</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
                 distinctio neque blanditiis, dolorem aperiam nulla explicabo
@@ -159,9 +159,7 @@ export function Home(){
             <div className="text">
               <h2 className="title title_products">Entre em contato com a gente!</h2>
               <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
+                Se você tem alguma dúvida, sugestão ou quer fazer uma proposta, entre em contato conosco.
               </p>
               <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário" className="button">
                   <div className="icones">
