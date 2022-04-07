@@ -13,8 +13,7 @@ export default function ScrollReavelling(){
     })
   //#testimonials .testimonials,
     scrollReveal.reveal(
-      ` #home .text,
-      #about .image_about, #about .text,
+      ` #about .image_about, #about .text,
       #services header, #products .card,
       #testimonials header, 
       #contact .text, #contact .links,

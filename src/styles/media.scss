@@ -5,6 +5,9 @@
 
 /*================ EXTRA SMALL DEVICES ====================*/
 @media (max-width:320px) {
+  html {
+    font-size: 60.5%;
+  }
   body {
     font: 400 1.44rem 'Poppins',sans-serif;
   }
@@ -62,6 +65,9 @@
 }
 
 @media (min-width:320px) {
+  html {
+    font-size: 60.5%;
+  }
   body {
     font: 400 1rem 'Poppins',sans-serif;
   }

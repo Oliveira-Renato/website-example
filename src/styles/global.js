@@ -13,6 +13,10 @@ box-sizing: border-box;
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @media (min-width: 280px) {
+    font-size: 58.5%;
+  }
 }
 
 
@@ -364,6 +368,15 @@ nav .close {
 .card .title {
   font-size: 2.4rem;
   margin-bottom: 1.248rem;
+}
+
+
+main #home .container .text .main_title {
+  font-size: 3.8rem;
+
+  @media (min-width: 280px and max-width: 600px) {
+    font-size: 2.4rem;
+  }
 }
 
 /*====  TESTIMONIALS ================= */

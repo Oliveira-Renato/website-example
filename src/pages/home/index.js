@@ -42,6 +42,7 @@ import 'swiper/css/mousewheel';
 import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
+import './animation.css';
 
 import { Header } from '../../components/header/header'
 import { Testimonials } from '../testimonials'
@@ -66,8 +67,10 @@ export function Home(){
             </div>
 
             <div className="text">
-              <h3 className="title">Syscare</h3>
-              <h2 className="title">Gestão de Home Care</h2>
+              <h3 className="title main_title">Syscare</h3>
+              <div className="typewriter">
+                <h1 className="title">Gestão de Home Care.</h1>
+              </div>
               <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
 
               <a className='button' href="#about">
