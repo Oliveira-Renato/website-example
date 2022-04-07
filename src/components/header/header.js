@@ -63,19 +63,19 @@ export function Header(){
           <div className="menu">
         <ul className="grid">
           <li>
-            <a className="title" href="/" alt="" onClick={handleCloseMenu} name="home" >Home</a>
+            <a className="title title_toggle" href="/" alt="" onClick={handleCloseMenu} name="home" >Home</a>
           </li>
           <li>
-            <a className="title" href="/#about" alt="" onClick={handleCloseMenu} name="about"  >Sobre</a>
+            <a className="title title_toggle" href="/#about" alt="" onClick={handleCloseMenu} name="about"  >Sobre</a>
           </li>
           <li>
-            <a className="title" href="/#products" alt="" onClick={handleCloseMenu} name="products" >Produtos</a>
+            <a className="title title_toggle" href="/#products" alt="" onClick={handleCloseMenu} name="products" >Produtos</a>
           </li>
           <li>
-            <a className="title" href="/#testimonials" alt="" onClick={handleCloseMenu} name="testmonials"  >Depoimentos</a>
+            <a className="title title_toggle" href="/#testimonials" alt="" onClick={handleCloseMenu} name="testmonials"  >Depoimentos</a>
           </li>
           <li>
-            <a className="title" href="/#contact" alt="" onClick={handleCloseMenu} name="contact" >Contato</a>
+            <a className="title title_toggle" href="/#contact" alt="" onClick={handleCloseMenu} name="contact" >Contato</a>
           </li>
         </ul>
         {/* ==== botão suporte ===== */}

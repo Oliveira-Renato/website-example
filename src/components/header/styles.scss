@@ -141,8 +141,10 @@ nav.show div.close {
 
 /*================ EXTRA SMALL DEVICES ====================*/
 @media (max-width:420px) {
- 
-  
+
+  .title_toggle {
+    font-size: 1.6rem;
+  }
  header {
   nav {
     
@@ -170,3 +172,14 @@ nav.show div.close {
 
 
 
+@media (max-width: 767px){
+  #header {
+    .title_toggle {
+      font-size: 1.6rem;
+    }
+  }
+
+  nav.show ul.grid {
+    gap: 1rem;
+  }
+}

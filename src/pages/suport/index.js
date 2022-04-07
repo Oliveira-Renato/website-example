@@ -24,9 +24,9 @@ export function Suport() {
                     <div className="first">
                         <img className="icon" src={logo} />
                         <form name="frm_login" action="http://suporte.syscare.com.br:81/suporte/login" method="POST">
-                            <label htmlFor="Usuário" />
+                            <label htmlFor="Usuário"></label>
                             <input type="text" id="usuario" name="usuario" placeholder="Usuário" />
-                            <label htmlFor="Senha" />
+                            <label htmlFor="Senha"></label>
                             <input type="password" id="senha" name="senha" placeholder="Senha" />
                             <input className="btn" type="submit" value="Entrar" />
                         </form> 
