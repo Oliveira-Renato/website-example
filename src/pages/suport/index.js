@@ -1,6 +1,6 @@
 import { Footer } from '../footer';
 import { Header } from '../../components/header/header';
-import './styles.css';
+// import './styles.css';
 
 import logo from '../../assets/images/suport/Syscare_Logo.png';
 import kennenLogo from '../../assets/images/suport/header_kennen.png';

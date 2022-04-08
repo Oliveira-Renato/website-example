@@ -7,7 +7,7 @@ import { FaCopyright } from "react-icons/fa";
 // import { IoLogoLinkedin } from "react-icons/io";
 
 
-import '../../styles/footer/styles.scss'
+// import '../../styles/footer/styles.scss'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -24,10 +24,19 @@ import { AboutPage } from './pages/about/index';
 import { Testimonials } from './pages/testimonials/index';
 import { Recaptcha } from './hooks/recaptcha/Recaptcha';
 
+import './styles/teste.css'
+import { ThemeProvider, DefaultTheme } from 'styled-components';
+import usePersistedState from './utils/usePersistedState';
+import light from './styles/theme/light'
+import dark from './styles/theme/dark'; 
 
 
 function App() {
+  const [theme, setTheme] = usePersistedState('theme', light);
+ 
+
   return (
+    <ThemeProvider theme={theme}>
      <div className="App">
       <BrowserRouter>  
         <Toaster
@@ -52,6 +61,7 @@ function App() {
                     <Recaptcha />
       </BrowserRouter>
     </div>
+    </ThemeProvider>
   );
 }
 

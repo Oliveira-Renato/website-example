@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-import '../../styles/themes/light.css'
-import './styles.scss'
+// import './styles.scss'
 
 import $ from 'jquery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

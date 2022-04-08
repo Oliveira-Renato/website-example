@@ -30,7 +30,7 @@ import 'swiper/css/mousewheel';
 import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
-import './animation.css';
+// import './animation.css';
 
 import { Header } from '../../components/header/header'
 import { Testimonials } from '../testimonials'

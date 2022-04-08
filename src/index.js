@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App';
-import './styles/media.scss';
+// import './styles/media.scss';
 import { CookiesProvider } from 'react-cookie';
 
 ReactDOM.render(
