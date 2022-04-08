@@ -7,19 +7,11 @@ import './styles.scss'
 import '../../styles/media.scss'
 
 
-import  logo  from '../../images/iconsLogo/logo_syscare_150.png'
-
-
-
-import  contactImg from '../../images/symbols/contact.png'
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import ReactTooltip from "react-tooltip";
-import { Link } from 'react-router-dom';
+import  logo  from '../../assets/images/icons/logo_syscare_150.png'
 
 
 export function Header(){
-  const [url, setUrl] = useState('')
-
+  
   function HandleToggleMenu() {
     const nav = document.querySelector('#header nav'); 
     const suportBtn = document.querySelector('.ainda_nao');

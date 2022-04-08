@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import './variables.css'
+import './themes/light.css';
 
 export default createGlobalStyle`
 /*======INICIAL=========================== */

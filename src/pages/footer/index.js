@@ -7,12 +7,8 @@ import { FaCopyright } from "react-icons/fa";
 // import { IoLogoLinkedin } from "react-icons/io";
 
 
-
-
 import '../../styles/footer/styles.scss'
 
-import kennenImg from '../../images/iconsLogo/header_kennen.png'
-import syscareImg from '../../images/iconsLogo/logo_syscare_200.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

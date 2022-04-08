@@ -1,0 +1,20 @@
+/*====  VARIABLES ============================ */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --header-height: 7.2rem;
+  
+    /* colors */
+    --hue: 210;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 36% 57%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+    --bar-loading-color: hsl(57, 82%, 60%);
+    --swiper-theme-color: blue;
+    --error-color: hsl(57, 80%, 50%);
+  }

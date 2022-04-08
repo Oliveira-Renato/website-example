@@ -1,7 +1,7 @@
 import React from "react";
 
 import './styles.scss';
-import whatsappImg from '../../images/whatsapp/pngwing.com.png';
+import whatsappImg from '../../assets/images/whatsapp/pngwing.com.png';
 export function Whatsapp() {
     return (
         <div>

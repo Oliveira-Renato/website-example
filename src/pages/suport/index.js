@@ -2,8 +2,8 @@ import { Footer } from '../footer';
 import { Header } from '../../components/header/header';
 import './styles.css';
 
-import logo from '../../assets/suport_Images/Syscare_Logo.png';
-import kennenLogo from '../../assets/suport_Images/header_kennen.png';
+import logo from '../../assets/images/suport/Syscare_Logo.png';
+import kennenLogo from '../../assets/images/suport/header_kennen.png';
 
 export function Suport() {
 

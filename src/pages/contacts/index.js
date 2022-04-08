@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 
-import '../../styles/variables.css'
+import '../../styles/themes/light.css'
 import './styles.scss'
 
-import  contactImg from '../../images/symbols/contact.png'
 import $ from 'jquery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -17,7 +16,6 @@ export function ContactForm(){
     const [inputs, setInputs] = useState([]);
     const [status, setStatus] = useState('Enviar');
     const [verify, setVerify] = useState(true);
-    const [loading, setLoading] = useState(false);
 
 
     function HandleCleanInputs(){

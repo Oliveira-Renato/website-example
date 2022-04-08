@@ -7,7 +7,6 @@ import {
 
 import data from './data.json'
 
-import { Card } from 'react-bootstrap';
 import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
 

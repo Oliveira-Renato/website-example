@@ -1,14 +1,7 @@
 import React from 'react'
 
+import mainImg from '../../assets/images/home/home.jpg' 
 
-import  logo  from '../../images/iconsLogo/logo_syscare_100.png'
-import mainImg from '../../images/homeImages/home.jpg'
-import aboutImg from '../../images/homeImages/campaign-creators.jpg'
-
-//==== Users testimonials pictures ==== \\
-import  caioImg  from '../../images/UserTestimonials/caio.jpg'
-import  alcidezImg  from '../../images/UserTestimonials/alcidez.jpg'
-import  tantanImg  from '../../images/UserTestimonials/tantan.jpg'
 
 
 import { ContactForm } from '../contacts';
@@ -26,15 +19,10 @@ import {
   faEnvelope,
   faLocationDot,
   faArrowUp,
-  faSuitcaseMedical,
   faAnglesDown
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faBtc, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
-//==== Import Swiper React components ==== \\
-import { Mousewheel , Pagination, Keyboard ,Navigation, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
