@@ -145,26 +145,38 @@ nav.show div.close {
   .title_toggle {
     font-size: 1.6rem;
   }
- header {
-  nav {
+ #header {
+  .container {
+    .menu {
+      nav {
     
-    a {
-      &.logo {
-        display: block;
-        img {
-          background-image: url('../../images/iconsLogo/logo_syscare_100.png');
-          background-size: contain;
-          min-width: 100px;
-          max-width: 100px;
+        ul {
+          li {
+            a {
+             
+
+              &.logo {
+                display: block;
+                img {
+                  background-image: url('../../images/iconsLogo/logo_syscare_100.png');
+                  background-size: contain;
+                  min-width: 100px;
+                  max-width: 100px;
+                }
+              }
+        
+              
+            }
+          }
         }
+    
+        .menu {
+          left: 32rem;
+          width: 0;
+        }
+        
       }
     }
-
-    .menu {
-      left: 32rem;
-      width: 0;
-    }
-    
   }
  } 
 
@@ -181,5 +193,16 @@ nav.show div.close {
 
   nav.show ul.grid {
     gap: 1rem;
+  }
+  nav {
+    ul {
+      li {
+        a {
+          &::after {
+            bottom: -0.4rem;
+          }
+        }
+      }
+    }
   }
 }

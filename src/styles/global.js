@@ -196,12 +196,17 @@ nav ul li a::after {
     width: 0%;
     height: 2px;
     background: var(--base-color);
-
     position: absolute;
     left: 0;
     bottom: -1.4rem;
-
     transition: 0.3s;
+
+    @media (max-width: 420px) {
+      bottom: -0.4rem;
+    }
+    @media (max-width: 1024px) {
+      bottom: -0.4rem;
+    }
     
 }
 
