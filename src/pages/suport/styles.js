@@ -1,4 +1,7 @@
-a {
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  a {
   color: white;
   display: inline-block;
   font-weight: 400;
@@ -128,3 +131,4 @@ input::placeholder
     width: 80%;
   }
 }
+`;

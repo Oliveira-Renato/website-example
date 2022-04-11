@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
-import './variables.css'
+import './variables.css';
+import './media.scss'
 
 export default createGlobalStyle`
+
 /*======INICIAL=========================== */
 * {
 margin: 0;
@@ -36,20 +38,20 @@ img {
 /*====  BASE ============================ */
 body {
   font: 400 1.6rem 'Poppins', sans-serif;
-  color: var(--text-color);
-  background: var(--body-color);
+  color: ${props => props.theme.colors.textColor};
+  background:  ${props => props.theme.colors.bodyColor};
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
   font: 700 2.4rem 'Poppins', sans-serif;
-  color: var(--title-color);
+  color:  ${props => props.theme.colors.titleColor};
   -webkit-font-smoothing: auto;
   
 }
 
 .button {
-  background-color: var(--base-color);
+  background-color:  ${props => props.theme.colors.baseColor};
   color: var(--text-color-light);
   height: 5.6rem;
   display: inline-flex;
@@ -64,15 +66,15 @@ body {
 }
 
 .button:hover {
-  background: var(--base-color-alt);
+  background:  ${props => props.theme.colors.baseColorAlt};
 }
 
 .divider-1 {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 36%, 57%, 1) 0%,
-    hsla(var(--hue), 65%, 88%, 0.34) 100%
+    hsla(${props => props.theme.colors.hue}, 36%, 57%, 1) 0%,
+    hsla(${props => props.theme.colors.hue}, 65%, 88%, 0.34) 100%
   );
 }
 
@@ -80,8 +82,8 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 65%, 88%, 0.34),
-    hsla(var(--hue),36%, 57%, 1) 
+    hsla(${props => props.theme.colors.hue}, 65%, 88%, 0.34),
+    hsla(${props => props.theme.colors.hue},36%, 57%, 1) 
   );
 }
 
@@ -114,7 +116,7 @@ body {
 }
 
 .section header strong {
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 }
 
 #header {
@@ -133,17 +135,17 @@ body {
 }
 
 #header.scroll {
-  background-color: var(--body-color);
+  background-color:  ${props => props.theme.colors.bodyColor};
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 } 
 
 main {
-  margin-top: calc(var(--header-height) + 3.2rem);
+  margin-top: calc(${props => props.theme.colors.headerHeight} + 3.2rem);
 }
 
 
 strong {
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 }
 /*====  LOGO ============================ */
 nav a.logo  img {
@@ -169,7 +171,7 @@ nav a.logo  img {
 
 /*====  NAVIGATION ============================ */
 nav {
-  height: var(--header-height);
+  height: ${props => props.theme.colors.headerHeight};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -188,14 +190,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--base-color);
+    color:  ${props => props.theme.colors.baseColor};
 }
 
 nav ul li a::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: var(--base-color);
+    background:  ${props => props.theme.colors.baseColor};
     position: absolute;
     left: 0;
     bottom: -1.4rem;
@@ -227,7 +229,7 @@ nav .menu ul {
 
 /*=========== toggle menu ==========*/
 .toggle {
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 
   >.svg-inline--fa {
     height: 1.5em;
@@ -276,7 +278,7 @@ nav .close {
   content: '';
   height: 100%;
   width: 100%;
-  background: var(--base-color-second);
+  background: ${props => props.theme.colors.baseColorSecond};
   position: absolute;
   top: -16.8%;
   left: 16.7%;
@@ -310,7 +312,7 @@ nav .close {
 
 /*====  HOME ============================ */
 #about {
-  background: white;
+  background: ${props => props.theme.colors.bodyColorAlt};
 }
 
 #about .container {
@@ -326,7 +328,7 @@ nav .close {
   content: '';
   height: 100%;
   width: 100%;
-  background: var(--base-color);
+  background:  ${props => props.theme.colors.baseColor};
 
   position: absolute;
   top: -8.3%;
@@ -357,7 +359,7 @@ nav .close {
 .card {
   padding: 2.4rem 1.6rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.28rem solid var(--base-color);
+  border-bottom: 0.28rem solid  ${props => props.theme.colors.baseColor};
   border-radius: 0.28rem 0.28rem 0 0;
   text-align: center;
 }
@@ -366,7 +368,7 @@ nav .close {
   display: block;
   margin-bottom: 2.4rem;
   font-size: 8rem;
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 }
 
 
@@ -401,7 +403,7 @@ main #home .container .text .second_title {
 
 /*====  TESTIMONIALS ================= */
 #testimonials {
-  background: white;
+  background: ${props => props.theme.colors.bodyColorAlt};
 }
 
 #testimonials .container {
@@ -425,7 +427,7 @@ main #home .container .text .second_title {
   position: relative;
   margin-bottom: 2.4rem;
   text-indent: 1.878rem;
-  color: var(--title-color);
+  color:  ${props => props.theme.colors.titleColor};
 }
 
 #testimonials blockquote p span{
@@ -433,7 +435,7 @@ main #home .container .text .second_title {
   position: absolute;
   left: -1.878rem;
   line-height: 1.628rem;
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 }
 
 #testimonials cite {
@@ -462,7 +464,7 @@ main #home .container .text .second_title {
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--base-color);
+  background:  ${props => props.theme.colors.baseColor};
 }
 
 
@@ -497,7 +499,7 @@ main #home .container .text .second_title {
 }
 
 #contact ul li .icones{
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
   margin-right: 0.878rem;
 }
 
@@ -506,7 +508,7 @@ main #home .container .text .second_title {
 }
 /*==== BACK TO TOP ================= */
 a.back-to-top {
-  background: var(--base-color);
+  background:  ${props => props.theme.colors.baseColor};
   color: var(--text-color-light);
 
   position: fixed;
@@ -545,5 +547,8 @@ a.back-to-top {
   display: flex;
   justify-content: center;
 }
+
+
+
 
 `

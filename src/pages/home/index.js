@@ -27,9 +27,7 @@ import {
 
 import { faBtc, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
-//==== Import Swiper React components ==== \\
-import { Mousewheel , Pagination, Keyboard ,Navigation, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -37,7 +35,9 @@ import 'swiper/css/mousewheel';
 import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
-import './animation.css';
+
+
+import {Container} from './animation.js';
 
 import { Header } from '../../components/header/header'
 import { Testimonials } from '../testimonials'
@@ -49,7 +49,7 @@ export function Home(){
   
   return (
     <div>
-
+      <Container>
       {/*====  HEADER/NAV ====  */}
       <Header />
       
@@ -62,7 +62,7 @@ export function Home(){
             </div>
 
             <div className="text">
-              <h3 className="title main_title" style={{color: "var(--base-color)"}}>Syscare</h3>
+              <h3 className="title main_title" style={{color: `${props => props.theme.colors.baseColor}` }}>Syscare</h3>
               <div className="typewriter">
                 <h1 className="title second_title">Gestão de Home Care</h1>
               </div>
@@ -200,7 +200,7 @@ export function Home(){
       <a href="#home" className="back-to-top">
         <FontAwesomeIcon icon={faArrowUp}  />
       </a>
-       
+      </Container>
     </div>
 
   )

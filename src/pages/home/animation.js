@@ -1,4 +1,7 @@
-.typewriter {
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  .typewriter {
   padding: 0;
   display: flex;
   margin: 0;
@@ -76,3 +79,4 @@
     to { width: 88% }
   }
 }
+`;

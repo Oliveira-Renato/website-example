@@ -1,5 +1,8 @@
+import styled from 'styled-components';
+
+export const Container = styled.div`
 #footer{
-	background-color: var(--base-color);
+	background-color: ${props => props.theme.colors.baseColor};
   padding: 8rem 0 0;
   position: absolute;
   width: 100%;
@@ -17,7 +20,7 @@
 
   .copyRight{
     margin-top:  7rem;
-    background: var(--base-color-alt);
+    background: ${props => props.theme.colors.baseColorAlt};
     color: #FFF;
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +54,7 @@
       position: absolute;
       left:0;
       bottom: -1rem;
-      background-color: var(--text-color-light);
+      background-color: ${props => props.theme.colors.textColorLight};
       height: 0.125rem;
       box-sizing: border-box;
       width: 5rem;
@@ -74,7 +77,7 @@
         text-transform: capitalize;
         text-decoration: none;
         font-weight: 300;
-        color: var(--text-color-light);
+        color: ${props => props.theme.colors.textColorLight};
         display: block;
         transition: all 0.3s ease;
 
@@ -108,7 +111,7 @@
       transition: all 0.5s ease;  
 
       &:hover{
-        color: var(--bar-loading-color);
+        color: ${props => props.theme.colors.barLoadingColor};
       }
     }
 
@@ -148,3 +151,5 @@
   }
   
 }
+
+`;

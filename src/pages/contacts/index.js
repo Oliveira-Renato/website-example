@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import '../../styles/variables.css'
-import './styles.scss'
+import  '../../styles/variables.css'
+import {ContainerContact} from './styles.js'
 
 import $ from 'jquery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -142,6 +142,7 @@ export function ContactForm(){
 
     return (
        <div>
+           <ContainerContact>   
             <form  action="" name="form" method="POST" id='form' onSubmit={ HandleSubmitForm } >
                 <h2 className="title">Envie-nos uma mensagem</h2>
                 
@@ -182,6 +183,7 @@ export function ContactForm(){
                     </button>
                 </div>
             </form>
+            </ ContainerContact>
        </div>
     )
 }

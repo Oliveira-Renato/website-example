@@ -1,3 +1,6 @@
+import styled from 'styled-components';
+
+export const ContainerContact = styled.div`
 #form .button {
   border: none;
   padding: 0 3.2rem;
@@ -45,10 +48,10 @@
       outline: none;
       border: 1px solid rgba(0, 0, 0, 0.08);
       border-radius: 0.25rem;
-      color: var(--text-color);
-      background: white;
+      color: ${props => props.theme.colors.textColor};
+      background: ${props => props.theme.colors.bodyColorAlt};
       resize: none;
-      box-shadow: 0px 1px 4px var(--base-color-second);
+      box-shadow: 0px 1px 4px ${props => props.theme.colors.baseColorSecoond};
       text-align: left;
   }
 
@@ -68,3 +71,4 @@
   display: flex;
   justify-content: center;
 }
+`;

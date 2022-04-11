@@ -3,17 +3,13 @@ import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark,faUserNurse, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
-import './styles.scss'
-import '../../styles/media.scss'
+import {Container} from './styles.js'
+// import '../../styles/media.scss'
 
 
 import  logo  from '../../assets/images/icons/logo_syscare_150.png'
 
 
-
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import ReactTooltip from "react-tooltip";
-import { Link } from 'react-router-dom';
 
 
 export function Header(){
@@ -53,6 +49,7 @@ export function Header(){
 
   return (
     <>
+    <Container>
     {/*====  HEADER/NAV ====  */}
     <header id="header">
         <nav className="container">
@@ -111,7 +108,7 @@ export function Header(){
         </nav>
 
     </header>
-      
+    </Container>
     </>
   )
 }

@@ -9,7 +9,7 @@ import { FaCopyright } from "react-icons/fa";
 
 
 
-import '../../styles/footer/styles.scss'
+import {Container} from  './styles.js'
 
 import kennenImg from '../../assets/images/icons/header_kennen.png'
 import syscareImg from '../../assets/images/icons/logo_syscare_200.png'
@@ -26,6 +26,7 @@ export function Footer(){
 
   
   return(
+    <Container>
   <footer id="footer">
     <div className="container">
       <div className="row">
@@ -88,6 +89,6 @@ export function Footer(){
          <p>{year} by <FaCopyright color="#FFF"/> Kennen Consultoria e Sistemas de Informação Ltda.</p>
     </div>
   </footer>
-    
+  </Container>
   )
 }

@@ -26,10 +26,28 @@ import { Recaptcha } from './hooks/recaptcha/Recaptcha';
 
 
 
+import { ThemeProvider, DefaultTheme } from 'styled-components';
+import usePersistedState from './utils/usePersistedState';
+import light from './styles/themes/light'
+import dark from './styles/themes/dark'; 
+import SwitchDark from './components/darkmode';  
+
+
+
 function App() {
+
+  const [theme, setTheme] = usePersistedState('theme', dark); 
+
+  const toggleTheme = () => {
+    setTheme(theme.title === 'light' ? dark : light);
+  };
+
   return (
+    <ThemeProvider theme={theme}>
      <div className="App">
-      <BrowserRouter>  
+      <BrowserRouter> 
+
+      <SwitchDark toggleTheme={toggleTheme} /> 
         <Toaster
         position="top-right"
         reverseOrder={false} 
@@ -37,7 +55,7 @@ function App() {
           <GlobalStyle />
             <Cookies />
               <HeaderEffect /> 
-                <ScrollReavelling />
+                {/* <ScrollReavelling /> */}
                   <ProgressBar />
   
                     <Routes>  
@@ -49,9 +67,10 @@ function App() {
                       <Route path="/#testimonials" element={<Testimonials />} />
                     </Routes>
 
-                    <Recaptcha />
-      </BrowserRouter>
-    </div>
+            <Recaptcha />
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
   );
 }
 

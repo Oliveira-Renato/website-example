@@ -1,9 +1,12 @@
-/*====MOSTRAR MENU======= */
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  /*====MOSTRAR MENU======= */
 nav.show .menu {
   opacity: 1;
   visibility:visible;
 
-  background: var(--body-color);
+  background: ${props => props.theme.colors.bodyColor};
   height: 100vh;
   width: 100vw;
 
@@ -63,7 +66,7 @@ nav.show div.close {
   .btn2{
     padding: 0 3.2rem;
     &:hover {
-      color: var(--body-color);
+      color: ${props => props.theme.colors.bodyColor};
     }
     &:hover::after{
       width: 0;
@@ -90,7 +93,7 @@ nav.show div.close {
 
 
     span {
-      color: var(--text-color);
+      color: ${props => props.theme.colors.textColor};
       font-weight: 400;
     }
   }
@@ -113,11 +116,11 @@ nav.show div.close {
 
   span {
     margin-left: 0.5rem;
-    color: #333;
+    color: ${props => props.theme.colors.textColor};
   }
 
   .login_icon {
-    color: var(--base-color);
+    color: ${props => props.theme.colors.baseColor};
   }
 }
 
@@ -126,7 +129,7 @@ nav.show div.close {
 
  .title {
     font: 700 1.675rem 'Poppins',sans-serif;
-      color: var(--title-color);
+      color: ${props => props.theme.colors.titleColor};
       -webkit-font-smoothing: auto;
     }
     nav.show ul.grid {
@@ -206,3 +209,4 @@ nav.show div.close {
     }
   }
 }
+`;
