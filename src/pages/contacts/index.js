@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import '../../styles/variables.css'
 import './styles.scss'
 
-import  contactImg from '../../images/symbols/contact.png'
 import $ from 'jquery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";

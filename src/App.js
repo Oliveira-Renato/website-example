@@ -10,7 +10,7 @@ import GlobalStyle from './styles/global';
 import  {ProductTest}  from './components/Produtos/Product';
 import { HeaderEffect } from './hooks/Header';
 import  ScrollReavelling  from './hooks/ScrollReveal';
-import { ProgressBar } from './components/Progressbar/Progressbar';
+import { ProgressBar } from './components/Progressbar/progressbar';
 
 
 import './styles/media.scss';

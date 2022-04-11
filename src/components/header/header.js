@@ -7,11 +7,10 @@ import './styles.scss'
 import '../../styles/media.scss'
 
 
-import  logo  from '../../images/iconsLogo/logo_syscare_150.png'
+import  logo  from '../../assets/images/icons/logo_syscare_150.png'
 
 
 
-import  contactImg from '../../images/symbols/contact.png'
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import ReactTooltip from "react-tooltip";
 import { Link } from 'react-router-dom';

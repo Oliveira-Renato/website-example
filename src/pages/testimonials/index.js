@@ -10,7 +10,7 @@ import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
 
 import data from './testimonials.json';
-import { CarouselItem } from 'react-bootstrap';
+
 
 
 

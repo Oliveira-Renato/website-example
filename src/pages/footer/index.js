@@ -11,8 +11,8 @@ import { FaCopyright } from "react-icons/fa";
 
 import '../../styles/footer/styles.scss'
 
-import kennenImg from '../../images/iconsLogo/header_kennen.png'
-import syscareImg from '../../images/iconsLogo/logo_syscare_200.png'
+import kennenImg from '../../assets/images/icons/header_kennen.png'
+import syscareImg from '../../assets/images/icons/logo_syscare_200.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

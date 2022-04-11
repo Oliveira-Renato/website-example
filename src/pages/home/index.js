@@ -1,14 +1,9 @@
 import React from 'react'
 
 
-import  logo  from '../../images/iconsLogo/logo_syscare_100.png'
-import mainImg from '../../images/homeImages/home.jpg'
-import aboutImg from '../../images/homeImages/campaign-creators.jpg'
-
-//==== Users testimonials pictures ==== \\
-import  caioImg  from '../../images/UserTestimonials/caio.jpg'
-import  alcidezImg  from '../../images/UserTestimonials/alcidez.jpg'
-import  tantanImg  from '../../images/UserTestimonials/tantan.jpg'
+import  logo  from '../../assets/images/icons/logo_syscare_100.png'
+import mainImg from '../../assets/images/home/home.jpg'
+import aboutImg from '../../assets/images/home/campaign-creators.jpg'
 
 
 import { ContactForm } from '../contacts';
