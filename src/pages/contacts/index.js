@@ -38,6 +38,7 @@ export function ContactForm(){
         inputs[event.target.name] = event.target.value;
 
         setInputs(inputs)
+        console.log(inputs)
     }
 
     async function HandleSubmitForm(event) {
