@@ -47,7 +47,20 @@
   }
 }
 
+@media (min-width: 1024px) {
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 76% }
+  }
+}
 
+
+@media (min-width: 1280px) {
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+  }
+}
 
 @media (min-width: 1400px) {
   @keyframes typing {
