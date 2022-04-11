@@ -9,13 +9,14 @@ function usePersistedState(key, initialState) {
       return JSON.parse(storageValue);
     } else {
       return initialState;
-    }
+    } 
   });
 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(state));
   }, [key, state]);
 
+  console.log(state);
   return [state, setState];
 }
 

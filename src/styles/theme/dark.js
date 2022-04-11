@@ -1,3 +1,5 @@
+import '../teste.css'
+
 export default {
 
     title : 'dark',

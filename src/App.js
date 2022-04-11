@@ -25,25 +25,34 @@ import { Testimonials } from './pages/testimonials/index';
 import { Recaptcha } from './hooks/recaptcha/Recaptcha';
 
 import './styles/teste.css'
+
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import usePersistedState from './utils/usePersistedState';
 import light from './styles/theme/light'
 import dark from './styles/theme/dark'; 
+import Header from './components/themeSwitch';
 
 
 function App() {
-  const [theme, setTheme] = usePersistedState('theme', light);
+  const [theme, setTheme] = usePersistedState('theme', dark); 
+
+  const toggleTheme = () => {
+    setTheme(theme.title === 'light' ? dark : light);
+  };
  
+  
 
   return (
     <ThemeProvider theme={theme}>
      <div className="App">
       <BrowserRouter>  
+      <Header toggleTheme={toggleTheme} />
         <Toaster
         position="top-right"
         reverseOrder={false} 
         />
           <GlobalStyle />
+          
             <Cookies />
               <HeaderEffect /> 
                 <ScrollReavelling />
