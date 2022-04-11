@@ -1,0 +1,213 @@
+import styled from 'styled-components';
+
+export const ContainerHeader = styled.div`
+ /*====MOSTRAR MENU======= */
+nav.show .menu {
+  opacity: 1;
+  visibility:visible;
+
+  background: var(--body-color);
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: -3.84rem;
+
+}
+
+nav.show .menu {
+  display: grid;
+  place-content: center;
+}
+
+nav.show .menu ul {
+  display: grid;
+}
+
+nav.show ul.grid  {
+  gap: 1.6rem;
+}
+
+
+nav.show div.close {
+  visibility: visible;
+  opacity: 1;
+  top: auto;
+  right: -0.16rem;
+}
+
+/*======== TOGGLE MENU =============*/
+
+
+.show_btn {
+  // visibility: visible;
+  
+
+}
+
+.ainda_nao {
+  // display: block;
+  margin-top: 3.2rem;
+  
+  // opacity: 1;
+
+  @media (min-width: 1030px) {
+    position: absolute;
+    right: 0rem;
+    top: -2.5rem;
+  }
+  @media (min-width: 1230px) {
+    position: absolute;
+    right: 9rem;
+    top: -2.5rem;
+  }
+
+  .btn2{
+    padding: 0 3.2rem;
+    &:hover {
+      color: var(--body-color);
+    }
+    &:hover::after{
+      width: 0;
+    }
+  }
+}
+
+
+
+.renato {
+  // display: block;
+}
+
+.login_btn {
+  justify-content:center;
+  text-align: center;
+  font: 700 1.878rem 'Poppins',sans-serif;
+  
+
+  @media (min-width: 1030px) {
+    position: absolute;
+    right: 18rem;
+    top: -1rem;
+
+
+    span {
+      color: var(--text-color);
+      font-weight: 400;
+    }
+  }
+  
+  @media (min-width: 1230px) {
+ 
+    right: 28rem;
+
+  }
+  
+  @media (min-width: 1280px) {
+    right: 28rem;
+    top: -1rem;
+  }
+  
+  @media (min-width: 1400px) {
+    right: 28rem;
+    top: -1rem;
+  }
+
+  span {
+    margin-left: 0.5rem;
+    color: #333;
+  }
+
+  .login_icon {
+    color: var(--base-color);
+  }
+}
+
+
+@media (max-width: 375px) {
+
+ .title {
+    font: 700 1.675rem 'Poppins',sans-serif;
+      color: var(--title-color);
+      -webkit-font-smoothing: auto;
+    }
+    nav.show ul.grid {
+      gap: 2rem;
+    }
+
+    .ainda_nao {
+      text-align: center;
+      margin-top: 3.4rem;
+    }
+}
+
+/*================ EXTRA SMALL DEVICES ====================*/
+@media (max-width:420px) {
+
+  .title_toggle {
+    font-size: 1.6rem;
+  }
+ #header {
+  .container {
+    .menu {
+      nav {
+    
+        ul {
+          li {
+            a {
+             
+
+              &.logo {
+                display: block;
+                img {
+                  background-image: url('../../images/iconsLogo/logo_syscare_100.png');
+                  background-size: contain;
+                  min-width: 100px;
+                  max-width: 100px;
+                }
+              }
+        
+              
+            }
+          }
+        }
+    
+        .menu {
+          left: 32rem;
+          width: 0;
+        }
+        
+      }
+    }
+  }
+ } 
+
+}
+
+
+
+@media (max-width: 767px){
+  #header {
+    .title_toggle {
+      font-size: 1.6rem;
+    }
+  }
+
+  nav.show ul.grid {
+    gap: 1rem;
+  }
+  nav {
+    ul {
+      li {
+        a {
+          &::after {
+            bottom: -0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+`;

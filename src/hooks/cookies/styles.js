@@ -1,0 +1,16 @@
+import styled from 'styled-components';
+
+
+export const ContainerCooks = styled.div`
+@import "../../styles/variables.css";
+
+.CookieConsent {
+  
+  button:hover { 
+        background: #FFF !important; 
+        transition: all 0.5s ease;
+        color: var(--text-color) !important;
+      }
+}
+
+`;

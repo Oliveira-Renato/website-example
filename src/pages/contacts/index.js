@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 import '../../styles/variables.css'
-import './styles.scss'
+import {ContainerContacts} from './styles.js'
+import {ContainerMedia} from '../../styles/media.js';
 
-import  contactImg from '../../images/symbols/contact.png'
 import $ from 'jquery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -17,7 +17,7 @@ export function ContactForm(){
     const [inputs, setInputs] = useState([]);
     const [status, setStatus] = useState('Enviar');
     const [verify, setVerify] = useState(true);
-    const [loading, setLoading] = useState(false);
+
 
 
     function HandleCleanInputs(){
@@ -142,47 +142,55 @@ export function ContactForm(){
     
 
     return (
-       <div>
-            <form  action="" name="form" method="POST" id='form' onSubmit={ HandleSubmitForm } >
-                <h2 className="title">Envie-nos uma mensagem</h2>
-                
-
-                <div className="contactForm">
-                    <div className="row">
-                        <div className="col50">
-                            <label htmlFor="name"></label>
-                            <input type="text" id="name" name="name" placeholder="Nome" onChange={ HandleInputChanges }  required/>
-                        </div>
-                        <div className="col50">
-                            <label htmlFor="lastname"></label>
-                            <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" onChange={ HandleInputChanges } />
-                        </div>
+       <>
+       
+       <ContainerContacts> 
+           
+       <form  action="" name="form" method="POST" id='form' onSubmit={ HandleSubmitForm } >
+            <h2 className="title">Envie-nos uma mensagem</h2>              
+            <div className="contactForm">
+                <div className="row">
+                    <div className="col50">
+                        <label htmlFor="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Nome" onChange={ HandleInputChanges }  required/>
                     </div>
-                    <div className="row">
-                        <div className="col50">
-                            <label htmlFor="email"></label>
-                            <input type="email" id="email" name="email" placeholder="Email" onChange={ HandleInputChanges }  required />
-                        </div>
-                        <div className="col50">
-                            <label htmlFor="subject"></label>
-                            <input type="text" id="subject" name="subject" placeholder="Assunto" onChange={ HandleInputChanges } required />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col100">
-                            <label htmlFor="message"></label>
-                            <textarea name='message' id="message" placeholder="Digite sua mensagem aqui..." onChange={ HandleInputChanges } required  />
-                        </div>
+                    <div className="col50">
+                        <label htmlFor="lastname"></label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" onChange={ HandleInputChanges } />
                     </div>
                 </div>
-                
-                <div className="send">
-                    <button className="button" type="submit" >
-                    <FontAwesomeIcon icon={faPaperPlane} />
-                        {status}
-                    </button>
+                <div className="row">
+                    <div className="col50">
+                        <label htmlFor="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email" onChange={ HandleInputChanges }  required />
+                    </div>
+                    <div className="col50">
+                        <label htmlFor="subject"></label>
+                        <input type="text" id="subject" name="subject" placeholder="Assunto" onChange={ HandleInputChanges } required />
+                    </div>
                 </div>
-            </form>
-       </div>
+                <div className="row">
+                    <div className="col100">
+                        <label htmlFor="message"></label>
+                        <textarea name='message' id="message" placeholder="Digite sua mensagem aqui..." onChange={ HandleInputChanges } required  />
+                    </div>
+                </div>
+            </div>
+            
+            <div className="send">
+                <button className="button" type="submit" >
+                <FontAwesomeIcon icon={faPaperPlane} />
+                    {status}
+                </button>
+            </div>
+        </form>
+        
+       </ContainerContacts>
+       </>
+          
+        
+        
+           
+            
     )
 }

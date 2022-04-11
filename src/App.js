@@ -13,7 +13,7 @@ import  ScrollReavelling  from './hooks/ScrollReveal';
 import { ProgressBar } from './components/Progressbar/Progressbar';
 
 
-import './styles/media.scss';
+
 import { Toaster } from 'react-hot-toast';
 import { Suport } from './pages/suport/index';
 
@@ -25,22 +25,33 @@ import { Testimonials } from './pages/testimonials/index';
 import { Recaptcha } from './hooks/recaptcha/Recaptcha';
 
 
+import {ContainerMedia} from './styles/media.js';
+
 
 function App() {
   return (
+    
      <div className="App">
-      <BrowserRouter>  
+      
+       
+      <BrowserRouter>
+      
+      
         <Toaster
         position="top-right"
         reverseOrder={false} 
         />
-          <GlobalStyle />
+         
+          
+         
+         <GlobalStyle />  
             <Cookies />
               <HeaderEffect /> 
                 <ScrollReavelling />
                   <ProgressBar />
-  
-                    <Routes>  
+                  
+                    <Routes> 
+                    
                       <Route path="/" element={<Home />} />
                       <Route path="/produtos" element={<ProductTest />} />
                       <Route path="/suporte" element={<Suport />} />
@@ -48,10 +59,12 @@ function App() {
                       <Route path="/#contact" element={<ContactForm />} />
                       <Route path="/#testimonials" element={<Testimonials />} />
                     </Routes>
-
                     <Recaptcha />
+              
       </BrowserRouter>
+      
     </div>
+    
   );
 }
 

@@ -4,15 +4,15 @@ import CookieConsent from "react-cookie-consent";
 
 import {faCookieBite} from '@fortawesome/free-solid-svg-icons';
 
-import './cookie.scss'
+import {ContainerCooks} from './styles.js'
 
 export function Cookies(){
   const [cookies, setCookie, removeCookie] = useCookies(["SyscareCookie"]);
   console.log(cookies)
 
   return(
-    <>
-      <CookieConsent
+   <ContainerCooks>
+     <CookieConsent
         enableDeclineButton
         declineButtonText = "Recusar"
         declineButtonStyle = {{fontSize: "1.6rem", background: "var(--base-color)",borderRadius: "2%", padding: "1rem 3.2rem",boxShadow: "0px 4px 4px rgb(0 0 0 / 25%)"}}
@@ -32,6 +32,8 @@ export function Cookies(){
         <a href="" style={{color: "var(--base-color)", textDecoration: "none", marginLeft:"1.05rem"}}> Política de Cookies</a>.
         
       </CookieConsent>
-    </>
+     
+   </ContainerCooks>
+      
   )
 }

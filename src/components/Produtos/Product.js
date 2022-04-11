@@ -7,12 +7,12 @@ import {
 
 import data from './data.json'
 
-import { Card } from 'react-bootstrap';
+
 import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
 
 
-import './styles.scss';
+import {ContainerProducts} from './styles.js';
 
 export function ProductTest(){
 
@@ -34,7 +34,7 @@ export function ProductTest(){
   })
 
   return (
-    <div>
+    <ContainerProducts>
       <Header />
       <main>
           <section className="section" id="products">
@@ -58,6 +58,8 @@ export function ProductTest(){
         <div className="divider-1"></div>
 
         <Footer />
-    </div>
+
+    </ContainerProducts>
+      
   )
 }
