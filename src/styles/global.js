@@ -52,7 +52,7 @@ body {
 
 .button {
   background-color:  ${props => props.theme.colors.baseColor};
-  color: var(--text-color-light);
+  color: ${props => props.theme.colors.textColorLight};
   height: 5.6rem;
   display: inline-flex;
   align-items: center;
@@ -384,6 +384,7 @@ nav .close {
 
 main #home .container .text .main_title {
   font-size: 3.8rem;
+  color: ${props => props.theme.colors.baseColor};
 
   @media (min-width: 280px and min-height: 568px) {
     font-size: 2.4rem;
@@ -419,7 +420,7 @@ main #home .container .text .second_title {
 
 #testimonials blockquote {
   padding: 3.2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, ${props => props.theme.colors.shadowPorCent});
   border-radius: 0.28rem;
 }
 
@@ -509,7 +510,7 @@ main #home .container .text .second_title {
 /*==== BACK TO TOP ================= */
 a.back-to-top {
   background:  ${props => props.theme.colors.baseColor};
-  color: var(--text-color-light);
+  color: ${props => props.theme.colors.textColorLight};
 
   position: fixed;
   right: 1.6rem;
@@ -548,7 +549,36 @@ a.back-to-top {
   justify-content: center;
 }
 
+@media (min-width: 1032px){
+  nav .menu ul li a.title, .container .menu ul li a.title {
+    font: 400 1.6rem "Poppins";
+    color: ${props => props.theme.colors.textColor};
+  }
 
+  nav .menu ul li a::after, .container .menu ul li a::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: ${props => props.theme.colors.textColor};
+    transition: width 0.3s;
+    top: -3px;
+  }
+}
+@media (min-width: 1280px){
+nav .menu ul li a.title, .container .menu ul li a.title {
+    font: 400 1.6rem "Poppins";
+    color: ${props => props.theme.colors.textColor};
+  }
+}
+
+@media (min-width: 1280px){
+  #header nav .menu ul li a.title, #header .container .menu ul li a.title {
+      font: 400 1.6rem "Poppins", sans-serif;
+      color: ${props => props.theme.colors.textColor};
+  }
+}
 
 
 `

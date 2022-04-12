@@ -9,7 +9,7 @@ export const Container = styled.div`
 }
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .58125rem solid var(--base-color-alt); /* The typwriter cursor */
+  border-right: .58125rem solid ${props => props.theme.colors.baseColorAlt}; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .58125rem; /* Adjust as needed */
@@ -39,7 +39,7 @@ export const Container = styled.div`
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: var(--base-color); }
+  50% { border-color: ${props => props.theme.colors.baseColor}; }
 }
 
 

@@ -16,6 +16,7 @@ export default {
       barLoadingColor:' hsl(57, 82%, 60%)',
       swiperThemeColor: 'blue',
       errorColor: 'hsl(57, 80%, 50%)',
+      shadowPorCent: '0.36',
     },
   
 };

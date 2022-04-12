@@ -1,7 +1,6 @@
 
 export default {
       title: 'light',
-
       colors: {
         headerHeight: '7.2rem ',
         hue: '210',
@@ -16,6 +15,7 @@ export default {
         barLoadingColor:' hsl(57, 82%, 60%)',
         swiperThemeColor: 'blue',
         errorColor: 'hsl(57, 80%, 50%)',
+        shadowPorCent: '8%',
       }
     
   };

@@ -62,7 +62,7 @@ export function Home(){
             </div>
 
             <div className="text">
-              <h3 className="title main_title" style={{color: `${props => props.theme.colors.baseColor}` }}>Syscare</h3>
+              <h3 className="title main_title" style={{color: `${props => props.theme.colors.baseColor}`}}>Syscare</h3>
               <div className="typewriter">
                 <h1 className="title second_title">Gestão de Home Care</h1>
               </div>
