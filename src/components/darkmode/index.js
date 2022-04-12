@@ -16,11 +16,14 @@ const Toggler= ({ toggleTheme }) => {
   }
 
   return (
+    <ContainerHeader>
       <Container>
-        <div className="show">
+        <div className="ainda_nao  show darkIcon ">
           <FontAwesomeIcon className="buttonTheme" icon={ faMoon } onClick={handleSetTheme}  />
         </div>
       </Container>
+    </ContainerHeader>
+      
   );
 };
 

@@ -2,10 +2,9 @@ import React, { useRef, useState } from 'react'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark,faUserNurse, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
-
 import {ContainerHeader} from './styles.js'
-// import '../../styles/media.scss'
 
+import Toggler from '../darkmode/index.js'
 
 import  logo  from '../../assets/images/icons/logo_syscare_150.png'
 
@@ -13,7 +12,6 @@ import  logo  from '../../assets/images/icons/logo_syscare_150.png'
 
 
 export function Header(){
-  const [url, setUrl] = useState('')
 
   function HandleToggleMenu() {
     const nav = document.querySelector('#header nav'); 
@@ -21,25 +19,19 @@ export function Header(){
 
     if(nav.classList.contains('show')){
         suportBtn.classList.toggle('show_btn');
-        nav.classList.toggle('show');
-        
-        
+        nav.classList.toggle('show'); 
     }else {
         suportBtn.classList.toggle('show_btn');
         nav.classList.toggle('show');
         
     }
-    //  sidebar.classList.toggle('active');
+    
   }
 
 
-
    const handleCloseMenu = (time) => { 
-    //  console.log(window.location.pathname);
-    // window.location.pathname = '';
      const nav = document.querySelector('#header nav'); 
      nav.classList.remove('show');
-     //window.location.pathname = '#'+ time
     }
 
    

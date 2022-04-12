@@ -3,17 +3,32 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: ${props => props.theme.colors.baseColor};
   background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  top: 70;
-  left: 0;
-  display: block;
-  padding-left: 10px;
-  margin-left: 4px;
+  right: 2.4rem;
+  position: fixed;
+  z-index: 9999;
+
+
+  @media(max-width: 1030px) {
+      display: none; 
+    }
   
   .buttonTheme{
     color: ${props => props.theme.colors.baseColor};
     cursor: pointer;
-    width: 80px;
-    height: 40px;
+    width: 50px;
+    height: 25px;
+  }
+
+  .darkIcon {
+    position: absolute;
+    right: 37rem;
+    top: -11.5rem;
+
+    @media(min-width: 1030px) {
+      right: 25rem;
+    }
+    @media(min-width: 1240px) {
+      right: 37rem;
+    }
   }
 `;  

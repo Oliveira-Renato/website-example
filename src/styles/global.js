@@ -569,18 +569,16 @@ a.back-to-top {
     top: -3px;
   }
 }
-@media (min-width: 1280px){
-nav .menu ul li a.title, .container .menu ul li a.title {
-    font: 400 1.6rem "Poppins";
-    color: ${props => props.theme.colors.textColor};
-  }
-}
 
 @media (min-width: 1280px){
   #header nav .menu ul li a.title, #header .container .menu ul li a.title {
       font: 400 1.6rem "Poppins", sans-serif;
       color: ${props => props.theme.colors.textColor};
   }
+  #header nav .menu ul li a.title, #header .container .menu ul li a.title:hover {
+    color: ${props => props.theme.colors.baseColor};
+  }
+  
 }
 
 
