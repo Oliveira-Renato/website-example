@@ -31,6 +31,7 @@ a{
 img {
     width: 100%;
     height: auto;
+    
 }
 
 
@@ -553,14 +554,17 @@ a.back-to-top {
     font: 400 1.6rem "Poppins";
     color: ${props => props.theme.colors.textColor};
   }
-
+  nav .menu ul li a.title, .container .menu ul li a.title:hover {
+    color: ${props => props.theme.colors.baseColor};
+  }
+  
   nav .menu ul li a::after, .container .menu ul li a::after {
     position: relative;
     content: "";
     display: block;
     width: 0;
     height: 2px;
-    background: ${props => props.theme.colors.textColor};
+    background: ${props => props.theme.colors.baseColor};
     transition: width 0.3s;
     top: -3px;
   }

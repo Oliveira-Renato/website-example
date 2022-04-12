@@ -37,6 +37,15 @@ nav.show div.close {
   right: -0.16rem;
 }
 
+
+element.style {
+}
+
+nav a.logo img {
+    
+    filter: ${props => props.theme.colors.imgFilter}; 
+}
+
 /*======== TOGGLE MENU =============*/
 
 
@@ -161,7 +170,7 @@ nav.show div.close {
               &.logo {
                 display: block;
                 img {
-                  background-image: url('../../assets/images/icons/logo_syscare_100.png');
+                  background-image: url('../../assets/images/black/png.png');
                   background-size: contain;
                   min-width: 100px;
                   max-width: 100px;

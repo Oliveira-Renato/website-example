@@ -16,6 +16,8 @@ export default {
         swiperThemeColor: 'blue',
         errorColor: 'hsl(57, 80%, 50%)',
         shadowPorCent: '8%',
+        shadowPorCentSuport: '1%',
+        imgFilter: '',
       }
     
   };

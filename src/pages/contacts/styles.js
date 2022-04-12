@@ -46,17 +46,20 @@ export const ContainerContact = styled.div`
       padding: 1rem;
       border: none;
       outline: none;
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, .08);
       border-radius: 0.25rem;
       color: ${props => props.theme.colors.textColor};
       background: ${props => props.theme.colors.bodyColorAlt};
       resize: none;
-      box-shadow: 0px 1px 4px ${props => props.theme.colors.baseColorSecoond};
+      box-shadow: 0px 1px 4px ${props => props.theme.colors.baseColorSecond};
       text-align: left;
+
+      &::placeholder {
+        opacity: 0.5; 
+      }
   }
 
     textarea {
-      margin-left: 5px; 
       height: 100px;
 
       &::placeholder {

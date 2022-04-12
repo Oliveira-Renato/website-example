@@ -1,7 +1,7 @@
 import React from 'react'
 
-
-import  logo  from '../../assets/images/icons/logo_syscare_100.png'
+// import  logo  from '../../assets/images/icons/logo_syscare_100.png'
+import  logo  from '../../assets/images/black/png.png'
 import mainImg from '../../assets/images/home/home.jpg'
 import aboutImg from '../../assets/images/home/campaign-creators.jpg'
 
@@ -188,6 +188,8 @@ export function Home(){
             <ContactForm />
           </div>
         </section>
+
+        
       </main>
 
       {/*====  SEPARETOR 2 ====  */}
