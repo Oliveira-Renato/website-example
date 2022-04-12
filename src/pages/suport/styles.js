@@ -34,6 +34,7 @@ h2 {
   position: relative;
   box-shadow: 0px 30px 60px 0 rgba(0, 0, 0, 0.3);
   text-align: center;
+  margin: 11rem;
 }
 
 .icon {
@@ -67,7 +68,7 @@ h2.active {
 
 input[type=button], input[type=submit]  
 {
-  background-color: var(--base-color);
+  background-color: ${props => props.theme.colors.baseColor};
   border: none;
   color: white;
   padding: 15px 80px;
@@ -84,7 +85,7 @@ input[type=button], input[type=submit]
 
 .btn:hover {
   cursor: pointer;  
-  background-color:var(--base-color-alt);  
+  background-color:${props => props.theme.colors.baseColorAlt};  
 }
 
 
@@ -111,7 +112,7 @@ input
 input:focus
 {
   background-color: white;
-  border-bottom: 2px solid var(--base-color);
+  border-bottom: 2px solid ${props => props.theme.colors.baseColor};
 
   
 

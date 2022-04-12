@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark,faUserNurse, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
-import {Container} from './styles.js'
+import {ContainerHeader} from './styles.js'
 // import '../../styles/media.scss'
 
 
@@ -49,7 +49,7 @@ export function Header(){
 
   return (
     <>
-    <Container>
+    <ContainerHeader>
     {/*====  HEADER/NAV ====  */}
     <header id="header">
         <nav className="container">
@@ -75,18 +75,19 @@ export function Header(){
           </li>
         </ul>
         {/* ==== botão suporte ===== */}
-        <ul>
-          <li><div className="ainda_nao show"> 
-          <a href="/suporte" className="button btn2"  alt="Botão para suporte">
-            <FontAwesomeIcon className="icones" icon={ faPhoneVolume } />Suporte
-          </a>
-        </div>
+        <ul className="tribruxo">
+          <li>
+            <div className="ainda_nao show"> 
+              <a href="/suporte" className="button btn2"  alt="Botão para suporte">
+              <FontAwesomeIcon className="icones" icon={ faPhoneVolume } />Suporte
+            </a>
+          </div>
         </li>
         <li>
-        <div className="ainda_nao login_btn show" >
-          <a href="http://dese.syscare.com.br"  className="btn1" target="_blank"  alt="área de login">
-            <FontAwesomeIcon className="icones login_icon" icon={ faUserNurse } /><span>Entrar</span>
-          </a>
+          <div className="ainda_nao login_btn show" >
+            <a href="http://dese.syscare.com.br"  className="btn1" target="_blank"  alt="área de login">
+              <FontAwesomeIcon className="icones login_icon" icon={ faUserNurse } /><span>Entrar</span>
+            </a>
           </div>
         </li>
         </ul>
@@ -108,7 +109,7 @@ export function Header(){
         </nav>
 
     </header>
-    </Container>
+    </ContainerHeader>
     </>
   )
 }

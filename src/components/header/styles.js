@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContainerHeader = styled.div`
   /*====MOSTRAR MENU======= */
 nav.show .menu {
   opacity: 1;

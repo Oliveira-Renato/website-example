@@ -120,7 +120,6 @@ body {
 }
 
 #header {
-  border-bottom: 1px solid #e4e4e4;
   margin-bottom: 3.2rem;
   display: flex;
 

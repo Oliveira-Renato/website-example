@@ -7,13 +7,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ContactForm } from './pages/contacts/index';
 
 import GlobalStyle from './styles/global';
-import  {ProductTest}  from './components/Produtos/Product';
+import { ProductTest }  from './components/Produtos/Product';
 import { HeaderEffect } from './hooks/Header';
 import  ScrollReavelling  from './hooks/ScrollReveal';
 import { ProgressBar } from './components/Progressbar/progressbar';
 
 
 import './styles/media.scss';
+
 import { Toaster } from 'react-hot-toast';
 import { Suport } from './pages/suport/index';
 
@@ -47,7 +48,7 @@ function App() {
      <div className="App">
       <BrowserRouter> 
 
-      <SwitchDark toggleTheme={toggleTheme} /> 
+      <SwitchDark toggleTheme={toggleTheme} />
         <Toaster
         position="top-right"
         reverseOrder={false} 
