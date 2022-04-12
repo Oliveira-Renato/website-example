@@ -38,8 +38,9 @@ nav.show div.close {
 }
 
 
-element.style {
-}
+/* .darkIcon.show {
+  display: none;
+} */
 
 nav a.logo img {
     
@@ -47,7 +48,12 @@ nav a.logo img {
 }
 
 /*======== TOGGLE MENU =============*/
-
+.darkIcontoggle {
+    
+    @media(max-width: 1030px) {
+      top:  -11.5rem;
+    }
+  }
 
 .show_btn {
   // visibility: visible;
@@ -83,10 +89,6 @@ nav a.logo img {
   }
 }
 
-
-
-.renato {
-  // display: block;
 }
 
 .login_btn {

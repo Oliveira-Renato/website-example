@@ -549,6 +549,12 @@ a.back-to-top {
   justify-content: center;
 }
 
+.darkIcontoggle {
+    
+    @media(max-width: 1030px) {
+      top:  -11.5rem;
+    }
+  }
 @media (min-width: 1032px){
   nav .menu ul li a.title, .container .menu ul li a.title {
     font: 400 1.6rem "Poppins";

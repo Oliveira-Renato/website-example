@@ -188,7 +188,6 @@ export function Home(){
             <ContactForm />
           </div>
         </section>
-
         
       </main>
 

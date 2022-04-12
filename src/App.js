@@ -39,8 +39,8 @@ function App() {
 
   const [theme, setTheme] = usePersistedState('theme', dark); 
 
-  const toggleTheme = () => {
-    setTheme(theme.title === 'light' ? dark : light);
+   const toggleTheme = () => {
+     setTheme(theme.title === 'light' ? dark : light);
   };
 
   return (
@@ -48,7 +48,7 @@ function App() {
      <div className="App">
       <BrowserRouter> 
 
-      <SwitchDark toggleTheme={toggleTheme} />
+      <SwitchDark toggleTheme={toggleTheme} /> 
         <Toaster
         position="top-right"
         reverseOrder={false} 

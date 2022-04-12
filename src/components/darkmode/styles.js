@@ -6,12 +6,10 @@ export const Container = styled.div`
   right: 2.4rem;
   position: fixed;
   z-index: 9999;
+  visibility: visible; 
 
-
-  @media(max-width: 1030px) {
-      display: none; 
-    }
   
+   
   .buttonTheme{
     color: ${props => props.theme.colors.baseColor};
     cursor: pointer;
@@ -24,11 +22,22 @@ export const Container = styled.div`
     right: 37rem;
     top: -11.5rem;
 
+    @media(max-width: 1030px) {
+      top: -25rem;
+    }
+
     @media(min-width: 1030px) {
       right: 25rem;
     }
     @media(min-width: 1240px) {
       right: 37rem;
+    } 
+  }
+
+  .darkIcontoggle {
+    
+    @media(max-width: 1030px) {
+      top:  -11.5rem;
     }
   }
 `;  
