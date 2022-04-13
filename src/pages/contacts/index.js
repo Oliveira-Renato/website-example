@@ -37,12 +37,11 @@ export function ContactForm(){
         inputs[event.target.name] = event.target.value;
 
         setInputs(inputs)
-        console.log(inputs)
+        
     }
 
     async function HandleSubmitForm(event) {
         event.preventDefault();
-        console.log(verify);
         // console.log(inputs);
         const data = Object.entries(inputs).map(([key, value]) => {
             return {

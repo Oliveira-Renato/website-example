@@ -9,7 +9,7 @@ export function Recaptcha(){
         .execute("6LcxBlQfAAAAAMM2iVlQai_h2wk9r8H3pcsnK1_B", { action:"homepage" })
         .then(token => {
           // ...
-          console.log(token);
+  
         })
     })
   }

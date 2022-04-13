@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   .CookieConsent {
     background: ${props => props.theme.colors.bodyColor} !important;
-
+    color: ${props => props.theme.colors.textColor} !important;
+    
   button {
     
        &:hover{

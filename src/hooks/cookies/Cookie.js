@@ -7,7 +7,6 @@ import { Container } from './styles';
 
 export function Cookies(){
   const [cookies, setCookie, removeCookie] = useCookies(["SyscareCookie"]);
-  console.log(cookies)
 
   return(
     <>
