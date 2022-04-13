@@ -23,6 +23,7 @@ export const Container = styled.div`
     top: -11.5rem;
 
     @media(max-width: 1030px) {
+      right: auto;
       top: -25rem;
     }
 
@@ -37,7 +38,10 @@ export const Container = styled.div`
   .darkIcontoggle {
     
     @media(max-width: 1030px) {
-      top:  -11.5rem;
+      transition: 0.3s ;
+      position: fixed; /* or absolute */
+      top: -5rem;
+      left: 50%;
     }
   }
 `;  

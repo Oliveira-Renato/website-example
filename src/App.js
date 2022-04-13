@@ -37,18 +37,20 @@ import SwitchDark from './components/darkmode';
 
 function App() {
 
-  const [theme, setTheme] = usePersistedState('theme', dark); 
+  const [theme, setTheme] = usePersistedState('themes', light); 
+  console.log('theme app',theme)
 
-   const toggleTheme = () => {
+   const toggleTheme= () => {
      setTheme(theme.title === 'light' ? dark : light);
-  };
+    };
 
   return (
     <ThemeProvider theme={theme}>
+      
      <div className="App">
+     <SwitchDark toggleTheme={toggleTheme} /> 
+     {/* <ScrollReavelling /> */}
       <BrowserRouter> 
-
-      <SwitchDark toggleTheme={toggleTheme} /> 
         <Toaster
         position="top-right"
         reverseOrder={false} 
@@ -56,9 +58,7 @@ function App() {
           <GlobalStyle />
             <Cookies />
               <HeaderEffect /> 
-                {/* <ScrollReavelling /> */}
                   <ProgressBar />
-  
                     <Routes>  
                       <Route path="/" element={<Home />} />
                       <Route path="/produtos" element={<ProductTest />} />

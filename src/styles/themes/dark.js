@@ -1,7 +1,6 @@
 export default {
 
     title : 'dark',
-    
     colors: {
       headerHeight: '7.2rem',
       hue: 970,

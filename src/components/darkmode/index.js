@@ -18,7 +18,7 @@ const Toggler= ({ toggleTheme }) => {
   return (
     <ContainerHeader>
       <Container>
-        <div className="container show ">
+        <div className="show">
         <div className="ainda_nao darkIcon">
           <FontAwesomeIcon className="buttonTheme" icon={ faMoon } onClick={handleSetTheme}  />
         </div>

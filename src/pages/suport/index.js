@@ -19,7 +19,7 @@ export function Suport() {
     <Container>
       <main>
       <Header />
-        <section className="section" id="suport" >
+        <section className="section section_suport" id="suport" >
             <div className="wrapper">
                 <div id="formcontent" onLoad={HandleCleanInputs}>
                     <h2 className="active">LOGIN</h2>

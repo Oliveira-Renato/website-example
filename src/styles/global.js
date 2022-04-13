@@ -51,6 +51,18 @@ body {
   
 }
 
+.title::before {
+  @media(min-width: 650px) {
+    background:  ${props => props.theme.colors.baseColor};
+  }
+}
+
+.title::before {
+  @media(min-width: 650px) {
+    background:  ${props => props.theme.colors.baseColor};
+  }
+}
+
 .button {
   background-color:  ${props => props.theme.colors.baseColor};
   color: ${props => props.theme.colors.textColorLight};
@@ -527,16 +539,16 @@ a.back-to-top {
 
   transition: 0.3s;
   transform: translateY(100%);
-
- 
-
 }
 
 .show{
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-
+    
+    @media(max-width: 1030px){
+      width: 100vw;
+    }
   }
 
 .showSuport {
@@ -552,7 +564,9 @@ a.back-to-top {
 .darkIcontoggle {
     
     @media(max-width: 1030px) {
-      top:  -11.5rem;
+      top: 10vh;
+      left: 100;
+
     }
   }
 @media (min-width: 1032px){

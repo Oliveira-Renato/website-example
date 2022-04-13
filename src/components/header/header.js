@@ -1,20 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark,faUserNurse, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import {ContainerHeader} from './styles.js'
+import  ScrollReavelling  from '../../hooks/ScrollReveal';
 
-import Toggler from '../darkmode/index.js'
-
-import  logo  from '../../assets/images/icons/logo_syscare_150.png'
-
-
-import { ThemeProvider, DefaultTheme } from 'styled-components';
-import usePersistedState from '../../utils/usePersistedState';
-import light from '../../styles/themes/light'
-import dark from '../../styles/themes/dark'; 
-import SwitchDark from '../../components/darkmode';  
-
+import  logo  from '../../assets/images/icons/logo_syscare_200.png';
 
 
 
@@ -23,40 +14,30 @@ export function Header(){
   function HandleToggleMenu() {
     const nav = document.querySelector('#header nav'); 
     const suportBtn = document.querySelector('.ainda_nao');
+    const toggleThemeIcon = document.querySelector('.darkIcon');
 
-    const teste = document.querySelector('.darkIcon');
+    toggleThemeIcon.classList.contains('darkIcontoggle')?toggleThemeIcon.classList.remove('darkIcontoggle'):toggleThemeIcon.classList.add('darkIcontoggle');
 
-    if(teste.classList.contains('darkIcontoggle')){
-        teste.classList.remove('darkIcontoggle')
-    }else{
-        teste.classList.add('darkIcontoggle');
-    }
-    
     
 
     if(nav.classList.contains('show')){
-
         suportBtn.classList.toggle('show_btn');
         nav.classList.toggle('show'); 
-        
     }else {
         suportBtn.classList.toggle('show_btn');
         nav.classList.toggle('show'); 
-        
     }
     
   }
 
+   const handleCloseMenu = () => { 
+      const toggleThemeIcon = document.querySelector('.darkIcon');
+      const nav = document.querySelector('#header nav'); 
 
-   const handleCloseMenu = (time) => { 
-     const nav = document.querySelector('#header nav'); 
-     nav.classList.remove('show');
+      nav.classList.remove('show');
+      toggleThemeIcon.classList.remove('darkIcontoggle');
     }
 
-   
-
-  
-    
 
   return (
     <>

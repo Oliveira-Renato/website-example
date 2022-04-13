@@ -213,7 +213,6 @@
             content: '';
             height: 100%;
             width: 100%;
-            background: var(--base-color);
             position: absolute;
             top: -12.3%;
             left: -14%;
@@ -233,12 +232,11 @@
             &::before {
               content: '';
               position: absolute;
-              left: 50%;
+              left: 10%;
               transform: translateX(-50%);
               bottom: -4px;
               width: 120px;
               height: 4px;
-              background: var(--base-color);
             }
           }
         }
@@ -269,7 +267,7 @@
             bottom: -5px;
             width: 60px;
             height: 4px;
-            background: var(--base-color);
+            
           }
           
         }
@@ -326,7 +324,7 @@
               bottom: -5px;
               width: 60px;
               height: 4px;
-              background: var(--base-color);
+              
             }
           }
 
@@ -515,7 +513,6 @@
             content: "";
             height: 65%;
             width: 100%;
-            background: var(--base-color);
             position: absolute;
             top: -6.7%;
             left: -14%;
@@ -540,7 +537,7 @@
               width: 120px;
               height: 4px;
               left: 6rem;
-              background: var(--base-color);
+              
             }
           }
         }
@@ -565,7 +562,7 @@
             bottom: -5px;
             width: 60px;
             height: 4px;
-            background: var(--base-color);
+            
           }
           
         }
@@ -610,7 +607,7 @@
               bottom: -5px;
               width: 60px;
               height: 4px;
-              background: var(--base-color);
+              
             }
           }
 
@@ -716,7 +713,7 @@
               display: block;
               width: 0;
               height: 2px;
-              background: var(--base-color);
+              
               transition: width 0.3s;
               top: -3px;
             
@@ -874,7 +871,7 @@
     //           bottom: -4px;
     //           width: 120px;
     //           height: 4px;
-    //           background: var(--base-color);
+    //           
     //         }
     //       }
     //     }
@@ -901,7 +898,7 @@
             bottom: -5px;
             width: 60px;
             height: 4px;
-            background: var(--base-color);
+            
           }
           
         }
@@ -955,7 +952,7 @@
               bottom: -5px;
               width: 60px;
               height: 4px;
-              background: var(--base-color);
+              
             }
           }
 
@@ -1070,7 +1067,7 @@
       .container {
         
         header .title, header p {
-          max-width: 32rem;
+          // max-width: 32rem;
           text-align: center;
           margin-left: auto;
           margin-right: auto;
@@ -1172,7 +1169,6 @@
             content: "";
             height: 73%;
             width: 100%;
-            background: var(--base-color);
             position: absolute;
             top: -12.7%;
             left: -14%;
@@ -1190,12 +1186,12 @@
              &::before {
                 content: '';
                 position: absolute;
-                left: 50%;
+                // left: 50%;
                 transform: translateX(-50%);
                 bottom: -4px;
                 width: 120px;
                 height: 4px;
-                background: var(--base-color);
+                
              }
            }
          }
@@ -1226,7 +1222,7 @@
             bottom: -5px;
             width: 60px;
             height: 4px;
-            background: var(--base-color);
+            
           }
           
         }
@@ -1272,7 +1268,7 @@
               bottom: -5px;
               width: 60px;
               height: 4px;
-              background: var(--base-color);
+              
             }
           }
 
@@ -1455,7 +1451,6 @@
             content: "";
                 height: 73%;
                 width: 100%;
-                background: var(--base-color);
                 position: absolute;
                 top: -12.7%;
                 left: -14%;
@@ -1495,7 +1490,7 @@
             bottom: -5px;
             width: 60px;
             height: 4px;
-            background: var(--base-color);
+            
           }
           
         }
@@ -1547,7 +1542,7 @@
               bottom: -5px;
               width: 60px;
               height: 4px;
-              background: var(--base-color);
+              
             }
           }
 

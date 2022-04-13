@@ -43,15 +43,27 @@ nav.show div.close {
 } */
 
 nav a.logo img {
-    
-    filter: ${props => props.theme.colors.imgFilter}; 
+    min-width: 120px;
+    max-width: 100px;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    resize: none;
+    /* filter: ${props => props.theme.colors.imgFilter};  */
 }
 
 /*======== TOGGLE MENU =============*/
 .darkIcontoggle {
     
     @media(max-width: 1030px) {
-      top:  -11.5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
     }
   }
 
@@ -172,7 +184,7 @@ nav a.logo img {
               &.logo {
                 display: block;
                 img {
-                  background-image: url('../../assets/images/black/png.png');
+                  /* background-image: url('../../assets/images/black/png.png'); */
                   background-size: contain;
                   min-width: 100px;
                   max-width: 100px;

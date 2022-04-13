@@ -2,10 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   a {
-  color: ${props => props.theme.colors.bodyColorAlt};
-  display: inline-block;
+  /* color: ${props => props.theme.colors.titleColor}; */
+  /* display: inline-block; */
   font-weight: 400;
   text-decoration: none;
+}
+
+main #suport {
+  padding: 11rem 0;
 }
 
 h2 {
@@ -46,6 +50,7 @@ h2 {
 .icon-2 {
   width: 120px;
   margin-bottom: 10px;
+  filter: ${props => props.theme.colors.imgFilter};
 }
 
 .formfooter {
@@ -62,6 +67,7 @@ h2 {
 }
 
 h2.active {
+  margin-top: 1.6rem;
   color: ${props => props.theme.colors.titleColor};
   font-size: 20px;
   font-weight: bold;
@@ -71,7 +77,7 @@ input[type=button], input[type=submit]
 {
   background-color: ${props => props.theme.colors.baseColor};
   border: none;
-  color: ${props => props.theme.colors.bodyColorAlt};
+  color: ${props => props.theme.colors.textColorLight};
   padding: 15px 80px;
   text-align: center;
   text-decoration: none;
@@ -94,7 +100,7 @@ input
 {
   background-color: ${props => props.theme.colors.bodyColor};
   border: none;
-  color: ${props => props.theme.colors.textColorLight};
+  color: ${props => props.theme.colors.textColor};
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -128,4 +134,14 @@ input::placeholder
     width: 80%;
   }
 }
+
+
+main .section {
+  padding: 11.2rem 3.2rem;
+  height: 100%;
+}
+
+
+
 `;
+
