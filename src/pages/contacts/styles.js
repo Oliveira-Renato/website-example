@@ -8,7 +8,9 @@ export const ContainerContact = styled.div`
   margin-left: 1rem;
   margin-top: 2.2rem;
 }
-
+.go2358747891 {
+  background: ${props => props.theme.colors.baseColor} !important;
+}
 .contactForm {
   width: 100%;
   

@@ -42,7 +42,7 @@ export function ContactForm(){
 
     async function HandleSubmitForm(event) {
         event.preventDefault();
-        // console.log(inputs);
+        
         const data = Object.entries(inputs).map(([key, value]) => {
             return {
                 [key] : value
@@ -76,8 +76,8 @@ export function ContactForm(){
                         {
                             icon: '👍',
                             style: {
-                                background: 'var(--base-color)',
-                                color: '#fff',
+                                background: 'hsl(970 36% 57%)',
+                                color: '#FFF',
                                 width: '300px',
                                 fontSize: '1.6rem',
                             },
@@ -91,12 +91,11 @@ export function ContactForm(){
                         icon: '😱',
                         style: {
                             width: '300px',
-                            background: '#EF2A2A',
+                            background: 'hsl(970 36% 57%)',
                             color: '#fff',
                             fontSize: '1.6rem',
                         },
                     })
-    
                     HandleCleanInputs()
                 }
                 
@@ -106,7 +105,7 @@ export function ContactForm(){
                     icon: '😱',
                     style: {
                         width: '300px',
-                        background: 'var(--error-color)',
+                        background: 'hsl(970 36% 57%)',
                         color: '#fff',
                         fontSize: '1.6rem',
                     },
@@ -121,7 +120,7 @@ export function ContactForm(){
                     icon: '😱',
                     style: {
                         width: '300px',
-                        background: 'var(--error-color)',
+                        background: 'hsl(970 36% 57%)',
                         color: '#fff',
                         fontSize: '1.6rem',
                     },
@@ -134,7 +133,6 @@ export function ContactForm(){
 
     function HandleOnChange(value) {
         setVerify(false)
-        console.log(verify);
     }
 
     

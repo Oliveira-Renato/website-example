@@ -38,7 +38,6 @@ import SwitchDark from './components/darkmode';
 function App() {
 
   const [theme, setTheme] = usePersistedState('themes', light); 
-  console.log('theme app',theme)
 
    const toggleTheme= () => {
      setTheme(theme.title === 'light' ? dark : light);

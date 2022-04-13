@@ -18,7 +18,7 @@ export const Container = styled.div`
       border: 0px; 
       border-radius: 2% !important; 
       box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px; 
-      color: ${props => props.theme.colors.bodyColor} !important;
+      color: ${props => props.theme.colors.textColorLight} !important;
       cursor: pointer; 
       flex: 0 0 auto; 
       padding: 1rem 3.2rem; 
