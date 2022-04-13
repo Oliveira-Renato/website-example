@@ -7,16 +7,16 @@ export default function ScrollReavelling(){
   useEffect(() => {
     const scrollReveal = ScrollReveal({
       origin: 'top',
-      distance: '20px',
+      distance: '30px',
       duration: 700,
       reset: true
     })
   //#testimonials .testimonials,
     scrollReveal.reveal(
       ` #home .text,
-      #about .image_about, #about .text,
+      #about .image, #about .text,
       #services header, #products .card,
-      #testimonials header, 
+      #testimonials header,  #testimonials .text,
       #contact .text, #contact .links,
       #footer .row
       `,

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const ContainerHeader = styled.div`
- /*====MOSTRAR MENU======= */
+  /*====MOSTRAR MENU======= */
 nav.show .menu {
   opacity: 1;
   visibility:visible;
 
-  background: var(--body-color);
+  background: ${props => props.theme.colors.bodyColor};
   height: 100vh;
   width: 100vw;
 
@@ -37,8 +37,35 @@ nav.show div.close {
   right: -0.16rem;
 }
 
-/*======== TOGGLE MENU =============*/
 
+/* .darkIcon.show {
+  display: none;
+} */
+
+nav a.logo img {
+    min-width: 120px;
+    max-width: 100px;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    resize: none;
+    /* filter: ${props => props.theme.colors.imgFilter};  */
+}
+
+/*======== TOGGLE MENU =============*/
+.darkIcontoggle {
+    
+    @media(max-width: 1030px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  }
 
 .show_btn {
   // visibility: visible;
@@ -66,7 +93,7 @@ nav.show div.close {
   .btn2{
     padding: 0 3.2rem;
     &:hover {
-      color: var(--body-color);
+      color: ${props => props.theme.colors.bodyColor};
     }
     &:hover::after{
       width: 0;
@@ -74,10 +101,6 @@ nav.show div.close {
   }
 }
 
-
-
-.renato {
-  // display: block;
 }
 
 .login_btn {
@@ -93,7 +116,7 @@ nav.show div.close {
 
 
     span {
-      color: var(--text-color);
+      color: ${props => props.theme.colors.textColor};
       font-weight: 400;
     }
   }
@@ -116,11 +139,11 @@ nav.show div.close {
 
   span {
     margin-left: 0.5rem;
-    color: #333;
+    color: ${props => props.theme.colors.textColor};
   }
 
   .login_icon {
-    color: var(--base-color);
+    color: ${props => props.theme.colors.baseColor};
   }
 }
 
@@ -129,7 +152,7 @@ nav.show div.close {
 
  .title {
     font: 700 1.675rem 'Poppins',sans-serif;
-      color: var(--title-color);
+      color: ${props => props.theme.colors.titleColor};
       -webkit-font-smoothing: auto;
     }
     nav.show ul.grid {
@@ -161,7 +184,7 @@ nav.show div.close {
               &.logo {
                 display: block;
                 img {
-                  background-image: url('../../images/iconsLogo/logo_syscare_100.png');
+                  /* background-image: url('../../assets/images/black/png.png'); */
                   background-size: contain;
                   min-width: 100px;
                   max-width: 100px;
@@ -209,5 +232,4 @@ nav.show div.close {
     }
   }
 }
-
 `;

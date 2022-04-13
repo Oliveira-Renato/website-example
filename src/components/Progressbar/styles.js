@@ -1,9 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const ContainerProgress = styled.div`
 
-@import url('../../styles/variables.css');
-
+export const Container = styled.div`
 .aaa {
   z-index: 100;
   width: 100%;
@@ -12,23 +10,25 @@ export const ContainerProgress = styled.div`
   top: 0;
   margin-top: 7.2rem;
 
-  .progress-container {
+  .progress-container { 
     width: 100%;
     height: 3px;
     background: linear-gradient(
     270deg,
-    hsla(var(--hue), 65%, 88%, 0.34) 0%,
-    hsla(var(--hue), 36%, 57%, 1) 100%
+    hsla(${props => props.theme.colors.hue}, 65%, 88%, 0.34) 0%,
+    hsla(${props => props.theme.colors.hue}, 36%, 57%, 1) 100%
   );
 
     .progress-bar {
       height: 3px;
-      background:var(--bar-loading-color);
+      background:${props => props.theme.colors.barLoadingColor};
 
       width: 0%;
     }
   }
 }
 
-
 `;
+
+
+

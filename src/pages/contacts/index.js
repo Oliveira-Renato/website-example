@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 
-import '../../styles/variables.css'
-import {ContainerContacts} from './styles.js'
-import {ContainerMedia} from '../../styles/media.js';
+import  '../../styles/variables.css'
+import {ContainerContact} from './styles.js'
 
 import $ from 'jquery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -142,17 +141,22 @@ export function ContactForm(){
     
 
     return (
-       <>
-       
-       <ContainerContacts> 
-           
-       <form  action="" name="form" method="POST" id='form' onSubmit={ HandleSubmitForm } >
-            <h2 className="title">Envie-nos uma mensagem</h2>              
-            <div className="contactForm">
-                <div className="row">
-                    <div className="col50">
-                        <label htmlFor="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Nome" onChange={ HandleInputChanges }  required/>
+       <div>
+           <ContainerContact>   
+            <form  action="" name="form" method="POST" id='form' onSubmit={ HandleSubmitForm } >
+                <h2 className="title">Envie-nos uma mensagem</h2>
+                
+
+                <div className="contactForm">
+                    <div className="row">
+                        <div className="col50">
+                            <label htmlFor="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Nome" onChange={ HandleInputChanges }  required/>
+                        </div>
+                        <div className="col50">
+                            <label htmlFor="lastname"></label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" onChange={ HandleInputChanges } />
+                        </div>
                     </div>
                     <div className="col50">
                         <label htmlFor="lastname"></label>
@@ -169,28 +173,8 @@ export function ContactForm(){
                         <input type="text" id="subject" name="subject" placeholder="Assunto" onChange={ HandleInputChanges } required />
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col100">
-                        <label htmlFor="message"></label>
-                        <textarea name='message' id="message" placeholder="Digite sua mensagem aqui..." onChange={ HandleInputChanges } required  />
-                    </div>
-                </div>
-            </div>
-            
-            <div className="send">
-                <button className="button" type="submit" >
-                <FontAwesomeIcon icon={faPaperPlane} />
-                    {status}
-                </button>
-            </div>
-        </form>
-        
-       </ContainerContacts>
-       </>
-          
-        
-        
-           
-            
+            </form>
+            </ ContainerContact>
+       </div>
     )
 }

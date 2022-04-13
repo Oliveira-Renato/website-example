@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
-import './variables.css'
+import './variables.css';
+import './media.scss'
 
 export default createGlobalStyle`
+
 /*======INICIAL=========================== */
 * {
 margin: 0;
@@ -29,6 +31,7 @@ a{
 img {
     width: 100%;
     height: auto;
+    
 }
 
 
@@ -36,21 +39,33 @@ img {
 /*====  BASE ============================ */
 body {
   font: 400 1.6rem 'Poppins', sans-serif;
-  color: var(--text-color);
-  background: var(--body-color);
+  color: ${props => props.theme.colors.textColor};
+  background:  ${props => props.theme.colors.bodyColor};
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
   font: 700 2.4rem 'Poppins', sans-serif;
-  color: var(--title-color);
+  color:  ${props => props.theme.colors.titleColor};
   -webkit-font-smoothing: auto;
   
 }
 
+.title::before {
+  @media(min-width: 650px) {
+    background:  ${props => props.theme.colors.baseColor};
+  }
+}
+
+.title::before {
+  @media(min-width: 650px) {
+    background:  ${props => props.theme.colors.baseColor};
+  }
+}
+
 .button {
-  background-color: var(--base-color);
-  color: var(--text-color-light);
+  background-color:  ${props => props.theme.colors.baseColor};
+  color: ${props => props.theme.colors.textColorLight};
   height: 5.6rem;
   display: inline-flex;
   align-items: center;
@@ -64,15 +79,15 @@ body {
 }
 
 .button:hover {
-  background: var(--base-color-alt);
+  background:  ${props => props.theme.colors.baseColorAlt};
 }
 
 .divider-1 {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 36%, 57%, 1) 0%,
-    hsla(var(--hue), 65%, 88%, 0.34) 100%
+    hsla(${props => props.theme.colors.hue}, 36%, 57%, 1) 0%,
+    hsla(${props => props.theme.colors.hue}, 65%, 88%, 0.34) 100%
   );
 }
 
@@ -80,8 +95,8 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 65%, 88%, 0.34),
-    hsla(var(--hue),36%, 57%, 1) 
+    hsla(${props => props.theme.colors.hue}, 65%, 88%, 0.34),
+    hsla(${props => props.theme.colors.hue},36%, 57%, 1) 
   );
 }
 
@@ -114,11 +129,10 @@ body {
 }
 
 .section header strong {
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 }
 
 #header {
-  border-bottom: 1px solid #e4e4e4;
   margin-bottom: 3.2rem;
   display: flex;
 
@@ -133,17 +147,17 @@ body {
 }
 
 #header.scroll {
-  background-color: var(--body-color);
+  background-color:  ${props => props.theme.colors.bodyColor};
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 } 
 
 main {
-  margin-top: calc(var(--header-height) + 3.2rem);
+  margin-top: calc(${props => props.theme.colors.headerHeight} + 3.2rem);
 }
 
 
 strong {
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 }
 /*====  LOGO ============================ */
 nav a.logo  img {
@@ -169,7 +183,7 @@ nav a.logo  img {
 
 /*====  NAVIGATION ============================ */
 nav {
-  height: var(--header-height);
+  height: ${props => props.theme.colors.headerHeight};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -188,14 +202,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--base-color);
+    color:  ${props => props.theme.colors.baseColor};
 }
 
 nav ul li a::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: var(--base-color);
+    background:  ${props => props.theme.colors.baseColor};
     position: absolute;
     left: 0;
     bottom: -1.4rem;
@@ -227,7 +241,7 @@ nav .menu ul {
 
 /*=========== toggle menu ==========*/
 .toggle {
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 
   >.svg-inline--fa {
     height: 1.5em;
@@ -276,7 +290,7 @@ nav .close {
   content: '';
   height: 100%;
   width: 100%;
-  background: var(--base-color-second);
+  background: ${props => props.theme.colors.baseColorSecond};
   position: absolute;
   top: -16.8%;
   left: 16.7%;
@@ -310,7 +324,7 @@ nav .close {
 
 /*====  HOME ============================ */
 #about {
-  background: white;
+  background: ${props => props.theme.colors.bodyColorAlt};
 }
 
 #about .container {
@@ -326,7 +340,7 @@ nav .close {
   content: '';
   height: 100%;
   width: 100%;
-  background: var(--base-color);
+  background:  ${props => props.theme.colors.baseColor};
 
   position: absolute;
   top: -8.3%;
@@ -357,7 +371,7 @@ nav .close {
 .card {
   padding: 2.4rem 1.6rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.28rem solid var(--base-color);
+  border-bottom: 0.28rem solid  ${props => props.theme.colors.baseColor};
   border-radius: 0.28rem 0.28rem 0 0;
   text-align: center;
 }
@@ -366,7 +380,7 @@ nav .close {
   display: block;
   margin-bottom: 2.4rem;
   font-size: 8rem;
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 }
 
 
@@ -382,6 +396,7 @@ nav .close {
 
 main #home .container .text .main_title {
   font-size: 3.8rem;
+  color: ${props => props.theme.colors.baseColor};
 
   @media (min-width: 280px and min-height: 568px) {
     font-size: 2.4rem;
@@ -401,7 +416,7 @@ main #home .container .text .second_title {
 
 /*====  TESTIMONIALS ================= */
 #testimonials {
-  background: white;
+  background: ${props => props.theme.colors.bodyColorAlt};
 }
 
 #testimonials .container {
@@ -417,7 +432,7 @@ main #home .container .text .second_title {
 
 #testimonials blockquote {
   padding: 3.2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, ${props => props.theme.colors.shadowPorCent});
   border-radius: 0.28rem;
 }
 
@@ -425,7 +440,7 @@ main #home .container .text .second_title {
   position: relative;
   margin-bottom: 2.4rem;
   text-indent: 1.878rem;
-  color: var(--title-color);
+  color:  ${props => props.theme.colors.titleColor};
 }
 
 #testimonials blockquote p span{
@@ -433,7 +448,7 @@ main #home .container .text .second_title {
   position: absolute;
   left: -1.878rem;
   line-height: 1.628rem;
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
 }
 
 #testimonials cite {
@@ -462,7 +477,7 @@ main #home .container .text .second_title {
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--base-color);
+  background:  ${props => props.theme.colors.baseColor};
 }
 
 
@@ -497,7 +512,7 @@ main #home .container .text .second_title {
 }
 
 #contact ul li .icones{
-  color: var(--base-color);
+  color:  ${props => props.theme.colors.baseColor};
   margin-right: 0.878rem;
 }
 
@@ -506,8 +521,8 @@ main #home .container .text .second_title {
 }
 /*==== BACK TO TOP ================= */
 a.back-to-top {
-  background: var(--base-color);
-  color: var(--text-color-light);
+  background:  ${props => props.theme.colors.baseColor};
+  color: ${props => props.theme.colors.textColorLight};
 
   position: fixed;
   right: 1.6rem;
@@ -524,16 +539,16 @@ a.back-to-top {
 
   transition: 0.3s;
   transform: translateY(100%);
-
- 
-
 }
 
 .show{
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-
+    
+    @media(max-width: 1030px){
+      width: 100vw;
+    }
   }
 
 .showSuport {
@@ -546,7 +561,45 @@ a.back-to-top {
   justify-content: center;
 }
 
+.darkIcontoggle {
+    
+    @media(max-width: 1030px) {
+      top: 10vh;
+      left: 100;
 
+    }
+  }
+@media (min-width: 1032px){
+  nav .menu ul li a.title, .container .menu ul li a.title {
+    font: 400 1.6rem "Poppins";
+    color: ${props => props.theme.colors.textColor};
+  }
+  nav .menu ul li a.title, .container .menu ul li a.title:hover {
+    color: ${props => props.theme.colors.baseColor};
+  }
+  
+  nav .menu ul li a::after, .container .menu ul li a::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: ${props => props.theme.colors.baseColor};
+    transition: width 0.3s;
+    top: -3px;
+  }
+}
+
+@media (min-width: 1280px){
+  #header nav .menu ul li a.title, #header .container .menu ul li a.title {
+      font: 400 1.6rem "Poppins", sans-serif;
+      color: ${props => props.theme.colors.textColor};
+  }
+  #header nav .menu ul li a.title, #header .container .menu ul li a.title:hover {
+    color: ${props => props.theme.colors.baseColor};
+  }
+  
+}
 
 
 `

@@ -1,18 +1,16 @@
 import React from 'react';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-
 
 import { ContactForm } from './pages/contacts/index';
 
 import GlobalStyle from './styles/global';
-import  {ProductTest}  from './components/Produtos/Product';
+import { ProductTest }  from './components/Produtos/Product';
 import { HeaderEffect } from './hooks/Header';
 import  ScrollReavelling  from './hooks/ScrollReveal';
-import { ProgressBar } from './components/Progressbar/Progressbar';
+import { ProgressBar } from './components/Progressbar/progressbar';
 
 
+import './styles/media.scss';
 
 import { Toaster } from 'react-hot-toast';
 import { Suport } from './pages/suport/index';
@@ -25,18 +23,33 @@ import { Testimonials } from './pages/testimonials/index';
 import { Recaptcha } from './hooks/recaptcha/Recaptcha';
 
 
-import {ContainerMedia} from './styles/media.js';
+import {ContainerMedia} from './styles/media.scss';
+
+
+import { ThemeProvider, DefaultTheme } from 'styled-components';
+import usePersistedState from './utils/usePersistedState';
+import light from './styles/themes/light'
+import dark from './styles/themes/dark'; 
+import SwitchDark from './components/darkmode';  
+
 
 
 function App() {
+
+  const [theme, setTheme] = usePersistedState('themes', light); 
+  console.log('theme app',theme)
+
+   const toggleTheme= () => {
+     setTheme(theme.title === 'light' ? dark : light);
+    };
+
   return (
-    
+    <ThemeProvider theme={theme}>
+      
      <div className="App">
-      
-       
-      <BrowserRouter>
-      
-      
+     <SwitchDark toggleTheme={toggleTheme} /> 
+     {/* <ScrollReavelling /> */}
+      <BrowserRouter> 
         <Toaster
         position="top-right"
         reverseOrder={false} 
@@ -47,11 +60,8 @@ function App() {
          <GlobalStyle />  
             <Cookies />
               <HeaderEffect /> 
-                <ScrollReavelling />
                   <ProgressBar />
-                  
-                    <Routes> 
-                    
+                    <Routes>  
                       <Route path="/" element={<Home />} />
                       <Route path="/produtos" element={<ProductTest />} />
                       <Route path="/suporte" element={<Suport />} />
@@ -59,12 +69,11 @@ function App() {
                       <Route path="/#contact" element={<ContactForm />} />
                       <Route path="/#testimonials" element={<Testimonials />} />
                     </Routes>
-                    <Recaptcha />
-              
-      </BrowserRouter>
-      
-    </div>
-    
+
+            <Recaptcha />
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
   );
 }
 

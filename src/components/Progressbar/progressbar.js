@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import {ContainerProgress} from './styles.js'
+import {Container} from './styles.js'
 
 export function ProgressBar(){
 
@@ -19,15 +19,14 @@ export function ProgressBar(){
   })
 
   return(
-    <ContainerProgress>
-      <div>
-        <div className="aaa">
-          <div className="progress-container">
-            <div className="progress-bar" id="myBar"></div>
-          </div>  
-        </div>
+    <div>
+      <Container>
+      <div className="aaa">
+        <div className="progress-container">
+          <div className="progress-bar" id="myBar"></div>
+        </div>  
       </div>
-    </ContainerProgress>
-    
+      </Container>
+    </div>
   )
 }

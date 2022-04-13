@@ -10,8 +10,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
 
-import {ContainerMedia} from '../../styles/media.js';
 import data from './testimonials.json';
+
+
 
 
 export function Testimonials(){
@@ -43,7 +44,7 @@ export function Testimonials(){
 
   return (
     <>
-    <ContainerMedia />
+    
       {/*====  TESTIMONIALS ====  */}
       <section className="section" id="testimonials">
           <div className="container">
