@@ -47,7 +47,7 @@
     "eject": "react-scripts eject"
   },
   "server": {
-     "start": "node server/index.js"
+    "start": "node server/index.js"
   },
   "eslintConfig": {
     "extends": [

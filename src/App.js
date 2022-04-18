@@ -53,6 +53,7 @@ function App() {
         <Toaster
         position="top-right"
         reverseOrder={false} 
+        className="toaster"
         />
           <GlobalStyle />
             <Cookies />

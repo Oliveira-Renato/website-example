@@ -63,15 +63,17 @@ export function ContactForm(){
 
             $.ajax({
                 type: 'POST',
-                url: 'http://localhost:5000/contact',
+                url: 'https://blooming-sierra-22149.herokuapp.com/',
                 data: wData,
                 contentType: "application/json; charset=utf-8",
                 traditional: true,
                 
             }).then((result) => {
                 if(result.status == "success"){
+
+                    console.log(result)
                     setTimeout(function(){   
-    
+                        console.log(result)
                         toast.success('Enviado com sucesso!',
                         {
                             icon: '👍',

@@ -18,8 +18,6 @@ export function Header(){
 
     toggleThemeIcon.classList.contains('darkIcontoggle')?toggleThemeIcon.classList.remove('darkIcontoggle'):toggleThemeIcon.classList.add('darkIcontoggle');
 
-    
-
     if(nav.classList.contains('show')){
         suportBtn.classList.toggle('show_btn');
         nav.classList.toggle('show'); 
@@ -27,17 +25,15 @@ export function Header(){
         suportBtn.classList.toggle('show_btn');
         nav.classList.toggle('show'); 
     }
-    
   }
 
-   const handleCloseMenu = () => { 
+  const handleCloseMenu = () => { 
       const toggleThemeIcon = document.querySelector('.darkIcon');
       const nav = document.querySelector('#header nav'); 
 
       nav.classList.remove('show');
       toggleThemeIcon.classList.remove('darkIcontoggle');
-    }
-
+  }
 
   return (
     <>

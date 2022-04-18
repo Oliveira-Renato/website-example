@@ -37,7 +37,7 @@ export function ProductTest(){
     <div>
       <Header />
       <main>
-          <section className="section" id="products">
+          <section className="section" id="products"  onLoad={()=>document.querySelector('#products').scrollIntoView({ behavior: 'smooth' })}>
             <div className="container">
               <header>
                 <h2 className="title">Produtos</h2>
