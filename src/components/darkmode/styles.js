@@ -12,6 +12,10 @@ export const Container = styled.div`
     cursor: pointer;
     width: 50px;
     height: 25px;
+
+    @media(min-width: 2400px){
+      height: 34px;
+    }
   }
   .darkIcon {
     position: absolute;

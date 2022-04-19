@@ -10,6 +10,7 @@ import './styles.scss';
 
 import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
+import { useEffect } from 'react';
 
 export function ProductTest(){
   const newData = data.map((valor,index,array)=>{
@@ -30,8 +31,8 @@ export function ProductTest(){
   return (
     <div>
       <Header />
-        <main>
-          <section className="section" id="products"  onLoad={()=>document.querySelector('#products').scrollIntoView({ behavior: 'smooth' })}>
+        <main onLoad={useEffect(() => document.querySelector('#products').scrollIntoView({ behavior: 'smooth' })) }>
+          <section className="section" id="products" >
             <div className="container">
               <header>
                 <h2 className="title">Produtos</h2>
