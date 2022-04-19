@@ -1,9 +1,11 @@
 //==== Import Swiper React components ==== \\
-import { Mousewheel , Pagination, Keyboard ,Navigation, A11y } from 'swiper';
+import { Mousewheel,
+  Pagination,
+  Keyboard,
+  Navigation
+} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/mousewheel';
 import 'swiper/css/pagination';
@@ -12,18 +14,12 @@ import 'swiper/css/navigation';
 
 import data from './testimonials.json';
 
-
-
-
 export function Testimonials(){
-
   const newData = data.map((valor,index,array)=>{
 
     return (
       <SwiperSlide key ={array[index]['id']}>
-        
         <div className="testimonials" >
-
             <blockquote>
               <p>
                 <span>&ldquo;</span>
@@ -39,12 +35,10 @@ export function Testimonials(){
           </div>
       </SwiperSlide>
     )
-
   })
 
   return (
     <>
-    
       {/*====  TESTIMONIALS ====  */}
       <section className="section" id="testimonials">
           <div className="container">
@@ -65,12 +59,10 @@ export function Testimonials(){
               >
               {/* //aqui */}
               {newData}
-                        
-
+             
             </Swiper>
-            
           </div>
-        </section>
+      </section>
     </>
   )
 }

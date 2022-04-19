@@ -2,16 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   a {
-  /* color: ${props => props.theme.colors.titleColor}; */
-  /* display: inline-block; */
   font-weight: 400;
   text-decoration: none;
 }
-
 main #suport {
   padding: 11rem 0;
 }
-
 h2 {
   text-align: center;
   font-size: 16px;
@@ -19,7 +15,6 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
 }
-
 .wrapper {
   display: flex;
   align-items: center;
@@ -30,7 +25,6 @@ h2 {
   padding: 20px;
   background: ${props => props.theme.colors.bodyColorAlt};
 }
-
 #formcontent {
   border-radius:  10px 10px 10px 10px;
   background: ${props => props.theme.colors.bodyColorAlt};
@@ -41,18 +35,15 @@ h2 {
   text-align: center;
   margin: 11rem;
 }
-
 .icon {
   width: 200px;
   margin-bottom: 10px;
 }
-
 .icon-2 {
   width: 120px;
   margin-bottom: 10px;
   filter: ${props => props.theme.colors.imgFilter};
 }
-
 .formfooter {
   background-color: ${props => props.theme.colors.bodyColorAlt};
   border-radius: 1px solid #dce8f1;
@@ -60,21 +51,17 @@ h2 {
   text-align: center;
   border-radius: 0 0 10px 10px;
 }
-
 .formfooter a {
   color: ${props => props.theme.colors.titleColor};
   font-weight: 700;
 }
-
 h2.active {
   margin-top: 1.6rem;
   color: ${props => props.theme.colors.titleColor};
   font-size: 20px;
   font-weight: bold;
 }
-
-input[type=button], input[type=submit]  
-{
+input[type=button], input[type=submit]  {
   background-color: ${props => props.theme.colors.baseColor};
   border: none;
   color: ${props => props.theme.colors.textColorLight};
@@ -89,15 +76,11 @@ input[type=button], input[type=submit]
   margin: 5px 20px 40px 20px;
   transition: all 0.5s ease-in-out;
 }
-
 .btn:hover {
   cursor: pointer;  
   background-color:${props => props.theme.colors.baseColorAlt};  
 }
-
-
-input 
-{
+input {
   background-color: ${props => props.theme.colors.bodyColor};
   border: none;
   color: ${props => props.theme.colors.textColor};
@@ -112,36 +95,24 @@ input
   transition: all 0.5s ease-in-out;
   border-radius: 5px 5px 5px 5px;  
 }
-
-input:focus
-{
+input:focus{
   background-color: ${props => props.theme.colors.bodyColorAlt};
   border-bottom: 2px solid ${props => props.theme.colors.baseColor};
 }
-
-input::placeholder
-{
+input::placeholder{
   color: ${props => props.theme.colors.textColor};
   opacity: 0.5 ;
 }
-
 *:focus {
   outline: none;
 }
-
 @media (max-width: 600px) {
   input {
     width: 80%;
   }
 }
-
-
 main .section {
   padding: 11.2rem 3.2rem;
   height: 100%;
 }
-
-
-
 `;
-

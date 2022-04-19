@@ -5,43 +5,29 @@ export const ContainerHeader = styled.div`
 nav.show .menu {
   opacity: 1;
   visibility:visible;
-
   background: ${props => props.theme.colors.bodyColor};
   height: 100vh;
   width: 100vw;
-
   position: fixed;
   top: 0;
   left: -3.84rem;
-
 }
-
 nav.show .menu {
   display: grid;
   place-content: center;
 }
-
 nav.show .menu ul {
   display: grid;
 }
-
 nav.show ul.grid  {
   gap: 1.6rem;
 }
-
-
 nav.show div.close {
   visibility: visible;
   opacity: 1;
   top: auto;
   right: -0.16rem;
 }
-
-
-/* .darkIcon.show {
-  display: none;
-} */
-
 nav a.logo img {
     min-width: 120px;
     max-width: 100px;
@@ -49,13 +35,11 @@ nav a.logo img {
     max-height: 100%;
     object-fit: contain;
     resize: none;
-    /* filter: ${props => props.theme.colors.imgFilter};  */
 }
-
 /*======== TOGGLE MENU =============*/
 .darkIcontoggle {
     
-    @media(max-width: 1030px) {
+    @media(max-width: 1032px) {
       position: fixed;
       top: 0;
       left: 0;
@@ -63,33 +47,20 @@ nav a.logo img {
       bottom: 0;
       display: flex;
       justify-content: space-around;
-      align-items: flex-start;
     }
   }
-
-.show_btn {
-  // visibility: visible;
-  
-
-}
-
 .ainda_nao {
-  // display: block;
   margin-top: 3.2rem;
-  
-  // opacity: 1;
-
-  @media (min-width: 1030px) {
+  @media (min-width: 1032px) {
     position: absolute;
     right: 0rem;
     top: -2.5rem;
   }
-  @media (min-width: 1230px) {
+  @media (min-width: 1232px) {
     position: absolute;
     right: 9rem;
     top: -2.5rem;
   }
-
   .btn2{
     padding: 0 3.2rem;
     &:hover {
@@ -97,24 +68,19 @@ nav a.logo img {
     }
     &:hover::after{
       width: 0;
+      }
     }
   }
 }
-
-}
-
 .login_btn {
   justify-content:center;
   text-align: center;
   font: 700 1.878rem 'Poppins',sans-serif;
   
-
-  @media (min-width: 1030px) {
+  @media (min-width: 1032px) {
     position: absolute;
     right: 18rem;
     top: -1rem;
-
-
     span {
       color: ${props => props.theme.colors.textColor};
       font-weight: 400;
@@ -122,9 +88,7 @@ nav a.logo img {
   }
   
   @media (min-width: 1230px) {
- 
     right: 28rem;
-
   }
   
   @media (min-width: 1280px) {
@@ -136,20 +100,15 @@ nav a.logo img {
     right: 28rem;
     top: -1rem;
   }
-
   span {
     margin-left: 0.5rem;
     color: ${props => props.theme.colors.textColor};
   }
-
   .login_icon {
     color: ${props => props.theme.colors.baseColor};
   }
 }
-
-
 @media (max-width: 375px) {
-
  .title {
     font: 700 1.675rem 'Poppins',sans-serif;
       color: ${props => props.theme.colors.titleColor};
@@ -158,16 +117,13 @@ nav a.logo img {
     nav.show ul.grid {
       gap: 2rem;
     }
-
     .ainda_nao {
       text-align: center;
       margin-top: 3.4rem;
     }
 }
-
 /*================ EXTRA SMALL DEVICES ====================*/
 @media (max-width:420px) {
-
   .title_toggle {
     font-size: 1.6rem;
   }
@@ -179,8 +135,6 @@ nav a.logo img {
         ul {
           li {
             a {
-             
-
               &.logo {
                 display: block;
                 img {
@@ -190,8 +144,6 @@ nav a.logo img {
                   max-width: 100px;
                 }
               }
-        
-              
             }
           }
         }
@@ -205,18 +157,13 @@ nav a.logo img {
     }
   }
  } 
-
 }
-
-
-
 @media (max-width: 767px){
   #header {
     .title_toggle {
       font-size: 1.6rem;
     }
   }
-
   nav.show ul.grid {
     gap: 1rem;
   }

@@ -3,9 +3,76 @@
 /*========= MEDIA QUERIES =========*/
 
 /*================ EXTRA SMALL DEVICES ====================*/
+@media (max-width:320px) {
+  body {
+    font: 400 1.44rem 'Poppins',sans-serif;
+  }
+  
+  nav, .container {
+    // max-width: 1366px;
+    margin-left: 11.2rem;
+    margin-right: 11.2rem;
+    a {
+      .logo {
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          box-sizing: border-box;
+          padding: 0;
+          border: none;
+          margin: auto;
+          display: block;
+          width: 0;
+          height: 0;
+          min-width: 100%;
+          max-width: 100%;
+          min-height: 100%;
+          max-height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .suport_btn{
+      display: none;
+    }
+  }
+  
+  #home, #about, #products, #testimonials, #contact{
+      .section {
+        padding: 9.6rem 0;
+      }
+      .container {      
+          h2,h3 {
+            font: 700 1.39rem 'Poppins',sans-serif;               
+        }
+      }
+    
+  }
+  
+
+}
+
+@media (min-width:320px) {
+  body {
+    font: 400 1rem 'Poppins',sans-serif;
+  }
+  
+  nav, .container {
+    // max-width: 1366px;
+    margin-left: 11.2rem;
+    margin-right: 11.2rem;
+    
+    .suport_btn{
+      display: none;
+    }
+  }
+}
 
 /*================ TABLET ====================*/
-@media (min-width: 650px){
+@media (min-width: 650px) {
   body {
     font: 400 1rem 'Poppins',sans-serif;
   }
@@ -26,54 +93,32 @@
   }
   /* layout */
   main {
-
     margin-top: var(--header-height);
     
-    .section, +#contact {
-      
+    .section, +#contact {     
       .container {
 
         header .title, header p {
-          // max-width: 32rem;
           text-align: center;
-
-        }
-
-        .image {
-          
-          img {
-            
-          }
         }
 
         .text {
           width: 100%;
-          text-align: left;
-        
-            
+          text-align: left;         
         }
-        
-        
-        
-        .cards{
-         
-
+      
+        .cards{      
           .card {
             padding-left: 4.8rem;
             padding-right: 4.8rem;
           }
         }
-
       }
     }
 
     //===== HOME =====\\
     #home {
-      // margin: 0 11.2rem;
-      // padding: 16rem 0;
-
       .container {
-        
 
         .text {
 
@@ -91,16 +136,14 @@
 
           img {
             max-width: 570px;
-            right: -1.2rem;
-            
-            
+            right: -1.2rem;   
           }
+          
           &::before {
             max-width: 100%;
             height: 100%;
             top: -12.8%;
             left: 38%;
-
           }
         }
 
@@ -147,8 +190,7 @@
           }
         }
 
-        .text { 
-          
+        .text {          
           font-size: 1.6rem;
           text-align: left;
           margin: 0 auto;
@@ -172,16 +214,12 @@
 
     //===== PRODUCTS =====\\
     #products {
-      
       .container {
         padding: 0 9.6rem;
 
-      
           header {
             text-align: center;
-          }
-          
-         
+          }        
         
         h2 {
           position: relative;
@@ -193,10 +231,8 @@
             transform: translateX(-50%);
             bottom: -5px;
             width: 60px;
-            height: 4px;
-            
-          }
-          
+            height: 4px;          
+          }        
         }
       }
     }
@@ -211,23 +247,19 @@
     }
     //===== CONTACTS =====\\
     #contact {
-
       .container {
         padding: 0;
         grid-auto-flow: column;
         align-items: center;
         grid-template-columns: repeat(auto-fit, 50%);
 
-
         .text {
           max-width: 25rem;
-          
 
           h2 {
-          text-align:left;
-           
-            
+          text-align:left; 
           }
+
           p {
             margin-bottom: 3.2rem;
           }
@@ -237,7 +269,6 @@
           display: grid;
           justify-content: center;
           flex-wrap: wrap;
-
 
           >h2 {
             text-align: center;
@@ -250,12 +281,9 @@
               transform: translateX(-50%);
               bottom: -5px;
               width: 60px;
-              height: 4px;
-              
+              height: 4px;              
             }
-          }
-
-          
+          }         
 
           .send {
             .button {
@@ -263,32 +291,24 @@
               margin-left: 0;
             }
           }
-        }
-
-        
+        }       
       }
       .grid {
         gap: 6.4rem;
       }
     }
 
-
     .swiper-slide {
       width: 50% !important;
-    }
-
-    
-
+    } 
   }
 
-  
+
   #footer {
     .footer-col {
       padding: 0 0 0 1rem;
     }
   }
-
-
 
 }
 
@@ -312,56 +332,35 @@
   section .title {
     font-size: 2.92rem;
   }
+
   /* layout */
   main {
-
-    margin-top: var(--header-height);
-    
-    .section, +#contact {
-      
+    //aqui
+    .section, +#contact {     
       .container {
-
-        
 
         header .title, header p {
           // max-width: 32rem;
           text-align: center;
-
-        }
-
-        .image {
-          
-          img {
-            
-          }
         }
 
         .text {
           width: 100%;
-          text-align: left;
-        
-            
+          text-align: left;            
         }
-        
-        
-        
+ 
         .cards{
-         
 
           .card {
             padding-left: 4.8rem;
             padding-right: 4.8rem;
           }
         }
-
       }
     }
 
     //===== HOME =====\\
     #home {
-      // margin: 0 11.2rem;
-      // padding: 16rem 0;
-
       .container {
         padding: 4rem 0;
         grid-auto-flow: column;
@@ -385,10 +384,9 @@
 
           img {
             max-width: 570px;
-            right: -1.2rem;
-            
-            
+            right: -1.2rem;       
           }
+
           &::before {
             
             width: 100%;
@@ -405,8 +403,6 @@
           margin: 0 auto;
           >h2 {
             margin-bottom: 0rem;
-            // font-size: 2.11.2rem;
-
           }
 
           >p {
@@ -422,8 +418,7 @@
     
     //===== ABOUT =====\\
     #about {
-      .container {
-        
+      .container {   
         padding: 1.2rem 0;
         grid-auto-flow: column;
         justify-content: space-between;
@@ -504,14 +499,9 @@
         align-items: center;
         grid-template-columns: repeat(auto-fit, 50%);
 
-
         .text {
           max-width: 100%;
 
-          h2 {
-           
-            
-          }
           p {
             margin-bottom: 3.2rem;
           }
@@ -521,7 +511,6 @@
           display: grid;
           justify-content: center;
           flex-wrap: wrap;
-
 
           >h2 {
             text-align: center;
@@ -534,12 +523,9 @@
               transform: translateX(-50%);
               bottom: -5px;
               width: 60px;
-              height: 4px;
-              
+              height: 4px;           
             }
           }
-
-          
 
           .send {
             .button {
@@ -560,24 +546,18 @@
     .swiper-slide {
       width: 50% !important;
     }
-
-    
-
   }
 
-  
   #footer {
     .footer-col {
       padding: 0 0 0 1rem;
     }
   }
-
 }
 
 
 /*================ NOTEBOOK ====================*/
 @media (min-width: 1032px) {
-
   body {
     font: 400 1rem 'Poppins',sans-serif;
   }
@@ -591,7 +571,6 @@
   }
   
   nav, .container {
-    // max-width: 1366px; 
     margin-left: 11.2rem;
     margin-right: 11.2rem;
     gap: 10rem;
@@ -599,18 +578,14 @@
     .toggle {
       display: none;
       visibility: hidden;
-
-      
     }
 
     .suport_btn {
       display: block;   
       position: absolute;
       right: 3.84rem;
-  
     }  
     
-
     .logo{
       margin: 1.4375rem 0 1.4375rem  0;
     }
@@ -630,9 +605,7 @@
             
             &.title {
               font: 400 1.6rem  'Poppins';
-              color: #333;
-              
-        
+              color: #333;       
             }
 
             &::after{
@@ -643,8 +616,7 @@
               height: 2px;
               
               transition: width 0.3s;
-              top: -3px;
-            
+              top: -3px;          
             }
             
             &:hover::after{
@@ -668,14 +640,11 @@
     }
 
     .section, +#contact {
-      
-
       .container {
         padding: 14.4rem 6.4rem;
 
 
         header .title, header p {
-          // max-width: 32rem;
           text-align: center;
           margin-left: auto;
           margin-right: auto;
@@ -713,7 +682,6 @@
 
     //===== HOME =====\\
     #home {
-      // margin: 0 11.2rem;
       padding: 0;
 
       .container {
@@ -756,56 +724,7 @@
         }
       }
     }
-    
-    //===== ABOUT =====\\
-    // #about {
-    //   padding: 0;
-    //   .container {
-    //     grid-auto-flow: column;
-    //     justify-content:baseline;
-    //     margin: 0 auto;
-
-    //     .image {
-    //       order: 0;
-          
-
-    //       img {
-    //         max-width: 100%;
-    //         height: auto; 
-    //       }
-
-    //       &::before {
-    //         height: 100%;
-    //         bottom: -8.3%;
-    //         top: -12.3%;
-    //         left: -40%;
-    //       }
-    //     }
-
-    //     .text {
-    //       max-width: 100%;
-    //       text-align: left;
-    //       font-size: 0.89.6rem;
-    //       position: relative;
-    //       left: -40%;
-          
-    //       h2 {
-    //         position: relative;
-
-    //         &::before {
-    //           content: '';
-    //           position: absolute;
-    //           transform: translateX(-50%);
-    //           bottom: -4px;
-    //           width: 120px;
-    //           height: 4px;
-    //           
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-
+  
     //===== PRODUCTS =====\\
     #products {
       padding: 5rem 0 ;
@@ -834,12 +753,11 @@
     }
 
     #testimonials {
-
         .container {
           padding: 0;
         }
-      
     }
+
     //===== CONTACTS =====\\
     #contact {
       padding: 11.2rem 11.2rem;
@@ -854,8 +772,7 @@
           max-width: 25rem;
 
           h2 {
-           
-            
+                  
           }
           p {
             margin-bottom: 3.2rem;
@@ -905,23 +822,14 @@
     .swiper-slide {
       width: 50% !important;
     }
-
-    
-
   }
 
-  
   #footer {
     .footer-col {
       padding: 0 0 0 6.4rem;
     }
   }
-
-
-
 }
-
-
 
 /*================ EXTRA LARGE COMPUTERS ====================*/
 @media (min-width: 1280px) {
@@ -1362,14 +1270,10 @@
       .container {
         gap: 0;
         grid-auto-flow: column;
-        justify-content: center;
-        // margin: 0 11.2rem;
-         
+        justify-content: center;    
 
         .image {
           order: 0;
-          // min-width: 570px;
-          // max-width: 710px;
 
           img {   
             max-width: 100%;     
@@ -1484,34 +1388,25 @@
           }
         }
 
-        
+   
       }
       .grid {
         gap: 6.4rem;
       }
     }
 
-
     .swiper-slide {
       width: 50% !important;
     }
-
-    
-
   }
 
   
   #footer {
     .footer-col {
       padding: 0 0 0 11.2rem;
-
     }
   }
-  
- 
-  
 }
-
 
 /*================ EXTRA EXTRA  LARGE COMPUTERS ====================*/
 @media (min-width: 1680px) { 
@@ -1536,4 +1431,3 @@
     }
   }
 }
-

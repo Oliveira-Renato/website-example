@@ -1,17 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-
-import  logo  from '../../assets/images/icons/logo_syscare_100.png'
-import mainImg from '../../assets/images/home/home.jpg'
-import aboutImg from '../../assets/images/home/campaign-creators.jpg'
-
-
-import { ContactForm } from '../contacts';
-import { Footer } from '../footer';
-
+import mainImg from '../../assets/images/home/home.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 /* ===== ICONES ===== */
 import {
@@ -21,187 +14,179 @@ import {
   faEnvelope,
   faLocationDot,
   faArrowUp,
-  faSuitcaseMedical,
   faAnglesDown
 } from "@fortawesome/free-solid-svg-icons";
 
-import { faBtc, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+/* ===== PAGES ===== */
+import { Header } from '../../components/header/header';
+import { AboutPage } from '../about';
+import { Testimonials } from '../testimonials';
+import { ContactForm } from '../contacts';
+import { Footer } from '../footer';
 
-
-
-// Import Swiper styles
+import { Container } from './animation.js';
 import 'swiper/css';
 import 'swiper/css/mousewheel';
 import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
 
-
-import {Container} from './animation.js';
-
-import { Header } from '../../components/header/header'
-import { Testimonials } from '../testimonials'
-import { AboutPage } from '../about'
-
-
 export function Home(){ 
-  
-  
   return (
     <div>
       <Container>
-      {/*====  HEADER/NAV ====  */}
-      <Header />
+        {/*====  HEADER/NAV ====  */}
+        <Header />
       
-      {/*====  MAIN ====  */}
-      <main>
-        <section className="section" id="home">
-          <div className="container grid">
-            <div className="image image_home">
-                <img src={ mainImg } alt="" />
-            </div>
-
-            <div className="text">
-              <h3 className="title main_title" style={{color: `${props => props.theme.colors.baseColor}`}}>Syscare</h3>
-              <div className="typewriter">
-                <h1 className="title second_title">Gestão de Home Care</h1>
+        {/*====  MAIN ====  */}
+        <main>
+          <section className="section" id="home">
+            <div className="container grid">
+              <div className="image image_home">
+                  <img src={ mainImg } alt="" />
               </div>
-              <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
 
-              <a className='button' href="#about">
-                <FontAwesomeIcon className="icones" icon={ faAnglesDown } />Saiba mais
+              <div className="text">
+                <h3 className="title main_title">Syscare</h3>
+                <div className="typewriter">
+                  <h1 className="title second_title">Gestão de Home Care</h1>
+                </div>
+                <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
+
+                <a className='button' href="#about">
+                  <FontAwesomeIcon className="icones" icon={ faAnglesDown } />Saiba mais
+                </a>  
+              </div>
+            </div>
+          </section>
+
+          {/*====  SEPARETOR 1 ====  */}
+          <div className="divider-1"></div>
+
+          {/*====  ABOUT ====  */}
+          <AboutPage />
+          {/*====  SEPARETOR 2 ====  */}
+          <div className="divider-2"></div>
+
+          {/*====  PRODUCTS ====  */}
+          <section className="section" id="products">
+          <div className="container grid">
+            <header>
+              <h2 className="title">Produtos</h2>
+              <p>Com mais de 20 anos no mercado, o <strong>Syscare</strong> já
+                conquistou inúmeros  clientes com seus serviços
+                exclusivos.
+                </p>
+            </header>
+            <div className="cards grid">
+              <div className="card">
+                <div className="icones">
+                  <FontAwesomeIcon icon={ faHouseMedical }  />
+                </div>
+                
+                <h3 className="title">Syscare - AD</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                  asperiores
+                </p>
+              </div>
+
+              <div className="card">
+                <div className="icones">
+                  <FontAwesomeIcon icon={ faLaptopMedical }/>
+                </div>
+                
+                <h3 className="title">Syscare - SCF</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                  asperiores
+                </p>
+              </div>
+
+              <div className="card">
+                <div className="icones">
+                  <FontAwesomeIcon icon={ faHouseMedical }  />
+                </div>
+                
+                <h3 className="title">Syscare - MGS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                  asperiores
+                </p>
+              </div>
+            </div> 
+            <div className="btn_produtos">
+              <a href="/produtos" className='button'>
+                <FontAwesomeIcon className="icones" icon={ faCartPlus } />Confira nossos produtos
               </a>  
-            </div>
+            </div> 
           </div>
-        </section>
+          </section>
 
-        {/*====  SEPARETOR 1 ====  */}
-        <div className="divider-1"></div>
+          {/*====  SEPARETOR 1 ====  */}
+          <div className="divider-1"></div>
 
-        {/*====  ABOUT ====  */}
-        <AboutPage />
-        {/*====  SEPARETOR 2 ====  */}
-        <div className="divider-2"></div>
 
-        {/*====  PRODUCTS ====  */}
-        <section className="section" id="products">
-        <div className="container grid">
-          <header>
-            <h2 className="title">Produtos</h2>
-            <p>Com mais de 20 anos no mercado, o <strong>Syscare</strong> já
-              conquistou inúmeros  clientes com seus serviços
-              exclusivos.
-              </p>
-          </header>
-          <div className="cards grid">
-            <div className="card">
-              <div className="icones">
-                <FontAwesomeIcon icon={ faHouseMedical }  />
+          {/*====  TESTIMONIALS ====  */}
+          <Testimonials />
+
+          {/*====  SEPARETOR 2 ====  */}
+          <div className="divider-2"></div>
+      
+          {/*====  CONTACTS ====  */}
+          <section className="section" id="contact">
+            <div className="container grid">
+              <div className="text">
+                <h2 className="title title_products">Entre em contato com a gente!</h2>
+                <p> 
+                  Se você tem alguma dúvida, sugestão ou quer fazer uma proposta, entre em contato conosco.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário" className="button">
+                    <div className="icones">
+                      <FontAwesomeIcon icon={ faWhatsapp } />
+                    </div>
+                    Entrar em contato
+                </a>
+              </div>
+
+              <div className="links">
+                <ul className="grid">
+                  <li>
+                    <FontAwesomeIcon icon={faPhone} className="icones" />55 (11) 4153-1075
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faEnvelope} className="icones" />contato@kennen.com.br
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faLocationDot} className="icones"/>Alameda Araguaia, 2044 - Torre I
+                  </li>
+                </ul>
               </div>
               
-              <h3 className="title">Syscare - AD</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
-              </p>
-            </div>
-
-            <div className="card">
-              <div className="icones">
-                <FontAwesomeIcon icon={ faLaptopMedical }/>
-              </div>
               
-              <h3 className="title">Syscare - SCF</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
-              </p>
             </div>
-
-            <div className="card">
-              <div className="icones">
-                <FontAwesomeIcon icon={ faHouseMedical }  />
-              </div>
-              
-              <h3 className="title">Syscare - MGS</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
-              </p>
+            {/*====  FORMS ====  */}
+            <div className="forms container">
+              <ContactForm />
             </div>
-          </div> 
-          <div className="btn_produtos">
-            <a href="/produtos" className='button'>
-              <FontAwesomeIcon className="icones" icon={ faCartPlus } />Confira nossos produtos
-            </a>  
-          </div> 
-        </div>
-        </section>
-
-        {/*====  SEPARETOR 1 ====  */}
-        <div className="divider-1"></div>
-
-
-        {/*====  TESTIMONIALS ====  */}
-        <Testimonials />
+          </section>
+          
+        </main>
 
         {/*====  SEPARETOR 2 ====  */}
-        <div className="divider-2"></div>
-    
-        {/*====  CONTACTS ====  */}
-        <section className="section" id="contact">
-          <div className="container grid">
-            <div className="text">
-              <h2 className="title title_products">Entre em contato com a gente!</h2>
-              <p> 
-                Se você tem alguma dúvida, sugestão ou quer fazer uma proposta, entre em contato conosco.
-              </p>
-              <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário" className="button">
-                  <div className="icones">
-                    <FontAwesomeIcon icon={ faWhatsapp } />
-                  </div>
-                  Entrar em contato
-              </a>
-            </div>
+        <div className="divider-1"></div>
 
-            <div className="links">
-              <ul className="grid">
-                <li>
-                  <FontAwesomeIcon icon={faPhone} className="icones" />55 (11) 4153-1075
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faEnvelope} className="icones" />contato@kennen.com.br
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faLocationDot} className="icones"/>Alameda Araguaia, 2044 - Torre I
-                </li>
-              </ul>
-            </div>
-            
-            
-          </div>
-          {/*====  FORMS ====  */}
-          <div className="forms container">
-            <ContactForm />
-          </div>
-        </section>
-      </main>
+        {/*====  FOOTER ====  */}
+        <Footer />
 
-      {/*====  SEPARETOR 2 ====  */}
-      <div className="divider-1"></div>
-
-      {/*====  FOOTER ====  */}
-      <Footer />
-
-      {/*====  SCROLL TO TOP ====  */}
-      <a href="#home" className="back-to-top">
-        <FontAwesomeIcon icon={faArrowUp}  />
-      </a>
+        {/*====  SCROLL TO TOP ====  */}
+        <a href="#home" className="back-to-top">
+          <FontAwesomeIcon icon={faArrowUp}  />
+        </a>
       </Container>
     </div>
-
   )
 }

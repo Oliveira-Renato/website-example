@@ -8,7 +8,9 @@ export const ContainerContact = styled.div`
   margin-left: 1rem;
   margin-top: 2.2rem;
 }
-
+.go2358747891 {
+  background: ${props => props.theme.colors.baseColor} !important;
+}
 .contactForm {
   width: 100%;
   
@@ -16,30 +18,24 @@ export const ContainerContact = styled.div`
     position: relative;
     width: 700px;
   }
-
-
   .row {
     width: 100%;
     display: flex;
-    
     
     @media(max-width: 43.5em) {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
     }
-
     .col50 {
       width: 100%;
       margin:1rem 1rem 1rem 0;
   }
-
     .col100 {
       width: 100%;
       margin:1rem 1rem 1rem 0;
       text-align: center;
   }
-
   input, textarea {
       font: 400 1.6rem 'Poppins',sans-serif;
       width: 100%;
@@ -53,23 +49,18 @@ export const ContainerContact = styled.div`
       resize: none;
       box-shadow: 0px 1px 4px ${props => props.theme.colors.baseColorSecond};
       text-align: left;
-
       &::placeholder {
         opacity: 0.5; 
       }
   }
-
     textarea {
       height: 100px;
-
       &::placeholder {
         opacity: 0.5;
       }
     }
   }
-
 }
-
 .send{
   display: flex;
   justify-content: center;
