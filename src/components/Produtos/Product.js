@@ -1,25 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 /* ===== ICONES ===== */
 import {
   faHouseMedical
 } from "@fortawesome/free-solid-svg-icons";
 
-
 import data from './data.json'
+import './styles.scss';
 
-import { Card } from 'react-bootstrap';
 import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
 
-
-import './styles.scss';
-
 export function ProductTest(){
-
   const newData = data.map((valor,index,array)=>{
     return (
       <div className="card"  key ={array[index]['id']}>
-        
         <div className="icones">
           <FontAwesomeIcon icon={ faHouseMedical }  />
         </div>
@@ -29,14 +24,13 @@ export function ProductTest(){
           {array[index]['content']}
         </p>
       </div>
-
     )
   })
 
   return (
     <div>
       <Header />
-      <main>
+        <main>
           <section className="section" id="products"  onLoad={()=>document.querySelector('#products').scrollIntoView({ behavior: 'smooth' })}>
             <div className="container">
               <header>
@@ -49,14 +43,12 @@ export function ProductTest(){
               <div className="cards grid">         
                 {newData}             
               </div>
-            
             </div>
           </section>
         </main>
 
         {/*====  SEPARETOR 2 ====  */}
         <div className="divider-1"></div>
-
         <Footer />
     </div>
   )

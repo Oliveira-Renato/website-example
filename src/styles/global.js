@@ -15,10 +15,14 @@ box-sizing: border-box;
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-
+  
   @media (min-width: 280px) {
     font-size: 58.5%;
   }
+  @media (min-width: 2400px) {
+    font-size: 72.5%;
+  }
+
 }
 
 
@@ -551,7 +555,7 @@ a.back-to-top {
     }
   }
 
-.showSuport {
+.showSuport { 
   display: none;
 }
 
@@ -564,8 +568,6 @@ a.back-to-top {
 .darkIcontoggle {
     
     @media(max-width: 1030px) {
-      top: 10vh;
-      left: 100;
 
     }
   }

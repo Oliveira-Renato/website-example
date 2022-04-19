@@ -6,18 +6,12 @@ export const Container = styled.div`
   padding: 8rem 0 0;
   position: absolute;
   width: 100%;
-
   z-index: 0;
-  .container {
-    
-  }
-  
 	.row{
     display: flex;
     flex-wrap: wrap;
   }
   
-
   .copyRight{
     margin-top:  7rem;
     background: ${props => props.theme.colors.baseColorAlt};
@@ -32,14 +26,10 @@ export const Container = styled.div`
     font-size:  1rem;
     z-index: 0;
   }
-
 }
 
-.footer-col{
-        
+.footer-col{     
   width: 25%;
-
- 
 
   h4{
     font-size: 1.8rem;
@@ -82,20 +72,14 @@ export const Container = styled.div`
         transition: all 0.3s ease;
 
         &:hover{
-          
           padding-left: 0.5rem;
         }
-
-        
-
       }
-
     }
   }
 
 
   .social-links{
-
     .socialmedia {
       font-size: 2.4rem;
       object-fit: cover;
@@ -114,18 +98,14 @@ export const Container = styled.div`
         color: ${props => props.theme.colors.barLoadingColor};
       }
     }
-
-
   }
-
 }
 
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
-    margin-bottom: 3.2rem;
-    
+    margin-bottom: 3.2rem;  
   }
 }
 @media(max-width: 574px){
@@ -133,7 +113,6 @@ export const Container = styled.div`
     width: 100%;
     text-align: center;
     
-
     h4::before {
      left: auto;
      width: 5rem;
@@ -143,13 +122,11 @@ export const Container = styled.div`
   .footer-col .social-links a {
     margin: 0  1rem  1rem  1rem;
     text-align: center;
-
   }
 
   ul {
     padding: 0;
   }
-  
 }
 
 `;

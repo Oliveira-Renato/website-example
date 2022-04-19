@@ -20,16 +20,15 @@ export function HeaderEffect(){
             const moonShow = document.querySelector('.darkIcon') && document.querySelector('.darkIcon') ;
 
             $(document).width() >= 1032 && navShow.classList.remove('show'); 
-
-            moonShow && moonShow.classList.remove('darkIcontoggle')
+            $(document).width() >= 1032 && moonShow && moonShow.classList.remove('darkIcontoggle'); 
         }
 
         window.addEventListener('scroll', function(){
-            HandleHeaderEffect()
+            HandleHeaderEffect();
         })
 
         window.addEventListener('resize', function(event) {
-            handleCloseMenu()
+            handleCloseMenu();
         }, true);
     })
 

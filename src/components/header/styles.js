@@ -13,7 +13,6 @@ nav.show .menu {
   position: fixed;
   top: 0;
   left: -3.84rem;
-
 }
 
 nav.show .menu {
@@ -29,18 +28,12 @@ nav.show ul.grid  {
   gap: 1.6rem;
 }
 
-
 nav.show div.close {
   visibility: visible;
   opacity: 1;
   top: auto;
   right: -0.16rem;
 }
-
-
-/* .darkIcon.show {
-  display: none;
-} */
 
 nav a.logo img {
     min-width: 120px;
@@ -49,13 +42,12 @@ nav a.logo img {
     max-height: 100%;
     object-fit: contain;
     resize: none;
-    /* filter: ${props => props.theme.colors.imgFilter};  */
 }
 
 /*======== TOGGLE MENU =============*/
 .darkIcontoggle {
     
-    @media(max-width: 1030px) {
+    @media(max-width: 1032px) {
       position: fixed;
       top: 0;
       left: 0;
@@ -63,28 +55,18 @@ nav a.logo img {
       bottom: 0;
       display: flex;
       justify-content: space-around;
-      align-items: flex-start;
     }
   }
 
-.show_btn {
-  // visibility: visible;
-  
-
-}
-
 .ainda_nao {
-  // display: block;
   margin-top: 3.2rem;
-  
-  // opacity: 1;
 
-  @media (min-width: 1030px) {
+  @media (min-width: 1032px) {
     position: absolute;
     right: 0rem;
     top: -2.5rem;
   }
-  @media (min-width: 1230px) {
+  @media (min-width: 1232px) {
     position: absolute;
     right: 9rem;
     top: -2.5rem;
@@ -97,9 +79,9 @@ nav a.logo img {
     }
     &:hover::after{
       width: 0;
+      }
     }
   }
-}
 
 }
 
@@ -109,11 +91,10 @@ nav a.logo img {
   font: 700 1.878rem 'Poppins',sans-serif;
   
 
-  @media (min-width: 1030px) {
+  @media (min-width: 1032px) {
     position: absolute;
     right: 18rem;
     top: -1rem;
-
 
     span {
       color: ${props => props.theme.colors.textColor};
@@ -122,7 +103,6 @@ nav a.logo img {
   }
   
   @media (min-width: 1230px) {
- 
     right: 28rem;
 
   }
@@ -147,14 +127,13 @@ nav a.logo img {
   }
 }
 
-
 @media (max-width: 375px) {
-
  .title {
     font: 700 1.675rem 'Poppins',sans-serif;
       color: ${props => props.theme.colors.titleColor};
       -webkit-font-smoothing: auto;
     }
+
     nav.show ul.grid {
       gap: 2rem;
     }
@@ -167,7 +146,6 @@ nav a.logo img {
 
 /*================ EXTRA SMALL DEVICES ====================*/
 @media (max-width:420px) {
-
   .title_toggle {
     font-size: 1.6rem;
   }
@@ -179,8 +157,6 @@ nav a.logo img {
         ul {
           li {
             a {
-             
-
               &.logo {
                 display: block;
                 img {
@@ -190,8 +166,7 @@ nav a.logo img {
                   max-width: 100px;
                 }
               }
-        
-              
+
             }
           }
         }

@@ -22,7 +22,6 @@ export const Container = styled.div`
     .progress-bar {
       height: 3px;
       background:${props => props.theme.colors.barLoadingColor};
-
       width: 0%;
     }
   }

@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   a {
-  /* color: ${props => props.theme.colors.titleColor}; */
-  /* display: inline-block; */
   font-weight: 400;
   text-decoration: none;
 }
@@ -73,8 +71,7 @@ h2.active {
   font-weight: bold;
 }
 
-input[type=button], input[type=submit]  
-{
+input[type=button], input[type=submit]  {
   background-color: ${props => props.theme.colors.baseColor};
   border: none;
   color: ${props => props.theme.colors.textColorLight};
@@ -96,8 +93,7 @@ input[type=button], input[type=submit]
 }
 
 
-input 
-{
+input {
   background-color: ${props => props.theme.colors.bodyColor};
   border: none;
   color: ${props => props.theme.colors.textColor};
@@ -113,14 +109,12 @@ input
   border-radius: 5px 5px 5px 5px;  
 }
 
-input:focus
-{
+input:focus{
   background-color: ${props => props.theme.colors.bodyColorAlt};
   border-bottom: 2px solid ${props => props.theme.colors.baseColor};
 }
 
-input::placeholder
-{
+input::placeholder{
   color: ${props => props.theme.colors.textColor};
   opacity: 0.5 ;
 }
@@ -135,13 +129,9 @@ input::placeholder
   }
 }
 
-
 main .section {
   padding: 11.2rem 3.2rem;
   height: 100%;
 }
-
-
-
 `;
 

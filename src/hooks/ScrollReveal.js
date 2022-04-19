@@ -1,9 +1,7 @@
-import { useEffect} from 'react'
-
-import ScrollReveal from 'scrollreveal'
+import { useEffect} from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export default function ScrollReavelling(){
-
   useEffect(() => {
     const scrollReveal = ScrollReveal({
       origin: 'top',
@@ -11,6 +9,7 @@ export default function ScrollReavelling(){
       duration: 700,
       reset: true
     })
+    
   //#testimonials .testimonials,
     scrollReveal.reveal(
       ` #home .text,

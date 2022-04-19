@@ -7,17 +7,12 @@ import $ from 'jquery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-
-
 import toast from 'react-hot-toast';
-
 
 export function ContactForm(){
     const [inputs, setInputs] = useState([]);
     const [status, setStatus] = useState('Enviar');
     const [verify, setVerify] = useState(true);
-    const [loading, setLoading] = useState(false);
-
 
     function HandleCleanInputs(){
         var campos = document.querySelectorAll('input');
@@ -29,7 +24,6 @@ export function ContactForm(){
         if(textArea[0].value != '') {
                 textArea[0].value = '';
         }
-
         setInputs([])
     }
 
@@ -131,20 +125,16 @@ export function ContactForm(){
             console.log('ERRO : ', error)
         }
     }
-    
 
     function HandleOnChange(value) {
         setVerify(false)
     }
 
-    
-
     return (
        <div>
-           <ContainerContact>   
+         <ContainerContact>   
             <form  action="" name="form" method="POST" id='form' onSubmit={ HandleSubmitForm } >
-                <h2 className="title">Envie-nos uma mensagem</h2>
-                
+                <h2 className="title">Envie-nos uma mensagem</h2> 
 
                 <div className="contactForm">
                     <div className="row">
@@ -182,7 +172,7 @@ export function ContactForm(){
                     </button>
                 </div>
             </form>
-            </ ContainerContact>
+         </ ContainerContact>
        </div>
     )
 }

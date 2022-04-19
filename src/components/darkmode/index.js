@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import {ContainerHeader} from '../header/styles';
 import { Container } from './styles';
@@ -7,8 +7,6 @@ import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 
 const Toggler= ({ toggleTheme }) => {
-
-  
 
   function handleSetTheme(event) {
     event.preventDefault();
@@ -19,14 +17,12 @@ const Toggler= ({ toggleTheme }) => {
     <ContainerHeader>
       <Container>
         <div className="show">
-        <div className="ainda_nao darkIcon">
-          <FontAwesomeIcon className="buttonTheme" icon={ faMoon } onClick={handleSetTheme}  />
+          <div className="ainda_nao darkIcon">
+            <FontAwesomeIcon className="buttonTheme" icon={ faMoon } onClick={handleSetTheme}  />
+          </div>
         </div>
-      </div>
-        
       </Container>
     </ContainerHeader>
-      
   );
 };
 

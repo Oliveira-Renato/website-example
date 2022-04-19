@@ -19,11 +19,9 @@ export const ContainerContact = styled.div`
     width: 700px;
   }
 
-
   .row {
     width: 100%;
     display: flex;
-    
     
     @media(max-width: 43.5em) {
       width: 100%;
@@ -55,7 +53,6 @@ export const ContainerContact = styled.div`
       resize: none;
       box-shadow: 0px 1px 4px ${props => props.theme.colors.baseColorSecond};
       text-align: left;
-
       &::placeholder {
         opacity: 0.5; 
       }
