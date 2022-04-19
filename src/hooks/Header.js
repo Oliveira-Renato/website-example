@@ -16,11 +16,11 @@ export function HeaderEffect(){
         }
 
         function handleCloseMenu() {
-            const navShow = document.querySelector('nav.show') &&  document.querySelector('nav.show');
+            const navShow = document.querySelector('nav.show');
             const moonShow = document.querySelector('.darkIcon') && document.querySelector('.darkIcon') ;
 
-            $(document).width() >= 1032 && navShow.classList.remove('show'); 
-            $(document).width() >= 1032 && moonShow && moonShow.classList.remove('darkIcontoggle'); 
+            $(document).width() >= 1030 && navShow ? navShow.classList.remove('show') : console.log('foda');
+            $(document).width() >= 1030 && moonShow ? moonShow.classList.remove('darkIcontoggle') : console.log('fodinha'); 
         }
 
         window.addEventListener('scroll', function(){
