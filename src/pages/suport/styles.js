@@ -106,6 +106,10 @@ input::placeholder{
 *:focus {
   outline: none;
 }
+
+#blabla a {
+  color: ${props => props.theme.colors.baseColor};
+}
 @media (max-width: 600px) {
   input {
     width: 80%;

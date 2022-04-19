@@ -7,6 +7,8 @@ import {ContainerHeader} from './styles.js'
 import  logo  from '../../assets/images/icons/logo_syscare_200.png';
 
 export function Header(){
+  const wDeseUrl = 'http://dese.syscare.com.br';
+
   function HandleToggleMenu() {
     const nav = document.querySelector('#header nav'); 
     const suportBtn = document.querySelector('.ainda_nao');
@@ -75,7 +77,7 @@ export function Header(){
                   </li>
                   <li>
                     <div className="ainda_nao login_btn show" >
-                      <a href={()=>validaURL('http://dese.syscare.com.br')}  className="btn1" target="_blank"  alt="área de login">
+                      <a href={validaUrl(wDeseUrl) ? wDeseUrl:''}  className="btn1" target="_blank"  alt="área de login">
                         <FontAwesomeIcon className="icones login_icon" icon={ faUserNurse } /><span>Entrar</span>
                       </a>
                     </div>

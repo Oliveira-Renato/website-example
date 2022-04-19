@@ -5,11 +5,19 @@ import {Container} from './styles.js';
 import logo from '../../assets/images/suport/Syscare_Logo.png';
 import kennenLogo from '../../assets/images/icons/header_kennen.png';
 
+import useValidaUrl from '../../hooks/ValidaUrl';
+
 export function Suport() {
+    const wSuportUrl = 'http://suporte.syscare.com.br:81/suporte/login'
+
     function HandleCleanInputs() {
         document.frm_login.usuario.value = '';
         document.frm_login.senha.value = '';
         document.frm_login.usuario.focus();
+    }
+
+    function handleSubmitForms(event){
+        event.preventDefault();
     }
 
   return (
@@ -23,7 +31,7 @@ export function Suport() {
                             <h2 className="active">LOGIN</h2>
                             <div className="first">
                                 <img className="icon" src={logo} />
-                                <form name="frm_login" action="http://suporte.syscare.com.br:81/suporte/login" method="POST">
+                                <form name="frm_login" action={ useValidaUrl(wSuportUrl) ? wSuportUrl : '' } method="POST" >
                                     <label htmlFor="Usuário"></label>
                                     <input type="text" id="usuario" name="usuario" placeholder="Usuário" />
                                     <label htmlFor="Senha"></label>
