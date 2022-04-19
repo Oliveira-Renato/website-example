@@ -7,7 +7,6 @@ import {ContainerHeader} from './styles.js'
 import  logo  from '../../assets/images/icons/logo_syscare_200.png';
 
 export function Header(){
-  
   function HandleToggleMenu() {
     const nav = document.querySelector('#header nav'); 
     const suportBtn = document.querySelector('.ainda_nao');
@@ -23,6 +22,11 @@ export function Header(){
         nav.classList.toggle('show'); 
     }
   }
+  
+  function validaUrl(url){
+    const parsed = new URL(url);
+    return ['http:','https:'].includes(parsed.protocol);
+  }
 
   const handleCloseMenu = () => { 
       const toggleThemeIcon = document.querySelector('.darkIcon');
@@ -31,7 +35,7 @@ export function Header(){
       nav.classList.remove('show');
       toggleThemeIcon.classList.remove('darkIcontoggle');
   }
-
+  
   return (
     <>
       <ContainerHeader>
@@ -71,7 +75,7 @@ export function Header(){
                   </li>
                   <li>
                     <div className="ainda_nao login_btn show" >
-                      <a href="http://dese.syscare.com.br"  className="btn1" target="_blank"  alt="área de login">
+                      <a href={()=>validaURL('http://dese.syscare.com.br')}  className="btn1" target="_blank"  alt="área de login">
                         <FontAwesomeIcon className="icones login_icon" icon={ faUserNurse } /><span>Entrar</span>
                       </a>
                     </div>
