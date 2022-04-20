@@ -22,7 +22,7 @@ export function ProductTest(){
           <FontAwesomeIcon icon={ faHouseMedical }  />
         </div>
         
-        <h3 className="title">{array[index]['titulo']}</h3>
+        <h3 className="title">Syscare - {array[index]['titulo']}</h3>
         <p>
           {array[index]['content']}
         </p>
@@ -47,6 +47,20 @@ export function ProductTest(){
               <div className="cards grid">         
                 {newData}             
               </div>
+            </div>
+          </section>
+
+          {/*====  SEPARETOR 1 ====  */}
+          <div className="divider-1"></div>
+
+          {/*====  MODULOS ====  */}
+          <section className="section" id="modules" >
+            <div className="container">
+              <header>
+                <h2 className="title">Syscare - Modulos</h2>
+                <p>loren ipsum deixará de ser um texto padrão, mas ainda é um texto padrão.
+                  </p>
+              </header>
             </div>
           </section>
         </main>
