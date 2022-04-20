@@ -4,13 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { ContactForm } from './pages/contacts/index';
 
-import GlobalStyle from './styles/global';
 import { ProductTest }  from './components/Produtos/Product';
 import { HeaderEffect } from './hooks/Header';
 import  ScrollReavelling  from './hooks/ScrollReveal';
 import { ProgressBar } from './components/Progressbar/progressbar';
-
-import './styles/media.scss';
 
 import { Toaster } from 'react-hot-toast';
 import { Suport } from './pages/suport/index';
@@ -22,6 +19,9 @@ import { Testimonials } from './pages/testimonials/index';
 import { Recaptcha } from './hooks/recaptcha/Recaptcha';
 import { ThemeProvider} from 'styled-components';
 
+import GlobalStyle from './styles/global';
+import './styles/media.scss';
+import './styles/variables.css';
 import usePersistedState from './utils/usePersistedState';
 import light from './styles/themes/light'
 import dark from './styles/themes/dark'; 

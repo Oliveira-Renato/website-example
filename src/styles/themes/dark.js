@@ -1,12 +1,11 @@
 export default {
-
     title : 'dark',
     colors: {
       headerHeight: '7.2rem',
-      hue: 970,
-      baseColor: 'hsl(970 36% 57%)',
-      baseColorSecond: 'hsl(970 65% 88%)',
-      baseColorAlt: 'hsl(970 57% 53%)',
+      hue: 'var(--color-hue-dark)',
+      baseColor: 'hsl(var(--color-hue-dark) 36% 57%)',
+      baseColorSecond: 'hsl(var(--color-hue-dark) 65% 88%)',
+      baseColorAlt: 'hsl(var(--color-hue-dark) 57% 53%)',
       titleColor: '#FFF',
       textColor: '#FFF',
       textColorLight: '#FFF',
@@ -19,5 +18,4 @@ export default {
       shadowPorCentSuport: '8%',
       imgFilter: 'grayscale(500%) brightness(1000%) sepia(0) saturate(1000%) invert(0)',
     },
-  
 };
