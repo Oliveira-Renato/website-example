@@ -26,6 +26,9 @@ import usePersistedState from './utils/usePersistedState';
 import light from './styles/themes/light'
 import dark from './styles/themes/dark'; 
 import SwitchDark from './components/darkmode';  
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   const [theme, setTheme] = usePersistedState('themes', light); 

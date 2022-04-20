@@ -13,6 +13,7 @@ import { Footer } from '../../pages/footer';
 import { useEffect } from 'react';
 
 import {ModalComponent} from '../modal/index';
+import { ModulesComponent } from '../modulos';
 
 export function ProductTest(){
   const newData = data.map((valor,index,array)=>{
@@ -53,20 +54,14 @@ export function ProductTest(){
           {/*====  SEPARETOR 1 ====  */}
           <div className="divider-1"></div>
 
-          {/*====  MODULOS ====  */}
-          <section className="section" id="modules" >
-            <div className="container">
-              <header>
-                <h2 className="title">Syscare - Modulos</h2>
-                <p>loren ipsum deixará de ser um texto padrão, mas ainda é um texto padrão.
-                  </p>
-              </header>
-            </div>
-          </section>
+          
         </main>
 
         {/*====  SEPARETOR 2 ====  */}
         <div className="divider-1"></div>
+
+          {/*====  MODULOS ====  */}
+          <ModulesComponent />
         <Footer />
     </div>
   )

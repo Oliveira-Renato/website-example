@@ -33,10 +33,12 @@
     "react-modal": "^3.14.4",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-slick": "^0.29.0",
     "react-spring": "^9.4.4",
     "react-tooltip": "^4.2.21",
     "sass": "^1.49.7",
     "scrollreveal": "^4.0.9",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
     "swiper": "^8.0.6",
     "web-vitals": "^2.1.4"
