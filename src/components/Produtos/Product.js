@@ -12,6 +12,8 @@ import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
 import { useEffect } from 'react';
 
+import {ModalComponent} from '../modal/index';
+
 export function ProductTest(){
   const newData = data.map((valor,index,array)=>{
     return (
@@ -24,6 +26,7 @@ export function ProductTest(){
         <p>
           {array[index]['content']}
         </p>
+        <ModalComponent productId={array[index]['id']} />
       </div>
     )
   })
