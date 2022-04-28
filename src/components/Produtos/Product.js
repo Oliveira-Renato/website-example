@@ -17,6 +17,7 @@ import { ModulesComponent } from '../modulos';
 
 import UseMapData from '../../hooks/map/Map';
 
+
 export function ProductTest(){
 
   return (
@@ -49,6 +50,9 @@ export function ProductTest(){
 
           {/*====  MODULOS ====  */}
           <ModulesComponent />
+
+        {/*====  SEPARETOR 1 ====  */}
+        <div className="divider-1"></div>
         <Footer />
     </div>
   )

@@ -491,4 +491,22 @@ a.back-to-top {
     color: ${props => props.theme.colors.baseColor};
   }
 }
+
+.slick-nex {
+  background:  ${props => props.theme.colors.bodyColor} !important;
+}
+.slick-arrow  {
+  background:  ${props => props.theme.colors.bodyColor} !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: ${props => props.theme.colors.baseColor} !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 `
