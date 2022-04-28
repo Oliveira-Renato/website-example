@@ -5,7 +5,7 @@ import {
   faHouseMedical
 } from "@fortawesome/free-solid-svg-icons";
 
-import data from './data.json'
+import data from './data.json';
 import './styles.scss';
 
 import { Header } from '../header/header';
@@ -15,22 +15,9 @@ import { useEffect } from 'react';
 import {ModalComponent} from '../modal/index';
 import { ModulesComponent } from '../modulos';
 
+import UseMapData from '../../hooks/map/Map';
+
 export function ProductTest(){
-  const newData = data.map((valor,index,array)=>{
-    return (
-      <div className="card"  key ={array[index]['id']}>
-        <div className="icones">
-          <FontAwesomeIcon icon={ faHouseMedical }  />
-        </div>
-        
-        <h3 className="title">Syscare - {array[index]['titulo']}</h3>
-        <p>
-          {array[index]['content']}
-        </p>
-        <ModalComponent productId={array[index]['id']} />
-      </div>
-    )
-  })
 
   return (
     <div>
@@ -46,7 +33,7 @@ export function ProductTest(){
                   </p>
               </header>
               <div className="cards grid">         
-                {newData}             
+                 <UseMapData json={data} />            
               </div>
             </div>
           </section>
