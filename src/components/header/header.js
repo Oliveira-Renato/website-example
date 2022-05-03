@@ -54,7 +54,14 @@ export function Header(){
                     <a className="title title_toggle" href="/" alt="" onClick={handleCloseMenu} name="home" >Home</a>
                   </li>
                   <li>
-                    <a className="title title_toggle" href="/#about" alt="" onClick={handleCloseMenu} name="about"  >Sobre</a>
+                    <div className="sub-menu">
+                      <a className="title title_toggle" href="/#about" alt="" onClick={handleCloseMenu} name="about"  >Sobre</a>
+                      <ul className='sub-menu-content'>
+                        <li>
+                          <a href="/" className="title title_toggle" alt=""  name="about" >Onde estamos</a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
                     <a className="title title_toggle" href="/#products" alt="" onClick={handleCloseMenu} name="products" >Produtos</a>

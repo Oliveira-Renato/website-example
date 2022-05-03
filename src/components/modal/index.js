@@ -1,5 +1,6 @@
-import React,{ useState } from 'react';
+import React,{ useEffect, useState } from 'react';
 import Modal from 'react-modal';
+import styled from 'styled-components';
 
 const customStyles = {
   content: {
@@ -14,26 +15,27 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-export function ModalComponent(productId) {
-  let subtitle;
+export function ModalComponent(pJson) {
+  var subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
-  console.log(productId);
+  const [data, setData] = useState(pJson.json);
+  const [title, setTitle] = useState('');
 
-  function openModal() {
+  const openModal = () => {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-    subtitle.style.color = '#f00';
+  const afterOpenModal = () => {
+    subtitle.style.color = `${props => props.theme.colors.titleColor}` ;
   }
 
-  function closeModal() {
+  const closeModal = () => {
     setIsOpen(false);
   }
-
+ 
   return (
     <div>
-      <button onClick={openModal}>Open Modal</button>
+      <div className="button" onClick={openModal}>{title}</div>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -41,10 +43,13 @@ export function ModalComponent(productId) {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        
+        <h2 className="title" ref={(_subtitle) => (subtitle = _subtitle)}>{}</h2>
+        <div>
+          <ul>
+            <li>* Item 1</li>
+          </ul>
+        </div>
+        <div className="button" onClick={closeModal}>Fechar</div>
       </Modal>
     </div>
   )

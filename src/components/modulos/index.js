@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import dataJson from './data.json';
+import contentModal from './contentModal.json';
+
 import UseMapData from "../../hooks/map/Map";
 
 import {ContainerMod} from "./styles";
@@ -80,7 +82,7 @@ export function ModulesComponent() {
         }
       ]
   };
-
+  
 
   return (
     <div>
@@ -98,8 +100,8 @@ export function ModulesComponent() {
             
             <Slider {...settings}>
               {data.map((item, index,array) => (
-                <div className="card_space">
-                  <div className="card" key={array[index]['id']}>  
+                <div className="card_space" key={array[index]['id']} >
+                  <div className="card" >  
                     <div className="icones">
                         <FontAwesomeIcon icon={require("@fortawesome/free-solid-svg-icons")[array[index]['image']]} />
                       </div>
@@ -108,7 +110,7 @@ export function ModulesComponent() {
                     <p className="ola">
                       {array[index]['content']}
                     </p>
-                    <ModalComponent productId={array[index]['id']} />
+                    <ModalComponent jsonData={3} />
                   </div>
                 </div>
               ))} 

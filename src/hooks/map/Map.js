@@ -7,7 +7,7 @@ export default function UseMapData(pJson){
   const [data, setData] = useState(pJson.json);
     // const data = pJson.json;
     
-    console.log(data);
+    // console.log(data);
   
     const newData = data.map((valor,index,array)=>{
       return (
@@ -20,7 +20,8 @@ export default function UseMapData(pJson){
           <p>
             {array[index]['content']}
           </p>
-          <ModalComponent productId={array[index]['id']} />
+          
+          <ModalComponent productId={2} />
       </div>
       )
     })

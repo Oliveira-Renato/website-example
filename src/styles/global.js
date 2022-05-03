@@ -201,6 +201,7 @@ nav .menu{
     visibility: hidden;
     top: -32rem;
     transition: 0.3s;
+    z-index:1000;
 }
 nav .menu ul {
   display: none;
@@ -356,6 +357,7 @@ main #home .container .text .second_title {
   padding: 3.2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, ${props => props.theme.colors.shadowPorCent});
   border-radius: 0.28rem;
+  aspect-ratio: 16/7;
 }
 #testimonials blockquote p {
   position: relative;

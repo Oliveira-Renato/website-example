@@ -22,6 +22,26 @@ nav.show .menu ul {
 nav.show ul.grid  {
   gap: 1.6rem;
 }
+
+//=====================================
+nav .sub-menu-content {
+  position:absolute ;
+  border: 1px solid ${props => props.theme.colors.baseColor};
+  width: 240px ;
+  background: ${props => props.theme.colors.bodyColor};
+  height: 100px;
+  padding: 1.2rem ;
+  transition:0.3s ;
+  opacity: 0 ;
+  visibility: hidden ;
+}
+
+nav .sub-menu:hover .sub-menu-content {
+  visibility: visible ;
+  transition:0.3s ;
+  opacity: 1 ;
+}
+
 nav.show div.close {
   visibility: visible;
   opacity: 1;

@@ -1,0 +1,72 @@
+[
+  {
+    "id":"1",
+    "boInativo": 0,
+    "titulo":"Informações do paciente",
+    "image":"faLaptopMedical",
+    "content": "prontuário gerado automaticamente pelo sistema por ocasião da primeira internação do paciente;disponibilidade de acesso via Internet para preenchimento de relatórios da equipe multiprofissional, bem como consulta dos convênios aos pacientes de sua carteira;disponibilidade de acesso via Internet para preenchimento de relatórios da equipe multiprofissional, bem como consulta dos convênios aos pacientes de sua carteira;opção de cadastros de ferramentas próprias de avaliação e pesquisa;formulários e impressos diversos pré-configurados para elaboração do prontuário físico do paciente;relatório completo de prescrições (médica, materiais, enfermagem e dietas) incluindo itens enviados por terceiros;recurso para cadastro de modelos de evolução, prescrição e anotações diversas, permitindo padronização própria;inclusão de imagens digitais do paciente, como laudos, exames, documentação, fotos, etc;possibilidade de cadastro de parâmetros clínicos críticos para alerta durante monitoramento (funcionalidade smartphone Treo)."
+  },
+  {
+    "id":"2",
+    "boInativo": 0,
+    "titulo":"TISS XML",
+    "image":"faFileArrowUp",
+    "content": "Módulo destinado a geração do arquivo de XML(TISS) a ser enviado ao convênio."
+  },
+  {
+    "id":"3",
+    "boInativo": 0,
+    "titulo":"Gestão Administrativa",
+    "image":"faClipboardList",
+    "content": "Relatórios do desempenho operacional para auxílio de decisões estratégicas."
+  },
+  {
+    "id":"4",
+    "boInativo": 0,
+    "titulo":"Faturamento",
+    "image":"faHandHoldingDollar",
+    "content": "Módulo destinado ao envio de faturamento físico e eletrônico para os convênios, além de contemplar ferramentas para análise de produtividade e controle de recebíveis."
+  },
+  {
+    "id":"5",
+    "boInativo": 0,
+    "titulo":"Orçamento",
+    "image":"faCalculator",
+    "content": "Através de parâmetros e informações pré-cadastradas no sistema, o módulo de orçamento gera proposta de atendimento ao paciente de forma automática, a partir da avaliação clínica e elaboração do plano terapêutico deste."
+  },
+  { 
+    "id":"6",
+    "boInativo": 0,
+    "titulo":"Farmácia",
+    "image":"faPrescriptionBottleMedical",
+    "content": "Módulo completo para gerenciamento de estoque. Contempla desde o cadastro dos produtos comercializados até controles rígidos de fluxo de materiais e medicamentos, apurando e registrando valores de custo e venda."
+  },
+  {
+    "id":"7",
+    "boInativo": 0,
+    "titulo":"Recursos Humanos",
+    "image":"faPerson",
+    "content": "Gerenciamento completo do corpo profissional próprio e terceirizado, desde o cadastro destes até a remuneração e apuração de produtividade."
+  },
+  {
+    "id":"8",
+    "boInativo": 0,
+    "titulo":"Remoções",
+    "image":"faTruckMedical",
+    "content": "Módulo destinado ao cadastro e manutenção de frotas de ambulâncias, bem como ao controle das execuções de remoções."
+  },
+  {
+    "id":"9",
+    "boInativo": 0,
+    "titulo":"Mobilidade",
+    "image":"faMobileScreenButton",
+    "content": "O SysCare oferece a possibilidade de acesso às informações do paciente, manutenção de dados clínicos, informações administrativas via web."
+  },
+  {
+    "id":"10",
+    "boInativo": 0,
+    "titulo":"Funções Adicionais",
+    "image":"faGears",
+    "content": "Além dos módulos principais, o Syscare conta com diversos módulos clínicos e administrativos, que visam atender a totalidade da rotina operacional do Home Care."
+  }
+]
