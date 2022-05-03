@@ -2,12 +2,28 @@
   [
     {
       "markerOffset": 15,
-      "name": "Brasilia",
+      "name": "Brasilia - DF",
       "coordinates": [-47.8825, -15.7942]
     },
     {
-      "markerOffset": 15,
-      "name": "São Paulo",
+      "markerOffset": 18,
+      "name": "São Paulo - SP",
       "coordinates": [-46.6388,  -23.5489]
+    },
+    {
+      "markerOffset": 8,
+      "name": "Rio de Janeiro - RJ",
+      "coordinates": [-43.2096,  -22.9035]
+    },
+    {
+      "markerOffset": 15,
+      "name": "Bahia - BH",
+      "coordinates": [-38.5124,  -12.9704]
+    },
+    {
+      "markerOffset": 15,
+      "name": "Amazonas - AM",
+      "coordinates": [-60.0261, -3.10719]
     }
+    
 ]

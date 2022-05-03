@@ -24,18 +24,19 @@ nav.show ul.grid  {
 }
 
 //=====================================
-nav .sub-menu-content {
+.sub-menu-content {
   position:absolute ;
   border: 1px solid ${props => props.theme.colors.baseColor};
   width: 240px ;
   background: ${props => props.theme.colors.bodyColor};
   height: 100px;
-  padding: 1.2rem ;
   transition:0.3s ;
   opacity: 0 ;
-  visibility: hidden ;
+  visibility: hidden;
 }
-
+.sub-menu-content div  {
+  padding:1.2rem ;
+}
 nav .sub-menu:hover .sub-menu-content {
   visibility: visible ;
   transition:0.3s ;
@@ -48,6 +49,10 @@ nav.show div.close {
   top: auto;
   right: -0.16rem;
 }
+
+
+
+
 nav a.logo img {
     min-width: 120px;
     max-width: 100px;
@@ -58,7 +63,7 @@ nav a.logo img {
 }
 /*======== TOGGLE MENU =============*/
 .darkIcontoggle {
-    
+
     @media(max-width: 1032px) {
       position: fixed;
       top: 0;

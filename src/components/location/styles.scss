@@ -1,0 +1,50 @@
+main {
+  section{
+    margin: 0;
+    padding: 0;
+  }
+  .section{
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: 1032px){
+      margin: 0;
+      padding: 0; 
+    }
+  }
+  #map {  
+    .container {
+      padding: 0;
+
+      .mapSize {
+        overflow: hidden;
+        position: relative;
+        left: 10%;
+        max-width: 100% !important;
+        min-height: 600px !important;
+         
+        @media (min-width: 1400px){
+          width: 80% !important;
+        }
+      }
+      header {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1032px){
+  .aqui .section {
+      padding: 0 3.2rem 11.2rem 3.2rem;
+      height: 100%;
+  }
+}
+
+@media (min-width: 1400px){
+      .mapSize {
+        min-width: 800px !important;
+        min-height: 600px !important; 
+      }
+}
+

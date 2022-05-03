@@ -57,9 +57,9 @@ export function Header(){
                     <div className="sub-menu">
                       <a className="title title_toggle" href="/#about" alt="" onClick={handleCloseMenu} name="about"  >Sobre</a>
                       <ul className='sub-menu-content'>
-                        <li>
-                          <a href="/" className="title title_toggle" alt=""  name="about" >Onde estamos</a>
-                        </li>
+                        <div>
+                          <a href="/localizacao" className="title title_toggle" alt=""  name="about" >Onde estamos</a>
+                        </div>
                       </ul>
                     </div>
                   </li>

@@ -18,6 +18,7 @@ import { AboutPage } from './pages/about/index';
 import { Testimonials } from './pages/testimonials/index';
 import { Recaptcha } from './hooks/recaptcha/Recaptcha';
 import { ThemeProvider} from 'styled-components';
+import MapChart from './components/location';
 
 import GlobalStyle from './styles/global';
 import './styles/media.scss';
@@ -28,6 +29,7 @@ import dark from './styles/themes/dark';
 import SwitchDark from './components/darkmode';  
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 
 function App() {
@@ -56,6 +58,7 @@ function App() {
                     <Routes>  
                       <Route path="/" element={<Home />} />
                       <Route path="/produtos" element={<ProductTest />} />
+                      <Route path="/localizacao" element={<MapChart />} />
                       <Route path="/suporte" element={<Suport />} />
                       <Route path="/#about" element={<AboutPage />} />
                       <Route path="/#contact" element={<ContactForm />} />

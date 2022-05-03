@@ -201,7 +201,6 @@ nav .menu{
     visibility: hidden;
     top: -32rem;
     transition: 0.3s;
-    z-index:1000;
 }
 nav .menu ul {
   display: none;
