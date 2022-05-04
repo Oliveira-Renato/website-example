@@ -11,6 +11,7 @@ nav.show .menu {
   position: fixed;
   top: 0;
   left: -3.84rem;
+  
 }
 nav.show .menu {
   display: grid;
@@ -26,21 +27,28 @@ nav.show ul.grid  {
 //=====================================
 .sub-menu-content {
   position:absolute ;
-  border: 1px solid ${props => props.theme.colors.baseColor};
+  border:  2mm ridge ${props => props.theme.colors.baseColor};
   width: 240px ;
-  background: ${props => props.theme.colors.bodyColor};
+  background: ${props => props.theme.colors.bodyColor}; 
   height: 100px;
   transition:0.3s ;
   opacity: 0 ;
   visibility: hidden;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  height: 1px;
+  
 }
 .sub-menu-content div  {
   padding:1.2rem ;
+}
+.sub-menu-content div a {
+  color: ${props => props.theme.colors.textColor} !important;
 }
 nav .sub-menu:hover .sub-menu-content {
   visibility: visible ;
   transition:0.3s ;
   opacity: 1 ;
+  height: 100px;
 }
 
 nav.show div.close {
