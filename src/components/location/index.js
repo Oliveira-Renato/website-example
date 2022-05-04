@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   ComposableMap,
   Geographies,
@@ -20,7 +20,7 @@ const MapChart = () => {
   return (
     <div>
        <Header />
-        <main className="aqui">
+        <main className="aqui"  onLoad={useEffect(() => document.querySelector('#map').scrollIntoView({ behavior: 'smooth' })) }>
           <section className="section section-map" id="map">
             <div className="container">
               <header>
@@ -64,10 +64,10 @@ const MapChart = () => {
                     <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
                     </g>
                     <text
-                      className="mapText"
+                    className="mapText"
                       textAnchor="left"
                       y={markerOffset}
-                      style={{ fontFamily: "system-ui"}}
+                      style={{ fontFamily: "Poppins", fill: "#5D5A6D" }}
                     >
                       {name}
                     </text>
