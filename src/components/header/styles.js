@@ -25,9 +25,12 @@ nav.show ul.grid  {
 }
 
 //=====================================
+.sub-menu {
+  
+}
 .sub-menu-content {
-  position:absolute ;
-  border:  2mm ridge ${props => props.theme.colors.baseColor};
+  position:absolute;
+  border: 0mm ridge ${props => props.theme.colors.baseColor};
   width: 240px ;
   background: ${props => props.theme.colors.bodyColor}; 
   height: 100px;
@@ -36,7 +39,11 @@ nav.show ul.grid  {
   visibility: hidden;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   height: 1px;
-  
+  left: 50%;
+
+  @media(max-width:1032px){
+    position:inherit;
+  }  
 }
 .sub-menu-content div  {
   padding:1.2rem ;
@@ -45,6 +52,7 @@ nav.show ul.grid  {
   color: ${props => props.theme.colors.textColor} !important;
 }
 nav .sub-menu:hover .sub-menu-content {
+  border: 2mm ridge ${props => props.theme.colors.baseColor};
   visibility: visible ;
   transition:0.3s ;
   opacity: 1 ;
@@ -195,6 +203,9 @@ nav a.logo img {
   #header {
     .title_toggle {
       font-size: 1.6rem;
+    }
+    .sobre-menu {
+      margin-bottom: 0;
     }
   }
   nav.show ul.grid {
