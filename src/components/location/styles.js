@@ -68,5 +68,7 @@ svg {
 .color-pointer {
   color: ${props => props.theme.colors.baseColor};
 }
-
+text {
+  fill: ${props => props.theme.colors.titleColor} !important;
+}
 `
