@@ -24,6 +24,11 @@
       "markerOffset": 15,
       "name": "Amazonas",
       "coordinates": [-60.0261, -3.10719]
+    },
+    {
+      "markerOffset": 15,
+      "name": "Portugal",
+      "coordinates": [-9.1604, 	38.7452]
     }
     
 ]

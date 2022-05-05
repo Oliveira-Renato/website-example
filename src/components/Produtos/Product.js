@@ -46,10 +46,10 @@ export function ProductTest(){
         </main>
 
         {/*====  SEPARETOR 2 ====  */}
-        <div className="divider-1"></div>
+        <div className="divider-2"></div>
 
-          {/*====  MODULOS ====  */}
-          <ModulesComponent />
+        {/*====  MODULOS ====  */}
+        <ModulesComponent />
 
         {/*====  SEPARETOR 1 ====  */}
         <div className="divider-1"></div>
