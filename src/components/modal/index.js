@@ -1,6 +1,6 @@
 import React,{ useEffect, useState } from 'react';
 import Modal from 'react-modal';
-import styled from 'styled-components';
+import './styles.scss';
 
 const customStyles = {
   content: {
@@ -18,8 +18,6 @@ Modal.setAppElement('#root');
 export function ModalComponent(pJson) {
   var subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [data, setData] = useState(pJson.json);
-  const [title, setTitle] = useState('');
 
   const openModal = () => {
     setIsOpen(true);
@@ -35,7 +33,7 @@ export function ModalComponent(pJson) {
  
   return (
     <div>
-      <div className="button" onClick={openModal}>{title}</div>
+      <div className="button button-modal" onClick={openModal}>Ver mais</div>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -43,7 +41,7 @@ export function ModalComponent(pJson) {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 className="title" ref={(_subtitle) => (subtitle = _subtitle)}>{}</h2>
+        <h2 className="title" ref={(_subtitle) => (subtitle = _subtitle)}>aaa</h2>
         <div>
           <ul>
             <li>* Item 1</li>

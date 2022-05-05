@@ -502,7 +502,7 @@ a.back-to-top {
 
 .slick-prev:before, .slick-next:before {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 3rem;
     line-height: 1;
     opacity: .75;
     color: ${props => props.theme.colors.baseColor} !important;
