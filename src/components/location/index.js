@@ -8,7 +8,6 @@ import {
 
 import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
-
 import data from './locations.json'
 import './styles.scss';
 
