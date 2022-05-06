@@ -70,60 +70,60 @@ export function Home(){
 
           {/*====  PRODUCTS ====  */}
           <section className="section" id="products">
-          <div className="container grid">
-            <header>
-              <h2 className="title">Produtos</h2>
-              <p>Com mais de 20 anos no mercado, o <strong>Syscare</strong> já
-                conquistou inúmeros  clientes com seus serviços
-                exclusivos.
-                </p>
-            </header>
-            <div className="cards grid">
-              <div className="card">
-                <div className="icones">
-                  <FontAwesomeIcon icon={ faHouseMedical }  />
+            <div className="container grid">
+              <header>
+                <h2 className="title">Produtos</h2>
+                <p>Com mais de 20 anos no mercado, o <strong>Syscare</strong> já
+                  conquistou inúmeros  clientes com seus serviços
+                  exclusivos.
+                  </p>
+              </header>
+              <div className="cards grid">
+                <div className="card">
+                  <div className="icones">
+                    <FontAwesomeIcon icon={ faHouseMedical }  />
+                  </div>
+                  
+                  <h3 className="title">Syscare - AD</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                    distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                    asperiores
+                  </p>
                 </div>
-                
-                <h3 className="title">Syscare - AD</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                  distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                  asperiores
-                </p>
-              </div>
 
-              <div className="card">
-                <div className="icones">
-                  <FontAwesomeIcon icon={ faLaptopMedical }/>
+                <div className="card">
+                  <div className="icones">
+                    <FontAwesomeIcon icon={ faLaptopMedical }/>
+                  </div>
+                  
+                  <h3 className="title">Syscare - SCF</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                    distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                    asperiores
+                  </p>
                 </div>
-                
-                <h3 className="title">Syscare - SCF</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                  distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                  asperiores
-                </p>
-              </div>
 
-              <div className="card">
-                <div className="icones">
-                  <FontAwesomeIcon icon={ faHouseMedical }  />
+                <div className="card">
+                  <div className="icones">
+                    <FontAwesomeIcon icon={ faHouseMedical }  />
+                  </div>
+                  
+                  <h3 className="title">Syscare - MGS</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                    distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                    asperiores
+                  </p>
                 </div>
-                
-                <h3 className="title">Syscare - MGS</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                  distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                  asperiores
-                </p>
-              </div>
-            </div> 
-            <div className="btn_produtos">
-              <a href="/produtos" className='button'>
-                <FontAwesomeIcon className="icones" icon={ faCartPlus } />Confira nossos produtos
-              </a>  
-            </div> 
-          </div>
+              </div> 
+              <div className="btn_produtos">
+                <a href="/produtos" className='button'>
+                  <FontAwesomeIcon className="icones" icon={ faCartPlus } />Confira nossos produtos
+                </a>  
+              </div> 
+            </div>
           </section>
 
           {/*====  SEPARETOR 1 ====  */}

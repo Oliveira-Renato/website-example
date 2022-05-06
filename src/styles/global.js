@@ -356,6 +356,7 @@ main #home .container .text .second_title {
   padding: 3.2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, ${props => props.theme.colors.shadowPorCent});
   border-radius: 0.28rem;
+  aspect-ratio: 16/7;
 }
 #testimonials blockquote p {
   position: relative;
@@ -491,4 +492,22 @@ a.back-to-top {
     color: ${props => props.theme.colors.baseColor};
   }
 }
+
+.slick-nex {
+  background:  ${props => props.theme.colors.bodyColor} !important;
+}
+.slick-arrow  {
+  background:  ${props => props.theme.colors.bodyColor} !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 3rem;
+    line-height: 1;
+    opacity: .75;
+    color: ${props => props.theme.colors.baseColor} !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 `

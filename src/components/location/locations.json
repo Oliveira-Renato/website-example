@@ -1,0 +1,34 @@
+
+  [
+    {
+      "markerOffset": 15,
+      "name": "Brasilia",
+      "coordinates": [-47.8825, -15.7942]
+    },
+    {
+      "markerOffset": 18,
+      "name": "São Paulo",
+      "coordinates": [-46.6388,  -23.5489]
+    },
+    {
+      "markerOffset": 8,
+      "name": "Rio de Janeiro",
+      "coordinates": [-43.2096,  -22.9035]
+    },
+    {
+      "markerOffset": 15,
+      "name": "Bahia",
+      "coordinates": [-38.5124,  -12.9704]
+    },
+    {
+      "markerOffset": 15,
+      "name": "Amazonas",
+      "coordinates": [-60.0261, -3.10719]
+    },
+    {
+      "markerOffset": 15,
+      "name": "Portugal",
+      "coordinates": [-9.1604, 	38.7452]
+    }
+    
+]

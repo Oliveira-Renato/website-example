@@ -14,3 +14,29 @@
     font-size: 150%;
   }
 }
+
+main {
+  section {
+    
+    .container {
+      header {
+        h2 {
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -5px;
+            width: 60px;
+            height: 4px;
+            
+          }
+          
+        }
+      }
+    }
+  }
+}
+

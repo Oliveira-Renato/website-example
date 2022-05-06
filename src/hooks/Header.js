@@ -32,7 +32,5 @@ export function HeaderEffect(){
         }, true);
     })
 
-    return (
-        <></>
-    )
+    return null
 }
