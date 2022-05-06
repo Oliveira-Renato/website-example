@@ -39,11 +39,18 @@ nav.show ul.grid  {
   visibility: hidden;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   height: 1px;
-  left: 50%;
 
   @media(max-width:1032px){
-    position:inherit;
+    position:fixed;
+    left: 40%;
+    opacity:1;
+    width: 220PX ;
+    z-index:150;
   }  
+  @media(max-width:766px){
+    width: 180px;
+    left: 25%;
+  }
 }
 .sub-menu-content div  {
   padding:1.2rem ;
@@ -57,6 +64,12 @@ nav .sub-menu:hover .sub-menu-content {
   transition:0.3s ;
   opacity: 1 ;
   height: 100px;
+  @media(max-width:1032px){
+    height: 100px;
+  }
+  @media(max-width:766px){
+    height: 80px;
+  }
 }
 
 nav.show div.close {
