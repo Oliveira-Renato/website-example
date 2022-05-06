@@ -15,12 +15,15 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-export function ModalComponent(pJson) {
+export function ModalComponent(pData) {
+  var {titulo} =  pData.jsonData ? pData.jsonData : {};
+  var dataId =  pData.jsonId ? pData.jsonId : {};
   var subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  const openModal = () => {
+  const openModal = (a) => {
     setIsOpen(true);
+    console.log(a)
   }
 
   const afterOpenModal = () => {
@@ -33,7 +36,7 @@ export function ModalComponent(pJson) {
  
   return (
     <div>
-      <div className="button button-modal" onClick={openModal}>Ver mais</div>
+      <div className="button button-modal" onClick={() => openModal(dataId)} value='1'>Ver mais</div>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -41,10 +44,10 @@ export function ModalComponent(pJson) {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 className="title" ref={(_subtitle) => (subtitle = _subtitle)}>aaa</h2>
+        <h2 className="title" ref={(_subtitle) => (subtitle = _subtitle)}>{}</h2>
         <div>
           <ul>
-            <li>* Item 1</li>
+            <h1>{titulo}</h1>
           </ul>
         </div>
         <div className="button" onClick={closeModal}>Fechar</div>

@@ -110,7 +110,7 @@ export function ModulesComponent() {
                     <p className="ola">
                       {array[index]['content']}
                     </p>
-                    <ModalComponent jsonData={3} />
+                    <ModalComponent jsonData={ contentModal[index]} jsonId={array[index]['id']} />
                   </div>
                 </div>
               ))} 
