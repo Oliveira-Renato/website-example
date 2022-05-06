@@ -62,7 +62,8 @@ svg {
 }
 
 .controls .glassButtons .glass-m .map_glass {
-  color: ${props => props.theme.colors.baseColor};
+  color: ${props => props.theme.colors.barLoadingColor};
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 1%);
 }
 
 .color-pointer {
