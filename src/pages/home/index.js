@@ -43,7 +43,7 @@ export function Home(){
           <section className="section" id="home">
             <div className="container grid">
               <div className="image image_home">
-                  <img src={ mainImg } alt="" />
+                  <img src={ mainImg } alt="Nurse taking care of an old lady at her home" />
               </div>
 
               <div className="text">

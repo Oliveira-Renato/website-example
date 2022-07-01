@@ -6,7 +6,7 @@ export function AboutPage(){
       <section className="section" id="about" >
           <div className="container grid">
             <div className="image image_about">
-              <img src={aboutImg} alt="" />
+              <img src={aboutImg} alt="business meeting with all members teams" />
             </div>
             <div className="text text_about">
               <h2 className="title">Sobre nós</h2>
