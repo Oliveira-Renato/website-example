@@ -326,7 +326,7 @@ nav .close {
 main #home .container .text .main_title {
   font-size: 3.8rem;
   color: ${props => props.theme.colors.baseColor};
-  @media (min-width: 280px and min-height: 568px) {
+  @media (min-width: 280px) and (max-height: 568px) {
     font-size: 2.4rem;
   }
 }

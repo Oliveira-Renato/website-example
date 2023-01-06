@@ -74,7 +74,7 @@ export function Header(){
                   </li>
                 </ul>
                 {/* ==== botão suporte ===== */}
-                <ul>
+                {/* <ul>
                   <li>
                     <div className="ainda_nao show"> 
                       <a href="/suporte" className="button btn2"  alt="Botão para suporte">
@@ -84,12 +84,13 @@ export function Header(){
                   </li>
                   <li>
                     <div className="ainda_nao login_btn show" >
-                      <a href={validaUrl(wDeseUrl) ? wDeseUrl:''}  className="btn1" target="_blank"  alt="área de login">
+                      <a href={validaUrl(wDeseUrl) ? wDeseUrl:''}  className="btn1" target="_blank"  alt="área de login" rel="noreferrer">
                         <FontAwesomeIcon className="icones login_icon" icon={ faUserNurse } /><span>Entrar</span>
                       </a>
                     </div>
                   </li>
-                </ul>
+                </ul> */}
+
               </div>
 
               <div className="toggle open" >

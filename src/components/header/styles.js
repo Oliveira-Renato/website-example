@@ -59,7 +59,6 @@ nav.show ul.grid  {
   color: ${props => props.theme.colors.textColor} !important;
 }
 nav .sub-menu:hover .sub-menu-content {
-  border: 2mm ridge ${props => props.theme.colors.baseColor};
   visibility: visible ;
   transition:0.3s ;
   opacity: 1 ;
@@ -78,10 +77,6 @@ nav.show div.close {
   top: auto;
   right: -0.16rem;
 }
-
-
-
-
 nav a.logo img {
     min-width: 120px;
     max-width: 100px;
@@ -125,7 +120,7 @@ nav a.logo img {
       }
     }
   }
-}
+
 .login_btn {
   justify-content:center;
   text-align: center;
