@@ -26,46 +26,47 @@ import './styles/variables.css';
 import usePersistedState from './utils/usePersistedState';
 import light from './styles/themes/light'
 import dark from './styles/themes/dark'; 
-import SwitchDark from './components/darkmode';  
+import {Toggler} from './components/darkmode';  
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
+export const globalTheme = {}
 
 function App() {
-  const [theme, setTheme] = usePersistedState('themes', light); 
-
-   const toggleTheme= () => {
-     setTheme(theme.title === 'light' ? dark : light);
-    };
+  const [globalTheme, setGlobalTheme] = usePersistedState('themes', light); 
+  const toggleTheme= () => {
+    console.log('theme',globalTheme);
+    setGlobalTheme(globalTheme.title === 'light' ? dark : light);
+  };
 
   return (
-    <ThemeProvider theme={theme}>
-      
+    <ThemeProvider theme={globalTheme}>
      <div className="App">
-     <SwitchDark toggleTheme={toggleTheme} /> 
-     {/* <ScrollReavelling /> */}
-      <BrowserRouter> 
-        <Toaster
-        position="top-right"
-        reverseOrder={false} 
-        className="toaster"
-        />
-          <GlobalStyle />
-            <Cookies />
-              <HeaderEffect /> 
-                  <ProgressBar />
-                    <Routes>  
-                      <Route path="/" element={<Home />} />
-                      <Route path="/produtos" element={<ProductTest />} />
-                      <Route path="/localizacao" element={<MapChart />} />
-                      {/* <Route path="/suporte" element={<Suport />} /> */}
-                      <Route path="/#about" element={<AboutPage />} />
-                      <Route path="/#contact" element={<ContactForm />} />
-                      <Route path="/#testimonials" element={<Testimonials />} />
-                    </Routes>
-
-            <Recaptcha />
+        <span className='dark_mode_main_icon'>
+          <Toggler toggleTheme={toggleTheme} /> 
+        </span>
+        {/* <ScrollReavelling /> */}
+        <BrowserRouter> 
+          <Toaster
+          position="top-right"
+          reverseOrder={false} 
+          className="toaster"
+          />
+            <GlobalStyle />
+              <Cookies />
+                <HeaderEffect /> 
+                    <ProgressBar />
+                      <Routes> 
+                        <Route path="/" element={<Home />} />
+                        <Route path="/produtos" element={<ProductTest />} />
+                        <Route path="/localizacao" element={<MapChart />} />
+                        {/* <Route path="/suporte" element={<Suport />} /> */}
+                        <Route path="/#about" element={<AboutPage />} />
+                        <Route path="/#contact" element={<ContactForm />} />
+                        <Route path="/#testimonials" element={<Testimonials />} />
+                      </Routes>
+              <Recaptcha />
         </BrowserRouter>
       </div>
     </ThemeProvider>

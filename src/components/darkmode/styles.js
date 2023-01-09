@@ -3,10 +3,15 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: ${props => props.theme.colors.baseColor};
   background-color: rgba(0, 0, 0, 0);
-  right: 2.4rem;
   position: fixed;
+  right: 11.2rem;
+  top: 2.4rem;
   z-index: 9999;
   visibility: visible; 
+  /* @media(max-width: 1030px) {
+    position: relative;
+    top: 1.5em;
+  } */
   .buttonTheme{
     color: ${props => props.theme.colors.baseColor};
     cursor: pointer;
@@ -18,7 +23,7 @@ export const Container = styled.div`
     }
   }
   .darkIcon {
-    position: absolute;
+    //position: absolute;
     right: 27rem;
     top: -11.5rem;
     @media(max-width: 1032px) {
@@ -33,7 +38,7 @@ export const Container = styled.div`
     
     @media(max-width: 1032px) {
       transition: 0.3s ;
-      position: fixed; /* or absolute */
+      //position: fixed; /* or absolute */
       top: -5rem;
       left: 50%;
     }

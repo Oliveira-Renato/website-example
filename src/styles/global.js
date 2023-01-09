@@ -89,8 +89,8 @@ body {
 }
 /*====  LAYOUT ============================ */
 .container {
-  margin-left: 3.84rem;
-  margin-right: 3.84rem;
+  margin-left: 5.6rem;
+  margin-right: 5.6rem;
   justify-content: space-between;
 }
 .grid {
@@ -208,6 +208,12 @@ nav .menu ul {
 /*=========== toggle menu ==========*/
 .toggle {
   color:  ${props => props.theme.colors.baseColor};
+  &:hover {
+    cursor: pointer;
+  }
+  &.close {
+    margin-right: 5.6rem;
+  }
   >.svg-inline--fa {
     height: 1.5em;
   }
@@ -449,6 +455,9 @@ a.back-to-top {
     
     @media(max-width: 1030px){
       width: 100vw;
+      position: relative;
+      /* width: 100%; */
+      margin: 0;
     }
   }
 .showSuport { 
@@ -510,4 +519,8 @@ a.back-to-top {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+.header_container {
+  position: relative;
+}
 `

@@ -10,7 +10,7 @@ nav.show .menu {
   width: 100vw;
   position: fixed;
   top: 0;
-  left: -3.84rem;
+  //left: -3.84rem;
   
 }
 nav.show .menu {
@@ -99,14 +99,14 @@ nav a.logo img {
     }
   }
 .ainda_nao {
-  margin-top: 3.2rem;
+  //margin-top: 3.2rem;
   @media (min-width: 1032px) {
-    position: absolute;
+   // position: absolute;
     right: 0rem;
     top: -2.5rem;
   }
   @media (min-width: 1232px) {
-    position: absolute;
+    //position: absolute;
     right: 9rem;
     top: -2.5rem;
   }
@@ -166,10 +166,10 @@ nav a.logo img {
     nav.show ul.grid {
       gap: 2rem;
     }
-    .ainda_nao {
+    /* .ainda_nao {
       text-align: center;
       margin-top: 3.4rem;
-    }
+    } */
 }
 /*================ EXTRA SMALL DEVICES ====================*/
 @media (max-width:420px) {
@@ -228,6 +228,29 @@ nav a.logo img {
           }
         }
       }
+    }
+  }
+}
+
+/*================ NEW STYLE 2023 ============================= */
+.dark_theme_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media(min-width: 1030px) {
+      display: none !important;
+    }
+  >.kDJRIF {
+    position: inherit;
+  }
+  >.kDJRIF .show {
+    position: inherit;
+    width: 100%;
+  }
+  >.rglBl {
+    position: inherit;
+    >.show {
+      width: 100%;
     }
   }
 }

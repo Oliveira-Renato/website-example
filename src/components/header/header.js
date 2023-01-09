@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark,faUserNurse, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import {ContainerHeader} from './styles.js'
 
 import  logo  from '../../assets/images/icons/logo_syscare_200.png';
+import {Toggler} from '../darkmode/index.js';
+import usePersistedState from '../../utils/usePersistedState.js';
+import dark from '../../styles/themes/dark.js';
+import light from '../../styles/themes/light.js';
 
 export function Header(){
-  const wDeseUrl = 'http://dese.syscare.com.br';
+  
+  const [currentTheme, setCurrentTheme] = usePersistedState('themes',light); 
 
+  const toggleTheme= () => {
+    let themes = JSON.parse(localStorage.getItem('themes'));
+    setCurrentTheme(themes.title === 'light' ? dark : light);
+    window.location.reload();
+   };
+ 
   function HandleToggleMenu() {
     const nav = document.querySelector('#header nav'); 
     const suportBtn = document.querySelector('.ainda_nao');
@@ -41,6 +52,7 @@ export function Header(){
   return (
     <>
       <ContainerHeader>
+      
         {/*====  HEADER/NAV ====  */}
         <header id="header">
             <nav className="container">
@@ -72,6 +84,10 @@ export function Header(){
                   <li>
                     <a className="title title_toggle" href="/#contact" alt="" onClick={handleCloseMenu} name="contact" >Contato</a>
                   </li>
+                  {/* ==== ICONE DARKMODE MOON ===== */}
+                  <div className="dark_theme_container">
+                    <Toggler toggleTheme={toggleTheme}/>
+                  </div> 
                 </ul>
                 {/* ==== botão suporte ===== */}
                 {/* <ul>
@@ -90,9 +106,8 @@ export function Header(){
                     </div>
                   </li>
                 </ul> */}
-
               </div>
-
+              
               <div className="toggle open" >
                 <FontAwesomeIcon icon={faBars} onClick={HandleToggleMenu} />
               </div>    
@@ -102,7 +117,7 @@ export function Header(){
               </div>
             </nav>
         </header>
-      </ContainerHeader>
+      </ContainerHeader> 
     </>
   )
 }

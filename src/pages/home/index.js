@@ -36,8 +36,11 @@ export function Home(){
     <div>
       <Container>
         {/*====  HEADER/NAV ====  */}
-        <Header />
-      
+        <div className='header_container'>
+          <Header />
+        </div>
+
+        {/*==== TESTIMONIALS ==== */}
         {/*====  MAIN ====  */}
         <main>
           <section className="section" id="home">
@@ -128,7 +131,6 @@ export function Home(){
 
           {/*====  SEPARETOR 1 ====  */}
           <div className="divider-1"></div>
-
 
           {/*====  TESTIMONIALS ====  */}
           <Testimonials />
