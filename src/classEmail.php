@@ -18,17 +18,17 @@
             $conteudo .= " Email: " . $contato['email'] . " <br />"; 
             $conteudo .= " Mensagem: " . $contato['mensagem'] . " <br />";
             
-            $username = 'send@kennen.com.br';
-            $password = 'Jskl12ujis0821';
+            $username = 'comercial@bessacare.com.br';
+            $password = 'Bessa@23';
             
-            $from = "send@kennen.com.br";
+            // $from = "comercial@bessacare.com.br";
             $fromName = "[Contato Site] " . $contato['nome'] . " - " . $contato['email'];
 
             // Define os dados do servidor e tipo de conexão
             $this->mailer->IsSMTP(); // Define que a mensagem será SMTP
             $this->mailer->SMTPAuth = true; // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
-            $this->mailer->Username = $username; // Usuário do servidor SMTP (endereço de email)
-            $this->mailer->Password = $password; // Senha do servidor SMTP (senha do email usado)
+            // $this->mailer->Username = $username; // Usuário do servidor SMTP (endereço de email)
+            // $this->mailer->Password = $password; // Senha do servidor SMTP (senha do email usado)
 
             // Define o remetente
             $this->mailer->From = $from; // Seu e-mail
@@ -36,10 +36,8 @@
             $this->mailer->FromName = $fromName; // Seu nome
 
             // Define os destinatário(s)
-            // $this->mailer->AddAddress('cicero@kennen.com.br');
+            $this->mailer->AddAddress('comercial@bessacare.com.br');
             // $this->mailer->AddAddress('contato@kennen.com.br');
-            $this->mailer->AddAddress('renato.printf@gmail.com');
-
 
 
             // Define os dados técnicos da Mensagem

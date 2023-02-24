@@ -16,23 +16,15 @@ const customStyles = {
 Modal.setAppElement('#root');
 
 export function ModalComponent(pData) {
-  var {titulo} =  pData.jsonData ? pData.jsonData : {};
+  var data =  pData.jsonData ? pData.jsonData : {};
   var dataId =  pData.jsonId ? pData.jsonId : {};
   var subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  const openModal = (a) => {
-    setIsOpen(true);
-    console.log(a)
-  }
-
-  const afterOpenModal = () => {
-    subtitle.style.color = `${props => props.theme.colors.titleColor}` ;
-  }
-
-  const closeModal = () => {
-    setIsOpen(false);
-  }
+  console.log(data)
+  const openModal = (a) => setIsOpen(true);
+  const afterOpenModal = () => subtitle.style.color = `${props => props.theme.colors.titleColor}`;
+  const closeModal = () => setIsOpen(false);
  
   return (
     <div>
@@ -46,8 +38,9 @@ export function ModalComponent(pData) {
       >
         <h2 className="title" ref={(_subtitle) => (subtitle = _subtitle)}>{}</h2>
         <div>
+           <h3>{data.titulo}</h3>
           <ul>
-            <h1>{titulo}</h1>
+            <li>{data.content}</li>
           </ul>
         </div>
         <div className="button" onClick={closeModal}>Fechar</div>

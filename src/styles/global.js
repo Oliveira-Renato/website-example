@@ -305,6 +305,11 @@ nav .close {
   margin-left: 2.4rem;
   margin-right: 2.4rem;
 }
+
+#about .text ul li {
+  list-style: circle;
+  padding-bottom: 1rem;
+}
 /*====  SERVICES ============================ */
 .cards.grid {
   gap: 2.4rem;
@@ -314,13 +319,37 @@ nav .close {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.28rem solid  ${props => props.theme.colors.baseColor};
   border-radius: 0.28rem 0.28rem 0 0;
+  text-align: justify;
+}
+.card h3 {
   text-align: center;
+}
+.card  .list-services {
+  display: flex;
+  justify-content: center;
+}
+.card  ul {
+  margin: 1.6rem;
+}
+.card  ul li {
+  list-style: circle;
+  height: 3.4rem;
 }
 .card  .icones {
   display: block;
   margin-bottom: 2.4rem;
-  font-size: 8rem;
+  font-size: 4rem;
   color:  ${props => props.theme.colors.baseColor};
+  text-align: center;
+}
+.card  p {
+  font-size: 1.2rem;
+  @media (min-width: 1200px) {
+    font-size: 1.6rem;
+  }
+  @media (max-width: 370px) {
+    font-size: .8rem;
+  }
 }
 .card .title {
   font-size: 2.4rem;

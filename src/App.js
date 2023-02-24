@@ -10,12 +10,9 @@ import  ScrollReavelling  from './hooks/ScrollReveal';
 import { ProgressBar } from './components/Progressbar/progressbar';
 
 import { Toaster } from 'react-hot-toast';
-import { Suport } from './pages/suport/index';
-
 import { Home } from './pages/home/index';
 import { Cookies } from './hooks/cookies/Cookie';
 import { AboutPage } from './pages/about/index';
-import { Testimonials } from './pages/testimonials/index';
 import { Recaptcha } from './hooks/recaptcha/Recaptcha';
 import { ThemeProvider} from 'styled-components';
 import MapChart from './components/location';
@@ -29,6 +26,8 @@ import dark from './styles/themes/dark';
 import {Toggler} from './components/darkmode';  
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Regimento } from './pages/regimento';
+import { Etica } from './pages/etica';
 
 
 export const globalTheme = {}
@@ -60,11 +59,11 @@ function App() {
                       <Routes> 
                         <Route path="/" element={<Home />} />
                         <Route path="/produtos" element={<ProductTest />} />
-                        <Route path="/localizacao" element={<MapChart />} />
+                        <Route path="/regimento-interno" element={<Regimento />} />
+                        <Route path="/codigo-de-etica" element={<Etica />} />
                         {/* <Route path="/suporte" element={<Suport />} /> */}
                         <Route path="/#about" element={<AboutPage />} />
                         <Route path="/#contact" element={<ContactForm />} />
-                        <Route path="/#testimonials" element={<Testimonials />} />
                       </Routes>
               <Recaptcha />
         </BrowserRouter>

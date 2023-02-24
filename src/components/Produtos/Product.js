@@ -12,48 +12,87 @@ import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
 import { useEffect } from 'react';
 
-import {ModalComponent} from '../modal/index';
+import { ModalComponent } from '../modal/index';
 import { ModulesComponent } from '../modulos';
 
 import UseMapData from '../../hooks/map/Map';
 
 
-export function ProductTest(){
+export function ProductTest() {
 
   return (
     <div>
       <Header />
-        <main onLoad={useEffect(() => document.querySelector('#products').scrollIntoView({ behavior: 'smooth' })) }>
-          <section className="section" id="products" >
-            <div className="container">
-              <header>
-                <h2 className="title">Produtos</h2>
-                <p>Com mais de 20 anos no mercado, o <strong>Syscare</strong> já
-                  conquistou inúmeros  clientes com seus serviços
-                  exclusivos.
-                  </p>
-              </header>
-              <div className="cards grid">         
-                 <UseMapData json={data} />            
+      {/*====  SEPARETOR 2 ====  */}
+      <div className="divider-2"></div>
+
+      <main onLoad={useEffect(() => document.querySelector('#products').scrollIntoView({ behavior: 'smooth' }))}>
+        <section className="section" id="products" >
+          <div className="container">
+            <header>
+              <h2 className="title">Aluguel de equipamentos</h2>
+              <p>Trabalhamos apenas com produtos de alta qualidade feitos pelos fabricantes mais respeitados. Todos os produtos são instalados por nossa equipe de engenheiros. Entre em contato para fazer um orçamento</p>
+            </header>
+
+            <div className="product-info">
+              <div className="list-1">
+                <h3>Nossos equipamentos médicos incluem:</h3>
+                <ul>
+                  <li>
+                    <p>Oxigênio suplementar</p>
+                  </li>
+                  <li>
+                    <p>Ventiladores</p>
+                  </li>
+                  <li>
+                    <p>Dispositivos de oximetria</p>
+                  </li>
+                  <li>
+                    <p>Ventiladores de suporte à vida</p>
+                  </li>
+                  <li>
+                    <p>Compressores e nebulizadores</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="list-2">
+                <h3>Nossos itens de mobilidade incluem:</h3>
+                <ul>
+                  <li>
+                    <p>Cadeiras de rodas</p>
+                  </li>
+                  <li>
+                    <p>Cadeiras de banho</p>
+                  </li>
+                  <li>
+                    <p>Cadeiras elevatórias</p>
+                  </li>
+                  <li>
+                    <p>Andadores dobráveis</p>
+                  </li>
+                  <li>
+                    <p>Scooters elétricos</p>
+                  </li>
+                  <li>
+                    <p>Camas hospitalares</p>
+                  </li>
+                </ul>
               </div>
             </div>
-          </section>
-
-          {/*====  SEPARETOR 1 ====  */}
-          <div className="divider-1"></div>
-
-          
-        </main>
-
-        {/*====  SEPARETOR 2 ====  */}
-        <div className="divider-2"></div>
-
-        {/*====  MODULOS ====  */}
-        <ModulesComponent />
+          </div>
+        </section>
 
         {/*====  SEPARETOR 1 ====  */}
         <div className="divider-1"></div>
-        <Footer />
+
+      </main>
+
+
+
+      {/*====  SEPARETOR 1 ====  */}
+      <div className="divider-1"></div>
+      <Footer />
     </div>
   )
 }

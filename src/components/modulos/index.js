@@ -39,7 +39,7 @@ function SamplePrevArrow(props) {
 
 export function ModulesComponent() {
   const data = dataJson;
-
+  var teste = [];
   const settings = {
     className:"minha",
       dots: false,
@@ -91,11 +91,8 @@ export function ModulesComponent() {
         <section className="section section_mod" id="modules">
           <div className="container">
             <header>
-              <h2 className="title">Módulos</h2>
-              <p>Com mais de 20 anos no mercado, o <strong>Syscare</strong> já
-                conquistou inúmeros  clientes com seus serviços
-                exclusivos.
-              </p>
+              <h2 className="title">Serviços</h2>
+              <p>Para agendar uma consulta com a nossa equipe e descobrir como podemos auxiliar você ou aqueles que ama, por favor agende uma consulta conosco.</p>
             </header>
             
             <Slider {...settings}>
@@ -106,11 +103,17 @@ export function ModulesComponent() {
                         <FontAwesomeIcon icon={require("@fortawesome/free-solid-svg-icons")[array[index]['image']]} />
                       </div>
           
-                    <h3 className="title">Syscare - {array[index]['titulo']}</h3>
-                    <p className="ola">
-                      {array[index]['content']}
-                    </p>
-                    <ModalComponent jsonData={ contentModal[index]} jsonId={array[index]['id']} />
+                    <h3 className="title">{array[index]['titulo']}</h3>
+                    <div className="card-content">
+                      {array[index]['content'].indexOf('-') !== -1 ? (
+                        (array[index]['content'].split('-')).map((item, index) => <li key={index}>{item}</li>)
+                      ):(
+                        <li>{array[index]['content']}</li>
+                      )}
+                    </div>
+                    <div className="btn-ver-mais">
+                      <ModalComponent jsonData={ contentModal[index]} jsonId={array[index]['id']} />
+                    </div>
                   </div>
                 </div>
               ))} 

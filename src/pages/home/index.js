@@ -3,7 +3,7 @@ import React from 'react';
 import mainImg from '../../assets/images/home/home.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 /* ===== ICONES ===== */
@@ -20,7 +20,6 @@ import {
 /* ===== PAGES ===== */
 import { Header } from '../../components/header/header';
 import { AboutPage } from '../about';
-import { Testimonials } from '../testimonials';
 import { ContactForm } from '../contacts';
 import { Footer } from '../footer';
 
@@ -30,8 +29,9 @@ import 'swiper/css/mousewheel';
 import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
+import { ModulesComponent } from '../../components/modulos';
 
-export function Home(){ 
+export function Home() {
   return (
     <div>
       <Container>
@@ -46,19 +46,19 @@ export function Home(){
           <section className="section" id="home">
             <div className="container grid">
               <div className="image image_home">
-                  <img src={ mainImg } alt="Nurse taking care of an old lady at her home" />
+                <img src={mainImg} alt="Nurse taking care of an old lady at her home" />
               </div>
 
               <div className="text">
-                <h3 className="title main_title">Syscare</h3>
+                <h1 className="title main_title">BessaCare</h1>
                 <div className="typewriter">
-                  <h1 className="title second_title">Gestão de Home Care</h1>
+                  <h2 className="title second_title">Serviços de Home Care</h2>
                 </div>
-                <p>Sempre atendendo de forma ampla as empresas de Home Care. A satisfação do cliente sempre foi, e sempre será nossa prioridade!</p>
+                <p>Atenção médica e cuidados de confiança para o paciente e sua família.</p>
 
                 <a className='button' href="#about">
-                  <FontAwesomeIcon className="icones" icon={ faAnglesDown } />Saiba mais
-                </a>  
+                  <FontAwesomeIcon className="icones" icon={faAnglesDown} />Saiba mais
+                </a>
               </div>
             </div>
           </section>
@@ -72,110 +72,52 @@ export function Home(){
           <div className="divider-2"></div>
 
           {/*====  PRODUCTS ====  */}
-          <section className="section" id="products">
-            <div className="container grid">
-              <header>
-                <h2 className="title">Produtos</h2>
-                <p>Com mais de 20 anos no mercado, o <strong>Syscare</strong> já
-                  conquistou inúmeros  clientes com seus serviços
-                  exclusivos.
-                  </p>
-              </header>
-              <div className="cards grid">
-                <div className="card">
-                  <div className="icones">
-                    <FontAwesomeIcon icon={ faHouseMedical }  />
-                  </div>
-                  
-                  <h3 className="title">Syscare - AD</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                    distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                    asperiores
-                  </p>
-                </div>
-
-                <div className="card">
-                  <div className="icones">
-                    <FontAwesomeIcon icon={ faLaptopMedical }/>
-                  </div>
-                  
-                  <h3 className="title">Syscare - SCF</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                    distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                    asperiores
-                  </p>
-                </div>
-
-                <div className="card">
-                  <div className="icones">
-                    <FontAwesomeIcon icon={ faHouseMedical }  />
-                  </div>
-                  
-                  <h3 className="title">Syscare - MGS</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                    distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                    asperiores
-                  </p>
-                </div>
-              </div> 
-              <div className="btn_produtos">
-                <a href="/produtos" className='button'>
-                  <FontAwesomeIcon className="icones" icon={ faCartPlus } />Confira nossos produtos
-                </a>  
-              </div> 
-            </div>
-          </section>
+          {/*====  MODULOS ====  */}
+          <ModulesComponent />
 
           {/*====  SEPARETOR 1 ====  */}
           <div className="divider-1"></div>
 
-          {/*====  TESTIMONIALS ====  */}
-          <Testimonials />
-
           {/*====  SEPARETOR 2 ====  */}
           <div className="divider-2"></div>
-      
+
           {/*====  CONTACTS ====  */}
           <section className="section" id="contact">
             <div className="container grid">
               <div className="text">
-                <h2 className="title title_products">Entre em contato com a gente!</h2>
-                <p> 
-                  Se você tem alguma dúvida, sugestão ou quer fazer uma proposta, entre em contato conosco.
-                </p>
-                <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário" className="button">
-                    <div className="icones">
-                      <FontAwesomeIcon icon={ faWhatsapp } />
-                    </div>
-                    Entrar em contato
+                <h2 className="title title_products">Fale conosco!</h2>
+                <p> Se você tem alguma dúvida ou quer mais informações, estamos a disposição para melhor ajudar e orientar.</p>
+                <a href="https://api.whatsapp.com/send?phone=+5511991501338&text=Oi Gostaria de agendar um horário" className="button">
+                  {/* https://api.whatsapp.com/send?phone=+551199150-1338&text=Oi */}
+                  <div className="icones">
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                  </div>
+                  Entrar em contato
                 </a>
               </div>
 
               <div className="links">
                 <ul className="grid">
                   <li>
-                    <FontAwesomeIcon icon={faPhone} className="icones" />55 (11) 4153-1075
+                    <FontAwesomeIcon icon={faPhone} className="icones" />55 (11) 4208-4048
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faEnvelope} className="icones" />contato@kennen.com.br
+                    <FontAwesomeIcon icon={faEnvelope} className="icones" />comercial@essacare.com.br
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faLocationDot} className="icones"/>Alameda Araguaia, 2044 - Torre I
+                    <FontAwesomeIcon icon={faLocationDot} className="icones" />Alameda Araguaia, 2044 – Conjunto 510 (Bloco 1), São Paulo, SP, 06455-906
                   </li>
                 </ul>
               </div>
-              
-              
+
+
             </div>
             {/*====  FORMS ====  */}
             <div className="forms container">
               <ContactForm />
             </div>
           </section>
-          
+
         </main>
 
         {/*====  SEPARETOR 2 ====  */}
@@ -186,7 +128,7 @@ export function Home(){
 
         {/*====  SCROLL TO TOP ====  */}
         <a href="#home" className="back-to-top">
-          <FontAwesomeIcon icon={faArrowUp}  />
+          <FontAwesomeIcon icon={faArrowUp} />
         </a>
       </Container>
     </div>

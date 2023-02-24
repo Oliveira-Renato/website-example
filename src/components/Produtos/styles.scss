@@ -36,6 +36,24 @@ main {
           
         }
       }
+
+      .product-info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        ul  {
+          li {
+            list-style: circle;
+          }
+        }
+        h3 {
+          padding-bottom: 1.6rem;
+        }
+        .list-2 h3 {
+          padding-top: 1.6rem;
+        }
+      }
     }
   }
 }

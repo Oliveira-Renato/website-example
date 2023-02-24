@@ -2,71 +2,43 @@
   {
     "id":"1",
     "boInativo": 0,
-    "titulo":"Informações do paciente",
+    "titulo":"Atendimento médico domiciliar",
     "image":"faLaptopMedical",
-    "content": "prontuário gerado automaticamente pelo sistema por ocasião da primeira internação do paciente;disponibilidade de acesso via Internet para preenchimento de relatórios da equipe multiprofissional, bem como consulta dos convênios aos pacientes de sua carteira;disponibilidade de acesso via Internet para preenchimento de relatórios da equipe multiprofissional, bem como consulta dos convênios aos pacientes de sua carteira;opção de cadastros de ferramentas próprias de avaliação e pesquisa;formulários e impressos diversos pré-configurados para elaboração do prontuário físico do paciente;relatório completo de prescrições (médica, materiais, enfermagem e dietas) incluindo itens enviados por terceiros;recurso para cadastro de modelos de evolução, prescrição e anotações diversas, permitindo padronização própria;inclusão de imagens digitais do paciente, como laudos, exames, documentação, fotos, etc;possibilidade de cadastro de parâmetros clínicos críticos para alerta durante monitoramento (funcionalidade smartphone Treo)."
+    "content": "Avaliação clínica e evolução do paciente;-Orientação da família cuidadores;-Análise de atendimento;-Controle medicamentoso;-Análise de equipamentos e mobiliário;-Procedimentos privativos;-Avaliação de lesões e integridade da pele;-Curativos complexos;-Controle de oxigenoterapia;-Cuidados paliativos (quando necessário)."
   },
   {
     "id":"2",
     "boInativo": 0,
-    "titulo":"TISS XML",
+    "titulo":"Terapeuta Ocupacional",
     "image":"faFileArrowUp",
-    "content": "Módulo destinado a geração do arquivo de XML(TISS) a ser enviado ao convênio."
+    "content": "Tem como intenção reincorporar o indivíduo à sociedade após alguma enfermidade. Ele é responsável em auxiliar o paciente na recuperação de sequelas, lesões e outros problemas físicos, melhorando seu condicionamento e prevenindo complicações por meio de atividades e exercícios."
   },
   {
     "id":"3",
     "boInativo": 0,
-    "titulo":"Gestão Administrativa",
+    "titulo":"Psicólogo",
     "image":"faClipboardList",
-    "content": "Relatórios do desempenho operacional para auxílio de decisões estratégicas."
+    "content": "O atendimento domiciliar envolve orientações à família ou responsável pelos cuidados que foram prescritos ao indivíduo, avaliando as necessidades de atendimento, psicoterapia para paciente e cuidador, além de intervenções psicológicas quando necessário. O papel desse profissional inclui compreender e traduzir os ideais do paciente em relação a seu processo, e interpretar para a equipe de saúde, facilitando o relacionamento."
   },
   {
     "id":"4",
     "boInativo": 0,
-    "titulo":"Faturamento",
+    "titulo":"Nutricionista",
     "image":"faHandHoldingDollar",
-    "content": "Módulo destinado ao envio de faturamento físico e eletrônico para os convênios, além de contemplar ferramentas para análise de produtividade e controle de recebíveis."
+    "content": "A terapia nutricional domiciliar é fundamental para o início da adaptação necessária sobre a oferta de alimentos, avaliando o estado nutricional, e acompanhando sua evolução. Acompanha e desenvolve dietoterapia para determinadas patologias, como em pacientes traqueostomizados, em antibioticoterapia, com transtornos de deglutição, digestão, disfagia e que utilizam outras vias de alimentação, como sondas nasoenterais e ostomias. Tudo isso considerando os fatores culturais e socioeconômicos."
   },
   {
     "id":"5",
     "boInativo": 0,
-    "titulo":"Orçamento",
+    "titulo":"Fonoaudiólogo",
     "image":"faCalculator",
-    "content": "Através de parâmetros e informações pré-cadastradas no sistema, o módulo de orçamento gera proposta de atendimento ao paciente de forma automática, a partir da avaliação clínica e elaboração do plano terapêutico deste."
+    "content": "Atender indivíduos com disfagias mecânicas (causadas por alterações orgânicas no trato digestivo) e neurogênicas (causadas por alterações neurológicas). É responsável também pela realização de estímulos para minimizar os efeitos de transtornos como paralisia facial, respiração oral, mastigação ineficiente, deglutição atípica e outros. Ainda, realiza terapias para afasias, alterações e atraso na linguagem, avaliação e terapia da voz e da articulação, acompanhamento de alterações auditivas e adaptação de próteses."
   },
   { 
     "id":"6",
     "boInativo": 0,
-    "titulo":"Farmácia",
+    "titulo":"Fisioterapeuta",
     "image":"faPrescriptionBottleMedical",
-    "content": "Módulo completo para gerenciamento de estoque. Contempla desde o cadastro dos produtos comercializados até controles rígidos de fluxo de materiais e medicamentos, apurando e registrando valores de custo e venda."
-  },
-  {
-    "id":"7",
-    "boInativo": 0,
-    "titulo":"Recursos Humanos",
-    "image":"faPerson",
-    "content": "Gerenciamento completo do corpo profissional próprio e terceirizado, desde o cadastro destes até a remuneração e apuração de produtividade."
-  },
-  {
-    "id":"8",
-    "boInativo": 0,
-    "titulo":"Remoções",
-    "image":"faTruckMedical",
-    "content": "Módulo destinado ao cadastro e manutenção de frotas de ambulâncias, bem como ao controle das execuções de remoções."
-  },
-  {
-    "id":"9",
-    "boInativo": 0,
-    "titulo":"Mobilidade",
-    "image":"faMobileScreenButton",
-    "content": "O SysCare oferece a possibilidade de acesso às informações do paciente, manutenção de dados clínicos, informações administrativas via web."
-  },
-  {
-    "id":"10",
-    "boInativo": 0,
-    "titulo":"Funções Adicionais",
-    "image":"faGears",
-    "content": "Além dos módulos principais, o Syscare conta com diversos módulos clínicos e administrativos, que visam atender a totalidade da rotina operacional do Home Care."
+    "content": "Reabilitar, reeducar e prevenir deformidades ósseas e articulares para que o paciente possa voltar o quanto antes para suas atividades de vida diária. Além disso, a fisioterapia home care ajuda a promover inclusão, melhorar a qualidade de vida, preservar ou recuperar a saúde do paciente."
   }
 ]

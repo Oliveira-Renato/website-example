@@ -9,23 +9,30 @@ export function AboutPage(){
               <img src={aboutImg} alt="business meeting with all members teams" />
             </div>
             <div className="text text_about">
-              <h2 className="title">Sobre nós</h2>
-              <p>
-              O <strong>Syscare</strong> é uma empresa de tecnologia da informação que atua no mercado de Home Care.
-              </p>
-              <br />
-              <br />
-              <p>
-                O <strong>Syscare</strong> tem como objetivo renovar a forma de gestão das empresas desenvolvendo sistemas sob demanda elaborados a partir das necessidades de cada cliente, oferecendo-lhes soluções de gestão de Home Care que atendam aos requisitos de cada empresa.
-              </p>
-              <br />
-              <p>
-                Nosso sistema atende de forma ampla as empresas de Home Care, assim como também atua com sistemas de <b>ERP</b> (Enterprise Resource Planning), tais como <i>financeiro</i>, <i>contabilidade</i>, <i>ativo fixo</i>.
-              </p>
-              <br />
-              <p>
-              Contando com profissionais que possuem ampla experiência com mais de 20 anos no mercado, o <strong>Syscare</strong> tem sua sede na cidade de Santana de Parnaíba – SP e filial em São Paulo.
-              </p>
+              <h2 className="title">Quem Somos</h2>
+              <ul>
+                <li>
+                  <p>Foco no tratamento humanizado e na segurança do paciente;</p>
+                </li>
+                <li>
+                  <p>Trabalharmos constantemente para sermos único como carinho de família.​</p>
+                </li>
+                <li>
+                  <p>Padronizar os processos e fazer com que tudo siga parâmetros bem definidos utilizando a tecnologia e equipamentos de ponta;</p>
+                </li>
+                <li>
+                  <p>Disponibilizar para o mercado nosso conhecimento, expertise, qualidade, tratamento humanizado com o paciente e sua família, reduzindo os custos e desperdício.</p>
+                </li>
+                <li>
+                  <p>Treinamento das pessoas e seleção dos melhores profissionais;</p>
+                </li>
+                <li>
+                  <p>Modelo padronizado de gestão e operação com critérios de monitoramento, com entrega de qualidade no atendimento aos pacientes e familiares;</p>
+                </li>
+                <li>
+                  <p>Padronizar os processos e fazer com que tudo siga parâmetros bem definidos utilizando a tecnologia e equipamentos de ponta;</p>
+                </li>
+              </ul>
             </div>
           </div>
       </section>

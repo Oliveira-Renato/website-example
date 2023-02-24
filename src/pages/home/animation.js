@@ -6,7 +6,7 @@ export const Container = styled.div`
     display: flex;
     margin: 0;
 }
-.typewriter h1 {
+.typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .58125rem solid ${props => props.theme.colors.baseColorAlt}; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -17,7 +17,7 @@ export const Container = styled.div`
     blink-caret .75s step-end infinite;
 }
 @media (max-width: 380px) {
-  .typewriter h1 {
+  .typewriter h2 {
     letter-spacing: .3rem;
   }
 }

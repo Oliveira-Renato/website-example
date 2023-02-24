@@ -21,7 +21,7 @@ export function Footer(){
             <div className="footer-col">
               <h4>Empresa</h4>
               <ul>
-                <li><a href="/#about">Sobre nós</a></li>
+                <li><a href="/#about">Quem somos</a></li>
                 <li><a href="/produtos">Nossos serviços</a></li>
                 <li><a href="#">Política de privacidade</a></li>
               </ul>
@@ -39,16 +39,14 @@ export function Footer(){
             <div className="footer-col">
               <h4>Produtos</h4>
               <ul>
-                <li><a href="#">Syscare - AD</a></li>
-                <li><a href="#">Syscare - SCF</a></li>
-                <li><a href="#">Syscare - BTC</a></li>
+                <li><a href="/produtos">Aluguel de equipamentos</a></li>
               </ul>
             </div>
 
             <div className="footer-col">
               <h4>Siga-nos</h4>
               <div className="social-links">
-                <a href="https://www.facebook.com/SistemaSysCare" target="_blank">
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={faFacebookF} className="socialmedia" />
                 </a>
                 <a href="#">
