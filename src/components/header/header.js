@@ -63,6 +63,7 @@ export function Header() {
             <div className="menu">
               <ul className="grid">
                 <li>
+
                   <div className="sub-menu">
                     <a className="title title_toggle" href="/" alt="" onClick={handleCloseMenu} name="home" >Home</a>
                     <ul className='sub-menu-content'>
@@ -83,11 +84,14 @@ export function Header() {
                       </li>
                     </ul>
                   </div>
+
                 </li>
+
                 <li>
                   <a className="title title_toggle sobre_menu" href="/#about" alt="" onClick={handleCloseMenu} name="about"  >Quem Somos</a>
 
                 </li>
+                
                 <li>
                   <div className="sub-menu">
                     <a className="title title_toggle" href="/#products" alt="" onClick={handleCloseMenu} name="products" >Serviços</a>

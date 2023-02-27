@@ -5,3 +5,24 @@
 .ReactModal__Content {
   margin-right: 0 !important;
 }
+
+.modal-list {
+  padding: 2.4rem;
+
+  h3 {
+    padding-bottom: 1.6rem;
+  }
+
+  ul {
+    li {
+      list-style: circle !important;
+      padding: 0.876rem;
+    }
+  }
+
+  .btn-fechar{
+    display: flex;
+    justify-content: center;
+    margin: 1.6rem 0;
+  }
+}

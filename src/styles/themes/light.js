@@ -12,9 +12,9 @@ export default {
         textColorLight: 'hsl(0 0% 98%)',
         bodyColor: '#FFF',
         bodyColorAlt: 'hsl(0 0% 98%)',
-        barLoadingColor:' hsl(57, 82%, 60%)',
+        barLoadingColor:'hsl(244, 82%, 60%)',
         swiperThemeColor: 'blue',
-        errorColor: 'hsl(57, 80%, 50%)',
+        errorColor: 'hsl(244, 80%, 50%)',
         shadowPorCent: '8%',
         shadowPorCentSuport: '1%',
         imgFilter: ''
