@@ -107,10 +107,11 @@ nav.show div.close {
 }
 nav a.logo img {
     min-width: 120px;
-    max-width: 100px;
+    max-width: 140px;
     min-height: 100%;
     max-height: 100%;
     object-fit: contain;
+    margin-top: 1.6rem;
     resize: none;
     
 }
