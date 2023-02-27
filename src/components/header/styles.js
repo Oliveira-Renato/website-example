@@ -49,12 +49,11 @@ nav.show ul.grid  {
             :after {
               content: '';
               position: absolute;
-              transition: 0.5s;
+              transition: 0.3s;
               width: 6px;
               height: 1.9rem;
               color: white;
               background-color: white;
-              text-align: right;
             }
           }
         }

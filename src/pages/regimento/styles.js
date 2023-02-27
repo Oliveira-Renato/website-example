@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const ContainerRule = styled.div`
-
-
 .wrapper{
   display: grid;
   grid-gap: 50px;
@@ -44,6 +42,7 @@ main {
             .list-two {
               padding-left: 1.67rem;
               >li {
+                list-style: circle !important;
                 padding-top : 0.675rem;
 
                 .list-third {
