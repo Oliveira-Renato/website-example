@@ -21,9 +21,13 @@ export const ContainerRule = styled.div`
 }
 
 main {
-  
   section {
       .list-new-pattern {
+        details {
+          text-align: center;
+          padding: 1.6rem 0;
+          color: ${props => props.theme.colors.baseColor};
+        }
         .list-one  {
           padding-bottom: 1.6rem;
 

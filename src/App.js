@@ -30,6 +30,7 @@ import { Regimento } from './pages/regimento';
 import { Etica } from './pages/etica';
 import { LGPDpage } from './pages/lgpd';
 import { Legislacao } from './pages/legislacao';
+import { Compliance } from './pages/compliance';
 
 
 export const globalTheme = {}
@@ -63,6 +64,7 @@ function App() {
                         <Route path="/produtos" element={<ProductTest />} />
                         <Route path="/regimento-interno" element={<Regimento />} />
                         <Route path="/codigo-de-etica" element={<Etica />} />
+                        <Route path="/compliance" element={<Compliance />} />
                         <Route path="/lgpd" element={<LGPDpage />} />
                         <Route path="/legislacao" element={<Legislacao />} />
                         <Route path="/#about" element={<AboutPage />} />
