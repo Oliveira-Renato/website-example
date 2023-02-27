@@ -21,7 +21,7 @@ export const ContainerRule = styled.div`
 }
 
 main {
-  margin-top: 0 !important;
+  
   section {
       .list-new-pattern {
         .list-one  {
@@ -29,6 +29,7 @@ main {
 
           >li {
             list-style: disc !important;
+            padding-bottom: 0.785rem;
             //list-style-type: circle !important;
             >p {
               font-weight: 600;
