@@ -23,7 +23,7 @@ export function Footer(){
               <ul>
                 <li><a href="/#about">Quem somos</a></li>
                 <li><a href="/produtos">Nossos serviços</a></li>
-                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="/lgpd">LGPD</a></li>
               </ul>
             </div>
             

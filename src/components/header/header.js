@@ -63,7 +63,26 @@ export function Header() {
             <div className="menu">
               <ul className="grid">
                 <li>
-                  <a className="title title_toggle" href="/" alt="" onClick={handleCloseMenu} name="home" >Home</a>
+                  <div className="sub-menu">
+                    <a className="title title_toggle" href="/" alt="" onClick={handleCloseMenu} name="home" >Home</a>
+                    <ul className='sub-menu-content'>
+                      <li>
+                        <a href="/regimento-interno" className="title title_toggle" alt="" name="regimento interno" >Regimento Interno</a>
+                      </li>
+                      <li>
+                        <a href="/codigo-de-etica" className="title title_toggle" alt="" name="codigo de etica" >Código de Ética</a>
+                      </li>
+                      <li>
+                        <a href="/compliance" className="title title_toggle" alt="" name="compliance" >Compliance</a>
+                      </li>
+                      <li>
+                        <a href="/lgpd" className="title title_toggle" alt="" name="lgpd" >LGPD</a>
+                      </li>
+                      <li>
+                        <a href="/legislacao" className="title title_toggle" alt="" name="legislacao" >Legislação</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
                   <a className="title title_toggle sobre_menu" href="/#about" alt="" onClick={handleCloseMenu} name="about"  >Quem Somos</a>
@@ -73,9 +92,9 @@ export function Header() {
                   <div className="sub-menu">
                     <a className="title title_toggle" href="/#products" alt="" onClick={handleCloseMenu} name="products" >Serviços</a>
                     <ul className='sub-menu-content'>
-                      <div>
+                      <li>
                         <a href="/produtos" className="title title_toggle" alt="" name="about" >Aluguel de equipamentos</a>
-                      </div>
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -88,23 +107,6 @@ export function Header() {
                   <Toggler toggleTheme={toggleTheme} />
                 </div>
               </ul>
-              {/* ==== botão suporte ===== */}
-              {/* <ul>
-                  <li>
-                    <div className="ainda_nao show"> 
-                      <a href="/suporte" className="button btn2"  alt="Botão para suporte">
-                        <FontAwesomeIcon className="icones" icon={ faPhoneVolume } />Suporte
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="ainda_nao login_btn show" >
-                      <a href={validaUrl(wDeseUrl) ? wDeseUrl:''}  className="btn1" target="_blank"  alt="área de login" rel="noreferrer">
-                        <FontAwesomeIcon className="icones login_icon" icon={ faUserNurse } /><span>Entrar</span>
-                      </a>
-                    </div>
-                  </li>
-                </ul> */}
             </div>
 
             <div className="toggle open" >

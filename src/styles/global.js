@@ -167,15 +167,15 @@ nav ul li {
   
     text-align: center;
 }
-nav ul li a {
+/* nav ul li a {
     transition: color 0.3s;
     position: relative;
     
-}
+} */
 nav ul li a:hover {
     color:  ${props => props.theme.colors.baseColor};
 }
-nav ul li a::after {
+/* nav ul li a::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -191,7 +191,7 @@ nav ul li a::after {
       bottom: -0.4rem;
     }
     
-}
+} */
 nav ul li a:hover::after {
     width : 100%;
 }

@@ -26,50 +26,89 @@ nav.show ul.grid  {
 
 //=====================================
 .sub-menu {
+  height: 100%;
+  z-index: 200;
   
-}
-.sub-menu-content {
-  position:absolute;
-  border: 0mm ridge ${props => props.theme.colors.baseColor};
-  width: 240px ;
-  background: ${props => props.theme.colors.bodyColor}; 
-  height: 100px;
-  transition:0.3s ;
-  opacity: 0 ;
-  visibility: hidden;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-  height: 1px;
+  &:hover {
+    .sub-menu-content {
+      visibility: visible ;
+      transition:0.3s ;
+      opacity: 1;
+      background-color: ${props => props.theme.colors.baseColor};
+      text-align: left;
+      padding: 2rem  0.675rem;
 
-  @media(max-width:1032px){
-    position:fixed;
-    left: 40%;
-    opacity:1;
-    width: 220PX ;
-    z-index:150;
-  }  
-  @media(max-width:766px){
-    width: 180px;
-    left: 25%;
+      li {
+        width: 100%;
+        position: relative;
+
+        a {
+          &:hover {
+
+            :after {
+              content: '';
+              position: absolute;
+              transition: 0.3s;
+              right: 0;
+              width: 6px;
+              height: 1.6rem;
+              color: white;
+              background-color: white;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sub-menu-content {
+    position:absolute;
+    border: 0mm ridge ${props => props.theme.colors.baseColor};
+    width: 240px ;
+    background: ${props => props.theme.colors.bodyColor}; 
+    transition:0.3s ;
+    opacity: 0 ;
+    visibility: hidden;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    
+
+    @media(max-width:1032px){
+      position:fixed;
+      left: 40%;
+      opacity:1;
+      width: 220PX ;
+      z-index:150;
+    }  
+    @media(max-width:766px){
+      width: 180px;
+      left: 25%;
+    }
+
+    li {
+      a {
+        color: ${props => props.theme.colors.textColorLight} !important;
+        text-align: left;
+
+        &:after {
+            content: '';
+            transition: 0.3s;
+            width: 0;
+            height: 0;
+            color: white;
+            background-color: white;
+            text-align: right;
+            
+          }
+      }
+    }
   }
 }
-.sub-menu-content div  {
-  padding:1.2rem ;
-}
-.sub-menu-content div a {
-  color: ${props => props.theme.colors.textColor} !important;
-}
-nav .sub-menu:hover .sub-menu-content {
-  visibility: visible ;
-  transition:0.3s ;
-  opacity: 1 ;
-  height: 100px;
-  @media(max-width:1032px){
-    height: 100px;
-  }
-  @media(max-width:766px){
-    height: 80px;
-  }
-}
+
 
 nav.show div.close {
   visibility: visible;
@@ -84,6 +123,7 @@ nav a.logo img {
     max-height: 100%;
     object-fit: contain;
     resize: none;
+    
 }
 /*======== TOGGLE MENU =============*/
 .darkIcontoggle {
