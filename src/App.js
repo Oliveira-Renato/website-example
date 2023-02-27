@@ -28,6 +28,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Regimento } from './pages/regimento';
 import { Etica } from './pages/etica';
+import { LGPDpage } from './pages/lgpd';
+import { Legislacao } from './pages/legislacao';
 
 
 export const globalTheme = {}
@@ -61,7 +63,8 @@ function App() {
                         <Route path="/produtos" element={<ProductTest />} />
                         <Route path="/regimento-interno" element={<Regimento />} />
                         <Route path="/codigo-de-etica" element={<Etica />} />
-                        {/* <Route path="/suporte" element={<Suport />} /> */}
+                        <Route path="/lgpd" element={<LGPDpage />} />
+                        <Route path="/legislacao" element={<Legislacao />} />
                         <Route path="/#about" element={<AboutPage />} />
                         <Route path="/#contact" element={<ContactForm />} />
                       </Routes>

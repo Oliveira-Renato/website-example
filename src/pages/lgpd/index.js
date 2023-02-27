@@ -1,46 +1,41 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './styles.js';
+import './styles.scss';
 
 import { Header } from '../../components/header/header';
 import { Footer } from '../footer';
 import { useEffect } from 'react';
-import { Container } from './styles.js';
 
 
-export function Regimento() {
+export function LGPDpage() {
 
   return (
-    <Container>
+    <div>
       <Header />
+
         <main>
 
-        <section className="section" id="regimento-interno" >
+        <section className="section" id="lgpd" >
           <div className="container">
             <header>
-              <h2 className="title">Regimento Interno</h2>
+              <h2 className="title">LGPD</h2>
               <p>Assistência médica domiciliar personalizada e humanizada.</p>
             </header>
 
             <div className="list-new-pattern">
-              <ul className='list-one'>
+              <ul>
                 <li>
-                  <p>Objetivo:</p>
-                  <ul className='list-two'>
-                    <li>
-                    <p>
-                    Possuir um regimento interno que defina o tipo de atenção domiciliar prestada e as diretrizes básicas que norteiam seu funcionamento. O SAD deve ter o manual e normas técnicas de procedimentos para a atenção domiciliar, de acordo com a especificidade da assistência a ser prestada.A atenção domiciliar deve ser indicada pelo profissional responsável pelo paciente e que desdobra toda a gestão clínica e administrativa para a equipe multidisciplinar.Todas as informações do cuidado devem ser encaminhadas ao SAD através de relatório detalhado sobre as condições de saúde e doença do paciente contendo histórico, prescrições, exames e intercorrências.
-                    </p>
-                    </li>
-                  </ul>
+                  <p>Objetivo: Possuir um regimento interno que defina o tipo de atenção domiciliar prestada e as diretrizes básicas que norteiam seu funcionamento. O SAD deve ter o manual e normas técnicas de procedimentos para a atenção domiciliar, de acordo com a especificidade da assistência a ser prestada.A atenção domiciliar deve ser indicada pelo profissional responsável pelo paciente e que desdobra toda a gestão clínica e administrativa para a equipe multidisciplinar.Todas as informações do cuidado devem ser encaminhadas ao SAD através de relatório detalhado sobre as condições de saúde e doença do paciente contendo histórico, prescrições, exames e intercorrências.</p>
                 </li>
               </ul>
+
               
-              <ul className='list-one'>
+
+              <ul>
                 <li>
                   <p>Definições:</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>Admissão em Atenção domiciliar: processo que se caracteriza pelas seguintes etapas: indicação, elaboração do Plano de Atenção Domiciliar e início da prestação da assistência ou internação domiciliar.&nbsp;</p>
                     </li>
@@ -75,11 +70,13 @@ export function Regimento() {
                 </li>
               </ul>
 
-              <ul className='list-one'>
+              
+
+              <ul>
                 <li>
                   <p>Condições Gerais do regimento do SAD</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>O SAD deve possuir alvará expedido pelo órgão sanitário competente.</p>
                     </li>
@@ -151,7 +148,7 @@ export function Regimento() {
                 <li>
                   <p>Missão, Visão e Valores</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>Missão: Ter um modelo padronizado de gestão e operação com critérios de monitoramento, com entrega de qualidade no atendimento aos pacientes e familiares.</p>
                     </li>
@@ -165,11 +162,13 @@ export function Regimento() {
                 </li>
               </ul>
 
-              <ul className='list-one'>
+              
+
+              <ul>
                 <li>
                   <p>Critérios de elegibilidade do atendimento</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>Para receber o atendimento em casa, alguns critérios são avaliados pela equipe multidisciplinar antes da aprovação do pedido de internação domiciliar</p>
                     </li>
@@ -213,11 +212,13 @@ export function Regimento() {
                 </li>
               </ul>
 
-              <ul className='list-one'>
+              
+
+              <ul>
                 <li>
                   <p>Critérios de inelegibilidade do atendimento</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>As situações em que a internação residencial é imediatamente contraindicada, são: instabilidade clínica do paciente, terapia de natureza cirúrgica ou inviável em domicílio, ausência de cuidador ou familiar, domicílio sem estrutura mínima, não aprovação da equipe médica ou do paciente/família, pacientes com moléstias agudas sem diagnóstico.</p>
                     </li>
@@ -225,11 +226,13 @@ export function Regimento() {
                 </li>
               </ul>
 
-              <ul className='list-one'>
+              
+
+              <ul>
                 <li>
                   <p>Modalidades, Equipes e Funções</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>A modalidade de atenção domiciliar descrito neste regimento é o conjunto de atividades desenvolvidas no domicílio em função da complexidade assistencial e avaliação socioambiental realizado pela equipe multiprofissional classificando a complexidade do paciente.&nbsp;</p>
                     </li>
@@ -246,11 +249,13 @@ export function Regimento() {
                 </li>
               </ul>
 
-              <ul className='list-one'>
+              
+
+              <ul>
                 <li>
                   <p>Consulta</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>O atendimento pode ser de rotina, para pacientes acamados, ou de urgência, nos chamados a qualquer hora.</p>
                     </li>
@@ -322,7 +327,7 @@ export function Regimento() {
                 <li>
                   <p>PAD – Plano de Atenção Domiciliar</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>A equipe do SAD deve elaborar um Plano de Atenção Domiciliar - PAD.</p>
                     </li>
@@ -354,11 +359,13 @@ export function Regimento() {
                 </li>
               </ul>
 
-              <ul className='list-one'>
+              
+
+              <ul>
                 <li>
                   <p>Atribuições da equipe</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>A equipe operacional do PAD é a responsável pelo funcionamento efetivo do programa, acompanhar e auditar os beneficiários incluídos no PAD, através da análise técnica de pareceres, laudos, relatórios médicos e/ou demais documentos e visitas técnicas domiciliares.</p>
                     </li>
@@ -369,11 +376,13 @@ export function Regimento() {
                 </li>
               </ul>
 
-              <ul className='list-one'>
+              
+
+              <ul>
                 <li>
                   <p>Cancelamento dos Serviços</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>Os serviços domiciliares cessarão quando ocorrer uma das seguintes situações:</p>
                     </li>
@@ -402,11 +411,13 @@ export function Regimento() {
                 </li>
               </ul>
 
-              <ul className='list-one'>
+              <p><span>*****</span></p>
+
+              <ul>
                 <li>
                   <p>Medidas Disciplinares</p>
 
-                  <ul className='list-two'>
+                  <ul>
                     <li>
                       <p>Todos os envolvidos neste regimente que cometerem atos que constituam infração às normas constantes a este regimento, código de ética, compliance ou alguma ação ilegal terão seus serviços de atenção domiciliar cancelados, podendo ser aplicado os recursos jurídicos necessários para autuação.</p>
                     </li>
@@ -427,6 +438,6 @@ export function Regimento() {
       {/*====  SEPARETOR 1 ====  */}
       <div className="divider-1"></div>
       <Footer />
-    </Container>
+    </div>
   )
 }

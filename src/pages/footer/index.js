@@ -31,7 +31,6 @@ export function Footer(){
               <h4>Suporte</h4>
               <ul>
                 <li><a href="#">FAQ</a></li>
-                <li><a href="/suporte">Suporte</a></li>
                 <li><a href="/">Home</a></li>
               </ul>
             </div>
