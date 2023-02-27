@@ -31,7 +31,6 @@ export function Compliance() {
                 <li>
                   <p>O objetivo é que todos na empresa — funcionários, gestores, parceiros ou fornecedores — ajam conforme as regras direcionadas ao seu segmento de atuação, nos mais diversos setores e atividades da companhia, como:</p>
 
-
                   <ul className='list-two'>
                     <li>
                       <p >segurança do trabalho;</p>

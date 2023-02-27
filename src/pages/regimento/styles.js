@@ -45,6 +45,14 @@ main {
               padding-left: 1.67rem;
               >li {
                 padding-top : 0.675rem;
+
+                .list-third {
+                  padding-left: 1.67rem;
+                  >li {
+                    list-style: square !important;
+                    color: ${props => props.theme.colors.baseColor};
+                  }
+                }
               }
             } 
           }
