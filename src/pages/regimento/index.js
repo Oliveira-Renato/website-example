@@ -1,17 +1,13 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import './styles.js';
-
 import { Header } from '../../components/header/header';
 import { Footer } from '../footer';
 import { useEffect } from 'react';
-import { Container } from './styles.js';
+import { ContainerRule } from './styles.js';
 
 
 export function Regimento() {
 
   return (
-    <Container>
+    <ContainerRule>
       <Header />
         <main>
 
@@ -427,6 +423,6 @@ export function Regimento() {
       {/*====  SEPARETOR 1 ====  */}
       <div className="divider-1"></div>
       <Footer />
-    </Container>
+    </ContainerRule>
   )
 }
