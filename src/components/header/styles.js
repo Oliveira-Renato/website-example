@@ -27,7 +27,7 @@ nav.show ul.grid  {
 //=====================================
 .sub-menu {
   height: 100%;
-  z-index: 200;
+  z-index: 99999;
   
   &:hover {
     .sub-menu-content {
@@ -37,6 +37,7 @@ nav.show ul.grid  {
       background-color: ${props => props.theme.colors.baseColor};
       text-align: left;
       padding: 2rem  0.675rem;
+      z-index: 20000;
 
       li {
         width: 100%;
@@ -48,10 +49,9 @@ nav.show ul.grid  {
             :after {
               content: '';
               position: absolute;
-              transition: 0.3s;
-              right: 0;
+              transition: 0.5s;
               width: 6px;
-              height: 1.6rem;
+              height: 1.9rem;
               color: white;
               background-color: white;
               text-align: right;
@@ -64,7 +64,7 @@ nav.show ul.grid  {
 
   .sub-menu-content {
     position:absolute;
-    border: 0mm ridge ${props => props.theme.colors.baseColor};
+    /* border: 0mm ridge ${props => props.theme.colors.baseColor}; */
     width: 240px ;
     background: ${props => props.theme.colors.bodyColor}; 
     transition:0.3s ;
@@ -93,17 +93,6 @@ nav.show ul.grid  {
       a {
         color: ${props => props.theme.colors.textColorLight} !important;
         text-align: left;
-
-        &:after {
-            content: '';
-            transition: 0.3s;
-            width: 0;
-            height: 0;
-            color: white;
-            background-color: white;
-            text-align: right;
-            
-          }
       }
     }
   }
@@ -257,7 +246,7 @@ nav a.logo img {
     }
   }
   nav.show ul.grid {
-    gap: 1rem;
+    gap: 5rem;
   }
   nav {
     ul {

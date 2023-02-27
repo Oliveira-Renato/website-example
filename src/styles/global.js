@@ -175,23 +175,24 @@ nav ul li {
 nav ul li a:hover {
     color:  ${props => props.theme.colors.baseColor};
 }
-/* nav ul li a::after {
+nav ul li a::after {
     content: '';
     width: 0%;
-    height: 2px;
+    height: 0px;
     background:  ${props => props.theme.colors.baseColor};
     position: absolute;
     left: 0;
-    bottom: -1.4rem;
-    transition: 0.3s;
-    @media (max-width: 420px) {
+    bottom: 0;
+    //bottom: -1.4rem;
+    transition: 0.5s;
+    /* @media (max-width: 420px) {
       bottom: -0.4rem;
     }
     @media (max-width: 1024px) {
       bottom: -0.4rem;
-    }
+    } */
     
-} */
+}
 nav ul li a:hover::after {
     width : 100%;
 }
