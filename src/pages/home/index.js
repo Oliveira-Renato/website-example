@@ -1,6 +1,7 @@
 import React from 'react';
 
-import mainImg from '../../assets/images/home/home.jpg';
+//import mainImg from '../../assets/images/home/home.jpg';
+import mainImg from '../../assets/images/home/home2.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";

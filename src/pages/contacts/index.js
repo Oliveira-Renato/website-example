@@ -132,7 +132,7 @@ export function ContactForm(){
 
     return (
        <div>
-         <ContainerContact>   
+         <ContainerContact>
             <form  action="" name="form" method="POST" id='form' onSubmit={ HandleSubmitForm } >
                 <h2 className="title">Envie-nos uma mensagem</h2> 
 

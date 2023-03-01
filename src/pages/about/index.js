@@ -1,4 +1,4 @@
-import aboutImg from '../../assets/images/home/campaign-creators.jpg'
+import aboutImg from '../../assets/images/home/12.jpg'
 
 export function AboutPage(){
   return (
