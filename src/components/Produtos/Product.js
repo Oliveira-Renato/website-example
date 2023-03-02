@@ -12,11 +12,6 @@ import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
 import { useEffect } from 'react';
 
-import { ModalComponent } from '../modal/index';
-import { ModulesComponent } from '../modulos';
-
-import UseMapData from '../../hooks/map/Map';
-
 
 export function ProductTest() {
 

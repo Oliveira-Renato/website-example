@@ -4,6 +4,12 @@
 
 .ReactModal__Content {
   margin-right: 0 !important;
+  @media screen and (max-width:590px) {
+    width: 90%;
+  }
+  @media screen and (max-width:330px) {
+    height: 400px;
+  }
 }
 
 .modal-list {

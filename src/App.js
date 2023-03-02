@@ -11,11 +11,10 @@ import { ProgressBar } from './components/Progressbar/progressbar';
 
 import { Toaster } from 'react-hot-toast';
 import { Home } from './pages/home/index';
-import { Cookies } from './hooks/cookies/Cookie';
+import { Cookie } from './hooks/cookies/Cookie';
 import { AboutPage } from './pages/about/index';
 import { Recaptcha } from './hooks/recaptcha/Recaptcha';
 import { ThemeProvider} from 'styled-components';
-import MapChart from './components/location';
 
 import GlobalStyle from './styles/global';
 import './styles/media.scss';
@@ -56,7 +55,7 @@ function App() {
           className="toaster"
           />
             <GlobalStyle />
-              <Cookies />
+              <Cookie />
                 <HeaderEffect /> 
                     <ProgressBar />
                       <Routes> 
@@ -65,7 +64,7 @@ function App() {
                         <Route path="/regimento-interno" element={<Regimento />} />
                         <Route path="/codigo-de-etica" element={<Etica />} />
                         <Route path="/compliance" element={<Compliance />} />
-                        <Route path="/lgpd" element={<LGPDpage />} />
+                        <Route path="/lgpd" element={<LGPDpage />} /> 
                         <Route path="/legislacao" element={<Legislacao />} />
                         <Route path="/#about" element={<AboutPage />} />
                         <Route path="/#contact" element={<ContactForm />} />

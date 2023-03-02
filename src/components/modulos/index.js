@@ -7,8 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import dataJson from './data.json';
 import contentModal from './contentModal.json';
 
-import UseMapData from "../../hooks/map/Map";
-
 import {ContainerMod} from "./styles";
 
 import { ModalComponent } from "../modal";
@@ -39,7 +37,7 @@ function SamplePrevArrow(props) {
 
 export function ModulesComponent() {
   const data = dataJson;
-  var teste = [];
+
   const settings = {
     className:"minha",
       dots: false,
@@ -82,7 +80,6 @@ export function ModulesComponent() {
         }
       ]
   };
-  
 
   return (
     <div>
@@ -111,6 +108,7 @@ export function ModulesComponent() {
                         <li>{array[index]['content']}</li>
                       )}
                     </div>
+
                     <div className="btn-ver-mais">
                       <ModalComponent jsonData={ contentModal[index]} jsonId={array[index]['id']} />
                     </div>
