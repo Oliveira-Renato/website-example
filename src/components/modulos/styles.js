@@ -14,6 +14,9 @@ main .section_mod {
 }
 .card_space > .card{
   inline-size: 92%;
+  @media screen and (max-width:600px){
+    inline-size: 100%;
+  }
 }
 .card .btn-ver-mais {
   display: flex;
