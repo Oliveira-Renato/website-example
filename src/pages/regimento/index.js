@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { ContainerRule } from './styles.js';
 
 
+
 export function Regimento() {
 
   return (
@@ -16,6 +17,7 @@ export function Regimento() {
             <header>
               <h2 className="title">Regimento Interno</h2>
               <p>Assistência médica domiciliar personalizada e humanizada.</p>
+              
             </header>
 
             <div className="list-new-pattern">

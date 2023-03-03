@@ -35,7 +35,6 @@ nav.show ul.grid  {
       transition:0.3s ;
       opacity: 1;
       background-color: ${props => props.theme.colors.baseColor};
-      text-align: left;
       padding: 2rem  0.675rem;
       z-index: 20000;
 
@@ -44,16 +43,19 @@ nav.show ul.grid  {
         position: relative;
 
         a {
+          text-align: left;
           &:hover {
 
             :after {
               content: '';
-              position: absolute;
               transition: 0.3s;
+              position: absolute;
               width: 6px;
               height: 1.9rem;
               color: white;
               background-color: white;
+              bottom: 0;
+              right: 0;
             }
           }
         }

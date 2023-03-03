@@ -1,0 +1,48 @@
+main {
+  #lgpd {
+    .lgpd-img {
+      margin-top: 1.6rem;
+      text-align: center;
+      >img {
+        min-width: 240px;
+        max-width: 500px;
+        height: auto;
+      }
+    }
+  
+    .list-new-pattern {
+      position: relative;
+      @media screen and (max-width: 1120px) {
+        display: block !important;
+        position: inherit;
+        justify-content: center ;
+        
+      }
+      >aside {
+        position: absolute;
+        right: 0;
+        @media screen and (max-width: 1120px) {
+         
+          position: inherit;
+          margin-bottom: 3.4rem;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+ #lgpd .lgpd-img::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: hsl(var(--color-hue) 65% 88%);
+  position: absolute;
+  top: 8.2%;
+  z-index: 0;
+  //overflow: hidden;
+  @media screen and (max-width: 1120px) {
+    top: 8.2%;
+    left: 11%;
+  }
+}

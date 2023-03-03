@@ -148,7 +148,7 @@ nav a.logo  img {
     resize:none ;
     @media (min-width: 1024px) {
       min-width: 100%;
-    max-width: 100%;
+      max-width: 100%;
     }
     @media (min-width: 1282px) {
       min-width: 100%;
@@ -172,10 +172,10 @@ nav ul li {
     position: relative;
     
 } */
-nav ul li a:hover {
+/* nav ul li a:hover {
     color:  ${props => props.theme.colors.baseColor};
-}
-nav ul li a::after {
+} */
+/* nav ul li a::after {
     content: '';
     width: 0%;
     height: 0px;
@@ -192,10 +192,10 @@ nav ul li a::after {
       bottom: -0.4rem;
     } */
     
-}
-nav ul li a:hover::after {
+
+/* nav ul li a:hover::after {
     width : 100%;
-}
+} */
     
 nav .menu{
     opacity: 0;
@@ -242,20 +242,27 @@ nav .close {
 #home .container {
   margin: 0;
 }
-#home .image {
+#home .image, 
+#compliance .img-container, 
+#legislacao .legislacao-img,
+#lgpd .lgpd-img
+ {
   position: relative;
 }
 #home .image::before {
   content: '';
   height: 100%;
   width: 100%;
-  background: ${props => props.theme.colors.baseColorSecond};
+  background: ${ props => props.theme.colors.baseColorSecond };
   position: absolute;
   top: -16.8%;
   left: 16.7%;
   z-index: 0;
 }
-#home .image img {
+#home .image img, 
+#compliance .img-container img,
+#legislacao .legislacao-img img,
+#lgpd .lgpd-img img {
   position: relative;
   right: 4.68rem;
 }
@@ -511,7 +518,7 @@ a.back-to-top {
     color: ${props => props.theme.colors.baseColor};
   }
   
-  nav .menu ul li a::after, .container .menu ul li a::after {
+  /* nav .menu ul li a::after, .container .menu ul li a::after {
     position: relative;
     content: "";
     display: block;
@@ -520,7 +527,7 @@ a.back-to-top {
     background: ${props => props.theme.colors.baseColor};
     transition: width 0.3s;
     top: -3px;
-  }
+  } */
 }
 @media (min-width: 1280px){
   #header nav .menu ul li a.title, #header .container .menu ul li a.title {

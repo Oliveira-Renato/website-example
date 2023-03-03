@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import  complianceImg  from '../../assets/images/home/compliance.jpg';
 import './styles.scss';
 
 import { Header } from '../../components/header/header';
@@ -20,6 +19,9 @@ export function Compliance() {
             <header>
               <h2 className="title">Compliance</h2>
               <p>BessaCare - Assistência médica domiciliar personalizada e humanizada.</p>
+              <div className='img-container'>
+                <img src={complianceImg} />
+              </div>
             </header>
 
             <div className="list-new-pattern">

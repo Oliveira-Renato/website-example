@@ -23,7 +23,7 @@ main {
       .list-new-pattern {
         details {
           text-align: center;
-          padding: 1.6rem 0;
+          padding-bottom: 1.6rem;
           color: ${props => props.theme.colors.baseColor};
         }
         .list-one  {
@@ -62,4 +62,6 @@ main {
       }
     }
   }
+
+  
 `;

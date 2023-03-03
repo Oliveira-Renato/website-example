@@ -3,6 +3,7 @@ import './styles.scss';
 import { Header } from '../../components/header/header';
 import { Footer } from '../footer';
 import { ContainerRule } from '../regimento/styles';
+import legislacaoIng from '../../assets/images/home/law.jpg';
 
 export function Legislacao() {
 
@@ -15,6 +16,9 @@ export function Legislacao() {
             <header>
               <h2 className="title">Legislação</h2>
               <p>Assistência médica domiciliar personalizada e humanizada.</p>
+              <div className="legislacao-img">
+                <img src={legislacaoIng} />
+              </div>
             </header>
 
             <div className="list-new-pattern">

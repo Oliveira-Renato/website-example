@@ -9,9 +9,6 @@ main .section_mod {
   }    
 }
 
-.minha {
-  
-}
 .card_space > .card{
   inline-size: 92%;
   @media screen and (max-width:600px){

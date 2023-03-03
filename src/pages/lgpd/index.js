@@ -3,7 +3,7 @@ import './styles.scss';
 import { Header } from '../../components/header/header';
 import { Footer } from '../footer';
 import { ContainerRule } from '../regimento/styles';
-
+import lgpdImg from '../../assets/images/home/security.jpg'
 
 export function LGPDpage() {
   return (
@@ -14,12 +14,17 @@ export function LGPDpage() {
           <div className="container">
             <header>
               <h2 className="title">LGPD</h2>
+
             </header>
 
             <div className="list-new-pattern">
-              <h3>Protocolo de Atendimento</h3>
-
+            <aside>
+              <div className="lgpd-img">
+                  <img src={lgpdImg} />
+                </div>
+            </aside>
               <ul className='list-one'>
+              <h3>Protocolo de Atendimento</h3>
                 <li>
                   <p>Dados Cadastrais</p>
                 </li>
@@ -277,7 +282,6 @@ export function LGPDpage() {
                   </ul>
                 </li>
               </ul>
-
             </div>
           </div>
         </section>
