@@ -245,7 +245,8 @@ nav .close {
 #home .image, 
 #compliance .img-container, 
 #legislacao .legislacao-img,
-#lgpd .lgpd-img
+#lgpd .lgpd-img,
+#products .img-container
  {
   position: relative;
 }
@@ -262,7 +263,8 @@ nav .close {
 #home .image img, 
 #compliance .img-container img,
 #legislacao .legislacao-img img,
-#lgpd .lgpd-img img {
+#lgpd .lgpd-img img,
+#products .img-container img {
   position: relative;
   right: 4.68rem;
 }

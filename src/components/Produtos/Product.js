@@ -11,7 +11,7 @@ import './styles.scss';
 import { Header } from '../header/header';
 import { Footer } from '../../pages/footer';
 import { useEffect } from 'react';
-
+import wheelChair from '../../assets/images/home/chairwheel.jpg'
 
 export function ProductTest() {
 
@@ -27,6 +27,9 @@ export function ProductTest() {
             <header>
               <h2 className="title">Aluguel de equipamentos</h2>
               <p>Trabalhamos apenas com produtos de alta qualidade feitos pelos fabricantes mais respeitados. Todos os produtos são instalados por nossa equipe de engenheiros. Entre em contato para fazer um orçamento</p>
+              <div className='img-container'>
+                <img src={wheelChair} />
+              </div>
             </header>
 
             <div className="product-info">
