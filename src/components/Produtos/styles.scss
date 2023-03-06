@@ -72,7 +72,7 @@ main {
 #products .img-container::before {
   content: '';
   height: 100%;
-  width: 500px;
+  width: 100%;
   max-width: 500px;
   background: hsl(var(--color-hue) 65% 88%);
   position: absolute;
