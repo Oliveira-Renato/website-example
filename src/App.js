@@ -30,6 +30,7 @@ import { Etica } from './pages/etica';
 import { LGPDpage } from './pages/lgpd';
 import { Legislacao } from './pages/legislacao';
 import { Compliance } from './pages/compliance';
+import { ModalComponent } from './components/modal';
 
 
 export const globalTheme = {}
@@ -66,8 +67,6 @@ function App() {
                         <Route path="/compliance" element={<Compliance />} />
                         <Route path="/lgpd" element={<LGPDpage />} /> 
                         <Route path="/legislacao" element={<Legislacao />} />
-                        <Route path="/#about" element={<AboutPage />} />
-                        <Route path="/#contact" element={<ContactForm />} />
                       </Routes>
               <Recaptcha />
         </BrowserRouter>

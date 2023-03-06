@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { ContainerHeader } from './styles.js'
 
 import logo from '../../assets/images/icons/logo.png';
@@ -44,9 +44,12 @@ export function Header() {
   const handleCloseMenu = () => {
     const toggleThemeIcon = document.querySelector('.darkIcon');
     const nav = document.querySelector('#header nav');
+    const subMenu = document.querySelector('.sub-menu')
 
     nav.classList.remove('show');
     toggleThemeIcon.classList.remove('darkIcontoggle');
+
+    subMenu.classList.toggle('sub-clicked');
   }
 
   return (
@@ -63,10 +66,31 @@ export function Header() {
             <div className="menu">
               <ul className="grid">
                 <li>
+                  <a className="title title_toggle" href="/" alt="" onClick={handleCloseMenu} name="home" >Home</a>
+                </li>
 
+                <li>
+                  <a className="title title_toggle sobre_menu" href="/#about" alt="" onClick={handleCloseMenu} name="about"  >Quem Somos</a>
+                </li>
+
+                <li>
+                  <a className="title title_toggle" href="/#modules" alt="" onClick={handleCloseMenu} name="products" >Serviços</a>
+                </li>
+                {/* Depoimentos aqui (apagado) */}
+                <li>
+                  <a className="title title_toggle" href="/#contact" alt="" onClick={handleCloseMenu} name="contact" >Contato</a>
+                </li>
+                {/* Mais itens */}
+                <li>
                   <div className="sub-menu">
-                    <a className="title title_toggle" href="/" alt="" onClick={handleCloseMenu} name="home" >Home</a>
+                    <a className="title title_toggle" onClick={handleCloseMenu} name="home" >
+                      Mais
+                      <FontAwesomeIcon icon={faCaretDown} onClick={HandleToggleMenu} />
+                    </a>
                     <ul className='sub-menu-content'>
+                      <li>
+                        <a href="/produtos" className="title title_toggle" alt="" name="about" >Aluguel de equipamentos</a>
+                      </li>
                       <li>
                         <a href="/regimento-interno" className="title title_toggle" alt="" name="regimento interno" >Regimento Interno</a>
                       </li>
@@ -84,27 +108,6 @@ export function Header() {
                       </li>
                     </ul>
                   </div>
-
-                </li>
-
-                <li>
-                  <a className="title title_toggle sobre_menu" href="/#about" alt="" onClick={handleCloseMenu} name="about"  >Quem Somos</a>
-
-                </li>
-                
-                <li>
-                  <div className="sub-menu">
-                    <a className="title title_toggle" href="/#products" alt="" onClick={handleCloseMenu} name="products" >Serviços</a>
-                    <ul className='sub-menu-content'>
-                      <li>
-                        <a href="/produtos" className="title title_toggle" alt="" name="about" >Aluguel de equipamentos</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                {/* Depoimentos aqui (apagado) */}
-                <li>
-                  <a className="title title_toggle" href="/#contact" alt="" onClick={handleCloseMenu} name="contact" >Contato</a>
                 </li>
                 {/* ==== ICONE DARKMODE MOON ===== */}
                 <div className="dark_theme_container">

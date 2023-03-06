@@ -28,8 +28,15 @@ nav.show ul.grid  {
 .sub-menu {
   height: 100%;
   z-index: 99999;
+
+  >a {
+    cursor: pointer;
+    svg {
+      padding-left: 0.675rem;
+    }
+  }
   
-  &:hover {
+  &.sub-clicked {
     .sub-menu-content {
       visibility: visible ;
       transition:0.3s ;
