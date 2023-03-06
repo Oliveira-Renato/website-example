@@ -48,7 +48,7 @@ function App() {
         <span className='dark_mode_main_icon'>
           <Toggler toggleTheme={toggleTheme} /> 
         </span>
-        {/* <ScrollReavelling /> */}
+        <ScrollReavelling />
         <BrowserRouter> 
           <Toaster
           position="top-right"

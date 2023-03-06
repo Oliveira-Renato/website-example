@@ -41,7 +41,7 @@ export function Header() {
     return ['http:', 'https:'].includes(parsed.protocol);
   }
 
-  const handleCloseMenu = () => {
+  const handleCloseMenu = function(pToggle){
     const toggleThemeIcon = document.querySelector('.darkIcon');
     const nav = document.querySelector('#header nav');
     const subMenu = document.querySelector('.sub-menu')
@@ -49,7 +49,8 @@ export function Header() {
     nav.classList.remove('show');
     toggleThemeIcon.classList.remove('darkIcontoggle');
 
-    subMenu.classList.toggle('sub-clicked');
+    pToggle === 'here' ? subMenu.classList.toggle('sub-clicked') : subMenu.classList.remove('sub-clicked');
+
   }
 
   return (
@@ -83,7 +84,7 @@ export function Header() {
                 {/* Mais itens */}
                 <li>
                   <div className="sub-menu">
-                    <a className="title title_toggle" onClick={handleCloseMenu} name="home" >
+                    <a className="title title_toggle" onClick={() => handleCloseMenu('here')}  >
                       Mais
                       <FontAwesomeIcon icon={faCaretDown} onClick={HandleToggleMenu} />
                     </a>

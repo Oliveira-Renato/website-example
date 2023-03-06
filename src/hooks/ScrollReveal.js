@@ -13,12 +13,14 @@ export default function ScrollReavelling(){
   //#testimonials .testimonials,
     scrollReveal.reveal(
       ` #home .text,
-      #about .image, #about .text,
-      #services header, #products .card,
-      #testimonials header,  #testimonials .text,
-      #contact .text, #contact .links,
-      #footer .row
-      `,
+        #about .image, #about .text,
+        #services header, #products .card,
+        #testimonials header,  #testimonials .text,
+        #contact .text, #contact .links,
+        #footer .row, #products .img-container,
+        #compliance .img-container, #lgpd .list-new-pattern .lgpd-img,
+        #legislacao .legislacao-img
+        `,
       { interval: 100 }
     )
   })
