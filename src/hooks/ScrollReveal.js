@@ -7,7 +7,8 @@ export default function ScrollReavelling(){
       origin: 'top',
       distance: '30px',
       duration: 700,
-      reset: true
+      reset: true,
+      mobile: false
     })
     
   //#testimonials .testimonials,
