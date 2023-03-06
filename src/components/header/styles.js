@@ -256,6 +256,7 @@ nav a.logo img {
   }
   nav.show ul.grid {
     gap: 5rem;
+    margin-top: -20rem;
   }
   nav {
     ul {

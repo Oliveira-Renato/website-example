@@ -46,11 +46,13 @@ export function Header() {
     const nav = document.querySelector('#header nav');
     const subMenu = document.querySelector('.sub-menu')
 
-    nav.classList.remove('show');
-    toggleThemeIcon.classList.remove('darkIcontoggle');
-
-    pToggle === 'here' ? subMenu.classList.toggle('sub-clicked') : subMenu.classList.remove('sub-clicked');
-
+    if(pToggle === 'here') {
+      subMenu.classList.toggle('sub-clicked');
+    } else {
+      subMenu.classList.remove('sub-clicked');
+      toggleThemeIcon.classList.remove('darkIcontoggle');
+      nav.classList.remove('show');
+    }
   }
 
   return (
@@ -86,7 +88,7 @@ export function Header() {
                   <div className="sub-menu">
                     <a className="title title_toggle" onClick={() => handleCloseMenu('here')}  >
                       Mais
-                      <FontAwesomeIcon icon={faCaretDown} onClick={HandleToggleMenu} />
+                      <FontAwesomeIcon icon={faCaretDown}  />
                     </a>
                     <ul className='sub-menu-content'>
                       <li>
