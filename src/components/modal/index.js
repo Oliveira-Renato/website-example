@@ -20,11 +20,11 @@ export function ModalComponent(pData) {
   var dataId = pData.jsonId ? pData.jsonId : {};
   var subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
-
+  console.log('id',pData)
   const openModal = (a) => setIsOpen(true);
   const afterOpenModal = () => subtitle.style.color = `${props => props.theme.colors.titleColor}`;
   const closeModal = () => setIsOpen(false);
-
+  console.log('entrou')
   return (
     <div>
       <div className="button button-modal" onClick={() => openModal(dataId)} value='1'>Ver mais</div>
@@ -44,7 +44,8 @@ export function ModalComponent(pData) {
                 <li key={index}>{item}</li>
               )
             ) : (
-              <li>{data.content}</li>
+              <li>{data.content}{console.log(data)}</li>
+             
             )}
           </ul>
 

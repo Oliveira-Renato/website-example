@@ -75,7 +75,6 @@ export function ModulesComponent() {
             slidesToShow: 1,
             slidesToScroll: 1,
             speed: 100,
-            fade: true,
           }
         }
       ]
