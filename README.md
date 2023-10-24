@@ -1,11 +1,10 @@
 ## Website Design Inspiration with Dark Theme Support
 
-This project is a showcase of a visually appealing and responsive website design inspiration, skillfully crafted using modern technologies including React, TypeScript, Firebase, and JavaScript. Notably, this project also includes support for a sleek and user-friendly dark theme, enhancing user experience even further.
+This project is a showcase of a visually appealing and responsive website design inspiration, skillfully crafted using modern technologies including React, Firebase, and JavaScript. Notably, this project also includes support for a sleek and user-friendly dark theme, enhancing user experience even further.
 
 ### Technologies Used:
 
 - **React**: A powerful JavaScript library for building interactive user interfaces.
-- **TypeScript**: A statically typed superset of JavaScript, ensuring code reliability and maintainability.
 - **Firebase**: A comprehensive backend platform offering real-time database capabilities, authentication, and hosting services.
 - **JavaScript**: The fundamental programming language that powers interactivity on the web.
 - **Dark Theme**: An elegant dark mode implementation for enhanced user comfort during low-light conditions.
