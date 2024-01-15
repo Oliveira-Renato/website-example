@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 //import mainImg from '../../assets/images/home/home.jpg';
-import mainImg from '../../assets/images/home/home2.jpg';
+import mainImg from "../../assets/images/home/home2.jpg";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
@@ -15,29 +15,29 @@ import {
   faEnvelope,
   faLocationDot,
   faArrowUp,
-  faAnglesDown
+  faAnglesDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* ===== PAGES ===== */
-import { Header } from '../../components/header/header';
-import { AboutPage } from '../about';
-import { ContactForm } from '../contacts';
-import { Footer } from '../footer';
+import { Header } from "../../components/header/header";
+import { AboutPage } from "../about";
+import { ContactForm } from "../contacts";
+import { Footer } from "../footer";
 
-import { Container } from './animation.js';
-import 'swiper/css';
-import 'swiper/css/mousewheel';
-import 'swiper/css/pagination';
-import 'swiper/css/keyboard';
-import 'swiper/css/navigation';
-import { ModulesComponent } from '../../components/modulos';
+import { Container } from "./animation.js";
+import "swiper/css";
+import "swiper/css/mousewheel";
+import "swiper/css/pagination";
+import "swiper/css/keyboard";
+import "swiper/css/navigation";
+import { ModulesComponent } from "../../components/modulos";
 
 export function Home() {
   return (
     <div>
       <Container>
         {/*====  HEADER/NAV ====  */}
-        <div className='header_container'>
+        <div className="header_container">
           <Header />
         </div>
 
@@ -47,18 +47,27 @@ export function Home() {
           <section className="section" id="home">
             <div className="container grid">
               <div className="image image_home">
-                <img src={mainImg} alt="Nurse taking care of an old lady at her home" />
+                <img
+                  src={mainImg}
+                  alt="Nurse taking care of an old lady at her home"
+                />
               </div>
 
               <div className="text">
-                <h1 className="title main_title">BessaCare</h1>
+                <h1 className="title main_title">Empresa nome</h1>
                 <div className="typewriter">
-                  <h2 className="title second_title">Serviços de Home Care</h2>
+                  <h2 className="title second_title">
+                    Lorem, ipsum dolor sit amet{" "}
+                  </h2>
                 </div>
-                <p>Atenção médica e cuidados de confiança para o paciente e sua família.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque perspiciatis exercitationem sequi
+                </p>
 
-                <a className='button' href="#about">
-                  <FontAwesomeIcon className="icones" icon={faAnglesDown} />Saiba mais
+                <a className="button" href="#about">
+                  <FontAwesomeIcon className="icones" icon={faAnglesDown} />
+                  Saiba mais
                 </a>
               </div>
             </div>
@@ -87,8 +96,15 @@ export function Home() {
             <div className="container grid">
               <div className="text">
                 <h2 className="title title_products">Fale conosco!</h2>
-                <p> Se você tem alguma dúvida ou quer mais informações, estamos a disposição para melhor ajudar e orientar.</p>
-                <a href="https://api.whatsapp.com/send?phone=+5511991501338&text=Oi Gostaria de agendar um horário" className="button">
+                <p>
+                  {" "}
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque perspiciatis exercitationem sequi
+                </p>
+                <a
+                  href="https://api.whatsapp.com/send?phone=+5511991501338&text=Oi Gostaria de agendar um horário"
+                  className="button"
+                >
                   {/* https://api.whatsapp.com/send?phone=+551199150-1338&text=Oi */}
                   <div className="icones">
                     <FontAwesomeIcon icon={faWhatsapp} />
@@ -100,25 +116,26 @@ export function Home() {
               <div className="links">
                 <ul className="grid">
                   <li>
-                    <FontAwesomeIcon icon={faPhone} className="icones" />55 (11) 4208-4048
+                    <FontAwesomeIcon icon={faPhone} className="icones" />
+                    55 (11) 0000-0000
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faEnvelope} className="icones" />comercial@essacare.com.br
+                    <FontAwesomeIcon icon={faEnvelope} className="icones" />
+                    comercial@example.com
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faLocationDot} className="icones" />Alameda Araguaia, 2044 – Conjunto 510 (Bloco 1), São Paulo, SP, 06455-906
+                    <FontAwesomeIcon icon={faLocationDot} className="icones" />
+                    rua exemplo, 2044 – predio (Bloco), São Paulo, SP,
+                    000000-000
                   </li>
                 </ul>
               </div>
-
-
             </div>
             {/*====  FORMS ====  */}
             <div className="forms container">
               <ContactForm />
             </div>
           </section>
-
         </main>
 
         {/*====  SEPARETOR 2 ====  */}
@@ -133,5 +150,5 @@ export function Home() {
         </a>
       </Container>
     </div>
-  )
+  );
 }

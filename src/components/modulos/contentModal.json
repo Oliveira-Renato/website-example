@@ -1,44 +1,23 @@
 [
   {
-    "id":"1",
+    "id": "1",
     "boInativo": 0,
-    "titulo":"Atendimento médico domiciliar",
-    "image":"faLaptopMedical",
-    "content": "Avaliação clínica e evolução do paciente;-Orientação da família cuidadores;-Análise de atendimento;-Controle medicamentoso;-Análise de equipamentos e mobiliário;-Procedimentos privativos;-Avaliação de lesões e integridade da pele;-Curativos complexos;-Controle de oxigenoterapia;-Cuidados paliativos (quando necessário)."
+    "titulo": "Lorem ipsum ",
+    "image": "faLaptopMedical",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Doloremque perspiciatis exercitationem sequi"
   },
   {
-    "id":"2",
+    "id": "2",
     "boInativo": 0,
-    "titulo":"Terapeuta Ocupacional",
-    "image":"faFileArrowUp",
-    "content": "Tem como intenção reincorporar o indivíduo à sociedade após alguma enfermidade. Ele é responsável em auxiliar o paciente na recuperação de sequelas, lesões e outros problemas físicos, melhorando seu condicionamento e prevenindo complicações por meio de atividades e exercícios."
+    "titulo": "Lorem ipsum ",
+    "image": "faFileArrowUp",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Doloremque perspiciatis exercitationem sequi"
   },
   {
-    "id":"3",
+    "id": "3",
     "boInativo": 0,
-    "titulo":"Psicólogo",
-    "image":"faClipboardList",
-    "content": "O atendimento domiciliar envolve orientações à família ou responsável pelos cuidados que foram prescritos ao indivíduo, avaliando as necessidades de atendimento, psicoterapia para paciente e cuidador, além de intervenções psicológicas quando necessário. O papel desse profissional inclui compreender e traduzir os ideais do paciente em relação a seu processo, e interpretar para a equipe de saúde, facilitando o relacionamento."
-  },
-  {
-    "id":"4",
-    "boInativo": 0,
-    "titulo":"Nutricionista",
-    "image":"faHandHoldingDollar",
-    "content": "A terapia nutricional domiciliar é fundamental para o início da adaptação necessária sobre a oferta de alimentos, avaliando o estado nutricional, e acompanhando sua evolução. Acompanha e desenvolve dietoterapia para determinadas patologias, como em pacientes traqueostomizados, em antibioticoterapia, com transtornos de deglutição, digestão, disfagia e que utilizam outras vias de alimentação, como sondas nasoenterais e ostomias. Tudo isso considerando os fatores culturais e socioeconômicos."
-  },
-  {
-    "id":"5",
-    "boInativo": 0,
-    "titulo":"Fonoaudiólogo",
-    "image":"faCalculator",
-    "content": "Atender indivíduos com disfagias mecânicas (causadas por alterações orgânicas no trato digestivo) e neurogênicas (causadas por alterações neurológicas). É responsável também pela realização de estímulos para minimizar os efeitos de transtornos como paralisia facial, respiração oral, mastigação ineficiente, deglutição atípica e outros. Ainda, realiza terapias para afasias, alterações e atraso na linguagem, avaliação e terapia da voz e da articulação, acompanhamento de alterações auditivas e adaptação de próteses."
-  },
-  { 
-    "id":"6",
-    "boInativo": 0,
-    "titulo":"Fisioterapeuta",
-    "image":"faPrescriptionBottleMedical",
-    "content": "Reabilitar, reeducar e prevenir deformidades ósseas e articulares para que o paciente possa voltar o quanto antes para suas atividades de vida diária. Além disso, a fisioterapia home care ajuda a promover inclusão, melhorar a qualidade de vida, preservar ou recuperar a saúde do paciente."
+    "titulo": "Lorem ipsum ",
+    "image": "faClipboardList",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Doloremque perspiciatis exercitationem sequi"
   }
 ]
